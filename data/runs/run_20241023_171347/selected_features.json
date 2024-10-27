@@ -1,0 +1,9 @@
+{
+  "selected_features": [
+    "volatility_3m",
+    "volume_momentum_5m"
+  ],
+  "feature_count": 2,
+  "total_features": 101,
+  "numeric_features": 97
+}

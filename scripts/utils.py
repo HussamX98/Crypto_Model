@@ -1,29 +1,44 @@
-# scripts/utils.py
-
-import requests
+import yaml
+import os
 from config import API_KEY
+import logging
 
-API_BASE_URL = "https://public-api.birdeye.so"
+BASE_URL = "https://public-api.birdeye.so"
 
-def make_api_request(endpoint, params=None):
-    url = f"{API_BASE_URL}{endpoint}"
+def load_token_list(file_name='token_list.yaml'):
+    # Get the directory of the current script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Go up one level to the project root
+    project_root = os.path.dirname(current_dir)
+    # Construct the full path to token_list.yaml
+    file_path = os.path.join(project_root, file_name)
+    
+    try:
+        with open(file_path, 'r') as file:
+            data = yaml.safe_load(file)
+        return [{'address': token.split('#')[0].strip()} for token in data['tokens']]
+    except FileNotFoundError:
+        print(f"Error: {file_path} not found. Please ensure the file exists in the project root directory.")
+        return []
+
+def get_headers():
     headers = {
         "X-API-KEY": API_KEY,
-        "accept": "application/json"
+        "Accept": "application/json",
     }
-    params = params or {}
+    masked_headers = headers.copy()
+    masked_headers["X-API-KEY"] = "****" + API_KEY[-4:]  # Only show last 4 characters
+    logging.debug(f"Request Headers: {masked_headers}")
+    return headers
 
-    print(f"Request URL: {url}")
-    print(f"Request Headers: {headers}")
-    print(f"Request Params: {params}")
+def get_url(endpoint):
+    url = f"{BASE_URL}/v1{endpoint}"
+    logging.debug(f"Constructed URL: {url}")
+    return url
 
-    response = requests.get(url, headers=headers, params=params)
-    print(f"Response Status Code: {response.status_code}")
-    print(f"Response Headers: {response.headers}")
-    print(f"Response Content: {response.text}")
-
-    if response.status_code != 200:
-        print(f"HTTP {response.status_code} Error: {response.reason}")
-    response.raise_for_status()
-    return response.json()
-
+def get_latest_run_dir(base_dir):
+    run_dirs = [d for d in os.listdir(base_dir) if d.startswith("run_")]
+    if not run_dirs:
+        raise ValueError("No run directories found in the base directory.")
+    latest_run = max(run_dirs)
+    return os.path.join(base_dir, latest_run)

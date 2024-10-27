@@ -1,1 +1,24 @@
-scripts/config.py
+config.py
+
+# Virtual Environment
+venv/
+env/
+.env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data and logs
+data/runs/*/logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db

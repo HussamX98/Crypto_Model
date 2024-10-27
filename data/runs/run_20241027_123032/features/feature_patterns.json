@@ -1,0 +1,4604 @@
+{
+  "high_correlation_pairs": [
+    {
+      "feature1": "price_mean",
+      "feature2": "price_min",
+      "correlation": 0.9956888101253457
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "price_max",
+      "correlation": 0.8044659208618372
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "price_last",
+      "correlation": 0.8044659208618372
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_total",
+      "correlation": 0.8116965793718608
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_mean",
+      "correlation": 0.8116965793718607
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_std",
+      "correlation": 0.8164164633524245
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_1m",
+      "correlation": 0.8073981604170379
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "avg_trade_size_1m",
+      "correlation": 0.8073981604170379
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "max_trade_size_1m",
+      "correlation": 0.8073981604170379
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_3m",
+      "correlation": 0.8854499485958115
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 0.8854499485958144
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.8728291057549165
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_5m",
+      "correlation": 0.7740915618043837
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.7740915618043833
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.8726160192480751
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.792762660299143
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_10m",
+      "correlation": 0.8116965793718608
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.8116965793718607
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.8216424623454505
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_15m",
+      "correlation": 0.8116965793718608
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.8116965793718607
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.8216424623454505
+    },
+    {
+      "feature1": "price_mean",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.8177773767421267
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "price_max",
+      "correlation": 0.8352566618535628
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "price_last",
+      "correlation": 0.8352566618535628
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "rsi_14_slope",
+      "correlation": 0.7945059006685368
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "price_change_3m",
+      "correlation": 0.8218433817124596
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_3m",
+      "correlation": 0.8338224208207309
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_3m",
+      "correlation": 0.8334624862160592
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_std_3m",
+      "correlation": 0.8338224208207309
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "acceleration_3m",
+      "correlation": 0.8434138144492842
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "price_change_5m",
+      "correlation": 0.7699064154257557
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_5m",
+      "correlation": 0.8337889471245364
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_5m",
+      "correlation": 0.833621871895113
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.8337889471245364
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "acceleration_5m",
+      "correlation": 0.8400297112875844
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_10m",
+      "correlation": 0.8337600024022942
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_10m",
+      "correlation": 0.8335989113237624
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.8337600024022942
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "acceleration_10m",
+      "correlation": 0.8401053703494038
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_15m",
+      "correlation": 0.8336821930449663
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_15m",
+      "correlation": 0.8334994660084137
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.8336821930449663
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "acceleration_15m",
+      "correlation": 0.8400649369891647
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.8367023133227626
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.8369129208896539
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.8412400244452056
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.8114471040235312
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.8392303165512023
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.8401987281286697
+    },
+    {
+      "feature1": "price_std",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.8396508784979934
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "price_max",
+      "correlation": 0.7593908482994538
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "price_last",
+      "correlation": 0.7593908482994538
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_total",
+      "correlation": 0.8137415922546902
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_mean",
+      "correlation": 0.8137415922546904
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_std",
+      "correlation": 0.8230004080926407
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_1m",
+      "correlation": 0.7935978005699988
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "avg_trade_size_1m",
+      "correlation": 0.7935978005699988
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "max_trade_size_1m",
+      "correlation": 0.7935978005699988
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_3m",
+      "correlation": 0.8901197960075578
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 0.8901197960075578
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.8733487931132683
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_5m",
+      "correlation": 0.7787326791105461
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.7787326791105466
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.8733454456477024
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.7797634550601836
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_10m",
+      "correlation": 0.8137415922546902
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.8137415922546904
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.8274330459346186
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_15m",
+      "correlation": 0.8137415922546902
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.8137415922546904
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.8274330459346186
+    },
+    {
+      "feature1": "price_min",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.8210983939963515
+    },
+    {
+      "feature1": "price_max",
+      "feature2": "price_last",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "rsi_7",
+      "feature2": "rsi_14",
+      "correlation": 0.9805836762432679
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "rsi_14_slope",
+      "correlation": 0.7496283724111725
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_3m",
+      "correlation": 0.7238093525842954
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_3m",
+      "correlation": 0.7230111711160718
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_std_3m",
+      "correlation": 0.7238093525842954
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "acceleration_3m",
+      "correlation": 0.7555502592431124
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_5m",
+      "correlation": 0.7235837020700171
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_5m",
+      "correlation": 0.7231393731558635
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.7235837020700171
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "acceleration_5m",
+      "correlation": 0.7407951021672903
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_10m",
+      "correlation": 0.7234761881941322
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_10m",
+      "correlation": 0.7232895904153378
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.7234761881941322
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "acceleration_10m",
+      "correlation": 0.7407892206782103
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_15m",
+      "correlation": 0.7235560535092416
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_15m",
+      "correlation": 0.723144068599607
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.7235560535092416
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "acceleration_15m",
+      "correlation": 0.7409587865589561
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.7471706738211157
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.7470244706738841
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.7307644788320636
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.7490422739896776
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.7504577687525152
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.7492807889935066
+    },
+    {
+      "feature1": "rsi_7_slope",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.7438749262029577
+    },
+    {
+      "feature1": "rsi_14",
+      "feature2": "price_change_10m",
+      "correlation": 0.7000407311072566
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "price_change_3m",
+      "correlation": 0.9437821458714825
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_3m",
+      "correlation": 0.9578725871025796
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_3m",
+      "correlation": 0.9575065707584628
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_std_3m",
+      "correlation": 0.9578725871025796
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "acceleration_3m",
+      "correlation": 0.9688689483476035
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "price_change_5m",
+      "correlation": 0.8855337341196555
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_5m",
+      "correlation": 0.9577421416760419
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_5m",
+      "correlation": 0.9574801749664831
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9577421416760419
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9650879028179818
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_10m",
+      "correlation": 0.9577091162763658
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_10m",
+      "correlation": 0.9574730303480979
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9577091162763658
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9650843604657916
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_15m",
+      "correlation": 0.9577167767235268
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_15m",
+      "correlation": 0.9574824779185077
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9577167767235268
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9650906114606514
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9648845870553057
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9648169293473897
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9596042251596004
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9771410102052207
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9808295231747802
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9795175876072928
+    },
+    {
+      "feature1": "rsi_14_slope",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9683089735635875
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_3m",
+      "correlation": 0.9972083593813921
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_3m",
+      "correlation": 0.9973987985575387
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_std_3m",
+      "correlation": 0.9972083593813921
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "acceleration_3m",
+      "correlation": 0.9808266362840169
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "price_change_5m",
+      "correlation": 0.9813506325531139
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9972694620058331
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9973920854113881
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9972694620058331
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9909522785441612
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "price_change_10m",
+      "correlation": 0.724084830128674
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9972843246405764
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9973829624385515
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9972843246405764
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9909505103967942
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9972834488150479
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9973791501794765
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9972834488150479
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9909503720697662
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9884060423378589
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9884895809575027
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9899696384559025
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9666230586781993
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9904105023783716
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9907615727783388
+    },
+    {
+      "feature1": "price_change_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9905019985502418
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_3m",
+      "correlation": 0.9999966029684547
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_std_3m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "acceleration_3m",
+      "correlation": 0.9926385174125272
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "price_change_5m",
+      "correlation": 0.9642992026842587
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9999996107538521
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9999967453049916
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9999996107538521
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9982069600788138
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999994082450301
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999968949363635
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999994082450301
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9982061863384093
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999994110832039
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999969552669558
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999994110832039
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998206125581388
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9961629666998669
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9962053949232424
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968944497198616
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9752034762706957
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978715154480903
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.998117064794655
+    },
+    {
+      "feature1": "volatility_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9979155720495168
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_std_3m",
+      "correlation": 0.9999966029684547
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "acceleration_3m",
+      "correlation": 0.9923207862580896
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "price_change_5m",
+      "correlation": 0.9649828655171286
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9999983599967924
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9999998716465222
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9999983599967924
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9980482295478703
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999986878426066
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999997157959006
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999986878426066
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9980474123156241
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999986840518335
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999996488418649
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999986840518335
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9980474106251053
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9959880220617587
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9960317665204559
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9967447540024116
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9749921681122605
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9977049858002246
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9979545711857507
+    },
+    {
+      "feature1": "momentum_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9977523034111416
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "acceleration_3m",
+      "correlation": 0.9926385174125272
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "price_change_5m",
+      "correlation": 0.9642992026842587
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9999996107538521
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9999967453049916
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9999996107538521
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9982069600788138
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999994082450301
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999968949363635
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999994082450301
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9982061863384093
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999994110832039
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999969552669558
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999994110832039
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998206125581388
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9961629666998669
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9962053949232424
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968944497198616
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9752034762706957
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978715154480903
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.998117064794655
+    },
+    {
+      "feature1": "momentum_std_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9979155720495168
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "price_change_5m",
+      "correlation": 0.9251429959619905
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9925384347477434
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9923320577560171
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9925384347477434
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9981081589746154
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9925138318129116
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9923473639656751
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9925138318129116
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9981090068987737
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9925160679465393
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9923544798191481
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9925160679465393
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9981093930417398
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.996932492750138
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9969073125496212
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9962989289497803
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9775268499715136
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9981226583037547
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9981952730979513
+    },
+    {
+      "feature1": "acceleration_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9980207945325993
+    },
+    {
+      "feature1": "trend_strength_3m",
+      "feature2": "trend_strength_5m",
+      "correlation": 0.7781329491482929
+    },
+    {
+      "feature1": "trend_strength_3m",
+      "feature2": "momentum_strength_3m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "trend_strength_3m",
+      "feature2": "volatility_adjusted_momentum_3m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "trend_strength_3m",
+      "feature2": "volatility_adjusted_momentum_5m",
+      "correlation": 0.783104814247506
+    },
+    {
+      "feature1": "trend_consistency_3m",
+      "feature2": "trend_consistency_5m",
+      "correlation": 0.8729467373892175
+    },
+    {
+      "feature1": "trend_consistency_3m",
+      "feature2": "trend_consistency_10m",
+      "correlation": 0.7779348098956899
+    },
+    {
+      "feature1": "trend_consistency_3m",
+      "feature2": "trend_consistency_15m",
+      "correlation": 0.7435692681696612
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_5m",
+      "correlation": 0.9645168626538007
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_5m",
+      "correlation": 0.964959179398026
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9645168626538007
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9467266774398765
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "price_change_10m",
+      "correlation": 0.8431599706322027
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9645699209198321
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_10m",
+      "correlation": 0.964926231232665
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9645699209198321
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9467226509379053
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "price_change_15m",
+      "correlation": 0.723435713798722
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9645613241289607
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9649070477744209
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9645613241289607
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9467158767643356
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "avg_trade_interval",
+      "correlation": -0.7160639616971082
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "trade_interval_std",
+      "correlation": 0.7906512077149032
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.942814706978744
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9430037218619226
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9465015378725055
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.919652399775217
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9456468776152587
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9462552787379835
+    },
+    {
+      "feature1": "price_change_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9461567867604532
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_5m",
+      "correlation": 0.9999985053911323
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_std_5m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.99815726874029
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999999510713853
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999985787597775
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999999510713853
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9981565203521829
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999999497214032
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999985791962488
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999999497214032
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9981564673394903
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9961061735856167
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9961490751354538
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968497747404566
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.975129040284016
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978187152046119
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.998066141388881
+    },
+    {
+      "feature1": "volatility_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9978642997765358
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "momentum_std_5m",
+      "correlation": 0.9999985053911326
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.9980537462737706
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999988292202222
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999998869533846
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999988292202222
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9980530492306036
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999988214547312
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999997632028668
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999988214547312
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9980530017880251
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9959951628526914
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9960390305675979
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9967493254683865
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9749875736043185
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.997709885359128
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9979602425545361
+    },
+    {
+      "feature1": "momentum_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9977578063419381
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "acceleration_5m",
+      "correlation": 0.99815726874029
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9999999510713853
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999985787597775
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999999510713853
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9981565203521829
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999999497214032
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999985791962488
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999999497214032
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9981564673394903
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9961061735856167
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9961490751354538
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968497747404566
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.975129040284016
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978187152046119
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.998066141388881
+    },
+    {
+      "feature1": "momentum_std_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9978642997765358
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_10m",
+      "correlation": 0.9981449909287988
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9980613932390799
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9981449909287988
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9999999406165809
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9981457871002644
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9980646534872207
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9981457871002644
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9999998967117065
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9983823777471071
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9983914119116842
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9984384010965905
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.978151251957711
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9998363184458308
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9999968089175522
+    },
+    {
+      "feature1": "acceleration_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9998086220741507
+    },
+    {
+      "feature1": "trend_strength_5m",
+      "feature2": "momentum_strength_3m",
+      "correlation": 0.778132949148293
+    },
+    {
+      "feature1": "trend_strength_5m",
+      "feature2": "volatility_adjusted_momentum_3m",
+      "correlation": 0.778132949148293
+    },
+    {
+      "feature1": "trend_strength_5m",
+      "feature2": "volatility_adjusted_momentum_5m",
+      "correlation": 0.869391692036016
+    },
+    {
+      "feature1": "trend_consistency_5m",
+      "feature2": "trend_consistency_10m",
+      "correlation": 0.7739587494788281
+    },
+    {
+      "feature1": "trend_consistency_5m",
+      "feature2": "trend_consistency_15m",
+      "correlation": 0.728804442859134
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "trend_consistency_10m",
+      "correlation": -0.8096952536416523
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "price_change_15m",
+      "correlation": 0.9811897828546364
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "trend_consistency_15m",
+      "correlation": -0.8270244716328068
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "avg_trade_interval",
+      "correlation": -0.8739384467046943
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "trade_interval_std",
+      "correlation": 0.9138105369828075
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_5m",
+      "correlation": 0.9186226016251082
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": 0.9191379821842255
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_10m",
+      "correlation": 0.9198904144213257
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.9143549313173188
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.9198904144213257
+    },
+    {
+      "feature1": "price_change_10m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.9143549313173188
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "momentum_10m",
+      "correlation": 0.9999988890191993
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "momentum_std_10m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9981442599719742
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999999848634182
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "momentum_15m",
+      "correlation": 0.999998905244995
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999999848634182
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998144199466725
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9960962206809508
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.996139171867742
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968348540007438
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9751026906011205
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978049467650656
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9980535090171733
+    },
+    {
+      "feature1": "volatility_10m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.997851487100477
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "momentum_std_10m",
+      "correlation": 0.9999988890191994
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9980606645390894
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999989134599312
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999998951168367
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999989134599312
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9980606461974351
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.996003462995346
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9960471780448147
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.996756968775027
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9749838030066057
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.997716702542419
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9979679488896704
+    },
+    {
+      "feature1": "momentum_10m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.99776530916704
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "acceleration_10m",
+      "correlation": 0.9981442599719742
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9999999848634182
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "momentum_15m",
+      "correlation": 0.999998905244995
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9999999848634182
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998144199466725
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9960962206809508
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.996139171867742
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968348540007438
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9751026906011205
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978049467650656
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9980535090171733
+    },
+    {
+      "feature1": "momentum_std_10m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.997851487100477
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volatility_15m",
+      "correlation": 0.9981450499839823
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9980639126962068
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.9981450499839823
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.9999999294983067
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9983788690902969
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9983879742356261
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9984420234514316
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9781503937629449
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9998363119689226
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9999968585188644
+    },
+    {
+      "feature1": "acceleration_10m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9998085701908844
+    },
+    {
+      "feature1": "trend_strength_10m",
+      "feature2": "volatility_adjusted_momentum_10m",
+      "correlation": 0.8700306938194474
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "price_change_15m",
+      "correlation": -0.8336909147869651
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "trend_consistency_15m",
+      "correlation": 0.948175010637544
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "avg_trade_interval",
+      "correlation": 0.7961708149376846
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "trade_interval_std",
+      "correlation": -0.8132169478436292
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_5m",
+      "correlation": -0.8339614645777763
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": -0.8340254051685305
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_acceleration_5m",
+      "correlation": 0.7124936767445132
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_10m",
+      "correlation": -0.8360609504111018
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": -0.8318706639314923
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_15m",
+      "correlation": -0.8360609504111018
+    },
+    {
+      "feature1": "trend_consistency_10m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": -0.8318706639314923
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "trend_consistency_15m",
+      "correlation": -0.8373999992889395
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "avg_trade_interval",
+      "correlation": -0.8644772485274491
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "trade_interval_std",
+      "correlation": 0.8888940755491838
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_5m",
+      "correlation": 0.9755878680562501
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": 0.9758574859296139
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_acceleration_5m",
+      "correlation": -0.8120709920194054
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_10m",
+      "correlation": 0.9759269028588559
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.9729760150492773
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.9759269028588559
+    },
+    {
+      "feature1": "price_change_15m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.9729760150492773
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "momentum_15m",
+      "correlation": 0.9999989156925632
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "momentum_std_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998144929169022
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9960961045134152
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9961389813630752
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968366100756099
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9750947205684315
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978054493254984
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9980543256998486
+    },
+    {
+      "feature1": "volatility_15m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.99785199958662
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "momentum_std_15m",
+      "correlation": 0.999998915692563
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998063753018673
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9959999813655013
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9960437016070252
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9967668638717022
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9749917154180939
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9977208086666608
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9979714184776802
+    },
+    {
+      "feature1": "momentum_15m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9977684101119453
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "acceleration_15m",
+      "correlation": 0.998144929169022
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9960961045134152
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9961389813630752
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9968366100756099
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9750947205684315
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9978054493254984
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9980543256998486
+    },
+    {
+      "feature1": "momentum_std_15m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.99785199958662
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volume_momentum_3m",
+      "correlation": 0.9983802318383905
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9983891041862292
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9984403062738223
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9781139268425079
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9998335709714872
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9999965395096465
+    },
+    {
+      "feature1": "acceleration_15m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9998085912081593
+    },
+    {
+      "feature1": "trend_strength_15m",
+      "feature2": "volatility_adjusted_momentum_15m",
+      "correlation": 0.805509895729088
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "avg_trade_interval",
+      "correlation": 0.8063675914330696
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "trade_interval_std",
+      "correlation": -0.836296536545572
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_5m",
+      "correlation": -0.8243636036787524
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": -0.8244929160178242
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_10m",
+      "correlation": -0.8262918640860868
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": -0.8212022831333193
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_15m",
+      "correlation": -0.8262918640860868
+    },
+    {
+      "feature1": "trend_consistency_15m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": -0.8212022831333193
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_mean",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_std",
+      "correlation": 0.977900811275359
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_1m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "avg_trade_size_1m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "max_trade_size_1m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_3m",
+      "correlation": 0.903327697492148
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 0.9033276974921503
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.973890484434735
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_5m",
+      "correlation": 0.9584291687710248
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9584291687710241
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9749907269108978
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_10m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "volume_total",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840579
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_std",
+      "correlation": 0.977900811275361
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_1m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "avg_trade_size_1m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "max_trade_size_1m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_3m",
+      "correlation": 0.9033276974921471
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 0.9033276974921506
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.9738904844347351
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_5m",
+      "correlation": 0.9584291687710237
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9584291687710248
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9749907269108964
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_10m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_15m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "volume_mean",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840576
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "volume_3m",
+      "correlation": 0.9289159539832035
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 0.928915953983205
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.9659653050251533
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "volume_5m",
+      "correlation": 0.951386100178602
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9513861001786014
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9668356458854137
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "volume_10m",
+      "correlation": 0.9779008112753592
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.977900811275361
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.995658810569096
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "volume_15m",
+      "correlation": 0.9779008112753592
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.977900811275361
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.995658810569096
+    },
+    {
+      "feature1": "volume_std",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.8206499426007489
+    },
+    {
+      "feature1": "volume_skew",
+      "feature2": "volume_kurtosis",
+      "correlation": 0.9854437728689697
+    },
+    {
+      "feature1": "volume_skew",
+      "feature2": "whale_volume_ratio",
+      "correlation": 0.8916733053511426
+    },
+    {
+      "feature1": "volume_kurtosis",
+      "feature2": "whale_volume_ratio",
+      "correlation": 0.8525771482646467
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "trade_interval_std",
+      "correlation": -0.9865386141875669
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_5m",
+      "correlation": -0.8229653760915346
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": -0.8236954466778476
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_10m",
+      "correlation": -0.8174023471590218
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": -0.8125331001080182
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_15m",
+      "correlation": -0.8174023471590218
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": -0.8125331001080182
+    },
+    {
+      "feature1": "avg_trade_interval",
+      "feature2": "holder_count",
+      "correlation": 0.7370741338357091
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_5m",
+      "correlation": 0.8302004342816744
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": 0.8310162875851014
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_10m",
+      "correlation": 0.8264314286371545
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.8199640407407904
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.8264314286371545
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.8199640407407904
+    },
+    {
+      "feature1": "trade_interval_std",
+      "feature2": "holder_count",
+      "correlation": -0.7619049298962611
+    },
+    {
+      "feature1": "whale_trade_count",
+      "feature2": "large_trade_ratio_5m",
+      "correlation": -1.0000000000000018
+    },
+    {
+      "feature1": "whale_trade_count",
+      "feature2": "large_trade_ratio_10m",
+      "correlation": -1.0000000000000018
+    },
+    {
+      "feature1": "whale_trade_count",
+      "feature2": "large_trade_ratio_15m",
+      "correlation": -1.0000000000000018
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "avg_trade_size_1m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "max_trade_size_1m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.7143912720440635
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.7138731057842002
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "volume_10m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "volume_15m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "volume_1m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "max_trade_size_1m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.7143912720440635
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.7138731057842002
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "volume_10m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "volume_15m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "avg_trade_size_1m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.7143912720440635
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.7138731057842002
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "volume_10m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "volume_15m",
+      "correlation": 0.7290642430754881
+    },
+    {
+      "feature1": "max_trade_size_1m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.7290642430754883
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "avg_trade_size_3m",
+      "correlation": 1.0000000000000002
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.9676952421745678
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "volume_5m",
+      "correlation": 0.9475183570966017
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9475183570966014
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.966532809479278
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.7516068059666525
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "volume_10m",
+      "correlation": 0.903327697492148
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9033276974921474
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9060431148062025
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "volume_15m",
+      "correlation": 0.903327697492148
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9033276974921474
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9060431148062025
+    },
+    {
+      "feature1": "volume_3m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.9647089471549255
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "max_trade_size_3m",
+      "correlation": 0.9676952421745703
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "volume_5m",
+      "correlation": 0.947518357096603
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9475183570966026
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9665328094792784
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.7516068059666517
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "volume_10m",
+      "correlation": 0.9033276974921503
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9033276974921506
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9060431148062041
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "volume_15m",
+      "correlation": 0.9033276974921503
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9033276974921506
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9060431148062041
+    },
+    {
+      "feature1": "avg_trade_size_3m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.9647089471549297
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "volume_5m",
+      "correlation": 0.9779718886293155
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.977971888629315
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9993546186077792
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.7367874340516304
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "volume_10m",
+      "correlation": 0.973890484434735
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9738904844347351
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9531897902327555
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "volume_15m",
+      "correlation": 0.973890484434735
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9738904844347351
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9531897902327555
+    },
+    {
+      "feature1": "max_trade_size_3m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.905441159377307
+    },
+    {
+      "feature1": "buy_sell_imbalance_3m",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.755149386503198
+    },
+    {
+      "feature1": "buy_sell_imbalance_3m",
+      "feature2": "buy_sell_imbalance_5m",
+      "correlation": 0.7710679229936055
+    },
+    {
+      "feature1": "large_trade_ratio_3m",
+      "feature2": "unique_wallets_24h",
+      "correlation": 0.7692564089599686
+    },
+    {
+      "feature1": "large_trade_ratio_3m",
+      "feature2": "trades_24h",
+      "correlation": 0.9581652229339427
+    },
+    {
+      "feature1": "large_trade_ratio_3m",
+      "feature2": "trades_per_holder",
+      "correlation": 0.9095989566487188
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volume_momentum_std_3m",
+      "correlation": 0.9999989226458236
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9938083479450602
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.9759950940756802
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9982129314504565
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9984239888987193
+    },
+    {
+      "feature1": "volume_momentum_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9980146549659628
+    },
+    {
+      "feature1": "volume_momentum_std_3m",
+      "feature2": "volume_acceleration_3m",
+      "correlation": -0.9938230696094467
+    },
+    {
+      "feature1": "volume_momentum_std_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": 0.976061498751332
+    },
+    {
+      "feature1": "volume_momentum_std_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9982256159748696
+    },
+    {
+      "feature1": "volume_momentum_std_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.998432248672657
+    },
+    {
+      "feature1": "volume_momentum_std_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9980242640058933
+    },
+    {
+      "feature1": "volume_acceleration_3m",
+      "feature2": "volatility_acceleration_3m",
+      "correlation": -0.9774126219865472
+    },
+    {
+      "feature1": "volume_acceleration_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": -0.9983744311924464
+    },
+    {
+      "feature1": "volume_acceleration_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": -0.9984734421045259
+    },
+    {
+      "feature1": "volume_acceleration_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": -0.9980848606213939
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "avg_trade_size_5m",
+      "correlation": 0.9999999999999983
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.9779577339697165
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "volume_10m",
+      "correlation": 0.9584291687710249
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9584291687710239
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9252459639899139
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "volume_15m",
+      "correlation": 0.9584291687710249
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9584291687710239
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9252459639899139
+    },
+    {
+      "feature1": "volume_5m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.8974491639486464
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "max_trade_size_5m",
+      "correlation": 0.977957733969715
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "volume_10m",
+      "correlation": 0.9584291687710241
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9584291687710247
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9252459639899123
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "volume_15m",
+      "correlation": 0.9584291687710241
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9584291687710247
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9252459639899123
+    },
+    {
+      "feature1": "avg_trade_size_5m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.8974491639486468
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "buy_sell_ratio_5m",
+      "correlation": 0.7310537708819883
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "volume_10m",
+      "correlation": 0.9749907269108978
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9749907269108964
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9535918159475074
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "volume_15m",
+      "correlation": 0.9749907269108978
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9749907269108964
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9535918159475074
+    },
+    {
+      "feature1": "max_trade_size_5m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.9000151773119738
+    },
+    {
+      "feature1": "buy_sell_ratio_5m",
+      "feature2": "buy_sell_imbalance_5m",
+      "correlation": 0.9480030195685997
+    },
+    {
+      "feature1": "buy_sell_ratio_5m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7409915851856932
+    },
+    {
+      "feature1": "buy_sell_imbalance_5m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7061521932294563
+    },
+    {
+      "feature1": "large_trade_ratio_5m",
+      "feature2": "large_trade_ratio_10m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "large_trade_ratio_5m",
+      "feature2": "large_trade_ratio_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_momentum_std_5m",
+      "correlation": 0.9999964614671067
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_acceleration_5m",
+      "correlation": -0.9150048285145731
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_momentum_10m",
+      "correlation": 0.9990262227216054
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.9988625016169171
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.9990262227216054
+    },
+    {
+      "feature1": "volume_momentum_5m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.9988625016169171
+    },
+    {
+      "feature1": "volume_momentum_std_5m",
+      "feature2": "volume_acceleration_5m",
+      "correlation": -0.9144690343462342
+    },
+    {
+      "feature1": "volume_momentum_std_5m",
+      "feature2": "volume_momentum_10m",
+      "correlation": 0.99905397435383
+    },
+    {
+      "feature1": "volume_momentum_std_5m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.998878293932516
+    },
+    {
+      "feature1": "volume_momentum_std_5m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.99905397435383
+    },
+    {
+      "feature1": "volume_momentum_std_5m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.998878293932516
+    },
+    {
+      "feature1": "volume_acceleration_5m",
+      "feature2": "volume_momentum_10m",
+      "correlation": -0.9125169604683662
+    },
+    {
+      "feature1": "volume_acceleration_5m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": -0.9181355980605327
+    },
+    {
+      "feature1": "volume_acceleration_5m",
+      "feature2": "volume_momentum_15m",
+      "correlation": -0.9125169604683662
+    },
+    {
+      "feature1": "volume_acceleration_5m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": -0.9181355980605327
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "avg_trade_size_10m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "volume_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "volume_10m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840579
+    },
+    {
+      "feature1": "avg_trade_size_10m",
+      "feature2": "max_trade_size_10m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "avg_trade_size_10m",
+      "feature2": "volume_15m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "avg_trade_size_10m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "avg_trade_size_10m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "avg_trade_size_10m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840576
+    },
+    {
+      "feature1": "max_trade_size_10m",
+      "feature2": "volume_15m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "max_trade_size_10m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "max_trade_size_10m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "max_trade_size_10m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7847065993564422
+    },
+    {
+      "feature1": "buy_sell_ratio_10m",
+      "feature2": "buy_sell_imbalance_10m",
+      "correlation": 0.9486701846089217
+    },
+    {
+      "feature1": "buy_sell_ratio_10m",
+      "feature2": "buy_sell_ratio_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "buy_sell_ratio_10m",
+      "feature2": "buy_sell_imbalance_15m",
+      "correlation": 0.9486701846089217
+    },
+    {
+      "feature1": "buy_sell_imbalance_10m",
+      "feature2": "buy_sell_ratio_15m",
+      "correlation": 0.9486701846089217
+    },
+    {
+      "feature1": "buy_sell_imbalance_10m",
+      "feature2": "buy_sell_imbalance_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "large_trade_ratio_10m",
+      "feature2": "large_trade_ratio_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_momentum_10m",
+      "feature2": "volume_momentum_std_10m",
+      "correlation": 0.9998460905527758
+    },
+    {
+      "feature1": "volume_momentum_10m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_momentum_10m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.9998460905527758
+    },
+    {
+      "feature1": "volume_momentum_std_10m",
+      "feature2": "volume_momentum_15m",
+      "correlation": 0.9998460905527758
+    },
+    {
+      "feature1": "volume_momentum_std_10m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_acceleration_10m",
+      "feature2": "volume_acceleration_15m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_acceleration_10m",
+      "feature2": "volume_acceleration",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_15m",
+      "feature2": "avg_trade_size_15m",
+      "correlation": 0.9999999999999981
+    },
+    {
+      "feature1": "volume_15m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555611
+    },
+    {
+      "feature1": "volume_15m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840579
+    },
+    {
+      "feature1": "avg_trade_size_15m",
+      "feature2": "max_trade_size_15m",
+      "correlation": 0.9768645117555604
+    },
+    {
+      "feature1": "avg_trade_size_15m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7967341789840576
+    },
+    {
+      "feature1": "max_trade_size_15m",
+      "feature2": "volume_trend_slope",
+      "correlation": 0.7847065993564422
+    },
+    {
+      "feature1": "buy_sell_ratio_15m",
+      "feature2": "buy_sell_imbalance_15m",
+      "correlation": 0.9486701846089217
+    },
+    {
+      "feature1": "volume_momentum_15m",
+      "feature2": "volume_momentum_std_15m",
+      "correlation": 0.9998460905527758
+    },
+    {
+      "feature1": "volume_acceleration_15m",
+      "feature2": "volume_acceleration",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "volume_trend_r2",
+      "feature2": "volume_trend_strength",
+      "correlation": 0.9790736104425828
+    },
+    {
+      "feature1": "cluster_count",
+      "feature2": "clustering_ratio",
+      "correlation": 0.9999999999999998
+    },
+    {
+      "feature1": "liquidity",
+      "feature2": "holder_count",
+      "correlation": 0.7986379299656475
+    },
+    {
+      "feature1": "liquidity",
+      "feature2": "unique_wallets_24h",
+      "correlation": 0.8658506786965997
+    },
+    {
+      "feature1": "liquidity",
+      "feature2": "trades_24h",
+      "correlation": 0.7363352156765558
+    },
+    {
+      "feature1": "liquidity",
+      "feature2": "trades_per_holder",
+      "correlation": 0.8120366759025726
+    },
+    {
+      "feature1": "market_count",
+      "feature2": "holder_count",
+      "correlation": 0.7207384834153829
+    },
+    {
+      "feature1": "market_count",
+      "feature2": "unique_wallets_24h",
+      "correlation": 0.873883179244613
+    },
+    {
+      "feature1": "market_count",
+      "feature2": "trades_24h",
+      "correlation": 0.7273613246622118
+    },
+    {
+      "feature1": "unique_wallets_24h",
+      "feature2": "active_ratio",
+      "correlation": 0.8404860404566286
+    },
+    {
+      "feature1": "unique_wallets_24h",
+      "feature2": "trades_24h",
+      "correlation": 0.9121193436177811
+    },
+    {
+      "feature1": "unique_wallets_24h",
+      "feature2": "trades_per_holder",
+      "correlation": 0.9172085467788752
+    },
+    {
+      "feature1": "active_ratio",
+      "feature2": "trades_24h",
+      "correlation": 0.7398618177703172
+    },
+    {
+      "feature1": "active_ratio",
+      "feature2": "trades_per_holder",
+      "correlation": 0.7331982790452913
+    },
+    {
+      "feature1": "trades_24h",
+      "feature2": "trades_per_holder",
+      "correlation": 0.9812793200102161
+    },
+    {
+      "feature1": "trend_strength_2m",
+      "feature2": "momentum_strength_2m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "momentum_strength_3m",
+      "feature2": "volatility_adjusted_momentum_3m",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "momentum_strength_3m",
+      "feature2": "volatility_adjusted_momentum_5m",
+      "correlation": 0.783104814247506
+    },
+    {
+      "feature1": "volatility_acceleration_3m",
+      "feature2": "volatility_acceleration_5m",
+      "correlation": 0.9817422127427369
+    },
+    {
+      "feature1": "volatility_acceleration_3m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.978592536002253
+    },
+    {
+      "feature1": "volatility_acceleration_3m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9781613404987178
+    },
+    {
+      "feature1": "volatility_acceleration_5m",
+      "feature2": "volatility_acceleration_10m",
+      "correlation": 0.9998733552062156
+    },
+    {
+      "feature1": "volatility_acceleration_5m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9998384562116231
+    },
+    {
+      "feature1": "volatility_acceleration_10m",
+      "feature2": "volatility_acceleration_15m",
+      "correlation": 0.9999978508348786
+    },
+    {
+      "feature1": "volatility_adjusted_momentum_3m",
+      "feature2": "volatility_adjusted_momentum_5m",
+      "correlation": 0.783104814247505
+    }
+  ],
+  "stable_features": [
+    "trades_count_1m",
+    "large_trade_ratio_1m",
+    "trades_count_3m",
+    "trades_count_5m",
+    "trades_count_10m",
+    "trades_count_15m",
+    "data_points_count",
+    "trades_count"
+  ],
+  "volatile_features": [
+    "price_mean",
+    "price_std",
+    "price_min",
+    "price_max",
+    "price_last",
+    "rsi_7_slope",
+    "rsi_14_slope",
+    "price_change_3m",
+    "volatility_3m",
+    "momentum_3m",
+    "momentum_std_3m",
+    "acceleration_3m",
+    "trend_strength_3m",
+    "price_change_5m",
+    "volatility_5m",
+    "momentum_5m",
+    "momentum_std_5m",
+    "acceleration_5m",
+    "trend_strength_5m",
+    "price_change_10m",
+    "volatility_10m",
+    "momentum_10m",
+    "momentum_std_10m",
+    "acceleration_10m",
+    "trend_strength_10m",
+    "price_change_15m",
+    "volatility_15m",
+    "momentum_15m",
+    "momentum_std_15m",
+    "acceleration_15m",
+    "volume_total",
+    "volume_mean",
+    "volume_std",
+    "volume_skew",
+    "volume_kurtosis",
+    "avg_trade_interval",
+    "trade_interval_std",
+    "volume_1m",
+    "avg_trade_size_1m",
+    "max_trade_size_1m",
+    "buy_sell_imbalance_1m",
+    "volume_3m",
+    "avg_trade_size_3m",
+    "max_trade_size_3m",
+    "buy_sell_ratio_3m",
+    "buy_sell_imbalance_3m",
+    "volume_momentum_3m",
+    "volume_momentum_std_3m",
+    "volume_acceleration_3m",
+    "volume_5m",
+    "avg_trade_size_5m",
+    "max_trade_size_5m",
+    "buy_sell_ratio_5m",
+    "buy_sell_imbalance_5m",
+    "volume_momentum_5m",
+    "volume_momentum_std_5m",
+    "volume_acceleration_5m",
+    "volume_10m",
+    "avg_trade_size_10m",
+    "max_trade_size_10m",
+    "buy_sell_ratio_10m",
+    "buy_sell_imbalance_10m",
+    "volume_momentum_10m",
+    "volume_momentum_std_10m",
+    "volume_acceleration_10m",
+    "volume_15m",
+    "avg_trade_size_15m",
+    "max_trade_size_15m",
+    "buy_sell_ratio_15m",
+    "buy_sell_imbalance_15m",
+    "volume_momentum_15m",
+    "volume_momentum_std_15m",
+    "volume_acceleration_15m",
+    "volume_trend_slope",
+    "volume_trend_r2",
+    "volume_trend_strength",
+    "volume_acceleration",
+    "liquidity",
+    "market_count",
+    "holder_count",
+    "unique_wallets_24h",
+    "active_ratio",
+    "trades_24h",
+    "trades_per_holder",
+    "trend_strength_2m",
+    "momentum_strength_2m",
+    "momentum_strength_3m",
+    "volatility_acceleration_3m",
+    "volatility_acceleration_5m",
+    "volatility_acceleration_10m",
+    "volatility_acceleration_15m",
+    "volatility_adjusted_momentum_3m",
+    "volatility_adjusted_momentum_5m",
+    "volatility_adjusted_momentum_10m",
+    "rsi_trend_strength_7",
+    "rsi_trend_strength_14"
+  ],
+  "key_statistics": {
+    "price_mean": {
+      "mean": 0.03797419474432903,
+      "std": 0.08578684072273851,
+      "min": 2.9362679480132568e-05,
+      "max": 0.3481610771397692,
+      "correlation_with_target": -0.20583690714606467
+    },
+    "price_std": {
+      "mean": 0.011956227436125146,
+      "std": 0.021751533436995794,
+      "min": 6.392717961186744e-06,
+      "max": 0.06855731942060837,
+      "correlation_with_target": 0.317507070264939
+    },
+    "price_min": {
+      "mean": 0.030961711935308448,
+      "std": 0.07465593529029388,
+      "min": 1.4016527897167415e-05,
+      "max": 0.2971311422611224,
+      "correlation_with_target": -0.23243607870280888
+    },
+    "price_max": {
+      "mean": 0.07573143574492162,
+      "std": 0.12475548832201568,
+      "min": 4.345930242085399e-05,
+      "max": 0.4414673915053789,
+      "correlation_with_target": 0.09687697667753145
+    },
+    "price_last": {
+      "mean": 0.07573143574492162,
+      "std": 0.12475548832201568,
+      "min": 4.345930242085399e-05,
+      "max": 0.4414673915053789,
+      "correlation_with_target": 0.09687697667753145
+    },
+    "rsi_7": {
+      "mean": 87.45032969332699,
+      "std": 11.401813897153371,
+      "min": 61.23651325257437,
+      "max": 100.0,
+      "correlation_with_target": 0.6070302357635726
+    },
+    "rsi_7_slope": {
+      "mean": 3.643177537412081,
+      "std": 3.8082017998949804,
+      "min": -4.027607867565141,
+      "max": 14.730536974019392,
+      "correlation_with_target": 0.11568393076223618
+    },
+    "rsi_14": {
+      "mean": 84.45699563327695,
+      "std": 12.395109716105267,
+      "min": 57.651389370174456,
+      "max": 100.0,
+      "correlation_with_target": 0.68824244733332
+    },
+    "rsi_14_slope": {
+      "mean": 7.1521002327447585,
+      "std": 12.120396355697965,
+      "min": -2.149046324023992,
+      "max": 49.19553949426135,
+      "correlation_with_target": 0.3719643815122405
+    },
+    "macd": {
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null,
+      "correlation_with_target": null
+    },
+    "macd_signal": {
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null,
+      "correlation_with_target": null
+    },
+    "macd_divergence": {
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null,
+      "correlation_with_target": null
+    },
+    "price_change_3m": {
+      "mean": 219.77556931050728,
+      "std": 522.4223634995888,
+      "min": 0.021490289906528435,
+      "max": 1634.9239827919012,
+      "correlation_with_target": 0.5772228181688875
+    },
+    "volatility_3m": {
+      "mean": 115.32051851191622,
+      "std": 294.6649539269138,
+      "min": 0.00014236671942330372,
+      "max": 919.4118790746845,
+      "correlation_with_target": 0.5148138028155459
+    },
+    "momentum_3m": {
+      "mean": 81.81485284043043,
+      "std": 208.38817086773534,
+      "min": 0.010745144953264174,
+      "max": 650.3793254890832,
+      "correlation_with_target": 0.5170340896536173
+    },
+    "momentum_std_3m": {
+      "mean": 115.32051851191622,
+      "std": 294.6649539269138,
+      "min": 0.00014236671942330372,
+      "max": 919.4118790746845,
+      "correlation_with_target": 0.5148138028155459
+    },
+    "acceleration_3m": {
+      "mean": 143.6564779978592,
+      "std": 423.82557867809703,
+      "min": -78.00313019966076,
+      "max": 1300.244748794351,
+      "correlation_with_target": 0.4073209420664467
+    },
+    "trend_strength_3m": {
+      "mean": 1.764161113764652,
+      "std": 2.018098573143782,
+      "min": 0.13790207089986223,
+      "max": 8.942057556365137,
+      "correlation_with_target": -0.32312858124576105
+    },
+    "trend_consistency_3m": {
+      "mean": 0.833690221270521,
+      "std": 0.16967911640404143,
+      "min": 0.3333333333333333,
+      "max": 1.0,
+      "correlation_with_target": -0.5476424280350172
+    },
+    "price_change_5m": {
+      "mean": 106.5323884511885,
+      "std": 218.64511100344814,
+      "min": 0.02000416697306152,
+      "max": 672.192055799719,
+      "correlation_with_target": 0.723435713798722
+    },
+    "volatility_5m": {
+      "mean": 81.66827695790671,
+      "std": 208.383022779565,
+      "min": 0.010543527790624384,
+      "max": 650.2819463485728,
+      "correlation_with_target": 0.5155188907185121
+    },
+    "momentum_5m": {
+      "mean": 40.923437694098865,
+      "std": 104.14704035922016,
+      "min": 0.012778274793017852,
+      "max": 325.0789887730012,
+      "correlation_with_target": 0.516957283865888
+    },
+    "momentum_std_5m": {
+      "mean": 81.66827695790671,
+      "std": 208.383022779565,
+      "min": 0.010543527790624384,
+      "max": 650.2819463485728,
+      "correlation_with_target": 0.5155188907185121
+    },
+    "acceleration_5m": {
+      "mean": 51.193737051612906,
+      "std": 139.81185681480338,
+      "min": -0.2629195714195365,
+      "max": 433.42723128965457,
+      "correlation_with_target": 0.4626370597054858
+    },
+    "trend_strength_5m": {
+      "mean": 1.3572155909200467,
+      "std": 1.373229100653448,
+      "min": 0.12396690825776283,
+      "max": 6.688837523301511,
+      "correlation_with_target": -0.34241630906776094
+    },
+    "trend_consistency_5m": {
+      "mean": 0.7965738758029979,
+      "std": 0.2093548141318512,
+      "min": 0.25,
+      "max": 1.0,
+      "correlation_with_target": -0.5298297436383256
+    },
+    "price_change_10m": {
+      "mean": 51.89245326296844,
+      "std": 90.33919108483192,
+      "min": 0.05357918563514538,
+      "max": 216.5455801081585,
+      "correlation_with_target": 0.9811897828546364
+    },
+    "volatility_10m": {
+      "mean": 54.48854112542304,
+      "std": 138.91563194390605,
+      "min": 0.022101456070276464,
+      "max": 433.5422097832147,
+      "correlation_with_target": 0.5156912907511748
+    },
+    "momentum_10m": {
+      "mean": 18.196300892938513,
+      "std": 46.251249206208286,
+      "min": 0.00997682695179198,
+      "max": 144.3895536457665,
+      "correlation_with_target": 0.516852195051565
+    },
+    "momentum_std_10m": {
+      "mean": 54.48854112542304,
+      "std": 138.91563194390605,
+      "min": 0.022101456070276464,
+      "max": 433.5422097832147,
+      "correlation_with_target": 0.5156912907511748
+    },
+    "acceleration_10m": {
+      "mean": 19.207183087303694,
+      "std": 52.45066415531206,
+      "min": -0.027709873756151943,
+      "max": 162.6027648748755,
+      "correlation_with_target": 0.46262565350461654
+    },
+    "trend_strength_10m": {
+      "mean": 0.7220377026909032,
+      "std": 0.6900881497769757,
+      "min": 0.11906671686136125,
+      "max": 2.982830672752741,
+      "correlation_with_target": -0.30717440001578616
+    },
+    "trend_consistency_10m": {
+      "mean": 0.6709493219129194,
+      "std": 0.2408339932167429,
+      "min": 0.1111111111111111,
+      "max": 1.0,
+      "correlation_with_target": -0.8336909147869651
+    },
+    "price_change_15m": {
+      "mean": 45.20497710040089,
+      "std": 80.10100447520453,
+      "min": 0.12224918913762138,
+      "max": 217.93833328431228,
+      "correlation_with_target": 1.0
+    },
+    "volatility_15m": {
+      "mean": 43.80439606975361,
+      "std": 111.47022219191219,
+      "min": 0.040025028296316975,
+      "max": 347.5990835930049,
+      "correlation_with_target": 0.5156809903758632
+    },
+    "momentum_15m": {
+      "mean": 11.725677611612292,
+      "std": 29.752683790034972,
+      "min": 0.011829956689470724,
+      "max": 92.80527694367122,
+      "correlation_with_target": 0.5168093933394595
+    },
+    "momentum_std_15m": {
+      "mean": 43.80439606975361,
+      "std": 111.47022219191219,
+      "min": 0.040025028296316975,
+      "max": 347.5990835930049,
+      "correlation_with_target": 0.5156809903758632
+    },
+    "acceleration_15m": {
+      "mean": 11.842471345944764,
+      "std": 32.299418935037004,
+      "min": -0.032824551616834736,
+      "max": 100.03885625990216,
+      "correlation_with_target": 0.46262365430278896
+    },
+    "trend_strength_15m": {
+      "mean": 0.39833848848027564,
+      "std": 0.19148748756608194,
+      "min": 0.12427428970628661,
+      "max": 0.9588073547128535,
+      "correlation_with_target": -0.3641019881765641
+    },
+    "trend_consistency_15m": {
+      "mean": 0.5954935622317596,
+      "std": 0.21569188269885028,
+      "min": 0.14285714285714285,
+      "max": 0.9285714285714286,
+      "correlation_with_target": -0.8373999992889395
+    },
+    "volume_total": {
+      "mean": 20822105.544921353,
+      "std": 30419402.12516767,
+      "min": 84698.896447,
+      "max": 157325744.48039597,
+      "correlation_with_target": -0.37882710512191237
+    },
+    "volume_mean": {
+      "mean": 2082210.554492135,
+      "std": 3041940.2125167665,
+      "min": 8469.8896447,
+      "max": 15732574.448039597,
+      "correlation_with_target": -0.37882710512191203
+    },
+    "volume_std": {
+      "mean": 2832539.146847753,
+      "std": 3762931.7174474257,
+      "min": 18939.628741748344,
+      "max": 16987609.10925063,
+      "correlation_with_target": -0.41621947905458745
+    },
+    "volume_skew": {
+      "mean": 1.6431742330792474,
+      "std": 0.8257177103622623,
+      "min": 0.563114780516054,
+      "max": 3.061116277663318,
+      "correlation_with_target": -0.27929702936267176
+    },
+    "volume_kurtosis": {
+      "mean": 2.4593191497805944,
+      "std": 3.7482039455359675,
+      "min": -2.01092305419534,
+      "max": 9.508537004459733,
+      "correlation_with_target": -0.27320981977042813
+    },
+    "avg_trade_interval": {
+      "mean": -64920.06447775399,
+      "std": 71589.65373216382,
+      "min": -183783.66666666666,
+      "max": -10.222222222222221,
+      "correlation_with_target": -0.8644772485274491
+    },
+    "trade_interval_std": {
+      "mean": 102996.83473622947,
+      "std": 122639.69519014141,
+      "min": 23.81584439914832,
+      "max": 303956.8080552089,
+      "correlation_with_target": 0.8888940755491838
+    },
+    "whale_trade_count": {
+      "mean": 0.9892933618843683,
+      "std": 0.10302783916270464,
+      "min": 0.0,
+      "max": 1.0,
+      "correlation_with_target": 0.0586689925419938
+    },
+    "whale_volume_ratio": {
+      "mean": 0.4293285255979464,
+      "std": 0.16167630768258684,
+      "min": 0.0,
+      "max": 0.7789140973972866,
+      "correlation_with_target": -0.019441087975335548
+    },
+    "volume_1m": {
+      "mean": 3401649.5394581263,
+      "std": 8408048.443794569,
+      "min": 239.422795299,
+      "max": 31513033.697522745,
+      "correlation_with_target": -0.2257753364380787
+    },
+    "trades_count_1m": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "correlation_with_target": null
+    },
+    "avg_trade_size_1m": {
+      "mean": 3401649.5394581263,
+      "std": 8408048.443794569,
+      "min": 239.422795299,
+      "max": 31513033.697522745,
+      "correlation_with_target": -0.2257753364380787
+    },
+    "max_trade_size_1m": {
+      "mean": 3401649.5394581263,
+      "std": 8408048.443794569,
+      "min": 239.422795299,
+      "max": 31513033.697522745,
+      "correlation_with_target": -0.2257753364380787
+    },
+    "buy_sell_ratio_1m": {
+      "mean": Infinity,
+      "std": null,
+      "min": 0.0,
+      "max": Infinity,
+      "correlation_with_target": null
+    },
+    "buy_sell_imbalance_1m": {
+      "mean": -0.4261241970021413,
+      "std": 0.9056348220413873,
+      "min": -1.0,
+      "max": 1.0,
+      "correlation_with_target": 0.12017888401560603
+    },
+    "large_trade_ratio_1m": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "correlation_with_target": null
+    },
+    "volume_3m": {
+      "mean": 10088346.133394046,
+      "std": 16514651.888867702,
+      "min": 31973.794406999998,
+      "max": 46002916.06427072,
+      "correlation_with_target": -0.3385909636425322
+    },
+    "trades_count_3m": {
+      "mean": 3.0,
+      "std": 0.0,
+      "min": 3.0,
+      "max": 3.0,
+      "correlation_with_target": null
+    },
+    "avg_trade_size_3m": {
+      "mean": 3362782.0444646813,
+      "std": 5504883.9629559005,
+      "min": 10657.931469,
+      "max": 15334305.354756907,
+      "correlation_with_target": -0.33859096364253244
+    },
+    "max_trade_size_3m": {
+      "mean": 5897131.809078051,
+      "std": 10514695.824348556,
+      "min": 13577.001803,
+      "max": 43215953.382956,
+      "correlation_with_target": -0.31038438989991984
+    },
+    "buy_sell_ratio_3m": {
+      "mean": 7.620254899586824,
+      "std": 45.91401589522141,
+      "min": 0.0,
+      "max": 302.897538314472,
+      "correlation_with_target": -0.09068230851900339
+    },
+    "buy_sell_imbalance_3m": {
+      "mean": -0.4602245465392424,
+      "std": 0.48461647103744404,
+      "min": -1.0,
+      "max": 0.9934188344825275,
+      "correlation_with_target": -0.32314488817142856
+    },
+    "large_trade_ratio_3m": {
+      "mean": 0.33904354032833683,
+      "std": 0.04329908141230297,
+      "min": 0.3333333333333333,
+      "max": 0.6666666666666666,
+      "correlation_with_target": -0.0716064305809167
+    },
+    "volume_momentum_3m": {
+      "mean": 157.3338243410732,
+      "std": 414.9278331227157,
+      "min": -0.6548294663232547,
+      "max": 1289.9809579669616,
+      "correlation_with_target": 0.45507748475819526
+    },
+    "volume_momentum_std_3m": {
+      "mean": 223.07166688657085,
+      "std": 586.8417443524686,
+      "min": 0.0837152101535787,
+      "max": 1825.012195287956,
+      "correlation_with_target": 0.45557986281695523
+    },
+    "volume_acceleration_3m": {
+      "mean": -292.9795512008152,
+      "std": 838.1412484319528,
+      "min": -2580.956998072523,
+      "max": 300.89753831447206,
+      "correlation_with_target": -0.46529873778724795
+    },
+    "volume_5m": {
+      "mean": 11833327.39014984,
+      "std": 20019268.036689784,
+      "min": 50375.800502,
+      "max": 109722858.917588,
+      "correlation_with_target": -0.3279616490354431
+    },
+    "trades_count_5m": {
+      "mean": 5.0,
+      "std": 0.0,
+      "min": 5.0,
+      "max": 5.0,
+      "correlation_with_target": null
+    },
+    "avg_trade_size_5m": {
+      "mean": 2366665.4780299678,
+      "std": 4003853.607337957,
+      "min": 10075.1601004,
+      "max": 21944571.7835176,
+      "correlation_with_target": -0.3279616490354428
+    },
+    "max_trade_size_5m": {
+      "mean": 5978884.308968684,
+      "std": 10476045.837259816,
+      "min": 13582.215294,
+      "max": 43215953.382956,
+      "correlation_with_target": -0.31564203993256007
+    },
+    "buy_sell_ratio_5m": {
+      "mean": 0.5006624255489134,
+      "std": 0.45301700731288297,
+      "min": 0.0,
+      "max": 1.7382925701432776,
+      "correlation_with_target": -0.32789114815784004
+    },
+    "buy_sell_imbalance_5m": {
+      "mean": -0.4371902350119894,
+      "std": 0.36574578562481574,
+      "min": -1.0,
+      "max": 0.26961785537206034,
+      "correlation_with_target": -0.3495161862597783
+    },
+    "large_trade_ratio_5m": {
+      "mean": 0.20214132762312634,
+      "std": 0.02060556783254093,
+      "min": 0.2,
+      "max": 0.4,
+      "correlation_with_target": -0.05866899254199399
+    },
+    "volume_momentum_5m": {
+      "mean": 268.3138511876434,
+      "std": 506.13267763013175,
+      "min": -0.2072864689549403,
+      "max": 1484.5347374303112,
+      "correlation_with_target": 0.9755878680562501
+    },
+    "volume_momentum_std_5m": {
+      "mean": 534.621437944861,
+      "std": 1010.0206807706269,
+      "min": 0.5282891443503163,
+      "max": 2960.245029364733,
+      "correlation_with_target": 0.9758574859296139
+    },
+    "volume_acceleration_5m": {
+      "mean": -246.10608363450154,
+      "std": 658.3265454061185,
+      "min": -1974.9636667964833,
+      "max": 100.15665765032442,
+      "correlation_with_target": -0.8120709920194054
+    },
+    "volume_10m": {
+      "mean": 20822105.544921353,
+      "std": 30419402.12516767,
+      "min": 84698.896447,
+      "max": 157325744.48039597,
+      "correlation_with_target": -0.37882710512191237
+    },
+    "trades_count_10m": {
+      "mean": 10.0,
+      "std": 0.0,
+      "min": 10.0,
+      "max": 10.0,
+      "correlation_with_target": null
+    },
+    "avg_trade_size_10m": {
+      "mean": 2082210.554492135,
+      "std": 3041940.2125167665,
+      "min": 8469.8896447,
+      "max": 15732574.448039597,
+      "correlation_with_target": -0.37882710512191203
+    },
+    "max_trade_size_10m": {
+      "mean": 7862398.508896869,
+      "std": 10119656.992468596,
+      "min": 56128.107634,
+      "max": 43215953.382956,
+      "correlation_with_target": -0.43012335458531686
+    },
+    "buy_sell_ratio_10m": {
+      "mean": 0.851618423485381,
+      "std": 0.6159909121302982,
+      "min": 0.0,
+      "max": 1.9652400606720193,
+      "correlation_with_target": -0.07924815783169363
+    },
+    "buy_sell_imbalance_10m": {
+      "mean": -0.21372102192327505,
+      "std": 0.42417998336532536,
+      "min": -1.0,
+      "max": 0.3255183529569827,
+      "correlation_with_target": 0.0819079780292564
+    },
+    "large_trade_ratio_10m": {
+      "mean": 0.10107066381156317,
+      "std": 0.010302783916270465,
+      "min": 0.1,
+      "max": 0.2,
+      "correlation_with_target": -0.05866899254199399
+    },
+    "volume_momentum_10m": {
+      "mean": 130.63876444732497,
+      "std": 221.33244139091596,
+      "min": 2.545885729684082,
+      "max": 660.9495418394649,
+      "correlation_with_target": 0.9759269028588559
+    },
+    "volume_momentum_std_10m": {
+      "mean": 380.1741456818871,
+      "std": 661.1413409526378,
+      "min": 6.9864056207498315,
+      "max": 1973.986101696781,
+      "correlation_with_target": 0.9729760150492773
+    },
+    "volume_acceleration_10m": {
+      "mean": -0.4943828873578109,
+      "std": 7.767537352549039,
+      "min": -38.21502343789431,
+      "max": 34.374744870792185,
+      "correlation_with_target": -0.100324630063514
+    },
+    "volume_15m": {
+      "mean": 20822105.544921353,
+      "std": 30419402.12516767,
+      "min": 84698.896447,
+      "max": 157325744.48039597,
+      "correlation_with_target": -0.37882710512191237
+    },
+    "trades_count_15m": {
+      "mean": 10.0,
+      "std": 0.0,
+      "min": 10.0,
+      "max": 10.0,
+      "correlation_with_target": null
+    },
+    "avg_trade_size_15m": {
+      "mean": 2082210.554492135,
+      "std": 3041940.2125167665,
+      "min": 8469.8896447,
+      "max": 15732574.448039597,
+      "correlation_with_target": -0.37882710512191203
+    },
+    "max_trade_size_15m": {
+      "mean": 7862398.508896869,
+      "std": 10119656.992468596,
+      "min": 56128.107634,
+      "max": 43215953.382956,
+      "correlation_with_target": -0.43012335458531686
+    },
+    "buy_sell_ratio_15m": {
+      "mean": 0.851618423485381,
+      "std": 0.6159909121302982,
+      "min": 0.0,
+      "max": 1.9652400606720193,
+      "correlation_with_target": -0.07924815783169363
+    },
+    "buy_sell_imbalance_15m": {
+      "mean": -0.21372102192327505,
+      "std": 0.42417998336532536,
+      "min": -1.0,
+      "max": 0.3255183529569827,
+      "correlation_with_target": 0.0819079780292564
+    },
+    "large_trade_ratio_15m": {
+      "mean": 0.10107066381156317,
+      "std": 0.010302783916270465,
+      "min": 0.1,
+      "max": 0.2,
+      "correlation_with_target": -0.05866899254199399
+    },
+    "volume_momentum_15m": {
+      "mean": 130.63876444732497,
+      "std": 221.33244139091596,
+      "min": 2.545885729684082,
+      "max": 660.9495418394649,
+      "correlation_with_target": 0.9759269028588559
+    },
+    "volume_momentum_std_15m": {
+      "mean": 380.1741456818871,
+      "std": 661.1413409526378,
+      "min": 6.9864056207498315,
+      "max": 1973.986101696781,
+      "correlation_with_target": 0.9729760150492773
+    },
+    "volume_acceleration_15m": {
+      "mean": -0.4943828873578109,
+      "std": 7.767537352549039,
+      "min": -38.21502343789431,
+      "max": 34.374744870792185,
+      "correlation_with_target": -0.100324630063514
+    },
+    "volume_trend_slope": {
+      "mean": 235583.249269619,
+      "std": 536795.9729340579,
+      "min": -387290.81341929693,
+      "max": 1455429.2164366702,
+      "correlation_with_target": -0.24556774821129718
+    },
+    "volume_trend_r2": {
+      "mean": 0.21502213286803362,
+      "std": 0.20051222636078936,
+      "min": 0.004642793178622228,
+      "max": 0.5550301078498988,
+      "correlation_with_target": 0.02691395874594968
+    },
+    "volume_trend_strength": {
+      "mean": 0.13385775396070235,
+      "std": 0.07450468476703252,
+      "min": 0.022505255576797396,
+      "max": 0.24606653376306736,
+      "correlation_with_target": 0.11931704868094163
+    },
+    "volume_acceleration": {
+      "mean": -0.4943828873578109,
+      "std": 7.767537352549039,
+      "min": -38.21502343789431,
+      "max": 34.374744870792185,
+      "correlation_with_target": -0.100324630063514
+    },
+    "trade_interval_skew": {
+      "mean": -1.5942507981608298,
+      "std": 0.5544206216620363,
+      "min": -2.873261933091746,
+      "max": -0.06831590265080296,
+      "correlation_with_target": -0.266982640537325
+    },
+    "cluster_count": {
+      "mean": 1.3211991434689507,
+      "std": 0.46743783520878207,
+      "min": 1.0,
+      "max": 2.0,
+      "correlation_with_target": -0.37797582093111043
+    },
+    "clustering_ratio": {
+      "mean": 0.13211991434689507,
+      "std": 0.0467437835208782,
+      "min": 0.1,
+      "max": 0.2,
+      "correlation_with_target": -0.37797582093111004
+    },
+    "liquidity": {
+      "mean": 21720.162822565686,
+      "std": 27026.057070776824,
+      "min": 0.0,
+      "max": 135122.40712401096,
+      "correlation_with_target": -0.44364881186619626
+    },
+    "market_count": {
+      "mean": 1.310492505353319,
+      "std": 0.8389378461528948,
+      "min": 1.0,
+      "max": 5.0,
+      "correlation_with_target": -0.2042972277491365
+    },
+    "holder_count": {
+      "mean": 788.1691648822269,
+      "std": 644.7564693729161,
+      "min": 19.0,
+      "max": 2867.0,
+      "correlation_with_target": -0.6237996047828869
+    },
+    "unique_wallets_24h": {
+      "mean": 26.092077087794433,
+      "std": 68.70573941149227,
+      "min": 1.0,
+      "max": 426.0,
+      "correlation_with_target": -0.19534833175955282
+    },
+    "active_ratio": {
+      "mean": 0.02639765731917987,
+      "std": 0.026481300795872034,
+      "min": 0.0007656967840735069,
+      "max": 0.14858737356121382,
+      "correlation_with_target": 0.16070126698851475
+    },
+    "average_holding": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "correlation_with_target": null
+    },
+    "trades_24h": {
+      "mean": 53.05353319057816,
+      "std": 196.54512560334328,
+      "min": 0.0,
+      "max": 1478.0,
+      "correlation_with_target": -0.14670211129191474
+    },
+    "trades_per_holder": {
+      "mean": 0.031431955039493774,
+      "std": 0.07033635175197364,
+      "min": 0.0,
+      "max": 0.5155214509940704,
+      "correlation_with_target": -0.24492233801249463
+    },
+    "volume_per_holder": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "correlation_with_target": null
+    },
+    "trend_strength_2m": {
+      "mean": 3.857010016364242,
+      "std": 16.15700121637526,
+      "min": 0.11726427069179719,
+      "max": 257.67990951682816,
+      "correlation_with_target": -0.1080492776962488
+    },
+    "trend_consistency_2m": {
+      "mean": 0.9154175588865097,
+      "std": 0.18764976036904596,
+      "min": 0.5,
+      "max": 1.0,
+      "correlation_with_target": 0.24538224944025952
+    },
+    "momentum_strength_2m": {
+      "mean": 3.857010016364242,
+      "std": 16.15700121637526,
+      "min": 0.11726427069179719,
+      "max": 257.67990951682816,
+      "correlation_with_target": -0.1080492776962488
+    },
+    "momentum_strength_3m": {
+      "mean": 1.764161113764652,
+      "std": 2.018098573143782,
+      "min": 0.13790207089986223,
+      "max": 8.942057556365137,
+      "correlation_with_target": -0.32312858124576105
+    },
+    "volatility_acceleration_1m": {
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null,
+      "correlation_with_target": null
+    },
+    "volatility_acceleration_3m": {
+      "mean": 191.34646305503313,
+      "std": 468.40376621540463,
+      "min": 0.12596037419158565,
+      "max": 1442.425651199011,
+      "correlation_with_target": 0.43527266605240766
+    },
+    "volatility_acceleration_5m": {
+      "mean": 171.40170244223174,
+      "std": 461.03928864627915,
+      "min": 0.24221828092594122,
+      "max": 1430.1502430244493,
+      "correlation_with_target": 0.460296962209098
+    },
+    "volatility_acceleration_10m": {
+      "mean": 140.68750249664112,
+      "std": 381.72407963645264,
+      "min": 0.6098960608900573,
+      "max": 1183.0564095004352,
+      "correlation_with_target": 0.46162402169336825
+    },
+    "volatility_acceleration_15m": {
+      "mean": 130.2382984793902,
+      "std": 352.24397840540075,
+      "min": 0.9825605867122598,
+      "max": 1091.7243541534488,
+      "correlation_with_target": 0.46185700708727023
+    },
+    "volatility_adjusted_momentum_3m": {
+      "mean": 1.7641611137646596,
+      "std": 2.018098573143795,
+      "min": 0.13790207089986223,
+      "max": 8.942057556365079,
+      "correlation_with_target": -0.3231285812457614
+    },
+    "volatility_adjusted_momentum_5m": {
+      "mean": 1.0576834093194063,
+      "std": 1.0096647849164815,
+      "min": 0.09359925518065568,
+      "max": 4.073210678142561,
+      "correlation_with_target": -0.3316085603609309
+    },
+    "volatility_adjusted_momentum_10m": {
+      "mean": 0.5656763213563271,
+      "std": 0.35758680508167395,
+      "min": 0.09732580449501209,
+      "max": 1.3258840618798184,
+      "correlation_with_target": -0.3772374645307614
+    },
+    "volatility_adjusted_momentum_15m": {
+      "mean": 0.38691530465571133,
+      "std": 0.15327789327657726,
+      "min": 0.067107498746914,
+      "max": 0.7740950830525501,
+      "correlation_with_target": -0.4485231687365133
+    },
+    "rsi_trend_strength_7": {
+      "mean": 3.826343740990961,
+      "std": 5.150700401292886,
+      "min": 0.0,
+      "max": 51.13628843509747,
+      "correlation_with_target": -0.3927278640826628
+    },
+    "rsi_trend_strength_14": {
+      "mean": 17.355872312751803,
+      "std": 83.747571633375,
+      "min": 0.0,
+      "max": 739.1134424096169,
+      "correlation_with_target": -0.11063167932429949
+    },
+    "rsi_trend_strength_21": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "correlation_with_target": null
+    },
+    "data_points_count": {
+      "mean": 15.995717344753748,
+      "std": 0.09254896267654952,
+      "min": 14.0,
+      "max": 16.0,
+      "correlation_with_target": null
+    },
+    "trades_count": {
+      "mean": 10.0,
+      "std": 0.0,
+      "min": 10.0,
+      "max": 10.0,
+      "correlation_with_target": null
+    }
+  }
+}
