@@ -1,1726 +1,900 @@
+from dataclasses import dataclass
 import pandas as pd
 import numpy as np
-import os
-import traceback
-import json
-import ast
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
-import ta
-from scipy import stats
-import matplotlib.pyplot as plt
-import seaborn as sns
-from dataclasses import dataclass
+import os
 import logging
-import warnings
-from pathlib import Path
-from sklearn.feature_selection import SelectKBest, f_regression
+import json
+from typing import List, Dict, Tuple, Any, Optional
+import aiohttp
+import asyncio
+from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.preprocessing import StandardScaler
-import shutil
-
-warnings.filterwarnings('ignore', category=RuntimeWarning, message='invalid value encountered in scalar divide')
-warnings.filterwarnings('ignore', category=RuntimeWarning, message='divide by zero encountered')
+import warnings
+import sys
+import traceback
+warnings.filterwarnings('ignore')
 
 @dataclass
-class FeatureConfig:
-    # Windows for different calculations (in minutes)
-    FULL_WINDOW: int = 15
-    SHORT_WINDOW: int = 5
-    PRICE_WINDOWS: List[int] = (1, 3, 5, 10, 15)
-    VOLUME_WINDOWS: List[int] = (1, 3, 5, 10, 15)
+class ProcessingStats:
+    total_spikes: int
+    processed_spikes: int
+    failed_spikes: int
+    start_time: datetime
+    end_time: datetime
+    unique_tokens: int
+    feature_count: int
     
-    # Add shorter intervals for micro-pattern detection
-    MICRO_WINDOWS: List[int] = (1, 2, 3)  # 1-3 minute patterns
-    
-    # Add composite features
-    COMPOSITE_FEATURES: bool = True
-    
-    # Feature importance thresholds
-    MIN_FEATURE_IMPORTANCE: float = 0.05
-    MAX_CORRELATION: float = 0.98
-
-    # Pattern detection parameters
-    PATTERN_LENGTH: int = 5  # Length for pattern detection
-    RSI_WINDOWS: List[int] = (7, 14, 21)  # Multiple RSI periods
-    BB_WINDOWS: List[int] = (20, 30)  # Multiple Bollinger Band periods
-    
-    # Market structure parameters
-    MIN_TRADE_SIZE_PERCENTILE: float = 0.95  # For whale detection
-    LIQUIDITY_IMPACT_THRESHOLD: float = 0.01  # 1% of liquidity
-    
-    # New feature groups
-    PATTERN_DETECTION: bool = True
-    MICROSTRUCTURE: bool = True
-    WALLET_ANALYSIS: bool = True
-
 class FeatureExtractor:
     def __init__(self, base_dir: str):
-        """Initialize feature extractor with proper run directory creation"""
         self.base_dir = base_dir
-        self.run_dir = self._create_new_run_dir()
-        self._setup_logging()
-        self.features_dir = os.path.join(self.run_dir, 'features')
-        os.makedirs(self.features_dir, exist_ok=True)
-        self.scaler = StandardScaler()
-
-    def _create_new_run_dir(self) -> str:
-        """Create a new run directory with timestamp"""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        run_dir = os.path.join(self.base_dir, "data", "runs", f"run_{timestamp}")
+        self.logger = self._setup_logging()
         
-        # Create required subdirectories
-        for subdir in ['features', 'logs', 'price_data', 'trades', 'token_info', 'analysis', 
-                      os.path.join('features', 'individual_features')]:
-            os.makedirs(os.path.join(run_dir, subdir), exist_ok=True)
-        
-        # Initialize run info
-        run_info = {
-            'timestamp': timestamp,
-            'start_time': datetime.now().isoformat(),
-            'status': 'initialized',
-            'total_spikes_processed': 0,
-            'successful_extractions': 0,
-            'failed_extractions': 0
+        # Import config for API key
+        sys.path.append(base_dir)
+        from config import API_KEY
+        self.api_key = API_KEY
+        self.headers = {
+            'X-API-KEY': self.api_key,
+            'Content-Type': 'application/json'
         }
+        self.base_url = 'https://public-api.birdeye.so'
         
-        with open(os.path.join(run_dir, 'run_info.json'), 'w') as f:
-            json.dump(run_info, f, indent=2)
-            
-        return run_dir
+        # Feature extraction settings
+        self.time_windows = [3, 5, 10, 15]  # minutes
+        self.price_metrics = ['mean', 'std', 'min', 'max', 'last']
+        self.volume_windows = [1, 3, 5, 10, 15]  # minutes
+        
+        # Rate limiting
+        self.DELAY_BETWEEN_REQUESTS = 0.1
 
     def _setup_logging(self):
-        """Setup comprehensive logging"""
-        log_dir = os.path.join(self.run_dir, 'logs')
-        os.makedirs(log_dir, exist_ok=True)
+        logger = logging.getLogger('FeatureExtractor')
+        logger.setLevel(logging.INFO)
+        if not logger.handlers:
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            logger.addHandler(handler)
+        return logger
 
-        # Configure logging format
-        log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    async def get_price_history(self, token_address: str, start_time: datetime, end_time: datetime) -> pd.DataFrame:
+        """Get historical price data for a token"""
+        max_retries = 3
+        retry_delay = 1
         
-        # Setup file handler for general logs
-        file_handler = logging.FileHandler(os.path.join(log_dir, 'feature_extractor.log'))
-        file_handler.setFormatter(logging.Formatter(log_format))
-        
-        # Setup file handler for debug logs
-        debug_handler = logging.FileHandler(os.path.join(log_dir, 'debug.log'))
-        debug_handler.setLevel(logging.DEBUG)
-        debug_handler.setFormatter(logging.Formatter(log_format))
-        
-        # Setup console handler
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(logging.Formatter(log_format))
+        for attempt in range(max_retries):
+            try:
+                start_ts = int(start_time.timestamp())
+                end_ts = int(end_time.timestamp())
+                
+                url = f"{self.base_url}/defi/history_price"
+                params = {
+                    "address": token_address,
+                    "address_type": "token",
+                    "type": "1m",
+                    "time_from": start_ts,
+                    "time_to": end_ts
+                }
+                
+                async with aiohttp.ClientSession() as session:
+                    async with session.get(url, headers=self.headers, params=params, timeout=30) as response:
+                        if response.status == 200:
+                            data = await response.json()
+                            if data.get('success') and data.get('data', {}).get('items'):
+                                df = pd.DataFrame(data['data']['items'])
+                                df['timestamp'] = pd.to_datetime(df['unixTime'], unit='s')
+                                return df
+                        elif response.status == 429:  # Rate limit
+                            await asyncio.sleep(retry_delay * (attempt + 1))
+                            continue
+                        else:
+                            self.logger.warning(f"API returned status {response.status} for {token_address}")
+                            
+            except asyncio.TimeoutError:
+                self.logger.warning(f"Timeout on attempt {attempt + 1} for {token_address}")
+                await asyncio.sleep(retry_delay)
+            except Exception as e:
+                self.logger.error(f"Error fetching price history for {token_address}: {str(e)}")
+                if attempt < max_retries - 1:
+                    await asyncio.sleep(retry_delay)
+                else:
+                    break
+                
+        return pd.DataFrame()
 
-        # Configure logger
-        logging.basicConfig(
-            level=logging.INFO,
-            handlers=[file_handler, console_handler, debug_handler]
-        )
-        self.logger = logging.getLogger('FeatureExtractor')
-
-    def extract_price_features(self, df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Extract enhanced price-related features"""
-        features = {}
+    async def get_trade_history(self, token_address: str, start_time: datetime, end_time: datetime) -> pd.DataFrame:
+        """Get trading history for a token"""
+        start_ts = int(start_time.timestamp())
+        end_ts = int(end_time.timestamp())
+        
+        url = f"{self.base_url}/defi/txs/token"
+        params = {
+            "address": token_address,
+            "tx_type": "swap",
+            "time_from": start_ts,
+            "time_to": end_ts
+        }
         
         try:
-            # Basic price statistics
-            features.update({
-                'price_mean': df['value'].mean(),
-                'price_std': df['value'].std(),
-                'price_min': df['value'].min(),
-                'price_max': df['value'].max(),
-                'price_last': df['value'].iloc[-1]
-            })
-            
-            # Technical indicators
-            if len(df) >= 5:  # Ensure enough data for technical indicators
-                # RSI for multiple windows
-                for window in config.RSI_WINDOWS:
-                    if len(df) >= window:
-                        rsi = ta.momentum.RSIIndicator(df['value'], window=window)
-                        features[f'rsi_{window}'] = rsi.rsi().iloc[-1]
-                        rsi_values = rsi.rsi().dropna()
-                        if len(rsi_values) >= 2:
-                            features[f'rsi_{window}_slope'] = np.gradient(rsi_values).mean()
-
-                # MACD
-                macd = ta.trend.MACD(df['value'])
-                features.update({
-                    'macd': macd.macd().iloc[-1],
-                    'macd_signal': macd.macd_signal().iloc[-1],
-                    'macd_divergence': macd.macd_diff().iloc[-1]
-                })
-
-                # Bollinger Bands for multiple windows
-                for window in config.BB_WINDOWS:
-                    if len(df) >= window:
-                        bb = ta.volatility.BollingerBands(df['value'], window=window)
-                        bb_high = bb.bollinger_hband()
-                        bb_low = bb.bollinger_lband()
-                        current_price = df['value'].iloc[-1]
-                        
-                        features[f'bb_width_{window}'] = ((bb_high - bb_low) / current_price).iloc[-1]
-                        width_diff = bb_high - bb_low
-                        if width_diff.iloc[-1] != 0:
-                            features[f'bb_position_{window}'] = ((current_price - bb_low.iloc[-1]) / 
-                                                            width_diff.iloc[-1])
-
-            # Price changes and volatility over different windows
-            for window in config.PRICE_WINDOWS:
-                if len(df) >= window:
-                    window_data = df.iloc[-window:]
-                    features.update(self._calculate_window_price_metrics(window_data, window))
-
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, headers=self.headers, params=params) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        if data.get('success') and data.get('data', {}).get('items'):
+                            trades_df = pd.DataFrame(data['data']['items'])
+                            # Debug logging
+                            self.logger.info(f"Trade data columns: {trades_df.columns.tolist()}")
+                            if not trades_df.empty:
+                                self.logger.info(f"Sample trade data: {trades_df.iloc[0].to_dict()}")
+                            return trades_df
+                        else:
+                            self.logger.warning(f"No trade data found for {token_address}")
+                    else:
+                        self.logger.warning(f"API returned status {response.status} for {token_address}")
+            return pd.DataFrame()
         except Exception as e:
-            self.logger.error(f"Error in price feature extraction: {str(e)}")
-            self.logger.debug(f"Price data shape: {df.shape}")
-            self.logger.debug(f"Price data head: {df.head().to_dict()}")
-            self.logger.debug(traceback.format_exc())
+            self.logger.error(f"Error fetching trade history for {token_address}: {str(e)}")
+            return pd.DataFrame()
+
+    async def get_token_info(self, token_address: str) -> Dict:
+        """Get token overview data"""
+        url = f"{self.base_url}/defi/token_overview"
+        params = {"address": token_address}
+        
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, headers=self.headers, params=params) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        if data.get('success'):
+                            return data.get('data', {})
+        except Exception as e:
+            self.logger.error(f"Error fetching token info for {token_address}: {str(e)}")
+        return {}
+    
+    def verify_data_quality(self, features_df: pd.DataFrame) -> bool:
+        """Verify the quality of extracted features"""
+        if features_df.empty:
+            self.logger.error("Empty features DataFrame")
+            return False
             
+        # Check for required columns
+        required_cols = ['token_address', 'spike_time', 'future_price_increase']
+        missing_cols = [col for col in required_cols if col not in features_df.columns]
+        if missing_cols:
+            self.logger.error(f"Missing required columns: {missing_cols}")
+            return False
+            
+        # Check for infinite values
+        inf_cols = features_df.columns[features_df.isin([np.inf, -np.inf]).any()]
+        if not inf_cols.empty:
+            self.logger.warning(f"Columns with infinity values: {inf_cols.tolist()}")
+            
+        # Check for excessive missing values
+        missing_pct = features_df.isnull().mean() * 100
+        high_missing = missing_pct[missing_pct > 50]
+        if not high_missing.empty:
+            self.logger.warning(f"Columns with >50% missing values: {high_missing.index.tolist()}")
+            
+        # Check date range
+        date_range = pd.to_datetime(features_df['spike_time'])
+        self.logger.info(f"Date range: {date_range.min()} to {date_range.max()}")
+        
+        # Check unique tokens
+        unique_tokens = features_df['token_address'].nunique()
+        self.logger.info(f"Unique tokens: {unique_tokens}")
+        
+        # Verify numeric columns don't have string values
+        numeric_issues = []
+        for col in features_df.select_dtypes(include=[np.number]).columns:
+            if features_df[col].apply(lambda x: isinstance(x, str)).any():
+                numeric_issues.append(col)
+        if numeric_issues:
+            self.logger.warning(f"Numeric columns containing strings: {numeric_issues}")
+        
+        # Check for duplicate spikes
+        dupes = features_df.duplicated(['token_address', 'spike_time'])
+        if dupes.any():
+            self.logger.warning(f"Found {dupes.sum()} duplicate spikes")
+            
+        # Basic reasonableness checks
+        if 'future_price_increase' in features_df.columns:
+            unreasonable = features_df['future_price_increase'] > 1000  # 1000x seems unreasonable
+            if unreasonable.any():
+                self.logger.warning(f"Found {unreasonable.sum()} spikes with >1000x price increase")
+        
+        return True
+
+    def calculate_technical_indicators(self, df: pd.DataFrame) -> Dict[str, float]:
+        """Calculate technical indicators for pre-spike window"""
+        features = {}
+        
+        if df.empty:
+            return {}
+        
+        df = df.sort_values('timestamp')
+        price_data = df['value']
+        
+        # RSI with trend analysis
+        for period in [7, 14, 21]:
+            delta = price_data.diff()
+            gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+            loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+            rs = gain / loss
+            rsi = 100 - (100 / (1 + rs))
+            
+            if len(rsi) >= period:
+                features[f'rsi_{period}'] = rsi.iloc[-1]
+                features[f'rsi_{period}_slope'] = (rsi.iloc[-1] - rsi.iloc[-2]) if len(rsi) > 1 else 0
+                
+                # RSI trend strength
+                rsi_trend = rsi.iloc[-period:].diff().mean()
+                features[f'rsi_trend_strength_{period}'] = abs(rsi_trend)
+        
+        # Additional indicators
+        if len(price_data) >= 26:  # Minimum length for MACD
+            exp1 = price_data.ewm(span=12, adjust=False).mean()
+            exp2 = price_data.ewm(span=26, adjust=False).mean()
+            macd = exp1 - exp2
+            signal = macd.ewm(span=9, adjust=False).mean()
+            
+            features.update({
+                'macd': macd.iloc[-1],
+                'macd_signal': signal.iloc[-1],
+                'macd_divergence': macd.iloc[-1] - signal.iloc[-1]
+            })
+        
         return features
-
-    def _calculate_window_price_metrics(self, window_data: pd.DataFrame, window: int) -> Dict:
-        """Calculate price metrics for a specific window"""
-        metrics = {}
-        try:
-            if len(window_data) >= 2:
-                # Calculate returns
-                returns = window_data['value'].pct_change().dropna()
-                
-                # Basic price change
-                start_price = window_data['value'].iloc[0]
-                end_price = window_data['value'].iloc[-1]
-                change = (end_price - start_price) / start_price if start_price != 0 else 0
-                
-                metrics[f'price_change_{window}m'] = change
-                
-                # Volatility metrics
-                if len(returns) > 0:
-                    returns_std = returns.std()
-                    metrics.update({
-                        f'volatility_{window}m': returns_std,
-                        f'momentum_{window}m': returns.mean(),
-                        f'momentum_std_{window}m': returns_std,
-                        f'acceleration_{window}m': returns.diff().mean()
-                    })
-                    
-                    # Trend metrics
-                    if returns_std != 0:
-                        metrics[f'trend_strength_{window}m'] = abs(returns.mean()) / returns_std
-                        metrics[f'trend_consistency_{window}m'] = (np.sign(returns) == 
-                                                                np.sign(returns.mean())).mean()
-        except Exception as e:
-            self.logger.error(f"Error calculating window metrics for {window}m: {str(e)}")
-            
-        return metrics
-
-    def parse_trade_amount(self, trade_data: str) -> float:
-        """Parse trade amount from JSON string or dict with improved error handling"""
-        try:
-            if isinstance(trade_data, str):
-                trade_dict = ast.literal_eval(trade_data.replace('null', 'None'))
-            else:
-                trade_dict = trade_data
-                
-            amount = float(trade_dict.get('uiAmount', 0))
-            # Handle potential negative values
-            return abs(amount)
-            
-        except Exception as e:
-            self.logger.debug(f"Error parsing trade amount: {str(e)}")
-            self.logger.debug(f"Trade data: {trade_data[:200]}...")  # Log first 200 chars
-            return 0.0
-
-    def calculate_trade_volume(self, row: pd.Series) -> float:
-        """Calculate trade volume with improved error handling"""
-        try:
-            # For a buy, use the 'to' amount, for a sell use the 'from' amount
-            if row['side'] == 'buy':
-                volume = self.parse_trade_amount(row['to'])
-            else:
-                volume = self.parse_trade_amount(row['from'])
-                
-            # Validate volume
-            if pd.isna(volume) or volume < 0:
-                self.logger.debug(f"Invalid volume calculated: {volume}")
-                return 0.0
-                
-            return float(volume)
-            
-        except Exception as e:
-            self.logger.debug(f"Error calculating trade volume: {str(e)}")
-            self.logger.debug(f"Row data: {row.to_dict()}")
-            return 0.0
-
-    def preprocess_trades_data(self, trades_df: pd.DataFrame) -> pd.DataFrame:
-        """Preprocess trades data with comprehensive validation"""
-        if trades_df is None or trades_df.empty:
-            self.logger.warning("Empty trades DataFrame provided")
-            return pd.DataFrame()
-            
-        try:
-            trades_df = trades_df.copy()
-            
-            # Convert timestamp
-            trades_df['timestamp'] = pd.to_datetime(trades_df['timestamp'])
-            
-            # Calculate volumes
-            self.logger.debug("Calculating trade volumes...")
-            trades_df['volume'] = trades_df.apply(self.calculate_trade_volume, axis=1)
-            
-            # Remove invalid entries
-            initial_count = len(trades_df)
-            trades_df = trades_df[trades_df['volume'] > 0]
-            removed_count = initial_count - len(trades_df)
-            
-            if removed_count > 0:
-                self.logger.warning(f"Removed {removed_count} trades with invalid volumes")
-            
-            # Sort by timestamp
-            trades_df = trades_df.sort_values('timestamp')
-            
-            # Add derived columns
-            if 'side' not in trades_df.columns:
-                trades_df['side'] = 'unknown'
-            
-            self.logger.debug(f"Preprocessed {len(trades_df)} trades successfully")
-            return trades_df
-            
-        except Exception as e:
-            self.logger.error(f"Error preprocessing trades data: {str(e)}")
-            self.logger.debug(traceback.format_exc())
-            return pd.DataFrame()
-
-    def extract_volume_features(self, trades_df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Extract enhanced volume and trading features"""
-        features = {}
-        
-        if trades_df is None or trades_df.empty:
-            self.logger.warning("No trade data available for volume feature extraction")
-            return self._get_default_volume_features()
-            
-        try:
-            # Preprocess trades
-            trades_df = self.preprocess_trades_data(trades_df)
-            if trades_df.empty:
-                return self._get_default_volume_features()
-            
-            # Basic volume statistics
-            features.update(self._calculate_basic_volume_metrics(trades_df))
-            
-            # Whale detection
-            large_trades = trades_df[
-                trades_df['volume'] > trades_df['volume'].quantile(config.MIN_TRADE_SIZE_PERCENTILE)
-            ]
-            features.update({
-                'whale_trade_count': len(large_trades),
-                'whale_volume_ratio': (large_trades['volume'].sum() / trades_df['volume'].sum() 
-                                     if trades_df['volume'].sum() > 0 else 0)
-            })
-            
-            # Window-based analysis
-            for window in config.VOLUME_WINDOWS:
-                window_features = self._calculate_window_volume_metrics(
-                    trades_df, window, config.MIN_TRADE_SIZE_PERCENTILE
-                )
-                features.update(window_features)
-            
-            # Add volume trends
-            trend_features = self._calculate_volume_trends(trades_df)
-            features.update(trend_features)
-            
-            return features
-            
-        except Exception as e:
-            self.logger.error(f"Error in volume feature extraction: {str(e)}")
-            self.logger.debug(traceback.format_exc())
-            return self._get_default_volume_features()
-
-    def _calculate_basic_volume_metrics(self, trades_df: pd.DataFrame) -> Dict:
-        """Calculate basic volume metrics with validation"""
-        metrics = {}
-        try:
-            metrics.update({
-                'volume_total': trades_df['volume'].sum(),
-                'volume_mean': trades_df['volume'].mean(),
-                'volume_std': trades_df['volume'].std(),
-                'volume_skew': trades_df['volume'].skew(),
-                'volume_kurtosis': trades_df['volume'].kurtosis()
-            })
-            
-            # Add trade intervals
-            if len(trades_df) > 1:
-                intervals = trades_df['timestamp'].diff().dt.total_seconds()
-                metrics.update({
-                    'avg_trade_interval': intervals.mean(),
-                    'trade_interval_std': intervals.std()
-                })
-                
-        except Exception as e:
-            self.logger.error(f"Error calculating basic volume metrics: {str(e)}")
-            metrics = {
-                'volume_total': 0,
-                'volume_mean': 0,
-                'volume_std': 0,
-                'volume_skew': 0,
-                'volume_kurtosis': 0,
-                'avg_trade_interval': 0,
-                'trade_interval_std': 0
-            }
-            
-        return metrics
-
-    def _calculate_window_volume_metrics(self, trades_df: pd.DataFrame, 
-                                       window: int, whale_threshold: float) -> Dict:
-        """Calculate volume metrics for specific time windows"""
-        metrics = {}
-        try:
-            window_data = trades_df.iloc[-window:]
-            if not window_data.empty:
-                prefix = f'volume_{window}m'
-                
-                # Basic volume metrics
-                metrics.update({
-                    f'{prefix}': window_data['volume'].sum(),
-                    f'trades_count_{window}m': len(window_data),
-                    f'avg_trade_size_{window}m': window_data['volume'].mean(),
-                    f'max_trade_size_{window}m': window_data['volume'].max()
-                })
-                
-                # Buy/Sell analysis
-                buys = window_data[window_data['side'] == 'buy']['volume'].sum()
-                sells = window_data[window_data['side'] == 'sell']['volume'].sum()
-                total = buys + sells
-                
-                if total > 0:
-                    metrics.update({
-                        f'buy_sell_ratio_{window}m': buys / sells if sells > 0 else float('inf'),
-                        f'buy_sell_imbalance_{window}m': (buys - sells) / total
-                    })
-                
-                # Trade size analysis
-                large_trades = window_data[
-                    window_data['volume'] >= window_data['volume'].quantile(whale_threshold)
-                ]
-                metrics[f'large_trade_ratio_{window}m'] = (
-                    len(large_trades) / len(window_data) if len(window_data) > 0 else 0
-                )
-                
-                # Volume momentum
-                if len(window_data) > 1:
-                    vol_changes = window_data['volume'].pct_change()
-                    metrics.update({
-                        f'volume_momentum_{window}m': vol_changes.mean(),
-                        f'volume_momentum_std_{window}m': vol_changes.std(),
-                        f'volume_acceleration_{window}m': vol_changes.diff().mean()
-                    })
-                
-        except Exception as e:
-            self.logger.error(f"Error calculating window metrics for {window}m: {str(e)}")
-            self.logger.debug(f"Window data head: {trades_df.head().to_dict()}")
-            
-        return metrics
-
-    def _calculate_volume_trends(self, trades_df: pd.DataFrame) -> Dict:
-        """Calculate volume trend metrics"""
-        trends = {}
-        try:
-            if len(trades_df) > 1:
-                # Calculate linear regression on volumes
-                x = np.arange(len(trades_df))
-                y = trades_df['volume'].values
-                slope, intercept, r_value, _, _ = stats.linregress(x, y)
-                
-                trends.update({
-                    'volume_trend_slope': slope,
-                    'volume_trend_r2': r_value ** 2,
-                    'volume_trend_strength': abs(slope) / trades_df['volume'].std() 
-                        if trades_df['volume'].std() != 0 else 0
-                })
-                
-                # Volume acceleration
-                vol_changes = trades_df['volume'].pct_change()
-                if len(vol_changes) > 1:
-                    trends['volume_acceleration'] = vol_changes.diff().mean()
-                
-        except Exception as e:
-            self.logger.error(f"Error calculating volume trends: {str(e)}")
-            trends = {
-                'volume_trend_slope': 0,
-                'volume_trend_r2': 0,
-                'volume_trend_strength': 0,
-                'volume_acceleration': 0
-            }
-            
-        return trends
-
-    def get_default_volume_features(self) -> Dict:
-        """Return default values for volume features when calculation fails"""
-        return {
+    
+    def get_default_volume_features(self) -> Dict[str, float]:
+        """Return default values for all volume features"""
+        default_features = {
             'volume_total': 0,
             'volume_mean': 0,
             'volume_std': 0,
             'volume_skew': 0,
             'volume_kurtosis': 0,
-            'whale_trade_count': 0,
-            'whale_volume_ratio': 0
-        }
-
-    def extract_market_features(self, token_info: Dict) -> Dict:
-        """Extract enhanced market structure features"""
-        features = {}
-        
-        if not token_info:
-            self.logger.warning("No token info available for market feature extraction")
-            return self._get_default_market_features()
-            
-        try:
-            # Market depth metrics
-            features.update({
-                'liquidity': token_info.get('liquidity', 0),
-                'market_count': token_info.get('numberMarkets', 0),
-                'holder_count': token_info.get('holder', 0),
-                'unique_wallets_24h': token_info.get('uniqueWallet24h', 0)
-            })
-            
-            # Calculate derived metrics
-            if features['holder_count'] > 0:
-                features.update({
-                    'active_ratio': features['unique_wallets_24h'] / features['holder_count'],
-                    'average_holding': token_info.get('totalSupply', 0) / features['holder_count']
-                })
-            
-            # Trading activity metrics
-            features['trades_24h'] = token_info.get('trade24h', 0)
-            if features['holder_count'] > 0:
-                features.update({
-                    'trades_per_holder': features['trades_24h'] / features['holder_count'],
-                    'volume_per_holder': token_info.get('volume24h', 0) / features['holder_count']
-                })
-            
-            # Market maturity indicators
-            if 'creationTime' in token_info:
-                creation_time = pd.to_datetime(token_info['creationTime'])
-                features['token_age_days'] = (pd.Timestamp.now() - creation_time).days
-                
-            # Market concentration metrics
-            if 'top10HolderPercent' in token_info:
-                features['holder_concentration'] = token_info['top10HolderPercent']
-                
-            # Volatility and momentum metrics
-            if 'priceChange24h' in token_info:
-                features['price_change_24h'] = token_info['priceChange24h']
-            if 'volumeChange24h' in token_info:
-                features['volume_change_24h'] = token_info['volumeChange24h']
-                
-            # Add validation flags
-            features.update(self._validate_market_features(token_info))
-            
-            return features
-            
-        except Exception as e:
-            self.logger.error(f"Error extracting market features: {str(e)}")
-            self.logger.debug(f"Token info: {json.dumps(token_info, indent=2)}")
-            return self._get_default_market_features()
-
-    def _validate_market_features(self, token_info: Dict) -> Dict:
-        """Validate market data and add quality flags"""
-        validation = {
-            'has_valid_liquidity': token_info.get('liquidity', 0) > 0,
-            'has_valid_holders': token_info.get('holder', 0) > 0,
-            'has_recent_trades': token_info.get('lastTradeUnixTime', 0) > 
-                              (datetime.now() - timedelta(hours=24)).timestamp(),
-            'has_price_data': 'price' in token_info and token_info['price'] is not None
-        }
-        return validation
-
-    def _get_default_market_features(self) -> Dict:
-        """Return default values for market features"""
-        return {
-            'liquidity': 0,
-            'market_count': 0,
-            'holder_count': 0,
-            'unique_wallets_24h': 0,
-            'active_ratio': 0,
-            'average_holding': 0,
-            'trades_24h': 0,
-            'trades_per_holder': 0,
-            'volume_per_holder': 0,
-            'token_age_days': 0,
-            'holder_concentration': 0,
-            'has_valid_liquidity': False,
-            'has_valid_holders': False,
-            'has_recent_trades': False,
-            'has_price_data': False
-        }
-
-    def extract_pattern_features(self, df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Extract pattern-based features with validation"""
-        features = {}
-        
-        try:
-            if len(df) < 5:  # Minimum data points needed for pattern detection
-                self.logger.warning("Insufficient data points for pattern detection")
-                return self._get_default_pattern_features()
-            
-            # Price patterns
-            returns = df['value'].pct_change().fillna(0)
-            
-            # Detect trend patterns
-            for window in config.MICRO_WINDOWS:
-                window_features = self._extract_window_patterns(returns, window)
-                features.update(window_features)
-            
-            # Volatility patterns
-            volatility_features = self._extract_volatility_patterns(df, returns, config)
-            features.update(volatility_features)
-            
-            # Technical patterns
-            tech_features = self._extract_technical_patterns(df, config)
-            features.update(tech_features)
-            
-            # Ensure default values for required patterns
-            required_patterns = {
-                'trend_strength_3m': 0.0,
-                'trend_consistency_3m': 0.0,
-                'volatility_regime_5m': 'unknown'
-            }
-            
-            for key, default_value in required_patterns.items():
-                if key not in features:
-                    features[key] = default_value
-            
-            # Add pattern validation
-            features['patterns_detected'] = self._validate_patterns(features)
-            
-            return features
-            
-        except Exception as e:
-            self.logger.error(f"Error extracting pattern features: {str(e)}")
-            return self._get_default_pattern_features()
-
-    def _extract_window_patterns(self, returns: pd.Series, window: int) -> Dict:
-        """Extract pattern features for a specific window"""
-        features = {}
-        try:
-            if len(returns) >= window:
-                rolling_mean = returns.rolling(window=window).mean()
-                rolling_std = returns.rolling(window=window).std()
-                
-                # Skip if not enough data
-                if pd.isna(rolling_mean.iloc[-1]) or pd.isna(rolling_std.iloc[-1]):
-                    return {}
-                    
-                # Trend strength and consistency
-                if rolling_std.iloc[-1] != 0:
-                    features[f'trend_strength_{window}m'] = (
-                        abs(rolling_mean.iloc[-1]) / rolling_std.iloc[-1]
-                    )
-                features[f'trend_consistency_{window}m'] = (
-                    (np.sign(returns[-window:]) == np.sign(rolling_mean.iloc[-1])).mean()
-                )
-                
-                # Momentum features
-                if rolling_std.iloc[-1] != 0:
-                    features[f'momentum_strength_{window}m'] = (
-                        rolling_mean.iloc[-1] / rolling_std.iloc[-1]
-                    )
-                
-                # Pattern identification
-                features[f'pattern_type_{window}m'] = self._identify_pattern(
-                    returns[-window:], rolling_mean.iloc[-1]
-                )
-                
-        except Exception as e:
-            self.logger.debug(f"Error in window pattern extraction: {str(e)}")
-            
-        return features
-
-    def _extract_volatility_patterns(self, df: pd.DataFrame, returns: pd.Series, 
-                                   config: FeatureConfig) -> Dict:
-        """Extract volatility-based patterns"""
-        features = {}
-        try:
-            for window in config.PRICE_WINDOWS:
-                if len(returns) >= window:
-                    volatility = returns.rolling(window=window).std()
-                    if len(volatility) >= 2 and volatility.iloc[-2] != 0:
-                        features[f'volatility_acceleration_{window}m'] = (
-                            volatility.iloc[-1] / volatility.iloc[-2]
-                        )
-                    
-                    # Volatility regimes
-                    if not pd.isna(volatility.iloc[-1]):
-                        features[f'volatility_regime_{window}m'] = self._classify_volatility(
-                            volatility.iloc[-1], volatility.mean(), volatility.std()
-                        )
-                        
-        except Exception as e:
-            self.logger.debug(f"Error in volatility pattern extraction: {str(e)}")
-            
-        return features
-
-    def _extract_technical_patterns(self, df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Extract technical analysis patterns"""
-        features = {}
-        try:
-            # RSI divergence
-            for window in config.RSI_WINDOWS:
-                if len(df) >= window:
-                    rsi = ta.momentum.RSIIndicator(df['value'], window=window).rsi()
-                    if len(rsi) >= 2:
-                        features[f'rsi_divergence_{window}'] = (
-                            np.sign(df['value'].diff().iloc[-1]) != 
-                            np.sign(rsi.diff().iloc[-1])
-                        )
-                        
-            # MACD patterns
-            if len(df) >= 26:  # Minimum length for MACD
-                macd = ta.trend.MACD(df['value'])
-                features.update({
-                    'macd_cross': (
-                        np.sign(macd.macd_diff().iloc[-1]) != 
-                        np.sign(macd.macd_diff().iloc[-2])
-                    ) if len(macd.macd_diff()) >= 2 else False,
-                    'macd_trend': self._classify_trend(macd.macd_diff().iloc[-5:])
-                })
-                
-        except Exception as e:
-            self.logger.debug(f"Error in technical pattern extraction: {str(e)}")
-            
-        return features
-
-    def _identify_pattern(self, returns: pd.Series, trend: float) -> str:
-        """Identify price pattern type"""
-        if abs(trend) < 0.001:  # Near zero trend
-            return 'consolidation'
-        elif trend > 0:
-            return 'uptrend' if (returns > 0).mean() > 0.7 else 'choppy_up'
-        else:
-            return 'downtrend' if (returns < 0).mean() > 0.7 else 'choppy_down'
-
-    def _classify_volatility(self, current: float, mean: float, std: float) -> str:
-        """Classify volatility regime"""
-        if current < mean - std:
-            return 'low'
-        elif current > mean + std:
-            return 'high'
-        return 'normal'
-
-    def _classify_trend(self, values: pd.Series) -> str:
-        """Classify trend direction"""
-        if len(values) < 2:
-            return 'unknown'
-        mean_change = values.mean()
-        if abs(mean_change) < 0.001:
-            return 'sideways'
-        return 'bullish' if mean_change > 0 else 'bearish'
-
-    def _get_default_pattern_features(self) -> Dict:
-        """Return default values for pattern features"""
-        return {
-            'patterns_detected': False,
-            'trend_strength': 0,
-            'trend_consistency': 0,
-            'volatility_regime': 'unknown',
-            'pattern_type': 'unknown'
-        }
-    
-    def _validate_patterns(self, features: Dict) -> bool:
-        """Validate extracted patterns"""
-        try:
-            # Check if required pattern features are present
-            required_patterns = [
-                'trend_strength_3m',
-                'trend_consistency_3m',
-                'volatility_regime_5m'
-            ]
-            
-            # Check for presence and non-None values
-            for pattern in required_patterns:
-                if pattern not in features or features[pattern] is None:
-                    return False
-            return True
-            
-        except Exception as e:
-            self.logger.debug(f"Error validating patterns: {str(e)}")
-            return False
-
-    def _serialize_features(self, features: Dict) -> Dict:
-        """Convert numpy types and other non-serializable types to Python native types"""
-        def serialize_value(value):
-            try:
-                if isinstance(value, (np.int8, np.int16, np.int32, np.int64)):
-                    return int(value)
-                elif isinstance(value, (np.float16, np.float32, np.float64)):
-                    return float(value)
-                elif isinstance(value, np.ndarray):
-                    return value.tolist()
-                elif isinstance(value, pd.Timestamp):
-                    return value.isoformat()
-                elif isinstance(value, datetime):
-                    return value.isoformat()
-                elif isinstance(value, (bool, np.bool_)):
-                    return bool(value)
-                elif pd.isna(value):
-                    return None
-                elif isinstance(value, dict):
-                    return {k: serialize_value(v) for k, v in value.items()}
-                elif isinstance(value, (list, tuple)):
-                    return [serialize_value(item) for item in value]
-                else:
-                    return value
-            except Exception as e:
-                self.logger.warning(f"Error serializing value {value}: {str(e)}")
-                return str(value)  # Fallback to string conversion
-
-        try:
-            serialized = {}
-            for key, value in features.items():
-                serialized[key] = serialize_value(value)
-            return serialized
-                
-        except Exception as e:
-            self.logger.error(f"Error in feature serialization: {str(e)}")
-            self.logger.error(traceback.format_exc())
-            # Return a stringified version as last resort
-            return {k: str(v) for k, v in features.items()}
-
-    def extract_microstructure_features(self, trades_df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Extract market microstructure features with improved validation"""
-        features = {}
-        
-        if trades_df is None or trades_df.empty:
-            self.logger.warning("No trades data for microstructure analysis")
-            return self._get_default_microstructure_features()
-            
-        try:
-            # Basic trade size analysis
-            features.update(self._analyze_trade_sizes(trades_df))
-            
-            # Trade timing analysis
-            features.update(self._analyze_trade_timing(trades_df))
-            
-            # Order flow analysis
-            for window in config.MICRO_WINDOWS:
-                features.update(self._analyze_order_flow(trades_df, window))
-            
-            return features
-            
-        except Exception as e:
-            self.logger.error(f"Error in microstructure feature extraction: {str(e)}")
-            return self._get_default_microstructure_features()
-
-    def _analyze_trade_sizes(self, trades_df: pd.DataFrame) -> Dict:
-        """Analyze trade size distributions"""
-        features = {}
-        try:
-            trade_sizes = trades_df['volume']
-            features.update({
-                'trade_size_mean': trade_sizes.mean(),
-                'trade_size_median': trade_sizes.median(),
-                'trade_size_skew': trade_sizes.skew(),
-                'trade_size_kurtosis': trade_sizes.kurtosis()
-            })
-            
-            # Size percentiles
-            for pct in [25, 75, 90, 95]:
-                features[f'trade_size_percentile_{pct}'] = trade_sizes.quantile(pct/100)
-                
-            # Large trade analysis
-            large_trades = trade_sizes[trade_sizes > trade_sizes.quantile(0.95)]
-            features.update({
-                'large_trade_count': len(large_trades),
-                'large_trade_volume_ratio': large_trades.sum() / trade_sizes.sum() 
-                    if trade_sizes.sum() > 0 else 0
-            })
-            
-        except Exception as e:
-            self.logger.debug(f"Error in trade size analysis: {str(e)}")
-            
-        return features
-
-    def _analyze_trade_timing(self, trades_df: pd.DataFrame) -> Dict:
-        """Analyze trade timing patterns"""
-        features = {}
-        try:
-            trade_times = pd.to_datetime(trades_df['timestamp'])
-            intervals = trade_times.diff().dt.total_seconds()
-            
-            features.update({
-                'avg_trade_interval': intervals.mean(),
-                'trade_interval_std': intervals.std(),
-                'trade_interval_skew': intervals.skew()
-            })
-            
-            # Clustering analysis
-            if len(intervals) > 1:
-                # Detect trade clusters
-                mean_interval = intervals.mean()
-                std_interval = intervals.std()
-                cluster_threshold = mean_interval - std_interval
-                
-                clusters = (intervals < cluster_threshold).astype(int)
-                cluster_starts = (clusters.diff() == 1).sum()
-                
-                features.update({
-                    'cluster_count': cluster_starts,
-                    'clustering_ratio': cluster_starts / len(intervals) if len(intervals) > 0 else 0
-                })
-                
-        except Exception as e:
-            self.logger.debug(f"Error in trade timing analysis: {str(e)}")
-            
-        return features
-
-    def _analyze_order_flow(self, trades_df: pd.DataFrame, window: int) -> Dict:
-        """Analyze order flow imbalance"""
-        features = {}
-        prefix = f'order_flow_{window}m'
-        
-        try:
-            window_trades = trades_df.iloc[-window:]
-            if not window_trades.empty:
-                # Buy/Sell imbalance
-                buys = window_trades[window_trades['side'] == 'buy']['volume'].sum()
-                sells = window_trades[window_trades['side'] == 'sell']['volume'].sum()
-                total = buys + sells
-                
-                if total > 0:
-                    features[f'{prefix}_imbalance'] = (buys - sells) / total
-                    features[f'{prefix}_buy_ratio'] = buys / total
-                    
-                # Trade size patterns
-                buy_sizes = window_trades[window_trades['side'] == 'buy']['volume']
-                sell_sizes = window_trades[window_trades['side'] == 'sell']['volume']
-                
-                if not buy_sizes.empty and not sell_sizes.empty:
-                    features.update({
-                        f'{prefix}_buy_mean_size': buy_sizes.mean(),
-                        f'{prefix}_sell_mean_size': sell_sizes.mean(),
-                        f'{prefix}_size_imbalance': (
-                            buy_sizes.mean() / sell_sizes.mean() if sell_sizes.mean() > 0 else 0
-                        )
-                    })
-                    
-        except Exception as e:
-            self.logger.debug(f"Error in order flow analysis for window {window}: {str(e)}")
-            
-        return features
-
-    def _get_default_microstructure_features(self) -> Dict:
-        """Return default values for microstructure features"""
-        return {
-            'trade_size_mean': 0,
-            'trade_size_median': 0,
-            'trade_size_skew': 0,
-            'trade_size_kurtosis': 0,
-            'large_trade_count': 0,
-            'large_trade_volume_ratio': 0,
             'avg_trade_interval': 0,
             'trade_interval_std': 0,
             'trade_interval_skew': 0,
-            'cluster_count': 0,
-            'clustering_ratio': 0
+            'whale_trade_count': 0,
+            'whale_volume_ratio': 0
         }
+        
+        # Add window-based defaults
+        for window in [1, 3, 5, 10, 15]:
+            default_features.update({
+                f'volume_{window}m': 0,
+                f'trades_count_{window}m': 0,
+                f'avg_trade_size_{window}m': 0,
+                f'max_trade_size_{window}m': 0,
+                f'buy_sell_ratio_{window}m': 1,
+                f'buy_sell_imbalance_{window}m': 0,
+                f'large_trade_ratio_{window}m': 0,
+                f'volume_momentum_{window}m': 0,
+                f'volume_momentum_std_{window}m': 0,
+                f'volume_acceleration_{window}m': 0
+            })
+        
+        return default_features
 
-    def extract_composite_features(self, price_df: pd.DataFrame, trades_df: pd.DataFrame, 
-                                 token_info: Dict, config: FeatureConfig) -> Dict:
-        """Extract composite features combining multiple signals"""
+    def calculate_price_features(self, df: pd.DataFrame) -> Dict[str, float]:
+        """Calculate price-related features for pre-spike window"""
         features = {}
         
-        try:
-            if trades_df is not None and not trades_df.empty:
-                # Volume-weighted price impact
-                features.update(self._calculate_volume_weighted_metrics(price_df, trades_df))
-                
-                # Liquidity utilization
-                if token_info and token_info.get('liquidity', 0) > 0:
-                    features.update(self._calculate_liquidity_metrics(trades_df, token_info))
-                
-                # Market impact calculations
-                features.update(self._calculate_market_impact(trades_df, token_info, config))
-                
-                # Buy pressure metrics
-                features.update(self._calculate_buy_pressure(trades_df, price_df, config))
-                
-            # Combined technical indicators
-            features.update(self._calculate_technical_combinations(price_df, config))
+        if df.empty:
+            return {f"{feat}_{window}m": 0 for window in [3, 5, 10, 15] 
+                    for feat in ['price_change', 'volatility', 'momentum', 'momentum_std', 
+                            'acceleration', 'trend_strength', 'trend_consistency']}
+        
+        # Ensure data is sorted by time
+        df = df.sort_values('timestamp')
+        
+        # Basic price metrics for entire 15m window
+        price_data = df['value']
+        features.update({
+            'price_mean': price_data.mean(),
+            'price_std': price_data.std(),
+            'price_min': price_data.min(),
+            'price_max': price_data.max(),
+            'price_last': price_data.iloc[-1]  # Price right before spike
+        })
+        
+        # Calculate features for different time windows
+        windows = [3, 5, 10, 15]  # minutes
+        for window in windows:
+            # Get window data from end (closest to spike)
+            window_data = df.tail(window)
+            if len(window_data) < 2:
+                continue
             
-            return features
+            # Price changes
+            start_price = window_data['value'].iloc[0]
+            end_price = window_data['value'].iloc[-1]
+            price_change = (end_price - start_price) / start_price
             
-        except Exception as e:
-            self.logger.error(f"Error extracting composite features: {str(e)}")
-            return self._get_default_composite_features()
-
-    def _calculate_volume_weighted_metrics(self, price_df: pd.DataFrame, trades_df: pd.DataFrame) -> Dict:
-        """Calculate volume-weighted metrics"""
-        features = {}
-        try:
-            price_changes = price_df['value'].pct_change()
-            volume_changes = trades_df['volume'].pct_change()
+            # Calculate returns and volatility
+            returns = window_data['value'].pct_change().dropna()
+            volatility = returns.std()
             
-            # Volume-weighted momentum
-            if len(price_changes) == len(volume_changes):
-                features['volume_weighted_momentum'] = (price_changes * volume_changes).mean()
-                
-            # Volume-price correlation
-            if len(price_changes) > 1 and len(volume_changes) > 1:
-                correlation = np.corrcoef(
-                    price_changes.fillna(0),
-                    volume_changes.fillna(0)
-                )[0, 1]
-                features['price_volume_correlation'] = correlation
-                
-        except Exception as e:
-            self.logger.debug(f"Error in volume-weighted metrics: {str(e)}")
+            # Momentum metrics
+            momentum = returns.mean()
+            momentum_std = returns.std()
             
-        return features
-
-    def _calculate_liquidity_metrics(self, trades_df: pd.DataFrame, token_info: Dict) -> Dict:
-        """Calculate liquidity-based metrics"""
-        features = {}
-        try:
-            liquidity = token_info.get('liquidity', 0)
-            if liquidity > 0:
-                total_volume = trades_df['volume'].sum()
-                features.update({
-                    'liquidity_utilization': total_volume / liquidity,
-                    'average_impact': (trades_df['volume'] / liquidity).mean()
-                })
-                
-                # Large trade impact
-                large_trades = trades_df[
-                    trades_df['volume'] >= trades_df['volume'].quantile(0.95)
-                ]
-                if not large_trades.empty:
-                    features['large_trade_impact'] = (
-                        large_trades['volume'].sum() / liquidity
-                    )
-                    
-        except Exception as e:
-            self.logger.debug(f"Error in liquidity metrics: {str(e)}")
-            
-        return features
-
-    def _calculate_market_impact(self, trades_df: pd.DataFrame, 
-                               token_info: Dict, config: FeatureConfig) -> Dict:
-        """Calculate market impact metrics"""
-        features = {}
-        try:
-            for window in config.MICRO_WINDOWS:
-                window_volume = trades_df['volume'].iloc[-window:].sum()
-                if token_info and token_info.get('liquidity', 0) > 0:
-                    features[f'market_impact_{window}m'] = (
-                        window_volume / token_info['liquidity']
-                    )
-                    
-        except Exception as e:
-            self.logger.debug(f"Error in market impact calculations: {str(e)}")
-            
-        return features
-
-    def _calculate_buy_pressure(self, trades_df: pd.DataFrame, 
-                              price_df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Calculate buy pressure metrics"""
-        features = {}
-        try:
-            for window in config.VOLUME_WINDOWS:
-                window_trades = trades_df.iloc[-window:]
-                buys = window_trades[window_trades['side'] == 'buy']['volume'].sum()
-                sells = window_trades[window_trades['side'] == 'sell']['volume'].sum()
-                
-                if sells > 0:
-                    # Buy pressure relative to volatility
-                    vol = price_df['value'].pct_change()[-window:].std()
-                    if vol > 0:
-                        features[f'buy_pressure_volatility_{window}m'] = (buys/sells) / vol
-                    
-                    # Buy pressure momentum
-                    prev_window = trades_df.iloc[-2*window:-window]
-                    prev_buys = prev_window[prev_window['side'] == 'buy']['volume'].sum()
-                    prev_sells = prev_window[prev_window['side'] == 'sell']['volume'].sum()
-                    if prev_sells > 0:
-                        features[f'buy_pressure_momentum_{window}m'] = (
-                            (buys/sells) / (prev_buys/prev_sells)
-                        )
-                        
-        except Exception as e:
-            self.logger.debug(f"Error in buy pressure calculations: {str(e)}")
-            
-        return features
-
-    def _calculate_technical_combinations(self, price_df: pd.DataFrame, config: FeatureConfig) -> Dict:
-        """Calculate combined technical indicators"""
-        features = {}
-        try:
-            # Volatility-adjusted momentum
-            for window in config.PRICE_WINDOWS:
-                price_changes = price_df['value'].pct_change()[-window:]
-                if len(price_changes) >= window:
-                    vol = price_changes.std()
-                    if vol > 0:
-                        features[f'volatility_adjusted_momentum_{window}m'] = (
-                            price_changes.mean() / vol
-                        )
-                        
-            # RSI combinations
-            for rsi_window in config.RSI_WINDOWS:
-                rsi = ta.momentum.RSIIndicator(price_df['value'], window=rsi_window).rsi()
-                if len(rsi) >= 5:
-                    features[f'rsi_trend_strength_{rsi_window}'] = (
-                        abs(rsi[-5:].mean() - 50) / rsi[-5:].std()
-                        if rsi[-5:].std() > 0 else 0
-                    )
-                    
-        except Exception as e:
-            self.logger.debug(f"Error in technical combinations: {str(e)}")
-            
-        return features
-
-    def _get_default_composite_features(self) -> Dict:
-        """Return default values for composite features"""
-        return {
-            'volume_weighted_momentum': 0,
-            'price_volume_correlation': 0,
-            'liquidity_utilization': 0,
-            'average_impact': 0,
-            'large_trade_impact': 0
-        }
-    
-    def extract_all_features(self, token_address: str, spike_time: datetime) -> Optional[Dict]:
-        """Extract and combine all features for a given spike"""
-        try:
-            # Get the data run directory from progress info
-            progress_file = os.path.join(self.run_dir, 'processing_progress.json')
-            if os.path.exists(progress_file):
-                with open(progress_file, 'r') as f:
-                    progress = json.load(f)
-                data_run_dir = progress.get('data_run_dir')
+            # Acceleration (change in momentum)
+            if len(returns) >= 4:
+                first_half = returns[:len(returns)//2].mean()
+                second_half = returns[len(returns)//2:].mean()
+                acceleration = second_half - first_half
             else:
-                # Find the latest data run directory
-                runs_dir = os.path.join(self.base_dir, "data", "runs")
-                run_dirs = [d for d in os.listdir(runs_dir) if d.startswith('run_')]
-                current_run = os.path.basename(self.run_dir)
-                previous_runs = [d for d in run_dirs if d < current_run]
-                data_run_dir = sorted(previous_runs)[-1] if previous_runs else None
-
-            if not data_run_dir:
-                self.logger.error("Could not find data run directory")
-                return None
-
-            spike_time_str = spike_time.strftime('%Y%m%d_%H%M%S')
+                acceleration = 0
+                
+            # Trend metrics
+            trend_strength = abs(price_change) / volatility if volatility > 0 else 0
+            up_moves = (returns > 0).sum()
+            trend_consistency = up_moves / len(returns) if len(returns) > 0 else 0
             
-            # Load data files from the data run directory
-            price_file = os.path.join(self.base_dir, "data", "runs", data_run_dir, 
-                                    'price_data', 
-                                    f'{token_address}_pre_spike_{spike_time_str}_price.csv')
-            trades_file = os.path.join(self.base_dir, "data", "runs", data_run_dir,
-                                     'trades',
-                                     f'{token_address}_pre_spike_{spike_time_str}_trades.csv')
-            token_info_file = os.path.join(self.base_dir, "data", "runs", data_run_dir,
-                                         'token_info',
-                                         f'{token_address}_pre_spike_{spike_time_str}_token_info.json')
+            # Pattern detection
+            features.update({
+                f'price_change_{window}m': price_change,
+                f'volatility_{window}m': volatility,
+                f'momentum_{window}m': momentum,
+                f'momentum_std_{window}m': momentum_std,
+                f'acceleration_{window}m': acceleration,
+                f'trend_strength_{window}m': trend_strength,
+                f'trend_consistency_{window}m': trend_consistency,
+                
+                # Additional pattern metrics
+                f'momentum_strength_{window}m': abs(momentum) / volatility if volatility > 0 else 0,
+                f'pattern_type_{window}m': 'uptrend' if price_change > 0 and trend_consistency > 0.6 else 'neutral'
+            })
+            
+            # Volatility regimes
+            volatility_acceleration = volatility / df['value'].pct_change().std() if len(df) > window else 1
+            features[f'volatility_acceleration_{window}m'] = volatility_acceleration
+            features[f'volatility_regime_{window}m'] = 'normal'
+            if volatility_acceleration > 1.5:
+                features[f'volatility_regime_{window}m'] = 'high'
+            elif volatility_acceleration < 0.5:
+                features[f'volatility_regime_{window}m'] = 'low'
+                
+            # Risk-adjusted metrics
+            features[f'volatility_adjusted_momentum_{window}m'] = momentum / volatility if volatility > 0 else 0
+        
+        return features
 
-            # Validate price file exists
-            if not os.path.exists(price_file):
-                self.logger.error(f"Price file not found: {price_file}")
-                return None
+    def calculate_volume_features(self, trades_df: pd.DataFrame) -> Dict[str, float]:
+        """Calculate volume-related features for pre-spike window"""
+        features = {}
+        
+        if trades_df.empty:
+            return self.get_default_volume_features()
+        
+        # Ensure trades are sorted by time
+        if 'timestamp' not in trades_df.columns and 'blockUnixTime' in trades_df.columns:
+            trades_df['timestamp'] = pd.to_datetime(trades_df['blockUnixTime'], unit='s')
+        trades_df = trades_df.sort_values('timestamp')
+        
+        # Determine volume field
+        volume_field = None
+        for field in ['amount', 'baseAmount', 'quoteAmount', 'value']:
+            if field in trades_df.columns:
+                volume_field = field
+                break
+        
+        if volume_field is None:
+            self.logger.warning("No volume field found, checking nested data")
+            # Try to extract from nested structure
+            if 'from' in trades_df.columns:
+                trades_df['amount'] = trades_df.apply(
+                    lambda x: float(x['from'].get('amount', 0)) if isinstance(x['from'], dict) else 0,
+                    axis=1
+                )
+                volume_field = 'amount'
+        
+        if volume_field is None:
+            return self.get_default_volume_features()
+        
+        # Basic volume metrics
+        volume_data = trades_df[volume_field].astype(float)
+        features.update({
+            'volume_total': volume_data.sum(),
+            'volume_mean': volume_data.mean(),
+            'volume_std': volume_data.std(),
+            'volume_skew': volume_data.skew(),
+            'volume_kurtosis': volume_data.kurtosis(),
+        })
+        
+        # Trade intervals
+        if len(trades_df) > 1:
+            intervals = trades_df['timestamp'].diff().dt.total_seconds()
+            features.update({
+                'avg_trade_interval': intervals.mean(),
+                'trade_interval_std': intervals.std(),
+                'trade_interval_skew': intervals.skew(),
+            })
+        
+        # Whale analysis
+        volume_95th = volume_data.quantile(0.95)
+        whale_trades = trades_df[volume_data >= volume_95th]
+        features.update({
+            'whale_trade_count': len(whale_trades),
+            'whale_volume_ratio': whale_trades[volume_field].sum() / volume_data.sum() if volume_data.sum() > 0 else 0
+        })
+        
+        # Analyze different time windows
+        for window in [1, 3, 5, 10, 15]:  # minutes
+            window_end = trades_df['timestamp'].max()
+            window_start = window_end - pd.Timedelta(minutes=window)
+            window_trades = trades_df[trades_df['timestamp'] >= window_start]
+            
+            if len(window_trades) == 0:
+                continue
+                
+            window_volume = window_trades[volume_field].astype(float)
+            
+            features.update({
+                f'volume_{window}m': window_volume.sum(),
+                f'trades_count_{window}m': len(window_trades),
+                f'avg_trade_size_{window}m': window_volume.mean(),
+                f'max_trade_size_{window}m': window_volume.max(),
+            })
+            
+            # Buy/Sell analysis
+            side_field = next((f for f in ['side', 'type', 'tradeType'] if f in window_trades.columns), None)
+            if side_field:
+                buys = window_trades[window_trades[side_field].str.lower().str.contains('buy', na=False)]
+                sells = window_trades[window_trades[side_field].str.lower().str.contains('sell', na=False)]
+                
+                buy_volume = buys[volume_field].astype(float).sum()
+                sell_volume = sells[volume_field].astype(float).sum()
+                total_volume = buy_volume + sell_volume
+                
+                features.update({
+                    f'buy_sell_ratio_{window}m': buy_volume / sell_volume if sell_volume > 0 else float('inf'),
+                    f'buy_sell_imbalance_{window}m': (buy_volume - sell_volume) / total_volume if total_volume > 0 else 0,
+                    f'large_trade_ratio_{window}m': (window_volume >= volume_95th).mean()
+                })
+            
+            # Volume momentum
+            if len(window_trades) > 1:
+                volume_changes = window_volume.pct_change().dropna()
+                features.update({
+                    f'volume_momentum_{window}m': volume_changes.mean(),
+                    f'volume_momentum_std_{window}m': volume_changes.std(),
+                    f'volume_acceleration_{window}m': volume_changes.diff().mean()
+                })
+        
+        # Calculate volume trend features first
+        if len(volume_data) > 1:
+            try:
+                features['volume_trend_slope'] = np.polyfit(range(len(volume_data)), volume_data, 1)[0]
+                features['volume_trend_r2'] = np.corrcoef(range(len(volume_data)), volume_data)[0,1] ** 2
+                features['volume_trend_strength'] = abs(features['volume_trend_slope']) / volume_data.std() if volume_data.std() > 0 else 0
+            except Exception as e:
+                self.logger.warning(f"Error calculating trend features: {str(e)}")
+                features.update({
+                    'volume_trend_slope': 0,
+                    'volume_trend_r2': 0,
+                    'volume_trend_strength': 0
+                })
+        else:
+            features.update({
+                'volume_trend_slope': 0,
+                'volume_trend_r2': 0,
+                'volume_trend_strength': 0
+            })
+        
+        return features
 
-            # Load and validate price data
-            price_df = pd.read_csv(price_file)
-            price_df['timestamp'] = pd.to_datetime(price_df['timestamp'])
+    def detect_trade_clusters(self, trades_df: pd.DataFrame, max_interval: int = 60) -> List[pd.DataFrame]:
+        """Detect clusters of trades based on time intervals"""
+        if len(trades_df) < 2:
+            return [trades_df] if not trades_df.empty else []
+            
+        trades_df = trades_df.sort_values('timestamp')
+        clusters = []
+        current_cluster = [trades_df.iloc[0]]
+        
+        for i in range(1, len(trades_df)):
+            current_trade = trades_df.iloc[i]
+            last_trade = current_cluster[-1]
+            
+            interval = (current_trade['timestamp'] - last_trade['timestamp']).total_seconds()
+            
+            if interval <= max_interval:
+                current_cluster.append(current_trade)
+            else:
+                if len(current_cluster) > 1:
+                    clusters.append(pd.DataFrame(current_cluster))
+                current_cluster = [current_trade]
+        
+        if len(current_cluster) > 1:
+            clusters.append(pd.DataFrame(current_cluster))
+            
+        return clusters
+
+    async def process_spike(self, spike: Dict) -> Optional[Dict[str, Any]]:
+        """Process a single spike and extract features from pre-spike window"""
+        try:
+            token_address = spike['token_address']
+            spike_time = datetime.fromisoformat(spike['spike_time'])
+            
+            # Get the 15-minute window before the spike
+            end_time = spike_time
+            start_time = end_time - timedelta(minutes=15)
+            
+            self.logger.debug(f"Processing {token_address} window: {start_time} to {end_time}")
+            
+            # Fetch all necessary data
+            price_df = await self.get_price_history(token_address, start_time, end_time)
+            trades_df = await self.get_trade_history(token_address, start_time, end_time)
+            token_info = await self.get_token_info(token_address)
             
             if price_df.empty:
-                self.logger.error(f"Empty price data for {token_address}")
+                self.logger.warning(f"No price data for {token_address}")
                 return None
-
-            # Load trades data
-            trades_df = None
-            if os.path.exists(trades_file):
-                trades_df = pd.read_csv(trades_file)
-                if not trades_df.empty:
-                    trades_df['timestamp'] = pd.to_datetime(trades_df['timestamp'])
-                    self.logger.info(f"Loaded {len(trades_df)} trades for {token_address}")
-
-            # Load token info
-            token_info = None
-            if os.path.exists(token_info_file):
-                with open(token_info_file, 'r') as f:
-                    token_info = json.load(f)
-
-            # Initialize feature config
-            config = FeatureConfig()
-
-            # Extract features
+            
+            # Log data points for verification
+            self.logger.info(f"Found {len(price_df)} price points and {len(trades_df)} trades in pre-spike window")
+            
             features = {
                 'token_address': token_address,
-                'spike_time': spike_time.isoformat()
+                'spike_time': spike_time.isoformat(),
+                'future_price_increase': spike['increase']
             }
-
-            # Extract each feature group with detailed logging
-            self.logger.debug(f"Extracting price features for {token_address}")
-            price_features = self.extract_price_features(price_df, config)
+            
+            # Add price features
+            price_features = self.calculate_price_features(price_df)
             features.update(price_features)
-
-            if trades_df is not None and not trades_df.empty:
-                self.logger.debug(f"Extracting volume features for {token_address}")
-                volume_features = self.extract_volume_features(trades_df, config)
+            
+            # Add volume features
+            if not trades_df.empty:
+                if 'from' in trades_df.columns:
+                    # Extract nested data
+                    trades_df['amount'] = trades_df.apply(
+                        lambda x: float(x['from'].get('amount', 0)) if isinstance(x['from'], dict) else 0, 
+                        axis=1
+                    )
+                    trades_df['side'] = trades_df.apply(
+                        lambda x: 'buy' if isinstance(x['to'], dict) and x['to'].get('address') == token_address else 'sell',
+                        axis=1
+                    )
+                
+                volume_features = self.calculate_volume_features(trades_df)
                 features.update(volume_features)
-
-                # Extract microstructure features
-                microstructure_features = self.extract_microstructure_features(trades_df, config)
-                features.update(microstructure_features)
-
-            self.logger.debug(f"Extracting market features for {token_address}")
-            market_features = self.extract_market_features(token_info)
-            features.update(market_features)
-
-            # Extract pattern features
-            pattern_features = self.extract_pattern_features(price_df, config)
-            features.update(pattern_features)
-
-            # Extract composite features
-            composite_features = self.extract_composite_features(
-                price_df, trades_df, token_info, config
-            )
-            features.update(composite_features)
-
-            # Add metadata
-            features.update({
-                'data_points_count': len(price_df),
-                'trades_count': len(trades_df) if trades_df is not None else 0,
-                'feature_extraction_time': datetime.now().isoformat(),
-                'data_run_dir': data_run_dir
-            })
-
-            # Serialize features
-            serialized_features = self._serialize_features(features)
             
-            # Save individual feature file
-            feature_file = os.path.join(
-                self.features_dir, 
-                'individual_features',
-                f'{token_address}_spike_{spike_time_str}_features.json'
-            )
+            # Add technical indicators
+            tech_features = self.calculate_technical_indicators(price_df)
+            features.update(tech_features)
             
-            with open(feature_file, 'w') as f:
-                json.dump(serialized_features, f, indent=2)
-
+            # Add token info features
+            if token_info:
+                token_features = {
+                    'liquidity': token_info.get('liquidity', 0),
+                    'market_count': token_info.get('numberMarkets', 0),
+                    'holder_count': token_info.get('holder', 0),
+                    'unique_wallets_24h': token_info.get('uniqueWallet24h', 0),
+                    'active_ratio': token_info.get('uniqueWallet24h', 0) / token_info.get('holder', 1) if token_info.get('holder', 0) > 0 else 0,
+                    'trades_24h': token_info.get('trade24h', 0),
+                    'trades_per_holder': token_info.get('trade24h', 0) / token_info.get('holder', 1) if token_info.get('holder', 0) > 0 else 0
+                }
+                features.update(token_features)
+            
             return features
-
+            
         except Exception as e:
-            self.logger.error(f"Error in extract_all_features for {token_address}: {str(e)}")
-            self.logger.error(traceback.format_exc())
+            self.logger.error(f"Error processing spike for {token_address}: {str(e)}")
+            traceback.print_exc()
             return None
 
-    def select_features(self, features_df: pd.DataFrame, target: str, config: FeatureConfig) -> Tuple[pd.DataFrame, List[str]]:
-        """Select most important features using statistical tests and correlation analysis"""
-        self.logger.info("Starting feature selection process...")
-        
+    async def process_all_spikes(self, spikes_data) -> pd.DataFrame:
+        """Process all spikes with improved error handling and progress tracking"""
         try:
-            # Store metadata columns
-            metadata_columns = ['token_address', 'spike_time']
-            metadata = features_df[metadata_columns].copy()
+            # Handle both DataFrame and file path inputs
+            if isinstance(spikes_data, str):
+                spikes_df = pd.read_csv(spikes_data)
+            else:
+                spikes_df = spikes_data
+                
+            self.logger.info(f"Processing {len(spikes_df)} spikes")
+            start_time = datetime.now()
             
-            # Get numeric columns only
-            numeric_columns = features_df.select_dtypes(include=[np.number]).columns
-            numeric_columns = [col for col in numeric_columns 
-                             if col not in metadata_columns + [target]]
+            features_list = []
+            failed_spikes = []
+            processed_count = 0
             
-            if not numeric_columns:
-                self.logger.error("No numeric features found for selection")
-                return features_df, []
+            # Create semaphore to limit concurrent requests
+            semaphore = asyncio.Semaphore(5)
             
-            # Prepare numeric data
-            numeric_df = features_df[numeric_columns].copy()
-            numeric_df = numeric_df.fillna(0)
+            async def process_with_rate_limit(spike):
+                async with semaphore:
+                    features = await self.process_spike(spike)
+                    await asyncio.sleep(self.DELAY_BETWEEN_REQUESTS)
+                    return features, spike['token_address']
             
-            # Calculate correlation with target
-            target_correlations = abs(numeric_df.corrwith(features_df[target]))
-            self.logger.info(f"Calculated correlations with target: {target}")
+            # Process spikes concurrently with rate limiting
+            tasks = []
+            for _, spike in spikes_df.iterrows():
+                tasks.append(process_with_rate_limit(spike.to_dict()))
             
-            # First selection based on correlation with target
-            correlation_threshold = 0.1
-            correlated_features = target_correlations[
-                target_correlations > correlation_threshold
-            ].index.tolist()
+            # Process in batches to avoid memory issues
+            batch_size = 100
+            for i in range(0, len(tasks), batch_size):
+                batch_tasks = tasks[i:i + batch_size]
+                results = await asyncio.gather(*batch_tasks, return_exceptions=True)
+                
+                for result in results:
+                    if isinstance(result, tuple) and result[0] is not None:
+                        features_list.append(result[0])
+                        processed_count += 1
+                    else:
+                        failed_spikes.append(result[1] if isinstance(result, tuple) else "Unknown")
+                
+                self.logger.info(f"Processed {processed_count}/{len(spikes_df)} spikes")
             
-            # Remove highly intercorrelated features
-            correlation_matrix = numeric_df[correlated_features].corr().abs()
-            upper = correlation_matrix.where(
-                np.triu(np.ones(correlation_matrix.shape), k=1).astype(bool)
+            if not features_list:
+                self.logger.error("No features were extracted")
+                return pd.DataFrame()
+            
+            # Create features DataFrame
+            features_df = pd.DataFrame(features_list)
+            
+            # Save processing stats
+            self.stats = ProcessingStats(
+                total_spikes=len(spikes_df),
+                processed_spikes=processed_count,
+                failed_spikes=len(failed_spikes),
+                start_time=start_time,
+                end_time=datetime.now(),
+                unique_tokens=features_df['token_address'].nunique(),
+                feature_count=len(features_df.columns)
             )
             
-            # Track removed features
-            removed_features = []
-            to_drop = set()
+            # Verify data quality
+            if not self.verify_data_quality(features_df):
+                self.logger.warning("Data quality issues detected")
             
-            # For each pair of correlated features
-            for i in range(len(correlation_matrix.columns)):
-                for j in range(i+1, len(correlation_matrix.columns)):
-                    val = correlation_matrix.iloc[i, j]
-                    if val > config.MAX_CORRELATION:
-                        feat_i = correlation_matrix.columns[i]
-                        feat_j = correlation_matrix.columns[j]
-                        if target_correlations[feat_i] < target_correlations[feat_j]:
-                            to_drop.add(feat_i)
-                            removed_features.append({
-                                'removed': feat_i,
-                                'kept': feat_j,
-                                'correlation': val,
-                                'reason': 'high_correlation'
-                            })
-                        else:
-                            to_drop.add(feat_j)
-                            removed_features.append({
-                                'removed': feat_j,
-                                'kept': feat_i,
-                                'correlation': val,
-                                'reason': 'high_correlation'
-                            })
-            
-            # Get selected features
-            selected_features = [f for f in correlated_features if f not in to_drop]
-            
-            # Ensure key features are included
-            key_features = [
-                'volume_momentum_5m',
-                'volatility_3m',
-                'price_change_15m',
-                'rsi_14',
-                'macd',
-                'volume_trend_strength'
-            ]
-            
-            for feature in key_features:
-                if feature in numeric_columns and feature not in selected_features:
-                    selected_features.append(feature)
-                    self.logger.info(f"Added key feature: {feature}")
-            
-            # Sort features by importance
-            feature_importance = target_correlations[selected_features]
-            selected_features = feature_importance.sort_values(ascending=False).index.tolist()
-            
-            # Create final DataFrame
-            result_df = pd.concat([
-                metadata,
-                features_df[selected_features],
-                features_df[target]
-            ], axis=1)
-            
-            # Log selection results
-            self.logger.info(f"Selected {len(selected_features)} features")
-            self._save_feature_selection_report(selected_features, removed_features, 
-                                             target_correlations)
-            
-            return result_df, selected_features
+            return features_df
             
         except Exception as e:
-            self.logger.error(f"Error in feature selection: {str(e)}")
-            self.logger.error(traceback.format_exc())
-            return features_df, list(features_df.columns)
+            self.logger.error(f"Error processing spikes: {str(e)}")
+            traceback.print_exc()
+            return pd.DataFrame()
 
-    def _save_feature_selection_report(self, selected_features: List[str], 
-                                     removed_features: List[Dict],
-                                     correlations: pd.Series):
-        """Save detailed feature selection report"""
-        report_path = os.path.join(self.features_dir, 'feature_selection_report.md')
+    def select_features(self, features_df: pd.DataFrame, target_col: str = 'future_price_increase') -> pd.DataFrame:
+        """Select most relevant features using correlations and domain knowledge"""
+        # Prepare data
+        metadata_cols = ['token_address', 'spike_time', target_col]
+        X = features_df.drop(metadata_cols, axis=1, errors='ignore')
+        y = features_df[target_col] if target_col in features_df.columns else None
         
-        with open(report_path, 'w') as f:
-            f.write("# Feature Selection Report\n\n")
+        self.logger.info(f"Starting feature selection with {len(X.columns)} features")
+        
+        # Handle missing values
+        X = X.fillna(0)
+        
+        # Convert boolean columns to int
+        bool_columns = X.select_dtypes(include=['bool']).columns
+        for col in bool_columns:
+            X[col] = X[col].astype(int)
+        
+        # Handle categorical columns
+        categorical_columns = X.select_dtypes(include=['object']).columns
+        for col in categorical_columns:
+            if 'regime' in col:
+                regime_map = {'low': 0, 'normal': 1, 'high': 2}
+                X[col] = X[col].map(regime_map).fillna(1)
+            elif 'pattern_type' in col:
+                pattern_map = {'neutral': 0, 'uptrend': 1}
+                X[col] = X[col].map(pattern_map).fillna(0)
+            else:
+                X = X.drop(columns=[col])
+        
+        # Handle numeric columns
+        numeric_columns = X.select_dtypes(include=[np.number]).columns
+        for col in numeric_columns:
+            # Handle infinity values
+            X[col] = X[col].replace([np.inf, -np.inf], [1e10, -1e10])
             
-            # Selected Features
-            f.write("## Selected Features\n")
-            for feature in selected_features:
-                f.write(f"- {feature} (correlation: {correlations[feature]:.3f})\n")
-            f.write("\n")
+            # Log transform large values (like volume)
+            if X[col].abs().max() > 1e6:
+                X[col] = np.sign(X[col]) * np.log1p(np.abs(X[col]))
             
-            # Removed Features
-            f.write("## Removed Features\n")
-            for removal in removed_features:
-                f.write(f"- {removal['removed']} (corr with {removal['kept']}: "
-                       f"{removal['correlation']:.3f}, reason: {removal['reason']})\n")
+            # Clip extreme values to 99th percentile
+            percentile_99 = np.percentile(X[col].abs(), 99)
+            X[col] = X[col].clip(-percentile_99, percentile_99)
+        
+        # Calculate absolute correlations with target
+        correlations = X.corrwith(y).abs()
+        raw_correlations = X.corrwith(y)  # Also keep raw correlations
+        correlations = correlations.sort_values(ascending=False)
+        
+        # Select features with significant correlations
+        strong_features = correlations[correlations > 0.3].index.tolist()
+        
+        # Always include key technical indicators
+        important_features = [
+            'price_change_15m', 'price_change_10m', 'price_change_5m',
+            'momentum_15m', 'momentum_10m', 'momentum_5m',
+            'rsi_14', 'rsi_14_slope',
+            'volume_15m', 'volume_trend_strength',
+            'volatility_15m', 'trend_strength_15m',
+            'buy_sell_imbalance_15m', 'large_trade_ratio_15m'
+        ]
+        
+        selected_features = list(set(strong_features + important_features))
+        
+        # Save feature importance scores
+        scores_df = pd.DataFrame({
+            'feature': correlations.index,
+            'raw_correlation': raw_correlations,
+            'abs_correlation': correlations,
+            'selected': correlations.index.isin(selected_features)
+        }).sort_values('abs_correlation', ascending=False)
+        
+        self.logger.info(f"Selected {len(selected_features)} features")
+        
+        # Print top features
+        print("\nTop 30 most important features:")
+        print(scores_df.head(30).to_string())
+        
+        # Add back metadata columns
+        final_features = metadata_cols + selected_features
+        return features_df[final_features]
 
+    def analyze_features(self, features_df: pd.DataFrame, run_dir: str):
+        """Analyze extracted features and save analysis results"""
+        analysis_dir = os.path.join(run_dir, 'feature_analysis')
+        os.makedirs(analysis_dir, exist_ok=True)
 
-    def _save_progress(self, progress: Dict):
-        """Save processing progress"""
-        progress_file = os.path.join(self.run_dir, 'processing_progress.json')
-        with open(progress_file, 'w') as f:
-            json.dump(progress, f, indent=2)
-
-    def _update_run_status(self, status: str, progress: Dict, error: str = None):
-        """Update run status information"""
-        run_info_file = os.path.join(self.run_dir, 'run_info.json')
+        # Get only numeric columns for analysis
+        numeric_cols = features_df.select_dtypes(include=[np.number]).columns
+        numeric_df = features_df[numeric_cols]
         
-        run_info = {
-            'status': status,
-            'end_time': datetime.now().isoformat(),
-            'total_processed': progress['processed'],
-            'successful': progress['successful'],
-            'failed': progress['failed'],
-            'error': error
-        }
+        # Calculate basic statistics
+        stats = numeric_df.describe().transpose()
         
-        with open(run_info_file, 'w') as f:
-            json.dump(run_info, f, indent=2)
-
-    def process_all_spikes(self):
-        """Process all spikes and perform feature extraction"""
-        # Get the previous run directory that contains the spikes data
-        runs_dir = os.path.join(self.base_dir, "data", "runs")
-        run_dirs = [d for d in os.listdir(runs_dir) if d.startswith('run_')]
-        if not run_dirs:
-            self.logger.error("No run directories found")
-            return
-            
-        # Sort by timestamp to get the latest run before current
-        current_run = os.path.basename(self.run_dir)
-        previous_runs = [d for d in run_dirs if d < current_run]
-        if not previous_runs:
-            self.logger.error("No previous run directories found")
-            return
-            
-        latest_data_run = sorted(previous_runs)[-1]
+        # Calculate correlations with target (if exists)
+        if 'price_change_15m' in numeric_cols:
+            stats['correlation_with_target'] = numeric_df.corrwith(numeric_df['price_change_15m'])
         
-        # Load spikes file from the latest data run
-        spikes_file = os.path.join(self.base_dir, "data", "runs", latest_data_run, '5x_price_increases.csv')
-        self.logger.info(f"Loading spikes from: {spikes_file}")
+        # Save statistics
+        stats.to_csv(os.path.join(analysis_dir, 'feature_statistics.csv'))
         
-        if not os.path.exists(spikes_file):
-            self.logger.error(f"Spikes file not found: {spikes_file}")
-            return
-            
-        try:
-            # Load and process spikes
-            spikes_df = pd.read_csv(spikes_file)
-            spikes_df['spike_time'] = pd.to_datetime(spikes_df['spike_time'])
-            
-            total_spikes = len(spikes_df)
-            self.logger.info(f"Processing {total_spikes} spikes")
-            
-            # Initialize progress tracking
-            progress = {
-                'total_spikes': total_spikes,
-                'processed': 0,
-                'successful': 0,
-                'failed': 0,
-                'start_time': datetime.now().isoformat(),
-                'data_run_dir': latest_data_run
-            }
-            
-            # Save initial progress
-            self._save_progress(progress)
-            
-            # Process spikes
-            all_features = []
-            failed_spikes = []
-            
-            for idx, spike in spikes_df.iterrows():
-                try:
-                    self.logger.info(f"Processing spike {idx + 1}/{total_spikes} "
-                                   f"for {spike['token_address']} at {spike['spike_time']}")
-                    
-                    # Update path for loading data files to use previous run directory
-                    spike_time_str = pd.to_datetime(spike['spike_time']).strftime('%Y%m%d_%H%M%S')
-                    
-                    # Load price data from previous run
-                    price_file = os.path.join(self.base_dir, "data", "runs", latest_data_run, 
-                                            'price_data', 
-                                            f"{spike['token_address']}_pre_spike_{spike_time_str}_price.csv")
-                                            
-                    trades_file = os.path.join(self.base_dir, "data", "runs", latest_data_run,
-                                             'trades',
-                                             f"{spike['token_address']}_pre_spike_{spike_time_str}_trades.csv")
-                                             
-                    token_info_file = os.path.join(self.base_dir, "data", "runs", latest_data_run,
-                                                 'token_info',
-                                                 f"{spike['token_address']}_pre_spike_{spike_time_str}_token_info.json")
-                    
-                    # Extract features using data from previous run
-                    features = self.extract_all_features(spike['token_address'], 
-                                                       pd.to_datetime(spike['spike_time']))
-                    
-                    if features:
-                        all_features.append(features)
-                        progress['successful'] += 1
-                    else:
-                        failed_spikes.append({
-                            'token_address': spike['token_address'],
-                            'spike_time': spike['spike_time'],
-                            'error': 'Feature extraction failed'
-                        })
-                        progress['failed'] += 1
-                        
-                except Exception as e:
-                    self.logger.error(f"Error processing spike {idx}: {str(e)}")
-                    failed_spikes.append({
-                        'token_address': spike['token_address'],
-                        'spike_time': spike['spike_time'],
-                        'error': str(e)
+        # Calculate and save correlations
+        correlations = numeric_df.corr()
+        correlations.to_csv(os.path.join(analysis_dir, 'feature_correlations.csv'))
+        
+        # Identify highly correlated pairs
+        corr_pairs = []
+        for i in range(len(correlations.columns)):
+            for j in range(i+1, len(correlations.columns)):
+                if abs(correlations.iloc[i, j]) > 0.8:
+                    corr_pairs.append({
+                        'feature1': correlations.columns[i],
+                        'feature2': correlations.columns[j],
+                        'correlation': correlations.iloc[i, j]
                     })
-                    progress['failed'] += 1
-                
-                progress['processed'] = idx + 1
-                self._save_progress(progress)
-            
-            # Create final results
-            if all_features:
-                self._save_results(all_features, failed_spikes)
-            
-            # Update run status
-            self._update_run_status('completed', progress)
-            
-        except Exception as e:
-            self.logger.error(f"Error in spike processing: {str(e)}")
-            self.logger.error(traceback.format_exc())
-            self._update_run_status('failed', progress, error=str(e))
-
-    def _save_results(self, all_features: List[Dict], failed_spikes: List[Dict]):
-        """Save extracted features and analysis results"""
-        try:
-            # Create DataFrame from all features
-            features_df = pd.DataFrame(all_features)
-            
-            # Save raw features
-            raw_features_file = os.path.join(self.features_dir, 'raw_features.csv')
-            features_df.to_csv(raw_features_file, index=False)
-            self.logger.info(f"Saved raw features to {raw_features_file}")
-
-            # Calculate feature statistics
-            numeric_features = features_df.select_dtypes(include=[np.number]).columns
-            feature_stats = features_df[numeric_features].describe()
-            stats_file = os.path.join(self.features_dir, 'feature_statistics.csv')
-            feature_stats.to_csv(stats_file)
-            self.logger.info(f"Saved feature statistics to {stats_file}")
-
-            # Calculate feature correlations
-            correlations = features_df[numeric_features].corr()
-            corr_file = os.path.join(self.features_dir, 'feature_correlations.csv')
-            correlations.to_csv(corr_file)
-            self.logger.info(f"Saved feature correlations to {corr_file}")
-
-            # Generate correlation heatmap
-            plt.figure(figsize=(20, 16))
-            sns.heatmap(correlations, annot=False, cmap='coolwarm', center=0)
-            plt.title('Feature Correlations Heatmap')
-            plt.tight_layout()
-            heatmap_file = os.path.join(self.run_dir, 'correlation_heatmap.png')
-            plt.savefig(heatmap_file)
-            plt.close()
-            self.logger.info(f"Saved correlation heatmap to {heatmap_file}")
-
-            # Identify feature patterns
-            patterns = self._analyze_feature_patterns(features_df, numeric_features)
-            patterns_file = os.path.join(self.features_dir, 'feature_patterns.json')
-            with open(patterns_file, 'w') as f:
-                json.dump(patterns, f, indent=2)
-            self.logger.info(f"Saved feature patterns to {patterns_file}")
-
-            # Save selected features
-            # Assuming price_change_15m is our target variable for feature selection
-            target = 'price_change_15m'
-            if target in features_df.columns:
-                selected_df, selected_features = self.select_features(features_df, target, FeatureConfig())
-                selected_file = os.path.join(self.features_dir, 'selected_features.csv')
-                selected_df.to_csv(selected_file, index=False)
-                
-                # Save feature metadata
-                metadata = {
-                    'selected_features': selected_features,
-                    'feature_count': len(selected_features),
-                    'total_features': len(features_df.columns),
-                    'numeric_features': len(numeric_features),
-                    'timestamp': datetime.now().isoformat()
-                }
-                metadata_file = os.path.join(self.features_dir, 'feature_metadata.json')
-                with open(metadata_file, 'w') as f:
-                    json.dump(metadata, f, indent=2)
-                self.logger.info(f"Saved selected features to {selected_file}")
-
-            # Save failed spikes
-            if failed_spikes:
-                failed_file = os.path.join(self.features_dir, 'failed_spikes.json')
-                with open(failed_file, 'w') as f:
-                    json.dump(failed_spikes, f, indent=2)
-                self.logger.info(f"Saved failed spikes to {failed_file}")
-
-            # Generate analysis report
-            self._generate_analysis_report(features_df, patterns, failed_spikes)
-
-        except Exception as e:
-            self.logger.error(f"Error saving results: {str(e)}")
-            self.logger.error(traceback.format_exc())
-            raise
-
-    def _analyze_feature_patterns(self, df: pd.DataFrame, numeric_features: pd.Index) -> Dict:
-        """Analyze patterns in features"""
-        patterns = {
-            'high_correlation_pairs': [],
-            'stable_features': [],
-            'volatile_features': [],
-            'key_statistics': {}
-        }
-
-        try:
-            # Find highly correlated feature pairs
-            correlations = df[numeric_features].corr()
-            for i in range(len(correlations.columns)):
-                for j in range(i+1, len(correlations.columns)):
-                    correlation = correlations.iloc[i, j]
-                    if abs(correlation) > 0.7:  # Threshold for high correlation
-                        patterns['high_correlation_pairs'].append({
-                            'feature1': str(correlations.columns[i]),
-                            'feature2': str(correlations.columns[j]),
-                            'correlation': float(correlation)  # Convert to native float
-                        })
-
-            # Identify stable and volatile features
-            for feature in numeric_features:
-                std = float(df[feature].std())  # Convert to native float
-                mean = float(df[feature].mean())  # Convert to native float
-                if mean != 0:
-                    cv = abs(std / mean)  # Coefficient of variation
-                    if cv < 0.1:  # Threshold for stability
-                        patterns['stable_features'].append(str(feature))
-                    elif cv > 0.5:  # Threshold for volatility
-                        patterns['volatile_features'].append(str(feature))
-
-            # Calculate key statistics for each feature
-            for feature in numeric_features:
-                feature_stats = {
-                    'mean': float(df[feature].mean()),
-                    'std': float(df[feature].std()),
-                    'min': float(df[feature].min()),
-                    'max': float(df[feature].max()),
-                    'correlation_with_target': float(correlations.get('price_change_15m', {}).get(feature, 0))
-                    if 'price_change_15m' in correlations else None
-                }
-                # Convert NaN to None for JSON serialization
-                feature_stats = {k: None if pd.isna(v) else v 
-                                 for k, v in feature_stats.items()}
-                patterns['key_statistics'][str(feature)] = feature_stats
-
-        except Exception as e:
-            self.logger.error(f"Error analyzing feature patterns: {str(e)}")
-            self.logger.debug(traceback.format_exc())
-
-        return patterns
-
-    def _generate_analysis_report(self, df: pd.DataFrame, patterns: Dict, failed_spikes: List[Dict]):
-        """Generate a comprehensive analysis report"""
-        report_path = os.path.join(self.features_dir, 'analysis_report.md')
         
-        try:
-            with open(report_path, 'w') as f:
-                f.write("# Feature Analysis Report\n\n")
+        # Analyze feature patterns
+        patterns = {
+            'highly_correlated_pairs': len(corr_pairs),
+            'stable_features': len(stats[stats['std'] < stats['std'].median()]),
+            'volatile_features': len(stats[stats['std'] > stats['std'].median()]),
+        }
+        
+        # Save patterns analysis
+        with open(os.path.join(analysis_dir, 'feature_patterns.json'), 'w') as f:
+            json.dump(patterns, f, indent=2)
+        
+        # Generate analysis report
+        report = f"""# Feature Analysis Report
 
-                # Run Summary
-                f.write("## Run Summary\n\n")
-                f.write(f"- Analysis Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-                f.write(f"- Total Spikes Analyzed: {len(df)}\n")
-                f.write(f"- Unique Tokens: {df['token_address'].nunique()}\n")
-                f.write(f"- Selected Features: {len(patterns['key_statistics'])}\n\n")
+    ## Run Summary
+    - Analysis Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+    - Total Spikes Analyzed: {len(features_df)}
+    - Total Features: {len(features_df.columns)}
+    - Numeric Features: {len(numeric_cols)}
 
-                # Feature Selection Results
-                f.write("## Feature Selection Results\n\n")
-                f.write(f"- Total Features Extracted: {len(df.columns)}\n")
-                f.write(f"- Features Selected: {len(patterns['key_statistics'])}\n")
-                f.write("### Selected Features:\n")
-                for feature in patterns['key_statistics'].keys():
-                    f.write(f"- {feature}\n")
-                f.write("\n")
+    ## Key Statistics
+    - Most predictive features (by correlation with 15m price change):
+    {stats.nlargest(10, 'correlation_with_target')[['correlation_with_target']].to_string() if 'correlation_with_target' in stats.columns else 'No target correlations calculated'}
 
-                # Feature Patterns
-                f.write("## Feature Patterns\n\n")
-                f.write(f"- Highly Correlated Pairs: {len(patterns['high_correlation_pairs'])}\n")
-                f.write(f"- Stable Features: {len(patterns['stable_features'])}\n")
-                f.write(f"- Volatile Features: {len(patterns['volatile_features'])}\n\n")
+    ## Feature Patterns
+    - Highly correlated pairs: {patterns['highly_correlated_pairs']}
+    - Stable features: {patterns['stable_features']}
+    - Volatile features: {patterns['volatile_features']}
+    """
+        
+        with open(os.path.join(analysis_dir, 'analysis_report.md'), 'w') as f:
+            f.write(report)
+        
+        self.logger.info(f"Feature analysis saved to {analysis_dir}")
 
-                # Key Statistics
-                f.write("## Key Statistics for Selected Features\n\n")
-                for feature, stats in patterns['key_statistics'].items():
-                    f.write(f"### {feature}\n")
-                    for stat_name, stat_value in stats.items():
-                        if stat_value is not None:  # Only write if value exists
-                            if isinstance(stat_value, (int, float)):
-                                # Format numbers to 4 decimal places if they're numbers
-                                f.write(f"- {stat_name}: {stat_value:.4f}\n")
-                            else:
-                                # For non-numeric values, just convert to string
-                                f.write(f"- {stat_name}: {str(stat_value)}\n")
-                        else:
-                            # Handle None values
-                            f.write(f"- {stat_name}: nan\n")
-                    f.write("\n")
+    def save_features(self, features_df: pd.DataFrame, run_dir: str):
+        """Save extracted features and analysis"""
+        # Create features directory
+        features_dir = os.path.join(run_dir, 'features')
+        os.makedirs(features_dir, exist_ok=True)
+        
+        # Save raw features
+        raw_features_file = os.path.join(features_dir, 'raw_features.csv')
+        features_df.to_csv(raw_features_file, index=False)
+        self.logger.info(f"Saved raw features to {raw_features_file}")
+        
+        # Select and save important features
+        self.logger.info("Starting feature selection")
+        selected_features = self.select_features(features_df)
+        selected_features_file = os.path.join(features_dir, 'selected_features.csv')
+        selected_features.to_csv(selected_features_file, index=False)
+        self.logger.info(f"Saved selected features to {selected_features_file}")
+        
+        # Analyze features
+        self.analyze_features(features_df, run_dir)
 
-                # Add failed spikes summary if any
-                if failed_spikes:
-                    f.write("## Failed Spikes Summary\n\n")
-                    f.write(f"Total Failed: {len(failed_spikes)}\n\n")
-                    for fail in failed_spikes[:5]:  # Show first 5 failures
-                        f.write(f"- Token: {fail.get('token_address', 'Unknown')}\n")
-                        f.write(f"  Time: {fail.get('spike_time', 'Unknown')}\n")
-                        f.write(f"  Error: {fail.get('error', 'Unknown error')}\n\n")
-                    if len(failed_spikes) > 5:
-                        f.write(f"... and {len(failed_spikes) - 5} more failures\n")
-
-                self.logger.info(f"Generated analysis report at {report_path}")
-
-        except Exception as e:
-            self.logger.error(f"Error generating analysis report: {str(e)}")
-            self.logger.debug(traceback.format_exc())
-            raise
-
-def main():
-    """Main entry point"""
-    # Get base directory
+async def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    runs_dir = os.path.join(base_dir, 'data', 'runs')
-
-    # Get all run directories
-    run_dirs = [d for d in os.listdir(runs_dir) if os.path.isdir(os.path.join(runs_dir, d)) and d.startswith('run_')]
-    if not run_dirs:
-        print("No run directories found")
-        return
-
-    # Sort run directories by timestamp
-    sorted_runs = sorted(run_dirs)
+    spikes_file = os.path.join(base_dir, 'data', 'historical_tokens', 'spikes_20241030_123758.csv')
     
-    # Find the last run directory that contains the 5x_price_increases.csv file
-    data_run_dir = None
-    for run_dir in reversed(sorted_runs):
-        spikes_file = os.path.join(runs_dir, run_dir, '5x_price_increases.csv')
-        if os.path.exists(spikes_file):
-            data_run_dir = run_dir
-            break
-
-    if not data_run_dir:
-        print("Could not find any run directory with 5x_price_increases.csv")
+    if not os.path.exists(spikes_file):
+        print(f"Spikes file not found: {spikes_file}")
         return
-
-    print(f"Using data from run directory: {data_run_dir}")
-
-    # Create a new run directory for feature extraction
+        
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    new_run_dir = os.path.join(runs_dir, f'run_{timestamp}')
-    os.makedirs(new_run_dir, exist_ok=True)
+    run_dir = os.path.join(base_dir, 'data', 'runs', f'run_{timestamp}')
+    os.makedirs(run_dir, exist_ok=True)
     
-    # Create subdirectories
-    for subdir in ['features', 'logs', 'trades', 'price_data', 'token_info']:
-        os.makedirs(os.path.join(new_run_dir, os.path.join(new_run_dir, subdir)), exist_ok=True)
+    print(f"Loading spikes from: {spikes_file}")
+    print(f"Saving results to: {run_dir}")
     
-    # Copy the spikes file from the data run directory to the new run directory
-    src_file = os.path.join(runs_dir, data_run_dir, '5x_price_increases.csv')
-    dst_file = os.path.join(new_run_dir, '5x_price_increases.csv')
-    if os.path.exists(src_file):
-        shutil.copy2(src_file, dst_file)
-        print(f"Copied spikes file from {src_file} to {dst_file}")
-    else:
-        print(f"Warning: Spikes file not found at {src_file}")
-        return
-    
-    # Initialize and run feature extractor
+    # Create feature extractor
     extractor = FeatureExtractor(base_dir)
-    extractor.process_all_spikes()
+    
+    # Load spikes data
+    spikes_df = pd.read_csv(spikes_file)
+    
+    # Take only first 10 spikes for testing
+    test_spikes_df = spikes_df.head(10)
+    print(f"Testing with first {len(test_spikes_df)} spikes...")
+    
+    features_df = await extractor.process_all_spikes(test_spikes_df)
+    
+    if not features_df.empty:
+        print(f"Successfully extracted features for {len(features_df)} spikes")
+        extractor.save_features(features_df, run_dir)
+        
+        print("\nFeature columns:")
+        for col in features_df.columns:
+            print(f"- {col}")
+            
+        proceed = input("\nDo you want to process all spikes? (y/n): ")
+        if proceed.lower() == 'y':
+            print(f"\nProcessing all {len(spikes_df)} spikes...")
+            print("Progress will be logged...")
+            
+            full_features_df = await extractor.process_all_spikes(spikes_df)
+            if not full_features_df.empty:
+                print(f"\nSuccessfully extracted features for all {len(full_features_df)} spikes")
+                
+                # Save full results
+                full_run_dir = os.path.join(base_dir, 'data', 'runs', f'run_{timestamp}_full')
+                os.makedirs(full_run_dir, exist_ok=True)
+                extractor.save_features(full_features_df, full_run_dir)
+                
+                # Print processing stats
+                if extractor.stats:
+                    duration = extractor.stats.end_time - extractor.stats.start_time
+                    print(f"\nProcessing Statistics:")
+                    print(f"Total time: {duration}")
+                    print(f"Processed: {extractor.stats.processed_spikes}/{extractor.stats.total_spikes}")
+                    print(f"Failed: {extractor.stats.failed_spikes}")
+                    print(f"Unique tokens: {extractor.stats.unique_tokens}")
+                    print(f"Feature count: {extractor.stats.feature_count}")
+    else:
+        print("No features were extracted in test run")
 
 if __name__ == "__main__":
-    main()
+    import traceback
+    asyncio.run(main())

@@ -1,0 +1,11 @@
+{
+    "token_address": "ExffBfDNutj92PvrVLswsxx9JM6mjZ21dv3t9VWFkW5r",
+    "start_time": "2024-10-06T10:32:06.278943",
+    "end_time": "2024-11-05T10:32:06.278943",
+    "data_points": 999,
+    "data_interval": "1m",
+    "min_price": 1.226214037147438e-06,
+    "max_price": 1.3016433571406603e-05,
+    "avg_price": 1.6856564472358192e-06,
+    "time_coverage": "999 minutes out of 43200 possible minutes"
+}

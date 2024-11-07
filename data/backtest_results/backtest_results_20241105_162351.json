@@ -1,0 +1,32 @@
+{
+    "3min_holding": {
+        "total_trades": 252688,
+        "win_rate": 0.31597068321408217,
+        "avg_return": 12.384529230759826,
+        "median_return": 0.0,
+        "max_return": 1205255.3498765733,
+        "std_return": 3584.859557315956,
+        "avg_winning_trade": 45.172966313279844,
+        "avg_losing_trade": -4.893653789835457
+    },
+    "15min_holding": {
+        "total_trades": 252688,
+        "win_rate": 0.368885740517951,
+        "avg_return": 14.433777918478734,
+        "median_return": 0.0,
+        "max_return": 1214345.3303279108,
+        "std_return": 3612.8577225973163,
+        "avg_winning_trade": 51.65673547654285,
+        "avg_losing_trade": -9.352046521004468
+    },
+    "45min_holding": {
+        "total_trades": 252688,
+        "win_rate": 0.38988792503007663,
+        "avg_return": 19.857523619710474,
+        "median_return": -0.7228470163829973,
+        "max_return": 1204740.8926568876,
+        "std_return": 3585.940495159543,
+        "avg_winning_trade": 70.84583160535004,
+        "avg_losing_trade": -14.057573791381108
+    }
+}
