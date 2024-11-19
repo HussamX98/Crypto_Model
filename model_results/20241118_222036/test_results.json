@@ -1,0 +1,41 @@
+{
+    "test_metrics": {
+        "accuracy": 0.9368917723385431,
+        "precision": 0.901840490797546,
+        "recall": 0.9098143236074271,
+        "f1": 0.9058098591549296,
+        "auc_roc": 0.9793289281159284
+    },
+    "threshold_analysis": {
+        "0.5": {
+            "num_trades": 1141,
+            "precision": 0.901840490797546,
+            "recall": 1.0,
+            "avg_return": 28.64345476255105
+        },
+        "0.6": {
+            "num_trades": 1062,
+            "precision": 0.9265536723163842,
+            "recall": 1.0,
+            "avg_return": 30.206252176847965
+        },
+        "0.7": {
+            "num_trades": 960,
+            "precision": 0.9583333333333334,
+            "recall": 1.0,
+            "avg_return": 13.617590237641751
+        },
+        "0.8": {
+            "num_trades": 839,
+            "precision": 0.9821215733015495,
+            "recall": 1.0,
+            "avg_return": 14.314475607217744
+        },
+        "0.9": {
+            "num_trades": 602,
+            "precision": 0.9916943521594684,
+            "recall": 1.0,
+            "avg_return": 16.34008305248192
+        }
+    }
+}

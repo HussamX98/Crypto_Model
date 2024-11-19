@@ -1,214 +1,314 @@
 import aiohttp
 import asyncio
 import pandas as pd
-from datetime import datetime, timedelta
+import numpy as np
+from datetime import datetime, timezone, timedelta
 import os
-import sys
-from typing import List, Dict, Optional
+import importlib.util
+from typing import List, Optional, Dict
 import logging
 import json
 
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, pd.Timestamp):
+            return obj.strftime('%Y-%m-%d %H:%M:%S')
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super().default(obj)
+
+def setup_directories(base_dir: str):
+    """Create directory structure for minute-level analysis"""
+    # Main directories
+    directories = {
+        'minute_data': os.path.join(base_dir, 'data', 'minute_level_data'),
+        'price_data': os.path.join(base_dir, 'data', 'minute_level_data', 'prices'),
+        'features': os.path.join(base_dir, 'data', 'minute_level_data', 'features'),
+        'backtest': os.path.join(base_dir, 'data', 'minute_level_data', 'backtest_results'),
+        'analysis': os.path.join(base_dir, 'data', 'minute_level_data', 'analysis'),
+        'logs': os.path.join(base_dir, 'data', 'minute_level_data', 'logs')
+    }
+    
+    # Create directories
+    for dir_path in directories.values():
+        os.makedirs(dir_path, exist_ok=True)
+        
+    # Create a timestamp for this run
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Create timestamped subdirectories
+    run_directories = {
+        'current_run': os.path.join(base_dir, 'data', 'minute_level_data', f'run_{timestamp}'),
+        'features_run': os.path.join(base_dir, 'data', 'minute_level_data', 'features', f'run_{timestamp}'),
+        'backtest_run': os.path.join(base_dir, 'data', 'minute_level_data', 'backtest_results', f'run_{timestamp}')
+    }
+    
+    for dir_path in run_directories.values():
+        os.makedirs(dir_path, exist_ok=True)
+        
+    return directories, run_directories, timestamp
+
+
+# Get absolute path to config.py
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.join(current_dir, "..")
+config_path = os.path.join(project_root, "config.py")
+
+# Import config.py using spec
+spec = importlib.util.spec_from_file_location("config", config_path)
+config = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(config)
+
+API_KEY = config.API_KEY
+
+# Debug prints
+print(f"Current directory: {current_dir}")
+print(f"Project root: {project_root}")
+print(f"Config path: {config_path}")
+print(f"API Key loaded: {API_KEY is not None}")
+
 class HistoricalDataCollector:
-    def __init__(self, base_dir: str):
-        self.base_dir = base_dir
-        self.logger = self._setup_logging()
-        sys.path.append(base_dir)
-        from config import API_KEY
-        self.api_key = API_KEY
-        self.headers = {
-            'X-API-KEY': self.api_key,
-            'accept': 'application/json',
-            'x-chain': 'solana'
-        }
-        self.base_url = 'https://public-api.birdeye.so'
+    def __init__(self, base_url: str, headers: dict, max_concurrent: int = 5):
+        self.base_url = base_url
+        self.headers = headers
+        self.semaphore = asyncio.Semaphore(max_concurrent)
+        self.session = None
+        self.logger = logging.getLogger("HistoricalDataCollector")
+        self.logger.setLevel(logging.INFO)
+        # Add handler to output logs to console
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            handler.setLevel(logging.INFO)
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
 
-    def _setup_logging(self):
-        """Setup logging configuration"""
-        logger = logging.getLogger('HistoricalDataCollector')
-        logger.setLevel(logging.INFO)
-        
-        # Create handlers
-        c_handler = logging.StreamHandler()
-        f_handler = logging.FileHandler('data_collection.log')
-        c_handler.setLevel(logging.INFO)
-        f_handler.setLevel(logging.INFO)
-        
-        # Create formatters and add it to handlers
-        log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        c_handler.setFormatter(log_format)
-        f_handler.setFormatter(log_format)
-        
-        # Add handlers to the logger
-        logger.addHandler(c_handler)
-        logger.addHandler(f_handler)
-        
-        return logger
+    async def __aenter__(self):
+        timeout = aiohttp.ClientTimeout(total=30)  # Set a total timeout of 30 seconds
+        self.session = aiohttp.ClientSession(timeout=timeout)
+        return self
 
-    async def get_token_price_history(self, token_address: str, 
-                                    start_time: datetime, 
-                                    end_time: datetime) -> pd.DataFrame:
-        """Get historical minute-by-minute price data"""
-        url = f"{self.base_url}/defi/history_price"
-        
-        params = {
-            "address": token_address,
-            "address_type": "token",
-            "type": "1m",  # 1-minute intervals
-            "time_from": int(start_time.timestamp()),
-            "time_to": int(end_time.timestamp())
-        }
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        if self.session:
+            await self.session.close()
 
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url, headers=self.headers, params=params) as response:
+    async def fetch_with_retry(self, url: str, params: dict, max_retries: int = 3) -> Optional[dict]:
+        for attempt in range(1, max_retries + 1):
+            try:
+                self.logger.info(f"Attempting request to {url} (attempt {attempt})")
+                async with self.session.get(url, headers=self.headers, params=params) as response:
+                    self.logger.info(f"Response status: {response.status}")
                     if response.status == 200:
                         data = await response.json()
-                        if data.get('success') and data.get('data', {}).get('items'):
-                            df = pd.DataFrame(data['data']['items'])
-                            df['timestamp'] = pd.to_datetime(df['unixTime'], unit='s')
-                            df = df.sort_values('timestamp')
-                            if not df.empty:
-                                self.logger.info(f"Successfully collected {len(df)} minute-by-minute price points for {token_address}")
-                                return df
-                        
-                        # More detailed error logging
-                        self.logger.warning(f"No price data found for {token_address} between "
-                                        f"{start_time.strftime('%Y-%m-%d %H:%M')} and "
-                                        f"{end_time.strftime('%Y-%m-%d %H:%M')}")
+                        return data
                     else:
-                        self.logger.error(f"API returned status {response.status} for {token_address}")
-                    
-                    return pd.DataFrame()
-        
-        except Exception as e:
-            self.logger.error(f"Error collecting price history for {token_address}: {str(e)}")
-            return pd.DataFrame()
+                        self.logger.error(f"Request failed with status {response.status}")
+            except asyncio.TimeoutError:
+                self.logger.error(f"Attempt {attempt} failed due to timeout.")
+            except Exception as e:
+                self.logger.error(f"Attempt {attempt} failed with exception: {e}")
+            await asyncio.sleep(0.5 * attempt)  # Exponential back-off
+        self.logger.error(f"All {max_retries} attempts failed for URL {url}")
+        return None
 
-    def _save_token_data(self, token_address: str, data: pd.DataFrame, 
-                        start_time: datetime, end_time: datetime):
-        """Save price history data to file"""
-        if data.empty:
+    async def get_token_price_history(self, token_address: str) -> tuple[pd.DataFrame, Optional[dict]]:
+        """Get minute-by-minute price history for a token"""
+        end_time = datetime.now(timezone.utc)
+        start_time = end_time - timedelta(days=30)
+        
+        self.logger.info(f"Fetching minute-by-minute price history for {token_address} from {start_time} to {end_time}")
+        
+        # Break into 2-hour chunks
+        chunk_size = timedelta(hours=2)
+        current_start = start_time
+        all_data = []
+        
+        while current_start < end_time:
+            current_end = min(current_start + chunk_size, end_time)
+            
+            params = {
+                'address': token_address,
+                'address_type': 'token',
+                'type': '1m',  # Changed from '1' to '1m'
+                'time_from': str(int(current_start.timestamp())),  # Convert to string
+                'time_to': str(int(current_end.timestamp()))  # Convert to string
+            }
+            
+            url = f"{self.base_url}/defi/history_price"
+            
+            # Debug log the params
+            self.logger.debug(f"Request params: {params}")
+            
+            response_data = await self.fetch_with_retry(url, params)
+            
+            if response_data and response_data.get('success'):
+                items = response_data['data'].get('items', [])
+                if items:
+                    chunk_df = pd.DataFrame(items)
+                    chunk_df['timestamp'] = pd.to_datetime(chunk_df['unixTime'], unit='s')
+                    all_data.append(chunk_df)
+            else:
+                self.logger.warning(f"Failed to get data for chunk: {current_start} to {current_end}")
+                if response_data:
+                    self.logger.debug(f"Response: {response_data}")
+            
+            current_start = current_end
+            await asyncio.sleep(1)  # Rate limiting
+        
+        if all_data:
+            df = pd.concat(all_data)
+            df = df.sort_values('timestamp')
+            df = df.drop_duplicates(subset=['timestamp'])
+            
+            summary = {
+                'token_address': token_address,
+                'start_time': df['timestamp'].min().strftime('%Y-%m-%d %H:%M:%S'),
+                'end_time': df['timestamp'].max().strftime('%Y-%m-%d %H:%M:%S'),
+                'data_points': len(df),
+                'points_per_hour': len(df) / ((df['timestamp'].max() - df['timestamp'].min()).total_seconds() / 3600)
+            }
+            
+            return df, summary
+        
+        return pd.DataFrame(), None
+    
+    async def save_minute_data(self, df: pd.DataFrame, token_address: str, directories: Dict[str, str], timestamp: str):
+        """Save minute-level price data"""
+        if df.empty:
             return
-
-        # Create separate directory for minute data
-        price_dir = os.path.join(self.base_dir, 'data', 'historical_prices_1m')
-        os.makedirs(price_dir, exist_ok=True)
+            
+        # Save raw price data
+        price_file = os.path.join(
+            directories['price_data'], 
+            f'{token_address}_minute_prices_{timestamp}.csv'
+        )
+        df.to_csv(price_file, index=False)
         
-        # Save with date range in filename
-        start_str = start_time.strftime('%Y%m%d')
-        end_str = end_time.strftime('%Y%m%d')
-        filename = f'{token_address}_prices_{start_str}_{end_str}.csv'
-        file_path = os.path.join(price_dir, filename)
-        
-        # Ensure we have all required columns
-        required_cols = ['unixTime', 'value', 'timestamp', 'address']
-        if not all(col in data.columns for col in required_cols):
-            data['address'] = token_address  # Add address column if missing
-        
-        data.to_csv(file_path, index=False)
-        self.logger.info(f"Saved minute data to {filename}")
-        
-        # Save summary stats in same directory
-        stats = {
+        # Convert timestamps to string format for JSON serialization
+        summary = {
             'token_address': token_address,
-            'start_time': start_time.isoformat(),
-            'end_time': end_time.isoformat(),
-            'data_points': len(data),
-            'data_interval': '1m',
-            'min_price': float(data['value'].min()),
-            'max_price': float(data['value'].max()),
-            'avg_price': float(data['value'].mean()),
-            'time_coverage': f"{len(data)} minutes out of {(end_time - start_time).total_seconds() / 60:.0f} possible minutes"
+            'start_time': df['timestamp'].min().strftime('%Y-%m-%d %H:%M:%S'),
+            'end_time': df['timestamp'].max().strftime('%Y-%m-%d %H:%M:%S'),
+            'total_minutes': len(df),
+            'avg_price': float(df['value'].mean()),
+            'min_price': float(df['value'].min()),
+            'max_price': float(df['value'].max()),
+            'price_volatility': float(df['value'].std() / df['value'].mean())
         }
         
-        stats_file = os.path.join(price_dir, f'{token_address}_summary.json')
-        with open(stats_file, 'w') as f:
-            json.dump(stats, f, indent=4)
+        summary_file = os.path.join(
+            directories['price_data'], 
+            f'{token_address}_summary_{timestamp}.json'
+        )
+        
+        with open(summary_file, 'w') as f:
+            json.dump(summary, f, indent=4, cls=CustomJSONEncoder)
+            
+        self.logger.info(f"Saved minute data for {token_address}")
+        self.logger.info(f"Total minutes: {len(df)}")
+        self.logger.info(f"Time range: {summary['start_time']} to {summary['end_time']}")
 
-    async def collect_historical_data(self, token_addresses: List[str], 
-                                    days_back: int = 30) -> Dict[str, pd.DataFrame]:
-        """Collect historical data for multiple tokens"""
-        end_time = datetime.now()
-        start_time = end_time - timedelta(days=days_back)
-        
-        all_data = {}
-        successful_tokens = 0
-        failed_tokens = 0
-        
-        for i, token in enumerate(token_addresses, 1):
-            try:
-                self.logger.info(f"Processing token {i}/{len(token_addresses)}: {token}")
-                
-                # Make a single request for the entire period first
-                price_data = await self.get_token_price_history(token, start_time, end_time)
-                
-                if not price_data.empty:
-                    all_data[token] = price_data
-                    self._save_token_data(token, price_data, start_time, end_time)
-                    successful_tokens += 1
-                    self.logger.info(f"Successfully collected data for {token}")
-                else:
-                    failed_tokens += 1
-                    self.logger.warning(f"No data found for {token}")
-                
-                # Rate limiting
-                await asyncio.sleep(2)
-                
-            except Exception as e:
-                self.logger.error(f"Failed to process token {token}: {str(e)}")
-                failed_tokens += 1
-                continue
-                
-            # Progress update every 10 tokens
-            if i % 10 == 0:
-                self.logger.info(f"\nProgress Update:")
-                self.logger.info(f"Processed: {i}/{len(token_addresses)} tokens")
-                self.logger.info(f"Successful: {successful_tokens}")
-                self.logger.info(f"Failed: {failed_tokens}\n")
-        
-        # Final summary
-        self.logger.info(f"\nCollection Complete:")
-        self.logger.info(f"Total tokens: {len(token_addresses)}")
-        self.logger.info(f"Successful collections: {successful_tokens}")
-        self.logger.info(f"Failed collections: {failed_tokens}")
-        
-        return all_data
+    async def collect_historical_data(self, token_addresses: List[str]) -> List[tuple[pd.DataFrame, Optional[dict]]]:
+        self.logger.info(f"Starting collection for {len(token_addresses)} tokens")
+        tasks = [self.fetch_with_semaphore(addr) for addr in token_addresses]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        valid_results = []
+        for i, r in enumerate(results):
+            if isinstance(r, Exception):
+                self.logger.error(f"Task for token {token_addresses[i]} failed with error: {r}")
+            elif r[0] is not None and not r[0].empty and r[1] is not None:
+                valid_results.append(r)
+            else:
+                self.logger.warning(f"No valid data for token {token_addresses[i]}")
+        return valid_results
+
+    async def fetch_with_semaphore(self, token_address: str) -> tuple[pd.DataFrame, Optional[dict]]:
+        async with self.semaphore:
+            self.logger.info(f"Fetching data for token {token_address}")
+            result = await self.get_token_price_history(token_address)
+            return result
+
+def load_token_addresses() -> List[str]:
+    """Load tokens from existing spikes file"""
+    spikes_file = os.path.join(project_root, "data", "historical_tokens", "spikes_20241030_123758.csv")
+    if os.path.exists(spikes_file):
+        df = pd.read_csv(spikes_file)
+        # Filter for significant spikes (5x or greater)
+        df = df[df['increase'] >= 5]
+        # Get unique token addresses
+        tokens = df['token_address'].unique().tolist()
+        print(f"Loaded {len(tokens)} unique tokens with 5x+ spikes")
+        return tokens
+    else:
+        raise FileNotFoundError(f"Spikes file not found at: {spikes_file}")
 
 async def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    collector = HistoricalDataCollector(base_dir)
+    print("\nStarting data collection process...")
+    print(f"Base directory: {base_dir}")
     
     try:
-        # Load tokens from spikes data
-        spikes_file = os.path.join(base_dir, 'data', 'historical_tokens', 'spikes_20241030_123758.csv')
-        spikes_df = pd.read_csv(spikes_file)
-        unique_tokens = spikes_df['token_address'].unique()
+        # Setup directories
+        directories, run_directories, timestamp = setup_directories(base_dir)
+        print("\nCreated directories:")
+        for name, path in directories.items():
+            print(f"{name}: {path}")
         
-        collector.logger.info(f"Found {len(unique_tokens)} unique tokens")
-        
-        # Create the new directory
-        minute_data_dir = os.path.join(base_dir, 'data', 'historical_prices_1m')
-        os.makedirs(minute_data_dir, exist_ok=True)
-        
-        # Collect minute data
-        data = await collector.collect_historical_data(unique_tokens, days_back=30)
-        
-        # Save collection summary
-        summary = {
-            'collection_time': datetime.now().isoformat(),
-            'total_tokens': len(unique_tokens),
-            'successful_collections': len(data),
-            'data_interval': '1m',
-            'tokens_with_data': list(data.keys())
+        base_url = "https://public-api.birdeye.so"
+        headers = {
+            "x-api-key": API_KEY
         }
+        print("\nAPI Configuration:")
+        print(f"Base URL: {base_url}")
+        print(f"Headers configured: {'x-api-key' in headers}")
         
-        summary_file = os.path.join(minute_data_dir, 'minute_collection_summary.json')
-        with open(summary_file, 'w') as f:
-            json.dump(summary, f, indent=4)
-
+        # Test with a known token first (SOL)
+        test_token = "So11111111111111111111111111111111111111112"
+        print(f"\nTesting with SOL token: {test_token}")
+        
+        async with HistoricalDataCollector(base_url, headers) as collector:
+            # Try the test token first
+            result, summary = await collector.get_token_price_history(test_token)
+            if not result.empty:
+                print("\nSuccessfully retrieved SOL price history!")
+                print(f"Data points: {len(result)}")
+                if len(result) > 0:
+                    print("\nFirst few rows of data:")
+                    print(result.head())
+                await collector.save_minute_data(result, test_token, directories, timestamp)
+                print(f"Saved SOL data to {directories['price_data']}")
+            else:
+                print("\nFailed to retrieve SOL price history")
+                return
+            
+            # Then proceed with your token list
+            token_addresses = load_token_addresses()
+            print(f"\nFound {len(token_addresses)} tokens to process")
+            
+            results = await collector.collect_historical_data(token_addresses)
+            
+            successful_collections = 0
+            for token_data, token_summary in results:
+                if token_data is not None and not token_data.empty:
+                    token_address = token_summary['token_address']
+                    await collector.save_minute_data(token_data, token_address, directories, timestamp)
+                    successful_collections += 1
+                    print(f"Processed {successful_collections}/{len(token_addresses)} tokens")
+            
+            print(f"\nData collection complete. Results saved in: {directories['price_data']}")
+            print("\nSummary of collection:")
+            print(f"Total tokens processed: {len(results)}")
+            print(f"Successful collections: {successful_collections}")
+            
     except Exception as e:
-        collector.logger.error(f"Error in data collection: {str(e)}", exc_info=True)
-        raise
+        print(f"\nError in main: {str(e)}")
+        import traceback
+        traceback.print_exc()
 
 if __name__ == "__main__":
+    print("\nStarting script...")
     asyncio.run(main())

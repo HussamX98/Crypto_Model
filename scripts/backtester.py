@@ -9,6 +9,38 @@ from dataclasses import dataclass
 import matplotlib.pyplot as plt
 import seaborn as sns
 import asyncio
+import traceback
+
+def setup_directories(base_dir: str):
+    """Create directory structure for minute-level analysis"""
+    # Main directories
+    directories = {
+        'minute_data': os.path.join(base_dir, 'data', 'minute_level_data'),
+        'price_data': os.path.join(base_dir, 'data', 'minute_level_data', 'prices'),
+        'features': os.path.join(base_dir, 'data', 'minute_level_data', 'features'),
+        'backtest': os.path.join(base_dir, 'data', 'minute_level_data', 'backtest_results'),
+        'analysis': os.path.join(base_dir, 'data', 'minute_level_data', 'analysis'),
+        'logs': os.path.join(base_dir, 'data', 'minute_level_data', 'logs')
+    }
+    
+    # Create directories
+    for dir_path in directories.values():
+        os.makedirs(dir_path, exist_ok=True)
+        
+    # Create a timestamp for this run
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Create timestamped subdirectories
+    run_directories = {
+        'current_run': os.path.join(base_dir, 'data', 'minute_level_data', f'run_{timestamp}'),
+        'features_run': os.path.join(base_dir, 'data', 'minute_level_data', 'features', f'run_{timestamp}'),
+        'backtest_run': os.path.join(base_dir, 'data', 'minute_level_data', 'backtest_results', f'run_{timestamp}')
+    }
+    
+    for dir_path in run_directories.values():
+        os.makedirs(dir_path, exist_ok=True)
+        
+    return directories, run_directories, timestamp
 
 @dataclass
 class TradeResult:
@@ -129,6 +161,61 @@ class BacktestEngine:
                 
         except Exception as e:
             self.logger.error(f"Error calculating features: {str(e)}, prices shape: {prices.shape if 'prices' in locals() else 'N/A'}")
+            return None
+        
+    def _calculate_minute_features(self, price_data: pd.DataFrame, current_idx: int) -> Dict:
+        """Calculate features using minute-level data with 15-minute lookback"""
+        try:
+            # Get 15-minute lookback window using minute data (15 * 1-minute intervals)
+            lookback_window = price_data.iloc[max(0, current_idx-15):current_idx+1]
+            
+            if len(lookback_window) < 15:  # Need full 15 minutes of data
+                return None
+                
+            # Get price array
+            prices = lookback_window['value'].values
+            volumes = lookback_window['volume'].values if 'volume' in lookback_window else None
+            
+            # Calculate features on minute data
+            features = {
+                # Price changes
+                'price_change_1m': self._calculate_price_change(prices, 1),
+                'price_change_5m': self._calculate_price_change(prices, 5),
+                'price_change_15m': self._calculate_price_change(prices, 15),
+                
+                # Momentum with minute granularity
+                'momentum_1m': self._calculate_momentum(prices, 1),
+                'momentum_5m': self._calculate_momentum(prices, 5),
+                'momentum_15m': self._calculate_momentum(prices, 15),
+                
+                # Volatility features
+                'volatility_1m': float(np.std(prices[-2:]) / (np.mean(prices[-2:]) + 1e-8)),
+                'volatility_5m': float(np.std(prices[-5:]) / (np.mean(prices[-5:]) + 1e-8)),
+                'volatility_15m': float(np.std(prices) / (np.mean(prices) + 1e-8)),
+                
+                # RSI with different timeframes
+                'rsi_14': self._calculate_rsi(prices, period=14),
+                'rsi_5': self._calculate_rsi(prices, period=5),
+                
+                # Trend strength using minute data
+                'trend_strength_15m': self._calculate_trend_strength(prices),
+                'trend_strength_5m': self._calculate_trend_strength(prices[-5:])
+            }
+            
+            # Add volume-based features if volume data is available
+            if volumes is not None:
+                features.update({
+                    'volume_change_1m': self._calculate_price_change(volumes, 1),
+                    'volume_change_5m': self._calculate_price_change(volumes, 5),
+                    'volume_change_15m': self._calculate_price_change(volumes, 15),
+                    'volume_trend_15m': self._calculate_volume_trend(volumes),
+                    'large_trade_ratio': self._calculate_large_trade_ratio(volumes)
+                })
+            
+            return features
+                    
+        except Exception as e:
+            self.logger.error(f"Error calculating minute features: {str(e)}")
             return None
 
     def _calculate_price_change(self, prices: np.ndarray, period: int) -> float:
@@ -309,7 +396,62 @@ class BacktestEngine:
         
         return False
     
-
+    async def backtest_token(self, price_data: pd.DataFrame, token_address: str, 
+                            holding_period: int) -> List[TradeResult]:
+        """Backtest looking for massive price multipliers using minute data"""
+        token_trades = []
+        max_spike_duration = 60  # Maximum minutes to look for spike
+        
+        # Need enough data for feature calculation
+        if len(price_data) < 15:
+            return []
+        
+        for i in range(15, len(price_data) - max_spike_duration):
+            current_time = price_data.iloc[i]['timestamp']
+            start_price = price_data.iloc[i]['value']
+            
+            # Calculate features at this point using minute data
+            features = self._calculate_minute_features(price_data, i)
+            
+            if features and self.check_entry_conditions(features):
+                # Look for massive moves in next period
+                future_window = price_data.iloc[i:i+max_spike_duration]
+                max_price = future_window['value'].max()
+                price_multiple = max_price / start_price
+                
+                # Look for 5x or greater moves
+                if price_multiple >= 5.0:
+                    peak_idx = future_window['value'].idxmax()
+                    trade_result = TradeResult(
+                        token_address=token_address,
+                        entry_time=current_time,
+                        entry_price=start_price,
+                        exit_time=price_data.loc[peak_idx, 'timestamp'],
+                        exit_price=max_price,
+                        max_price=max_price,
+                        return_pct=(price_multiple - 1) * 100,
+                        max_return_pct=(price_multiple - 1) * 100,
+                        holding_period=pd.Timedelta(minutes=holding_period),
+                        strategy=f"{holding_period}min_hold",
+                        features_at_entry=features
+                    )
+                    
+                    self.logger.info(f"\nFound {price_multiple:.1f}x move!")
+                    self.logger.info(f"Start price: {start_price:.10f}")
+                    self.logger.info(f"Max price: {max_price:.10f}")
+                    self.logger.info(f"Time to peak: {(peak_idx - i)} minutes")
+                    
+                    token_trades.append(trade_result)
+                    
+                    # Skip ahead past this spike to avoid duplicate trades
+                    i = peak_idx + 1
+        
+        if token_trades:
+            self.logger.info(f"\nFound {len(token_trades)} large moves for {token_address}")
+            for trade in token_trades:
+                self.logger.info(f"{trade.return_pct/100:.1f}x multiple in {trade.holding_period}")
+        
+        return token_trades
 
     def simulate_trade(self, price_data: pd.DataFrame, entry_time: datetime, 
                     token_address: str, holding_period: int, features: Dict) -> Optional[TradeResult]:
@@ -368,60 +510,6 @@ class BacktestEngine:
             self.logger.debug(f"Data range: {price_data['timestamp'].min()} to {price_data['timestamp'].max()}")
             return None
 
-
-    async def backtest_token(self, price_data: pd.DataFrame, token_address: str, 
-                            holding_period: int) -> List[TradeResult]:
-        """Backtest looking for massive price multipliers"""
-        token_trades = []
-        max_spike_duration = 60  # Maximum minutes to look for spike
-        
-        # Need enough data for feature calculation
-        if len(price_data) < 15:
-            return []
-        
-        for i in range(15, len(price_data) - max_spike_duration):
-            current_time = price_data.iloc[i]['timestamp']
-            start_price = price_data.iloc[i]['value']
-            
-            # Calculate features at this point
-            features = self._calculate_features(price_data, i)
-            
-            if features and self.check_entry_conditions(features):
-                # Look for massive moves in next period
-                future_window = price_data.iloc[i:i+max_spike_duration]
-                max_price = future_window['value'].max()
-                price_multiple = max_price / start_price
-                
-                # Look for 5x or greater moves (being conservative)
-                if price_multiple >= 5.0:  # 500% minimum increase
-                    peak_idx = future_window['value'].idxmax()
-                    trade_result = TradeResult(
-                        token_address=token_address,
-                        entry_time=current_time,
-                        entry_price=start_price,
-                        exit_time=price_data.loc[peak_idx, 'timestamp'],
-                        exit_price=max_price,
-                        max_price=max_price,
-                        return_pct=(price_multiple - 1) * 100,  # Convert to percentage for logging
-                        max_return_pct=(price_multiple - 1) * 100,
-                        holding_period=pd.Timedelta(minutes=holding_period),
-                        strategy=f"{holding_period}min_hold",
-                        features_at_entry=features
-                    )
-                    
-                    self.logger.info(f"\nFound {price_multiple:.1f}x move!")
-                    self.logger.info(f"Start price: {start_price:.10f}")
-                    self.logger.info(f"Max price: {max_price:.10f}")
-                    self.logger.info(f"Time to peak: {(peak_idx - i)} minutes")
-                    
-                    token_trades.append(trade_result)
-        
-        if token_trades:
-            self.logger.info(f"\nFound {len(token_trades)} large moves for {token_address}")
-            for trade in token_trades:
-                self.logger.info(f"{trade.return_pct/100:.1f}x multiple in {trade.holding_period}")
-        
-        return token_trades
     
     async def validate_backtest(self, num_validation_tokens: int = 3) -> bool:
         """Run backtest on a small set of tokens to validate approach"""
@@ -596,40 +684,116 @@ class BacktestEngine:
                 }
         
         return results
+    
+    def save_backtest_results(self, results: List[TradeResult], directories: Dict[str, str], timestamp: str):
+        """Save backtest results and analysis"""
+        try:
+            # Save individual trades
+            trades_df = pd.DataFrame([
+                {
+                    'token_address': t.token_address,
+                    'entry_time': t.entry_time,
+                    'exit_time': t.exit_time,
+                    'entry_price': t.entry_price,
+                    'exit_price': t.exit_price,
+                    'return_pct': t.return_pct,
+                    'max_return_pct': t.max_return_pct,
+                    'holding_period_minutes': t.holding_period.total_seconds() / 60,
+                    'strategy': t.strategy,
+                    **t.features_at_entry
+                }
+                for t in results
+            ])
+            
+            trades_file = os.path.join(
+                directories['backtest_run'],
+                f'trades_{timestamp}.csv'
+            )
+            trades_df.to_csv(trades_file, index=False)
+            
+            # Save summary statistics
+            summary = {
+                'total_trades': len(results),
+                'winning_trades': len([t for t in results if t.return_pct > 0]),
+                'average_return': float(trades_df['return_pct'].mean()),
+                'max_return': float(trades_df['return_pct'].max()),
+                'win_rate': float(len([t for t in results if t.return_pct > 0])) / len(results),
+                'avg_holding_period': float(trades_df['holding_period_minutes'].mean()),
+                'timestamp': timestamp
+            }
+            
+            summary_file = os.path.join(
+                directories['backtest_run'],
+                f'summary_{timestamp}.json'
+            )
+            
+            with open(summary_file, 'w') as f:
+                json.dump(summary, f, indent=4)
+                
+            # Save detailed analysis
+            analysis = self.analyze_results()
+            analysis_file = os.path.join(
+                directories['backtest_run'],
+                f'detailed_analysis_{timestamp}.json'
+            )
+            
+            with open(analysis_file, 'w') as f:
+                json.dump(analysis, f, indent=4)
+                
+            self.logger.info(f"Saved backtest results to {directories['backtest_run']}")
+            
+        except Exception as e:
+            self.logger.error(f"Error saving backtest results: {str(e)}")
 
 async def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    backtester = BacktestEngine(base_dir)
+    directories, run_directories, timestamp = setup_directories(base_dir)
     
     try:
+        backtester = BacktestEngine(base_dir)
+        print("\nStarting backtesting process...")
+        
+        # First run validation
+        print("Running validation phase...")
+        is_valid = await backtester.validate_backtest(num_validation_tokens=5)
+        
+        if not is_valid:
+            print("Validation failed - no valid trades found")
+            return
+            
+        print("Validation successful - proceeding with full backtest")
+        
+        # Run full backtest
         results = await backtester.run_full_backtest()
         
         if results:
             # Save results
-            results_dir = os.path.join(base_dir, 'data', 'backtest_results')
-            os.makedirs(results_dir, exist_ok=True)
+            backtester.save_backtest_results(backtester.trades, directories, timestamp)
             
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            results_file = os.path.join(results_dir, f'backtest_results_{timestamp}.json')
-            
-            with open(results_file, 'w') as f:
-                json.dump(results, f, indent=4)
-            
-            backtester.logger.info(f"Results saved to {results_file}")
-            
-            # Log summary statistics
-            backtester.logger.info("\nBacktest Results Summary:")
-            backtester.logger.info("-" * 50)
+            # Print summary statistics
+            print("\nBacktest Results Summary:")
+            print("-" * 50)
             for period, metrics in results.items():
-                backtester.logger.info(f"\n{period} results:")
-                backtester.logger.info(f"Total trades: {metrics['total_trades']}")
-                backtester.logger.info(f"Win rate: {metrics['win_rate']:.2%}")
-                backtester.logger.info(f"Average return: {metrics['avg_return']:.2f}%")
-                backtester.logger.info(f"Median return: {metrics['median_return']:.2f}%")
-    
+                print(f"\n{period} results:")
+                print(f"Total trades: {metrics['total_trades']}")
+                print(f"Win rate: {metrics['win_rate']:.2%}")
+                print(f"Average return: {metrics['avg_return']:.2f}%")
+                print(f"Median return: {metrics['median_return']:.2f}%")
+                
+            print(f"\nDetailed results saved in: {directories['backtest']}")
+            print(f"Total trades executed: {len(backtester.trades)}")
+            
+            # Print a few example trades
+            if backtester.trades:
+                print("\nExample trades:")
+                for trade in backtester.trades[:5]:
+                    print(f"\nToken: {trade.token_address}")
+                    print(f"Entry time: {trade.entry_time}")
+                    print(f"Return: {trade.return_pct:.2f}%")
+                    print(f"Holding period: {trade.holding_period}")
+        else:
+            print("No backtest results generated")
+            
     except Exception as e:
-        backtester.logger.error(f"Error in backtesting: {str(e)}", exc_info=True)
-        raise
-
-if __name__ == "__main__":
-    asyncio.run(main())
+        print(f"Error in backtesting: {str(e)}")
+        traceback.print_exc()
