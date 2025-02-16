@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_11",
+  "token_symbol": "pump",
+  "entry_time": "2025-02-10T21:58:18.638478",
+  "market_price": 5.759021142012337e-06,
+  "entry_price": 6.6228743133141874e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.0004576611751420101,
+    "volatility_5m": 0.00013818353744679432,
+    "momentum_7m": -0.15642384580001323
+  }
+}

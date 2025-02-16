@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_76",
+  "token_address": "FFDv7SFQfAfdtePuNhLJoQwGKg2hAGrXAwVWcs1pump",
+  "token_symbol": "NGA",
+  "entry_time": "2025-01-01T00:46:46.091790",
+  "market_price": 6.758285452713063e-06,
+  "entry_price_with_slippage": 7.772028270620023e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.272822025203975,
+    "momentum_7m": 0.19834242400260638,
+    "trend_acceleration": 0.023930671008636606
+  }
+}

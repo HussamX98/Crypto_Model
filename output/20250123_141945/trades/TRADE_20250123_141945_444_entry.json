@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_444",
+  "token_address": "GVy7ZfMwHwzeq98fQURCXPe3SsL7ddsXoL9SxnTipump",
+  "token_symbol": "XBXN",
+  "entry_time": "2025-01-23T17:38:32.082015",
+  "entry_price": 8.16662307096953e-06,
+  "market_price": 7.1014113660604615e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": -0.01236498361937044,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.02472996723874088,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 186.53439956666668
+}

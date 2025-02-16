@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250108_130244_5",
+  "token_symbol": "ISS",
+  "token_address": "9X1a35ZLZQxHcAh9Sx6a3sXN97njMF1on3diTQsjpump",
+  "entry_time": "2025-01-08T13:27:50.544546",
+  "entry_price": 1.6998077854108033e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0137876166666666,
+  "highest_price_seen": 1.6998077854108033e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T13:27:50.545547",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.545279804918912e-05,
+      "return_pct": -9.090909090909093,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.6998077854108033e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T13:28:50.789722",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.2150042461995844e-05,
+      "return_pct": -28.521080052239757,
+      "volume": 14609.742682900394,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.6998077854108033e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T13:28:50.789722",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.2150042461995844e-05,
+      "return_pct": -28.521080052239757,
+      "volume": 14609.742682900394,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.6998077854108033e-05,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 1.2748558390581024e-05
+    }
+  ]
+}

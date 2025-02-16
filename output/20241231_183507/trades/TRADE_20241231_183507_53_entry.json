@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_53",
+  "token_address": "cDUoecNyQaNXb1B1BRpqLVT4SZGtWLJaymsoeiXpump",
+  "token_symbol": "HYENA",
+  "entry_time": "2024-12-31T20:16:29.391027",
+  "market_price": 0.001976035725361134,
+  "entry_price_with_slippage": 0.002272441084165304,
+  "slippage_percent": 15,
+  "position_size": 30.0,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.027540583240963423,
+    "momentum_7m": 0.03356247819103797
+  }
+}

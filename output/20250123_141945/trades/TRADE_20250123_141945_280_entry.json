@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_280",
+  "token_address": "8shf9P27nVRBbVRCbtpMXfb1sDusxo8GZtSUjzzqpump",
+  "token_symbol": "Smell",
+  "entry_time": "2025-01-23T17:33:25.278525",
+  "entry_price": 8.452796104862398e-06,
+  "market_price": 7.350257482489042e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.0010991404583605702,
+    "momentum_7m": -0.0010991404583605702,
+    "trend_acceleration": 0.0015021183381676018,
+    "price_volatility": 0.0010621580630629788,
+    "price_change_15m": -0.000428468715946706,
+    "volume_momentum": 0.00012990501168164137
+  },
+  "token_age_minutes": 191.3941909
+}

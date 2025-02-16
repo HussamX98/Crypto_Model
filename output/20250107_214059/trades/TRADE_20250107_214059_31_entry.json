@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_31",
+  "token_address": "3iFmNhfzYGG922VjeQgYqFchEXjvXwbDR9o6Snmppump",
+  "token_symbol": "USOC",
+  "entry_time": "2025-01-07T22:07:34.265996",
+  "market_price": 7.949057932054337e-06,
+  "entry_price_with_slippage": 8.743963725259772e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7420425615948265,
+  "features": {
+    "momentum_5m": 0.42889821552143004,
+    "momentum_7m": 0.16688146376847235,
+    "trend_acceleration": 0.04180601664861691,
+    "price_change_15m": 0.0866189800164241
+  }
+}

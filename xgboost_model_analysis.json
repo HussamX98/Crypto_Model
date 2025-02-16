@@ -1,0 +1,21 @@
+{
+  "features": {
+    "names": [],
+    "types": []
+  },
+  "model_parameters": {
+    "base_score": "5E-1",
+    "boost_from_average": "1",
+    "num_class": "0",
+    "num_feature": "6",
+    "num_target": "1"
+  },
+  "gradient_booster": {
+    "name": "gbtree",
+    "parameters": {}
+  },
+  "objective": {
+    "name": "binary:logistic",
+    "parameters": {}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250107_214059_39",
+  "token_address": "FMGn2XhSda575yzL5itB9Hy4egSDf9ZQLg66yBqKpump",
+  "token_symbol": "HENTAI",
+  "entry_time": "2025-01-07T22:10:24.257937",
+  "market_price": 6.7296689376054155e-06,
+  "entry_price_with_slippage": 7.402635831365957e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7146900826831337,
+  "features": {
+    "momentum_5m": 0.13175206614650703,
+    "momentum_7m": 0.20496197543223604,
+    "trend_acceleration": 0.021673858959222136
+  }
+}

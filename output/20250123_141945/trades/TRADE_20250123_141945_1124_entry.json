@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1124",
+  "token_address": "HrFB9h5Wt9ozhPrypLzFG9Q2TfNdaMXe4nPMcEi8pump",
+  "token_symbol": "president",
+  "entry_time": "2025-01-23T18:10:32.953830",
+  "entry_price": 8.314536691674962e-06,
+  "market_price": 7.230031905804315e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 230.50834223333334
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_6",
+  "token_address": "GBpdsvv3N3PUinpJ1h66MEmWz9qV9n9WHnDDQaoApump",
+  "token_symbol": "GAISHA",
+  "entry_time": "2024-12-29T23:27:28.557834",
+  "market_price": 6.310249111726614e-08,
+  "entry_price_with_slippage": 7.256786478485606e-08,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.0640591157914332,
+    "volatility_5m": 0.5320295578957166,
+    "momentum_7m": 1.0640591157914332,
+    "trend_acceleration": 0.13300738947392915,
+    "price_change_15m": 1.0640591157914332,
+    "relative_volume": 1.5215566104252867
+  }
+}

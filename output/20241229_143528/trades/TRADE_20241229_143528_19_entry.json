@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_19",
+  "token_address": "AirHxnmrGF5VthUapkEMcTzCvSPn2r2sEghr2Kk7pump",
+  "token_symbol": "Fish",
+  "entry_time": "2024-12-29T16:21:26.627573",
+  "entry_price": 1.4961650316615535e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6995191101014497,
+    "momentum_7m": 0.7299794531455432,
+    "trend_acceleration": 0.02756788112606226,
+    "price_change_15m": 0.7995619582405091
+  }
+}

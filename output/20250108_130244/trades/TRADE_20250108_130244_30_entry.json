@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_30",
+  "token_address": "5GQM2AxsfJLVRcwyTSe9PJNXDFZYbfhJoS3PKph2pump",
+  "token_symbol": "Large",
+  "entry_time": "2025-01-08T13:51:58.356737",
+  "market_price": 1.1604469450863231e-05,
+  "entry_price_with_slippage": 1.2764916395949555e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9315821086600637,
+  "features": {
+    "momentum_5m": 0.31482106382815567,
+    "momentum_7m": 0.37786584801207046,
+    "trend_acceleration": 0.013158210866006381,
+    "price_change_15m": 0.46907796175518723
+  }
+}

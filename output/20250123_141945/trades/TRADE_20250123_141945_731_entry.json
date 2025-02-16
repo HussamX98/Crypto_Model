@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_731",
+  "token_address": "F6aVneUrFH4m1CU38yjp2AcsW6SZnUqvouaEJQTepump",
+  "token_symbol": "BP",
+  "entry_time": "2025-01-23T17:48:27.319915",
+  "entry_price": 7.979505545972746e-06,
+  "market_price": 6.93870047475891e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 182.44295215
+}

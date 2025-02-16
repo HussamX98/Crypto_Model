@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_25",
+  "token_symbol": "HYENA",
+  "token_address": "bMSzHaXeDWQLTCqegXGezqSDTtBxwp1G1ZekbjHpump",
+  "entry_time": "2024-12-31T19:23:29.517579",
+  "entry_price": 0.0023017073790189153,
+  "initial_position_size": 30.0,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.026610588381455802,
+    "momentum_7m": 0.034211253064659
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:23:29.518583",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.0020014846774077527,
+      "return_pct": -13.043478260869556,
+      "volume": 0.0,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:24:31.366430",
+      "time_in_trade_minutes": 1.03,
+      "price": 0.0019974004170521453,
+      "return_pct": -13.220923073917346,
+      "volume": 0.0,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:25:35.282471",
+      "time_in_trade_minutes": 2.1,
+      "price": 0.0001633855226320095,
+      "return_pct": -92.90155107806748,
+      "volume": 18948.267906121255,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:26:35.654854",
+      "time_in_trade_minutes": 3.1,
+      "price": 0.0001633855226320095,
+      "return_pct": -92.90155107806748,
+      "volume": 18948.267906121255,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:27:36.159119",
+      "time_in_trade_minutes": 4.11,
+      "price": 3.5326514173315434e-06,
+      "return_pct": -99.84652039396784,
+      "volume": 18948.267906121255,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:28:36.417609",
+      "time_in_trade_minutes": 5.12,
+      "price": 3.5326514173315434e-06,
+      "return_pct": -99.84652039396784,
+      "volume": 18948.267906121255,
+      "remaining_position_size": 30.0,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.1190833
+}

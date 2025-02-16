@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_14",
+  "token_address": "EKe8hAEjaLP5mSstEsnrgHFBLHhyq87qF8v6UZ9kpump",
+  "token_symbol": "miso",
+  "entry_time": "2024-12-29T15:27:27.204909",
+  "entry_price": 8.799235365220601e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3835926627014721,
+    "momentum_7m": 0.3580208763241368,
+    "trend_acceleration": 0.03427819810049609,
+    "price_change_15m": 0.6283386599494596
+  }
+}

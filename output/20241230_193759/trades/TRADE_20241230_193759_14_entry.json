@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_14",
+  "token_address": "5mteu8CyT6WxrDiFiA53ouXMEP9hiYoPW3aRKvUzpump",
+  "token_symbol": "Bhole",
+  "entry_time": "2024-12-30T20:29:01.200732",
+  "market_price": 1.5413555224409336e-05,
+  "entry_price_with_slippage": 1.7725588508070734e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5564518147749109,
+    "volume_change_5m": 0.0,
+    "volatility_5m": 0.06855089747411752,
+    "momentum_7m": 0.4865436319648939,
+    "trend_acceleration": 0.04378671144728455,
+    "price_change_15m": 1.1669411910235836,
+    "volume_change_15m": 0,
+    "relative_volume": 2.715522209506
+  }
+}

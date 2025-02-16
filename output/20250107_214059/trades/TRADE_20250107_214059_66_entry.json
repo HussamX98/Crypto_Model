@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250107_214059_66",
+  "token_address": "Bfi2fHHfDcPDqYq2UxUA4AjVizyxBt1FTTDpf53npump",
+  "token_symbol": "MLGCAT",
+  "entry_time": "2025-01-07T22:18:09.873849",
+  "market_price": 7.922653283893346e-06,
+  "entry_price_with_slippage": 8.714918612282682e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7002143641968522,
+  "features": {
+    "momentum_5m": 0.185658221525697,
+    "momentum_7m": 0.18194987802388685,
+    "trend_acceleration": 0.014972930074792896
+  }
+}

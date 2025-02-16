@@ -1,0 +1,11 @@
+{
+  "session_timestamp": "20250210_215057",
+  "total_tokens_monitored": 100,
+  "total_trades_executed": 22,
+  "active_tokens": 100,
+  "inactive_tokens_removed": 0,
+  "active_trades": 22,
+  "profitable_trades": 0,
+  "stop_losses_hit": 0,
+  "monitoring_duration_hours": 0.17848150416666667
+}

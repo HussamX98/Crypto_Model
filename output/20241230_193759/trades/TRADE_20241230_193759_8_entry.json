@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_8",
+  "token_address": "4bxax2pvsXDdX3T1bE4ES9od3ysz7Q6kFvb7QJJgpump",
+  "token_symbol": "DMND",
+  "entry_time": "2024-12-30T20:18:46.494810",
+  "market_price": 9.20860715456084e-06,
+  "entry_price_with_slippage": 1.0589898227744965e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.34027372842657,
+    "volume_change_5m": 0,
+    "volatility_5m": 0.10146777246153264,
+    "momentum_7m": 0.34027372842657,
+    "trend_acceleration": 0.0208083013710543,
+    "price_change_15m": 0.5049474346296692,
+    "volume_change_15m": 0,
+    "relative_volume": 4.5
+  }
+}

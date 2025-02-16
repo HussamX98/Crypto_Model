@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_80",
+  "token_address": "4tUbAgv5G5GmVUiJiujyL4iPHGsiF9mobvxbLTDgpump",
+  "token_symbol": "WAGMI",
+  "entry_time": "2025-01-01T00:47:33.788141",
+  "market_price": 1.2393076350342894e-05,
+  "entry_price_with_slippage": 1.4252037802894328e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.3000615966323259,
+    "momentum_7m": 0.4633379152874786,
+    "trend_acceleration": -0.02882901255157086
+  }
+}

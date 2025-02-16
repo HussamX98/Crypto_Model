@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250211_105802_12",
+  "token_symbol": "alphastool",
+  "entry_time": "2025-02-11T17:33:09.699429",
+  "market_price": 1.3852199727607588e-05,
+  "entry_price": 1.5930029686748724e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.0986440896403562,
+    "volatility_5m": 0.5493220448201781,
+    "momentum_7m": 1.0986440896403562,
+    "trend_acceleration": 0.13733051120504453,
+    "price_change_15m": 1.0986440896403562
+  }
+}

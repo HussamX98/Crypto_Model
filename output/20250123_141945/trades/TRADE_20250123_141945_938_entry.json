@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_938",
+  "token_address": "4RCvLcTxdzFQNfbdZ1kV7FiDjW2wf61PvDtE4Jwxpump",
+  "token_symbol": "WEATHER",
+  "entry_time": "2025-01-23T17:57:42.003487",
+  "entry_price": 1.2605650134362826e-05,
+  "market_price": 1.0961434899445936e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 183.51599838333334
+}

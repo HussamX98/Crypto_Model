@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_902",
+  "token_address": "CN2G2H8vvLgHxDo9SDb5SJsdTDvC2tD9fZpEdqsnpump",
+  "token_symbol": "XVine",
+  "entry_time": "2025-01-23T17:56:40.170661",
+  "entry_price": 0.0002183627070046255,
+  "market_price": 0.00018988061478663088,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.02260819568975181,
+    "momentum_7m": -0.02260819568975181,
+    "trend_acceleration": -0.0036089018803927564,
+    "price_volatility": 0.0025518789922626007,
+    "price_change_15m": 0.010155898383641393,
+    "volume_momentum": 0.005888596192283879
+  },
+  "token_age_minutes": 182.72559028333333
+}

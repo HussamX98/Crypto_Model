@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_221758_1",
+  "token_symbol": "NO DIDDY",
+  "token_address": "HLPPgonco1wfmJ1m1zywQNNxuyqBNwRPpd5Ub1SJpump",
+  "entry_time": "2025-01-09T22:40:35.635217",
+  "entry_price": 1.1366802562871965e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0142165,
+  "highest_price_seen": 1.1366802562871965e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T22:40:35.636217",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.0415719028534432e-05,
+      "return_pct": -8.367203785558052,
+      "volume": 3418.836628848727,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1366802562871965e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:41:35.939263",
+      "time_in_trade_minutes": 1.01,
+      "price": 9.173094923543349e-06,
+      "return_pct": -19.299249962289732,
+      "volume": 3418.836628848727,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1366802562871965e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:41:35.939263",
+      "time_in_trade_minutes": 1.01,
+      "price": 9.173094923543349e-06,
+      "return_pct": -19.299249962289732,
+      "volume": 3418.836628848727,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1366802562871965e-05,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -19.30%"
+    }
+  ]
+}

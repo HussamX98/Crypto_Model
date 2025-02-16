@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_33",
+  "token_address": "9kTEgJeFUqQZ5wYZxhKvuPb4fHfLR3TQp8PLC68fpump",
+  "token_symbol": "WMD",
+  "entry_time": "2025-01-09T23:14:15.954372",
+  "market_price": 7.38641045544723e-06,
+  "entry_price_with_slippage": 8.125051500991954e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.2287875818076539,
+    "momentum_7m": 0.2287875818076539,
+    "trend_acceleration": 0.023873180489011103,
+    "price_change_15m": 0.2287875818076539
+  },
+  "volume": 9754.01501818193
+}

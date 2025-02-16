@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_19",
+  "token_symbol": "STARGATE",
+  "entry_time": "2025-02-10T21:59:58.433449",
+  "market_price": 5.656955752872363e-06,
+  "entry_price": 6.505499115803217e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.0011210674863997294,
+    "volatility_5m": 0.0006017712920123324,
+    "momentum_7m": -0.14890889653325246
+  }
+}

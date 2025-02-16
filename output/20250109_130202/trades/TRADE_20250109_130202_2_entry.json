@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_130202_2",
+  "token_address": "8xS1teNUqa9xNEbNZwRLqKZVDEyZnt5pMt4UNZH7pump",
+  "token_symbol": "HJ",
+  "entry_time": "2025-01-09T13:29:35.224991",
+  "market_price": 8.989418179405122e-06,
+  "entry_price_with_slippage": 9.888359997345635e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.2760926127090575,
+    "momentum_7m": 0.27029004884239516,
+    "trend_acceleration": 0.022703369667765094,
+    "price_change_15m": 0.38926568668250305
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_4",
+  "token_address": "ETozasogpAMn7T4JjpeP4rM6r1LShUUJuqtSm4oppump",
+  "token_symbol": "Bye2024",
+  "entry_time": "2024-12-30T20:04:32.208183",
+  "market_price": 9.85664783431927e-06,
+  "entry_price_with_slippage": 1.1335145009467161e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5142627155472101,
+    "volume_change_5m": 0.0,
+    "volatility_5m": 0.108369075917482,
+    "momentum_7m": 0.5905418468669901,
+    "trend_acceleration": 0.026705339824889485,
+    "price_change_15m": 0.6322135423853765,
+    "volume_change_15m": 0,
+    "relative_volume": 2.375
+  }
+}

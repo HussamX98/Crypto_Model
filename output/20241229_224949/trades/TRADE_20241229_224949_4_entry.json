@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_4",
+  "token_address": "EmjoU8e2LdfXErc3FRWbSN4cwJ1gedpdbso4Lrompump",
+  "token_symbol": "Flusto",
+  "entry_time": "2024-12-29T23:23:56.359885",
+  "market_price": 8.318166726091177e-05,
+  "entry_price_with_slippage": 9.565891735004853e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.7692647800287105,
+    "volatility_5m": 0.3953378906242941,
+    "momentum_7m": 1.032043594249397,
+    "trend_acceleration": 0.09866536904279502,
+    "price_change_15m": 1.6058224183859835,
+    "relative_volume": 2.469329760332567
+  }
+}

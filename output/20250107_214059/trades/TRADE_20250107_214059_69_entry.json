@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_69",
+  "token_address": "3JixBJULeoRnkyeuqWTF673RxfpSDzaDd17PnY3Lpump",
+  "token_symbol": "F",
+  "entry_time": "2025-01-07T22:18:58.751033",
+  "market_price": 8.127143436754133e-06,
+  "entry_price_with_slippage": 8.939857780429547e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7048819074541166,
+  "features": {
+    "momentum_5m": 0.16859029118530544,
+    "momentum_7m": 0.31557887274561436,
+    "trend_acceleration": -0.00032863015184067534,
+    "price_change_15m": 0.21621606520872705
+  }
+}

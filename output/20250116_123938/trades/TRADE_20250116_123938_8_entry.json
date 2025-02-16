@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250116_123938_8",
+  "token_symbol": "ARCDOC",
+  "entry_time": "2025-01-16T18:51:29.607637",
+  "market_price": 0.00042774601310496693,
+  "entry_price": 0.0004919079150707119,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.9231987819182774,
+    "volatility_5m": 0.26477774300846874,
+    "momentum_7m": 1.8431433838778872,
+    "trend_acceleration": -0.0015996628678015545,
+    "price_change_15m": 4.319342479283447
+  }
+}

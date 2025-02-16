@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_2",
+  "token_address": "3hcfeFT8ryRQQT5JmL7vjGZpS1kXXiVGUU1p1Ck7pump",
+  "token_symbol": "CURA",
+  "entry_time": "2024-12-29T14:50:35.116729",
+  "entry_price": 4.3247565295282814e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.194150306426648,
+    "momentum_7m": 1.588408234082721,
+    "trend_acceleration": 0.05620249032003555,
+    "price_change_15m": 4.759993525293438
+  }
+}

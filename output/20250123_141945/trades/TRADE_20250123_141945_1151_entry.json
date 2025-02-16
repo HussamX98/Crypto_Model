@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1151",
+  "token_address": "HybByWqWPirrr7Fwg4K8TLmdtAFRFoTnCmuavCbGpump",
+  "token_symbol": "AWW",
+  "entry_time": "2025-01-23T18:13:42.402973",
+  "entry_price": 8.135356763570828e-06,
+  "market_price": 7.074223272670286e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.75102443333333
+}

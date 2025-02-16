@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_8",
+  "token_address": "cijKDAkpZhvGni16wPzJZrLwJV37xAR5vW7URpGpump",
+  "token_symbol": "PHD",
+  "entry_time": "2025-01-08T13:32:19.942310",
+  "market_price": 8.230488830102775e-06,
+  "entry_price_with_slippage": 9.053537713113054e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9628246217032344,
+  "features": {
+    "momentum_5m": 0.23291294621716818,
+    "momentum_7m": 0.224877433140257,
+    "trend_acceleration": 0.01980826460920085,
+    "price_change_15m": 0.24711296341683875
+  }
+}

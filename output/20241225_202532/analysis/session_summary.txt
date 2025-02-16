@@ -1,0 +1,146 @@
+=== TRADING SESSION ANALYSIS ===
+
+Total Trades Analyzed: 15
+Session Start: 2024-12-25T21:06:35.926416
+
+=== 5min Performance ===
+Win Rate: 40.00%
+Average Return: 0.21%
+Median Return: -11.73%
+Best Trade: 116.28%
+Worst Trade: -49.36%
+Win/Loss Ratio: 1.52
+Profitable Trades: 6 / 15
+Standard Deviation: 46.98%
+
+=== 15min Performance ===
+Win Rate: 46.67%
+Average Return: 10.01%
+Median Return: -8.67%
+Best Trade: 242.29%
+Worst Trade: -97.59%
+Win/Loss Ratio: 1.62
+Profitable Trades: 7 / 15
+Standard Deviation: 95.42%
+
+=== 30min Performance ===
+Win Rate: 26.67%
+Average Return: -16.66%
+Median Return: -35.85%
+Best Trade: 251.25%
+Worst Trade: -98.11%
+Win/Loss Ratio: 1.42
+Profitable Trades: 4 / 15
+Standard Deviation: 82.54%
+
+=== 45min Performance ===
+Win Rate: 25.00%
+Average Return: 21.56%
+Median Return: -58.79%
+Best Trade: 764.26%
+Worst Trade: -98.27%
+Win/Loss Ratio: 4.25
+Profitable Trades: 3 / 12
+Standard Deviation: 239.88%
+
+=== 60min Performance ===
+Win Rate: 25.00%
+Average Return: -37.12%
+Median Return: -66.70%
+Best Trade: 160.73%
+Worst Trade: -98.26%
+Win/Loss Ratio: 0.94
+Profitable Trades: 3 / 12
+Standard Deviation: 74.36%
+
+=== Feature Analysis ===
+
+5min Feature Analysis:
+momentum_5m:
+  Profitable trades avg: 0.4438
+  Unprofitable trades avg: 0.5666
+  Difference: -0.1229
+momentum_7m:
+  Profitable trades avg: 0.9832
+  Unprofitable trades avg: 0.7395
+  Difference: 0.2437
+trend_acceleration:
+  Profitable trades avg: 0.0310
+  Unprofitable trades avg: 0.0449
+  Difference: -0.0139
+price_change_15m:
+  Profitable trades avg: 0.7326
+  Unprofitable trades avg: 1.8632
+  Difference: -1.1306
+
+15min Feature Analysis:
+momentum_5m:
+  Profitable trades avg: 0.4410
+  Unprofitable trades avg: 0.5844
+  Difference: -0.1435
+momentum_7m:
+  Profitable trades avg: 0.7104
+  Unprofitable trades avg: 0.9478
+  Difference: -0.2374
+trend_acceleration:
+  Profitable trades avg: 0.0300
+  Unprofitable trades avg: 0.0475
+  Difference: -0.0174
+price_change_15m:
+  Profitable trades avg: 0.8373
+  Unprofitable trades avg: 1.9129
+  Difference: -1.0756
+
+30min Feature Analysis:
+momentum_5m:
+  Profitable trades avg: 0.4156
+  Unprofitable trades avg: 0.5546
+  Difference: -0.1390
+momentum_7m:
+  Profitable trades avg: 1.1835
+  Unprofitable trades avg: 0.7110
+  Difference: 0.4725
+trend_acceleration:
+  Profitable trades avg: 0.0330
+  Unprofitable trades avg: 0.0416
+  Difference: -0.0086
+price_change_15m:
+  Profitable trades avg: 0.6430
+  Unprofitable trades avg: 1.6902
+  Difference: -1.0471
+
+45min Feature Analysis:
+momentum_5m:
+  Profitable trades avg: 0.5290
+  Unprofitable trades avg: 0.5146
+  Difference: 0.0143
+momentum_7m:
+  Profitable trades avg: 0.7419
+  Unprofitable trades avg: 0.8608
+  Difference: -0.1189
+trend_acceleration:
+  Profitable trades avg: 0.0232
+  Unprofitable trades avg: 0.0434
+  Difference: -0.0202
+price_change_15m:
+  Profitable trades avg: 0.8134
+  Unprofitable trades avg: 1.5603
+  Difference: -0.7470
+
+60min Feature Analysis:
+momentum_5m:
+  Profitable trades avg: 0.5290
+  Unprofitable trades avg: 0.5146
+  Difference: 0.0143
+momentum_7m:
+  Profitable trades avg: 0.7419
+  Unprofitable trades avg: 0.8608
+  Difference: -0.1189
+trend_acceleration:
+  Profitable trades avg: 0.0232
+  Unprofitable trades avg: 0.0434
+  Difference: -0.0202
+price_change_15m:
+  Profitable trades avg: 0.8134
+  Unprofitable trades avg: 1.5603
+  Difference: -0.7470

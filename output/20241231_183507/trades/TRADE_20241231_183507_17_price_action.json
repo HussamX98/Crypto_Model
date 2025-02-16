@@ -1,0 +1,115 @@
+{
+  "trade_id": "TRADE_20241231_183507_17",
+  "token_symbol": "2026",
+  "token_address": "CbUmXf6b6DKRPB9pDfyQQ6tH3PdN22sFkvMdgP5ipump",
+  "entry_time": "2024-12-31T19:05:50.950021",
+  "entry_price": 6.736271629820751e-06,
+  "initial_position_size": 16.13,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.02927235877039469,
+    "momentum_7m": 0.06794674346491836
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:05:50.951523",
+      "time_in_trade_minutes": 0.0,
+      "price": 5.8576275041919574e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:06:54.309794",
+      "time_in_trade_minutes": 1.06,
+      "price": 5.8576275041919574e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:07:54.990834",
+      "time_in_trade_minutes": 2.07,
+      "price": 5.8576275041919574e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:08:55.323024",
+      "time_in_trade_minutes": 3.07,
+      "price": 5.8576275041919574e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:09:55.633104",
+      "time_in_trade_minutes": 4.08,
+      "price": 5.795126101338788e-06,
+      "return_pct": -13.97131202838693,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:10:55.983642",
+      "time_in_trade_minutes": 5.08,
+      "price": 5.795126101338788e-06,
+      "return_pct": -13.97131202838693,
+      "volume": 0.0,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:11:57.129748",
+      "time_in_trade_minutes": 6.1,
+      "price": 5.795126101338788e-06,
+      "return_pct": -13.97131202838693,
+      "volume": 4645.36913525136,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:12:57.404709",
+      "time_in_trade_minutes": 7.11,
+      "price": 5.795126101338788e-06,
+      "return_pct": -13.97131202838693,
+      "volume": 4645.36913525136,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:13:57.685990",
+      "time_in_trade_minutes": 8.11,
+      "price": 5.799941183614153e-06,
+      "return_pct": -13.899832097945152,
+      "volume": 4645.36913525136,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:14:58.259185",
+      "time_in_trade_minutes": 9.12,
+      "price": 5.799941183614153e-06,
+      "return_pct": -13.899832097945152,
+      "volume": 4645.36913525136,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:15:58.520687",
+      "time_in_trade_minutes": 10.13,
+      "price": 5.615062583025441e-06,
+      "return_pct": -16.644356231596092,
+      "volume": 4645.36913525136,
+      "remaining_position_size": 16.13,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 11.130170533333335
+}

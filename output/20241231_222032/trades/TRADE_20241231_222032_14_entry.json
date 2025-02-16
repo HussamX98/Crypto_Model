@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_14",
+  "token_address": "3snRt2nmyFJKfGbdaMakRyNSALJ93G6ShQi9uRYApump",
+  "token_symbol": "CHILLTATE",
+  "entry_time": "2024-12-31T23:12:52.779695",
+  "market_price": 3.5872308106106524e-05,
+  "entry_price_with_slippage": 4.12531543220225e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.09014764963671928,
+    "momentum_7m": 0.12444675646272496
+  }
+}

@@ -1,0 +1,1 @@
+timestamp,token,entry_price,confidence_score,momentum_5m,momentum_7m,trend_acceleration,price_change_15m,volume_change_5m,volume_change_15m,market_volatility,exit_5m,exit_15m,exit_30m,exit_45m,exit_60m,return_5m,return_15m,return_30m,return_45m,return_60m,stop_loss_hit,max_drawdown

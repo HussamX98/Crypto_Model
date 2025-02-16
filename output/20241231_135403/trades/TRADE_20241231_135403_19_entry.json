@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_19",
+  "token_address": "BaCyJs18i7huC4zqXcaXFa9oAQ8JXRT4mSSM6ryjpump",
+  "token_symbol": "NURSECOIN",
+  "entry_time": "2024-12-31T15:39:29.774456",
+  "market_price": 1.7102126081053794e-05,
+  "entry_price_with_slippage": 1.966744499321186e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4389724219087079,
+    "momentum_7m": 0.4888293348429511,
+    "trend_acceleration": 0.04939659122957499,
+    "price_change_15m": 0.5403105951226146
+  }
+}

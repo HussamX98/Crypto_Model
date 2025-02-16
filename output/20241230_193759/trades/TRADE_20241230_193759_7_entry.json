@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_7",
+  "token_address": "4z6J5RcGFvtS8PKMpJSTTehrs1iRxtZuDvLQDBh7pump",
+  "token_symbol": "AICMP",
+  "entry_time": "2024-12-30T20:17:11.601169",
+  "market_price": 8.377279138262561e-06,
+  "entry_price_with_slippage": 9.633871009001944e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.46813956317906436,
+    "volume_change_5m": 0.003304176190538133,
+    "volatility_5m": 0.21860726379298573,
+    "momentum_7m": 0.5581484757396564,
+    "trend_acceleration": 0.022488185448639925,
+    "price_change_15m": 0.5581484757396564,
+    "volume_change_15m": 0,
+    "relative_volume": 2.339754584213112
+  }
+}

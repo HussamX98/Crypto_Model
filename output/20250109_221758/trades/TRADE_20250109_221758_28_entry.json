@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_28",
+  "token_address": "79ctv7iRbvVKYZPYevh5KkwpQndcpKoDF4mc69tkpump",
+  "token_symbol": "FLOW",
+  "entry_time": "2025-01-09T23:10:23.908774",
+  "market_price": 8.843547147336461e-06,
+  "entry_price_with_slippage": 9.727901862070108e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.1254573707961788,
+    "momentum_7m": 0.2848656964603369,
+    "trend_acceleration": 0.01393548219942338,
+    "price_change_15m": -0.17791358894971976
+  },
+  "volume": 9344.369944287862
+}

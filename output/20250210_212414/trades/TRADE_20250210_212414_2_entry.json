@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_212414_2",
+  "token_symbol": "VoteBechar",
+  "entry_time": "2025-02-10T21:31:24.061427",
+  "market_price": 1.4074303621069792e-05,
+  "entry_price": 1.618544916423026e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 1.2407700120168936,
+    "volatility_5m": 0.4707354170381354,
+    "momentum_7m": 1.2421365263181179
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_93",
+  "token_address": "GGcJzHwjW7ASQv6QSQJypFzBRCwyyuDEyiZZhmRpump",
+  "token_symbol": "Dada",
+  "entry_time": "2025-01-01T00:52:50.840177",
+  "market_price": 6.426453734720834e-06,
+  "entry_price_with_slippage": 7.3904217949289585e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.08793799424846549,
+    "momentum_7m": 0.15534222500286554
+  }
+}

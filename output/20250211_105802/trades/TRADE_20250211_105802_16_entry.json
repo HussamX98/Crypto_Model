@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250211_105802_16",
+  "token_symbol": "anxiety",
+  "entry_time": "2025-02-11T18:58:24.358236",
+  "market_price": 6.3567574468822524e-06,
+  "entry_price": 7.31027106391459e-06,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.4187475993712093,
+    "volatility_5m": 0.07867687936150235,
+    "momentum_7m": 0.4187475993712093,
+    "trend_acceleration": 0.020474818353292956,
+    "price_change_15m": 0.4150991759558442
+  }
+}

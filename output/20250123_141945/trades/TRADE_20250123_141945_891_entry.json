@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_891",
+  "token_address": "CCmVddpcfE1vP7aC1WE8gF1EDzM5Y5uXT1o5xfsbpump",
+  "token_symbol": "CCT",
+  "entry_time": "2025-01-23T17:56:30.033804",
+  "entry_price": 8.154214270374239e-06,
+  "market_price": 7.090621104673252e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 200.13574163333334
+}

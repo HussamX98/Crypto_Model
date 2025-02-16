@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250211_105802_11",
+  "token_symbol": "DICKUS",
+  "entry_time": "2025-02-11T17:25:05.923573",
+  "market_price": 0.0003782801449156381,
+  "entry_price": 0.00043502216665298375,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.36717840316979,
+    "volatility_5m": 0.36283186652920124,
+    "momentum_7m": 1.2114863159815004
+  }
+}

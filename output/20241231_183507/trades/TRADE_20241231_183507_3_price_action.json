@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_3",
+  "token_symbol": "IMU",
+  "token_address": "wA3CuiZgJGQ2QKErk9zk7MLsRc3iMfgD4dsdLLapump",
+  "entry_time": "2024-12-31T18:43:03.627054",
+  "entry_price": 7.0875267610418675e-06,
+  "initial_position_size": 11.08,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.1377314488226531,
+    "momentum_7m": 0.1377314488226531
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T18:43:03.628055",
+      "time_in_trade_minutes": 0.0,
+      "price": 6.163066748732059e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:44:03.903909",
+      "time_in_trade_minutes": 1.0,
+      "price": 6.163066748732059e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:45:04.217399",
+      "time_in_trade_minutes": 2.01,
+      "price": 6.163683832183909e-06,
+      "return_pct": -13.034771648920774,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:46:04.668554",
+      "time_in_trade_minutes": 3.02,
+      "price": 6.163683832183909e-06,
+      "return_pct": -13.034771648920774,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:47:08.053396",
+      "time_in_trade_minutes": 4.07,
+      "price": 5.622313714970674e-06,
+      "return_pct": -20.67312188682031,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:48:08.349112",
+      "time_in_trade_minutes": 5.08,
+      "price": 5.622313714970674e-06,
+      "return_pct": -20.67312188682031,
+      "volume": 1418.2439617484006,
+      "remaining_position_size": 11.08,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.140476083333334
+}

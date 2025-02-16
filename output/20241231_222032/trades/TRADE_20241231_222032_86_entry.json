@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_86",
+  "token_address": "HSyuBWjbDRsLru1bhbzAUEyEMCh1dwX17LPY3ZBRpump",
+  "token_symbol": "DOGEFATHER",
+  "entry_time": "2025-01-01T00:49:15.608997",
+  "market_price": 9.220079807425522e-06,
+  "entry_price_with_slippage": 1.060309177853935e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.1969861183820678,
+    "momentum_7m": 0.1969861183820678,
+    "trend_acceleration": 0.012563605572538022
+  }
+}

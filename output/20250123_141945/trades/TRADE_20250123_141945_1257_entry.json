@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1257",
+  "token_address": "AGsXWWcRbWUd3B9JTL8EtwCnwJJkx3G3gg2YH7Bnpump",
+  "token_symbol": "revenge",
+  "entry_time": "2025-01-23T18:21:45.556028",
+  "entry_price": 7.945607501984486e-06,
+  "market_price": 6.909223914769119e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.52762456666667
+}

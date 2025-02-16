@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_1",
+  "token_address": "u4p6veAhFRa88QZGdLxTUj2WxSAhvP7cKccefQcpump",
+  "token_symbol": "dustry",
+  "entry_time": "2025-01-01T12:57:35.018624",
+  "market_price": 1.8431610499591015e-05,
+  "entry_price_with_slippage": 2.1196352074529665e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6340317659172334,
+    "momentum_7m": 1.1218765018462609,
+    "trend_acceleration": 0.03423923347070644,
+    "price_change_15m": 2.1188034130415123
+  }
+}

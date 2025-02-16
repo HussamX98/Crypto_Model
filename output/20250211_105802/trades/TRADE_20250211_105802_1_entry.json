@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20250211_105802_1",
+  "token_symbol": "SWMG",
+  "entry_time": "2025-02-11T14:15:32.522193",
+  "market_price": 1.187136537142114e-05,
+  "entry_price": 1.365207017713431e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.37301194700667284,
+    "volatility_5m": 0.10465532652215631,
+    "momentum_7m": 0.37301194700667284,
+    "trend_acceleration": 0.016609114783966844
+  }
+}

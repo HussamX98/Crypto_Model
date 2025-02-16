@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_16",
+  "token_address": "evrFdk1kd4R6nhdmYWxN6ZKzPYSRpkQrLMJJfVMpump",
+  "token_symbol": "dGPU",
+  "entry_time": "2024-12-29T16:14:12.507477",
+  "entry_price": 0.0023609761949323514,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6343404919973585,
+    "momentum_7m": 0.6494689256186077,
+    "trend_acceleration": 0.07701898275229485,
+    "price_change_15m": 0.705845726158234
+  }
+}

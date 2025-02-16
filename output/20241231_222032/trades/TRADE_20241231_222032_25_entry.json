@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_25",
+  "token_address": "ADNZ9Hawu5nQ8wk4pDjXHNyHH8eqLnDdKMuDTqLYpump",
+  "token_symbol": "WIFIUS",
+  "entry_time": "2024-12-31T23:32:35.252745",
+  "market_price": 6.4849075650226714e-06,
+  "entry_price_with_slippage": 7.457643699776072e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.19066487868848592,
+    "momentum_7m": 0.10871549230908428
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_113",
+  "token_address": "GemEpbmB9jf4K4TbQrjxgm5RZ2yTdifrYMb9Firpump",
+  "token_symbol": "SILENCE",
+  "entry_time": "2025-01-07T22:40:21.714957",
+  "market_price": 5.4949812621924414e-05,
+  "entry_price_with_slippage": 6.044479388411686e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.43982286384158753,
+    "momentum_7m": 0.6163837453644267,
+    "trend_acceleration": 0.029097574682641153,
+    "price_change_15m": 0.6587465276341042
+  }
+}

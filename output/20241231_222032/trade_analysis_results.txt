@@ -1,0 +1,47 @@
+=== TRADE ANALYSIS RESULTS ===
+
+Overall Performance:
+Total Trades: 95
+Completed Trades: 57
+Profitable Trades: 7
+Win Rate: 12.28%
+Take Profit Hits: 16
+Stop Losses: 48
+Total PnL: $-2087.19
+Average Hold Time: 15.09 minutes
+Largest Win: $66.51
+Largest Loss: $-98.40
+
+Feature Analysis:
+
+momentum_5m:
+  Mean: 0.2603
+  Median: 0.1958
+  Min: 0.0756
+  Max: 1.0619
+  Profitable trades mean: 0.3920
+  Unprofitable trades mean: 0.2419
+
+momentum_7m:
+  Mean: 0.2891
+  Median: 0.2260
+  Min: 0.1044
+  Max: 1.0894
+  Profitable trades mean: 0.3353
+  Unprofitable trades mean: 0.2826
+
+trend_acceleration:
+  Mean: 0.1090
+  Median: 0.0231
+  Min: -0.0759
+  Max: 2.5453
+  Profitable trades mean: 0.0120
+  Unprofitable trades mean: 0.1292
+
+price_change_15m:
+  Mean: 4481.5862
+  Median: -0.2790
+  Min: -0.9906
+  Max: 44819.4120
+  Profitable trades mean: 22409.7255
+  Unprofitable trades mean: -0.4486

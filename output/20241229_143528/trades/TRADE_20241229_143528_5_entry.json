@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_5",
+  "token_address": "4bnUTuZV7aFFwT7nvsS47qF188HyiWEGoubmvifUpump",
+  "token_symbol": "suza",
+  "entry_time": "2024-12-29T14:57:57.529659",
+  "entry_price": 1.66582569610103e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.7491693631760457,
+    "momentum_7m": 0.7870986766368453,
+    "trend_acceleration": 0.023566248019546626,
+    "price_change_15m": 1.8306231979395813
+  }
+}

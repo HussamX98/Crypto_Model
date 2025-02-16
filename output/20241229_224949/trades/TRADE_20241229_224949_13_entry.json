@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_13",
+  "token_address": "ES3VJHeJ2YBwr9LAZQxs5XPNAGAeZuMtgUfYXQw8pump",
+  "token_symbol": "BABA",
+  "entry_time": "2024-12-29T23:48:28.031205",
+  "market_price": 1.0907695889636675e-07,
+  "entry_price_with_slippage": 1.2543850273082176e-07,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6814736264406362,
+    "volatility_5m": 0.3407368132203181,
+    "momentum_7m": 0.6814736264406362,
+    "trend_acceleration": 0.08518420330507953,
+    "price_change_15m": 1.1094888847091675,
+    "relative_volume": 1.367870565710695
+  }
+}

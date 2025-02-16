@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_78",
+  "token_address": "5YvJkKSWR9r1VUiRVRJbYiMthZ51Ya6VHikEX5a9pump",
+  "token_symbol": "LLAMA",
+  "entry_time": "2025-01-01T00:47:19.334631",
+  "market_price": 0.0001469754265362105,
+  "entry_price_with_slippage": 0.00016902174051664206,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.3022267507505958,
+    "momentum_7m": 0.19898564423583975,
+    "trend_acceleration": 0.03547134325283363
+  }
+}

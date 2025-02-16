@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_26",
+  "token_address": "78DnctoDzXYbRjrsfx61SiZkVsX9UUTeEtr1ZLyYpump",
+  "token_symbol": "MOW",
+  "entry_time": "2024-12-31T23:35:20.196759",
+  "market_price": 3.649104975201382e-05,
+  "entry_price_with_slippage": 4.196470721481589e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.12879503206503506,
+    "momentum_7m": 0.18037980312379687
+  }
+}

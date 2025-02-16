@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_25",
+  "token_address": "TccjfJHwA3YGMunKoga374QbCkkNnt6ar6DFUrmpump",
+  "token_symbol": "ai16G",
+  "entry_time": "2025-01-09T23:06:01.363543",
+  "market_price": 8.17672649048346e-06,
+  "entry_price_with_slippage": 8.994399139531806e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.20804072173888666,
+    "momentum_7m": 0.20928538803392183,
+    "trend_acceleration": 0.02603364824190632,
+    "price_change_15m": 0.23925972905039838
+  },
+  "volume": 10151.568991495918
+}

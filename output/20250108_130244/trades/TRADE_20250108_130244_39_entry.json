@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_39",
+  "token_address": "EXf3y44puAf8GCBSgKX5qKazMFNVZKVBruxHC9nupump",
+  "token_symbol": "Morphology",
+  "entry_time": "2025-01-08T13:56:13.527425",
+  "market_price": 7.511037346122811e-06,
+  "entry_price_with_slippage": 8.262141080735093e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5621128100868278,
+    "momentum_7m": 0.5621128100868278,
+    "trend_acceleration": 0.07841255367501068,
+    "price_change_15m": 0.49095384274611864
+  }
+}

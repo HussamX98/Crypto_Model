@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_34",
+  "token_address": "2QQba7i8ZXH8BsyMhsbH1jKAdrRDwqLpZsy3WE9rpump",
+  "token_symbol": "BMT",
+  "entry_time": "2025-01-08T13:53:31.445523",
+  "market_price": 8.788551885301757e-05,
+  "entry_price_with_slippage": 9.667407073831934e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6193549173167969,
+    "momentum_7m": 0.7681369105707512,
+    "trend_acceleration": 0.04957728309728407,
+    "price_change_15m": 1.48529598159375
+  }
+}

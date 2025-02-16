@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_44",
+  "token_address": "9L1Cs6vj9JV3VLWPB2sKRpgQ3ewP3mjFRg7fxFkXpump",
+  "token_symbol": "TOOTH",
+  "entry_time": "2025-01-01T00:11:28.295589",
+  "market_price": 6.049473937621433e-06,
+  "entry_price_with_slippage": 6.956895028264648e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.12900261464520146,
+    "momentum_7m": 0.1154071177243714,
+    "trend_acceleration": 0.0027482771510658477
+  }
+}

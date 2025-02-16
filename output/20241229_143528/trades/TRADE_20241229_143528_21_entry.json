@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_21",
+  "token_address": "HXeWSijZJdQFEMG7tDtg115RQjovz7TULG4jpS5Jpump",
+  "token_symbol": "DEBT",
+  "entry_time": "2024-12-29T16:42:14.472814",
+  "entry_price": 9.823589601715047e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.79634712952414,
+    "momentum_7m": 0.79634712952414,
+    "trend_acceleration": 0.04119579419988015,
+    "price_change_15m": 0.79634712952414
+  }
+}

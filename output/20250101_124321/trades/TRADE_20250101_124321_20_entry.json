@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_20",
+  "token_address": "FJwqmrwdsegwEmZP8QTFttbGHkpWEmBuSe2tSyj8pump",
+  "token_symbol": "NIKYRA",
+  "entry_time": "2025-01-01T14:32:34.908832",
+  "market_price": 2.2333388297480298e-05,
+  "entry_price_with_slippage": 2.568339654210234e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.696087764938567,
+    "momentum_7m": 1.4511442524056362,
+    "trend_acceleration": 0.10467658468747967,
+    "price_change_15m": 1.3307371708697344
+  }
+}

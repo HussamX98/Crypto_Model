@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_7",
+  "token_address": "87osvLBP8fCRvpotb3EfzAfSxSYCHN4wGNwncc4Mpump",
+  "token_symbol": "Ash",
+  "entry_time": "2024-12-29T15:05:23.479484",
+  "entry_price": 1.5076700410310008e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.30206571896256507,
+    "momentum_7m": 0.8916821568654518,
+    "trend_acceleration": 0.030426080601552954,
+    "price_change_15m": 1.5571496456633165
+  }
+}

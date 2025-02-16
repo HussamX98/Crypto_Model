@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_54",
+  "token_address": "9fMPcEMdon4hUQX9guGLFNf9MbUvefk7ioiGPdnfpump",
+  "token_symbol": "TMIN",
+  "entry_time": "2025-01-01T00:30:38.615936",
+  "market_price": 6.5797345016580976e-06,
+  "entry_price_with_slippage": 7.566694676906812e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.18589841181847633,
+    "momentum_7m": 0.20516227746273352
+  }
+}

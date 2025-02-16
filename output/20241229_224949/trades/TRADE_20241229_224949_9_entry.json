@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_9",
+  "token_address": "2SsSQGpk4dHHGmFjnYLT6JJC4uZWxSMxZe53nCNApump",
+  "token_symbol": "KEL",
+  "entry_time": "2024-12-29T23:33:29.362127",
+  "market_price": 1.9727858819171828e-05,
+  "entry_price_with_slippage": 2.26870376420476e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.704729110048268,
+    "volatility_5m": 0.262925998690751,
+    "momentum_7m": 0.8663846492103198,
+    "trend_acceleration": 0.08389134194130014,
+    "price_change_15m": 1.8147202783310101,
+    "relative_volume": 2.4285714285714284
+  }
+}

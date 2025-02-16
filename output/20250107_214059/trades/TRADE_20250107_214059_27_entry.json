@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_27",
+  "token_address": "2HpDwACCaVQoN13fXPGbX2N6ekdiKvfwFBG7rHmppump",
+  "token_symbol": "AC130",
+  "entry_time": "2025-01-07T22:06:20.834977",
+  "market_price": 1.1118115248159261e-05,
+  "entry_price_with_slippage": 1.2229926772975189e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.987585952443768,
+  "features": {
+    "momentum_5m": 0.6200827401225943,
+    "momentum_7m": 0.8292066182321478,
+    "trend_acceleration": 0.019991378022093345,
+    "price_change_15m": 0.9857776010290005
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_29",
+  "token_address": "ArrvELirkWPdu4sSp6Ckh2Uo5WxEX6ezsHmkXB1rpump",
+  "token_symbol": "CKAI",
+  "entry_time": "2024-12-31T23:36:01.945450",
+  "market_price": 6.0442138338745465e-06,
+  "entry_price_with_slippage": 6.950845908955728e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.11460170108778822,
+    "momentum_7m": 0.11460170108778822,
+    "trend_acceleration": 0.008309524593719086
+  }
+}

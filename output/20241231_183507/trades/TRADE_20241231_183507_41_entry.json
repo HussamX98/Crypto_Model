@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_41",
+  "token_address": "62a87wQCe6iCWzaeVfpRNAjdERNhi7uLyamsKzxgpump",
+  "token_symbol": "CTT",
+  "entry_time": "2024-12-31T19:56:16.635459",
+  "market_price": 1.1576811129019368e-05,
+  "entry_price_with_slippage": 1.3313332798372273e-05,
+  "slippage_percent": 15,
+  "position_size": 41.74,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.42297797422518957,
+    "momentum_7m": 0.337854725802625
+  }
+}

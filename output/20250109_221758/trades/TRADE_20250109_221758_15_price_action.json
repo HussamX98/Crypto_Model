@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_221758_15",
+  "token_symbol": "SAM",
+  "token_address": "FPxoNdbTpuNHQFg4E5QJqprPxPByKow6H9hciwvzpump",
+  "entry_time": "2025-01-09T22:59:43.768479",
+  "entry_price": 0.011345854470509956,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.01453425,
+  "highest_price_seen": 0.011345854470509956,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T22:59:43.770480",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.01049110483066079,
+      "return_pct": -7.533585434846046,
+      "volume": 766038.313194332,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.011345854470509956,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T23:00:44.006898",
+      "time_in_trade_minutes": 1.0,
+      "price": 0.009474996999579733,
+      "return_pct": -16.48934838528856,
+      "volume": 766038.313194332,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.011345854470509956,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T23:00:44.006898",
+      "time_in_trade_minutes": 1.0,
+      "price": 0.009474996999579733,
+      "return_pct": -16.48934838528856,
+      "volume": 766038.313194332,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.011345854470509956,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -16.49%"
+    }
+  ]
+}

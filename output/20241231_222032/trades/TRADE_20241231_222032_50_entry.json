@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_50",
+  "token_address": "6nRAQZD7rheC4vbTMB6iYiDPTuCszisS3QQXzg3gpump",
+  "token_symbol": "POPNU",
+  "entry_time": "2025-01-01T00:24:23.426812",
+  "market_price": 0.012520862384693344,
+  "entry_price_with_slippage": 0.014398991742397345,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6510555966156357,
+  "features": {
+    "momentum_5m": 0.7697359978910254,
+    "momentum_7m": 0.573955681584059,
+    "trend_acceleration": 0.03703248562338084
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_556",
+  "token_address": "4nCja6TTjY8oSutqdz79GgwC3brJT5FLQYok3ytcpump",
+  "token_symbol": "MOON",
+  "entry_time": "2025-01-23T17:41:35.317252",
+  "entry_price": 0.00016343729895033316,
+  "market_price": 0.00014211939039159406,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.01441935911730996,
+    "momentum_7m": -0.01441935911730996,
+    "trend_acceleration": 0.10611689984774558,
+    "price_volatility": 0.16832161680700047,
+    "price_change_15m": -0.047330260415447856,
+    "volume_momentum": 0.00027608077632201855
+  },
+  "token_age_minutes": 180.37206986666666
+}

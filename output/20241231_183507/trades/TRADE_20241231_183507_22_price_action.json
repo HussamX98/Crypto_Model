@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_22",
+  "token_symbol": "YO-YO COIN",
+  "token_address": "J6dUNkXq1Su6dKBPER8Zq5pcqLwh6JbWHJqAeoYvpump",
+  "entry_time": "2024-12-31T19:16:38.871233",
+  "entry_price": 1.0444223541449678e-05,
+  "initial_position_size": 40.51,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.3702257490346903,
+    "momentum_7m": 0.37116023918353225
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:16:38.872233",
+      "time_in_trade_minutes": 0.0,
+      "price": 9.081933514304068e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:17:39.158026",
+      "time_in_trade_minutes": 1.0,
+      "price": 7.087694388251534e-06,
+      "return_pct": -32.137660974769325,
+      "volume": 0.0,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:18:39.749991",
+      "time_in_trade_minutes": 2.01,
+      "price": 6.239834999392179e-06,
+      "return_pct": -40.25563533154636,
+      "volume": 19456.97927225464,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:19:40.224744",
+      "time_in_trade_minutes": 3.02,
+      "price": 6.282683879603346e-06,
+      "return_pct": -39.84537141828258,
+      "volume": 19456.97927225464,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:20:43.222875",
+      "time_in_trade_minutes": 4.07,
+      "price": 7.348806960186714e-06,
+      "return_pct": -29.637594111024878,
+      "volume": 19456.97927225464,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:21:43.493517",
+      "time_in_trade_minutes": 5.08,
+      "price": 6.932180218404304e-06,
+      "return_pct": -33.62665792346584,
+      "volume": 19456.97927225464,
+      "remaining_position_size": 40.51,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.109304233333333
+}

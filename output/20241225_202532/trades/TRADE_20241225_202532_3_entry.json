@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_3",
+  "token_address": "9Aig4B6yEqUdUxRPuVsTcweq1g71ph3Xo5Hyfqpipump",
+  "token_symbol": "ALYSSANDRA",
+  "entry_time": "2024-12-25T21:25:23.130724",
+  "entry_price": 6.08284416354612e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5232298165166094,
+    "momentum_7m": 0.6979586617511682,
+    "trend_acceleration": 0.026432851574250585,
+    "price_change_15m": 4.5522775725167755
+  }
+}

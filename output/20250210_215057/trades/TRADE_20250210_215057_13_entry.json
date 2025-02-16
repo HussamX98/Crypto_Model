@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_13",
+  "token_symbol": "MarkQunt",
+  "entry_time": "2025-02-10T21:58:35.532724",
+  "market_price": 5.652316903971308e-06,
+  "entry_price": 6.500164439567003e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.00043481013430657356,
+    "volatility_5m": 0.00021740506715328678,
+    "momentum_7m": -0.13527298848997538
+  }
+}

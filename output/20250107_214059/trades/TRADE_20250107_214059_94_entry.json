@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_94",
+  "token_address": "6hk7Brvw4RYe6xUcFEFBvSHMCFvPiwkMrxHiE5ehpump",
+  "token_symbol": "TAFT",
+  "entry_time": "2025-01-07T22:26:26.564478",
+  "market_price": 7.103588125320621e-06,
+  "entry_price_with_slippage": 7.813946937852683e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.2521844504357238,
+    "momentum_7m": 0.22743708994398326,
+    "trend_acceleration": 0.03086810611542065,
+    "price_change_15m": 0.09947112050390539
+  }
+}

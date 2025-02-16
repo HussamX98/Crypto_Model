@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_6",
+  "token_address": "3Nk4c8R6Tf53MzV68bktMxWiL6nuYkUcnUzw6ytcpump",
+  "token_symbol": "RTM",
+  "entry_time": "2024-12-30T20:11:33.673253",
+  "market_price": 2.1624652835222914e-05,
+  "entry_price_with_slippage": 2.486835076050635e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5269930046047562,
+    "volume_change_5m": 0.0,
+    "volatility_5m": 0.1780028985985481,
+    "momentum_7m": 0.5269930046047562,
+    "trend_acceleration": 0.03817785116109304,
+    "price_change_15m": 0.5040194261819975,
+    "volume_change_15m": 0.12537846952632004,
+    "relative_volume": 1.7146152184745613
+  }
+}

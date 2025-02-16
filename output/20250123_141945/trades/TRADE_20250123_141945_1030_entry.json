@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1030",
+  "token_address": "DaqWT3TsNaCH7U8xyMcuEXTW9N15sw3zt22vSiaKpump",
+  "token_symbol": "Neuro",
+  "entry_time": "2025-01-23T18:04:32.258285",
+  "entry_price": 7.88793886551612e-06,
+  "market_price": 6.859077274361844e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 198.03298085
+}

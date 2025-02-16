@@ -1,0 +1,71 @@
+{
+  "trade_id": "TRADE_20241231_183507_20",
+  "token_symbol": "ROCKY",
+  "token_address": "HajNo2EYMARTQLGSmLHUSHZTdJCQpj62pv4TBaaipump",
+  "entry_time": "2024-12-31T19:12:50.732656",
+  "entry_price": 7.648537483134755e-06,
+  "initial_position_size": 18.05,
+  "confidence_score": 0.8,
+  "features_at_entry": {
+    "momentum_5m": 0.15501766200655842,
+    "momentum_7m": 0.15501766200655842,
+    "trend_acceleration": 0.020566609487407697
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:12:50.734656",
+      "time_in_trade_minutes": 0.0,
+      "price": 6.650902159247614e-06,
+      "return_pct": -13.043478260869545,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:13:51.301821",
+      "time_in_trade_minutes": 1.01,
+      "price": 6.272395619657509e-06,
+      "return_pct": -17.992222258329495,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:14:51.554903",
+      "time_in_trade_minutes": 2.01,
+      "price": 6.270276985716093e-06,
+      "return_pct": -18.019922115277144,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:15:51.856585",
+      "time_in_trade_minutes": 3.02,
+      "price": 6.144927547276268e-06,
+      "return_pct": -19.658790182750497,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:16:52.320653",
+      "time_in_trade_minutes": 4.03,
+      "price": 5.8623374669295585e-06,
+      "return_pct": -23.353484507905186,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:17:55.152249",
+      "time_in_trade_minutes": 5.07,
+      "price": 5.8623374669295585e-06,
+      "return_pct": -23.353484507905186,
+      "volume": 3357.5454071572067,
+      "remaining_position_size": 18.05,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.078565966666667
+}

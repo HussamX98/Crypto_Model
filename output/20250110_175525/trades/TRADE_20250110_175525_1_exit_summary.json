@@ -1,0 +1,12 @@
+{
+  "trade_id": "TRADE_20250110_175525_1",
+  "exit_type": "quick_stop",
+  "exit_time": "2025-01-10T18:23:58.961650",
+  "exit_price": 8.760521349451455e-06,
+  "return_pct": -33.84275971956857,
+  "pnl": -33.84275971956857,
+  "time_in_trade_minutes": 1.014437,
+  "peak_return": 0,
+  "time_to_peak": 0,
+  "highest_price": 1.3241969151549871e-05
+}

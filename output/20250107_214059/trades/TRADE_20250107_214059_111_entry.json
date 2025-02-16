@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_111",
+  "token_address": "GznFTovvsMMo4zrjLyF9JJd45EohBAKjgeEpREgRpump",
+  "token_symbol": "Steve",
+  "entry_time": "2025-01-07T22:39:30.381246",
+  "market_price": 8.839704107075394e-06,
+  "entry_price_with_slippage": 9.723674517782933e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.35525830368543354,
+    "momentum_7m": 0.36315770223125265,
+    "trend_acceleration": 0.03733531914749952,
+    "price_change_15m": 0.3845762914847177
+  }
+}

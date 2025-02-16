@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20250210_212414_5",
+  "token_symbol": null,
+  "entry_time": "2025-02-10T21:35:36.715280",
+  "market_price": 1.5821151429033903e-05,
+  "entry_price": 1.819432414338899e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.2042973511156565,
+    "volatility_5m": 0.06079640832827059,
+    "momentum_7m": 0.7722826084436203,
+    "trend_acceleration": 0.001954471829950652
+  }
+}

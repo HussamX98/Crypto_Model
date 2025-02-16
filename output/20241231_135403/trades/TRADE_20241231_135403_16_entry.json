@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_16",
+  "token_address": "HqoV4KyvupoQHFUsTkukseYmsi6phuJueKmXCzvdpump",
+  "token_symbol": "HYPU",
+  "entry_time": "2024-12-31T15:15:04.265390",
+  "market_price": 2.0962298803660438e-05,
+  "entry_price_with_slippage": 2.41066436242095e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.2540395838584595,
+    "momentum_7m": 1.2540395838584595,
+    "trend_acceleration": 0.17060327719003165,
+    "price_change_15m": 1.0087462271074479
+  }
+}

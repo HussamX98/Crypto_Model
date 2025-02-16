@@ -1,0 +1,63 @@
+{
+  "trade_id": "TRADE_20250108_130244_70",
+  "token_symbol": "BMT",
+  "token_address": "2QQba7i8ZXH8BsyMhsbH1jKAdrRDwqLpZsy3WE9rpump",
+  "entry_time": "2025-01-08T14:37:46.995018",
+  "entry_price": 0.0001507685818558905,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 3.0241648833333334,
+  "highest_price_seen": 0.0001507685818558905,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:37:46.998017",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.00013706234714171863,
+      "return_pct": -9.090909090909093,
+      "volume": 423076.5979789664,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001507685818558905,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:38:47.361228",
+      "time_in_trade_minutes": 1.01,
+      "price": 0.00014067417518312002,
+      "return_pct": -6.695298548618734,
+      "volume": 423076.5979789664,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001507685818558905,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:39:47.631688",
+      "time_in_trade_minutes": 2.01,
+      "price": 0.00011713361928413204,
+      "return_pct": -22.308999764889915,
+      "volume": 423076.5979789664,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001507685818558905,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:40:47.939252",
+      "time_in_trade_minutes": 3.02,
+      "price": 7.72722389487948e-05,
+      "return_pct": -48.74778418844975,
+      "volume": 423076.5979789664,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001507685818558905,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:40:47.939252",
+      "time_in_trade_minutes": 3.02,
+      "price": 7.72722389487948e-05,
+      "return_pct": -48.74778418844975,
+      "volume": 423076.5979789664,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001507685818558905,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 0.00011307643639191787
+    }
+  ]
+}

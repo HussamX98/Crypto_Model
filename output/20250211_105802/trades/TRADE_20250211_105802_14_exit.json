@@ -1,0 +1,9 @@
+{
+  "trade_id": "TRADE_20250211_105802_14",
+  "exit_type": "stop_loss_20",
+  "exit_time": "2025-02-11T18:13:02.167792",
+  "exit_price": 0.00017818659103151072,
+  "return_pct": -20.99733054543065,
+  "time_in_trade_minutes": 11.7313333,
+  "peak_return": 0
+}

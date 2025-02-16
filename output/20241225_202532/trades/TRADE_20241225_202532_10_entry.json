@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_10",
+  "token_address": "AiAFGHZ785tpKwTAMn8ZG4yDreZAG2q3mFNd1YM4pump",
+  "token_symbol": "SIQI",
+  "entry_time": "2024-12-25T22:37:07.201171",
+  "entry_price": 1.3323707358754181e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5248623028482609,
+    "momentum_7m": 1.1231693313504523,
+    "trend_acceleration": 0.03548766189292259,
+    "price_change_15m": 0.7171670126411152
+  }
+}

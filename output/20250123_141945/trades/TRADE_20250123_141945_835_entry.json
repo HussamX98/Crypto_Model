@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_835",
+  "token_address": "E1ttdVCwjbYX9WJiZHhLZ9UoYsAg9Aw63BboMmnkpump",
+  "token_symbol": "Water",
+  "entry_time": "2025-01-23T17:51:41.028760",
+  "entry_price": 8.088250382732898e-06,
+  "market_price": 7.033261202376433e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 187.83353673333335
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_18",
+  "token_address": "52VSN9wPrVU4fDJMkRQ686N5WG1fXMQdAhaQDdNupump",
+  "token_symbol": "KFD",
+  "entry_time": "2024-12-31T23:16:58.398855",
+  "market_price": 6.095364375310588e-06,
+  "entry_price_with_slippage": 7.009669031607175e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.13934673860174684,
+    "momentum_7m": 0.14767707942380426
+  }
+}

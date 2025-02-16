@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_64",
+  "token_address": "E6HBubgDV5vJ7ybqV8GKav67tCYkaV9oQqx679ZZpump",
+  "token_symbol": "RaR",
+  "entry_time": "2025-01-08T14:29:29.191748",
+  "market_price": 1.799263143682201e-05,
+  "entry_price_with_slippage": 1.979189458050421e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9106177261540844,
+  "features": {
+    "momentum_5m": 0.23228762059657893,
+    "momentum_7m": 0.191170855172482,
+    "trend_acceleration": 0.012606872960224086,
+    "price_change_15m": 0.3776735270569964
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_954",
+  "token_address": "5rWLAxWCNXB13coZbRDfj9uGKRcr51ftgeJESJVbpump",
+  "token_symbol": "SNDAS",
+  "entry_time": "2025-01-23T17:58:41.771689",
+  "entry_price": 8.048357752024495e-06,
+  "market_price": 6.998571958282171e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 198.37767101666668
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_4",
+  "token_address": "A6MfS3xEAEhQTC8fKoCj458m6uuJHaoQmyRTEAcspump",
+  "token_symbol": "Andrew",
+  "entry_time": "2024-12-25T21:48:34.641576",
+  "entry_price": 5.573830425900842e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3829589561088462,
+    "momentum_7m": 0.5080154610772074,
+    "trend_acceleration": 0.028031091424372545,
+    "price_change_15m": 0.5114560277914502
+  }
+}

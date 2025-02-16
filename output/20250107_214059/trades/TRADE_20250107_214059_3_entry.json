@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_3",
+  "token_address": "8LoVqte4fCqzXV7VxyPHB42LMdS2ShGkgpWD9J5Fpump",
+  "token_symbol": "DOGEAI",
+  "entry_time": "2025-01-07T21:55:06.987109",
+  "market_price": 1.0077566225569121e-05,
+  "entry_price_with_slippage": 1.1085322848126034e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.2544873987256213,
+    "momentum_7m": 0.28771429848449803,
+    "trend_acceleration": 0.0,
+    "price_change_15m": 0.3904120033808307
+  }
+}

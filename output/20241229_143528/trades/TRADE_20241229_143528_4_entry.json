@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_4",
+  "token_address": "ALGbvwpyZg8STRmSbCAeVKXkuHt9rEDNBuSFL2RMpump",
+  "token_symbol": "ben",
+  "entry_time": "2024-12-29T14:56:57.312455",
+  "entry_price": 2.5046386110311225e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.35043194481295203,
+    "momentum_7m": 0.4389432359589551,
+    "trend_acceleration": 0.020648103068149487,
+    "price_change_15m": 2.542038900971014
+  }
+}

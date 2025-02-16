@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_7",
+  "token_address": "GerGFUmqWarZUWWx28MfV7ZjDWfEBd2wUcSJUcP3pump",
+  "token_symbol": "FARTC\u0410T",
+  "entry_time": "2025-01-09T22:51:31.197538",
+  "market_price": 1.1867697211273324e-05,
+  "entry_price_with_slippage": 1.3054466932400657e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.875,
+  "features": {
+    "momentum_5m": 0.2074482666030526,
+    "momentum_7m": 0.13164538765668632,
+    "trend_acceleration": 0.000900413975209402,
+    "price_change_15m": 0.4874856649227768
+  },
+  "volume": 4916.2202987893525
+}

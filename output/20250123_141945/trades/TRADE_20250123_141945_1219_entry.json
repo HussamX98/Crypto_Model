@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1219",
+  "token_address": "AGjfGdqRiwP91Xap7XTsooXSuF3WurBks994162Vpump",
+  "token_symbol": "FORMA",
+  "entry_time": "2025-01-23T18:18:33.295116",
+  "entry_price": 7.901335739815828e-06,
+  "market_price": 6.870726730274633e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 187.40134013333332
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_38",
+  "token_address": "64V4d5igKtq97SjrH9mDG9xECevGH6ugJLQmVwMTpump",
+  "token_symbol": "SR2",
+  "entry_time": "2025-01-23T17:23:22.884831",
+  "entry_price": 1.1685688079501956e-05,
+  "market_price": 1.0161467895219094e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.01010835727085535,
+    "momentum_7m": 0.01010835727085535,
+    "trend_acceleration": 0.0012635446588569188,
+    "price_volatility": 0.005054178635427675,
+    "price_change_15m": 0.028338930513039262,
+    "volume_momentum": 0.0017412203654658676
+  },
+  "token_age_minutes": 180.08925088333334
+}

@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_183507_26",
+  "token_address": "AJn5GDepDTqyPnkEGiEaVG3ikLBBtNR3RusB586Gpump",
+  "token_symbol": "JESUS",
+  "entry_time": "2024-12-31T19:24:17.015172",
+  "market_price": 6.3367134076168025e-06,
+  "entry_price_with_slippage": 7.287220418759322e-06,
+  "slippage_percent": 15,
+  "position_size": 11.09,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0653219235794209,
+    "momentum_7m": 0.060518419456907946,
+    "trend_acceleration": 0.0036384350070419735
+  }
+}

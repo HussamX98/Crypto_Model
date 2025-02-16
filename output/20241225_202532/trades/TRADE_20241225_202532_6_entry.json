@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_6",
+  "token_address": "AHgzA4wDbuZi6uWqZU5S9TcT3LcJXzes4Z43Fy1tpump",
+  "token_symbol": "ORGY",
+  "entry_time": "2024-12-25T22:10:42.585007",
+  "entry_price": 1.392818663137727e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.32989644359587755,
+    "momentum_7m": 0.4548522208905583,
+    "trend_acceleration": 0.020293140535201037,
+    "price_change_15m": 0.55147636215003
+  }
+}

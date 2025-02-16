@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_22",
+  "token_address": "65S7bVzVAnrec7YrQaPztAYWTgU7YTc7wGP85ZR6pump",
+  "token_symbol": "shimmer",
+  "entry_time": "2024-12-29T17:31:17.935550",
+  "entry_price": 2.128647295652404e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5786325802443055,
+    "momentum_7m": 0.6593553882853862,
+    "trend_acceleration": 0.02078860685693637,
+    "price_change_15m": 0.8559904152713111
+  }
+}

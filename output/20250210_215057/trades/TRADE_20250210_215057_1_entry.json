@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_1",
+  "token_symbol": "ILP69",
+  "entry_time": "2025-02-10T21:56:01.063521",
+  "market_price": 5.632491040181432e-06,
+  "entry_price": 6.477364696208647e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0007308501474456719,
+    "volatility_5m": 0.00036542507372283595,
+    "momentum_7m": -0.10785528834640767
+  }
+}

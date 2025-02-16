@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_3",
+  "token_address": "wA3CuiZgJGQ2QKErk9zk7MLsRc3iMfgD4dsdLLapump",
+  "token_symbol": "IMU",
+  "entry_time": "2024-12-31T18:43:03.627054",
+  "market_price": 6.163066748732059e-06,
+  "entry_price_with_slippage": 7.0875267610418675e-06,
+  "slippage_percent": 15,
+  "position_size": 11.08,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.1377314488226531,
+    "momentum_7m": 0.1377314488226531
+  }
+}

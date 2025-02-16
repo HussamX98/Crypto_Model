@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_66",
+  "token_address": "HtsjBz5Upzym24P7vW2fGUeFoCURPk67bkLoit3Qpump",
+  "token_symbol": "MLM",
+  "entry_time": "2025-01-08T14:32:46.515242",
+  "market_price": 2.530876681617238e-05,
+  "entry_price_with_slippage": 2.783964349778962e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9089509503137891,
+  "features": {
+    "momentum_5m": 0.39788947249190554,
+    "momentum_7m": 0.14797197160787956,
+    "trend_acceleration": 0.036010117840235514,
+    "price_change_15m": 0.5211924289374774
+  }
+}

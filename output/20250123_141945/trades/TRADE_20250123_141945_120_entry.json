@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_120",
+  "token_address": "7U8HTN3reU81M1Pho37aV1JKzm14jhGDhnnWotXppump",
+  "token_symbol": "Strump",
+  "entry_time": "2025-01-23T17:27:30.766814",
+  "entry_price": 8.241289439857984e-06,
+  "market_price": 7.16633864335477e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.03136745179496492,
+    "momentum_7m": 0.03136745179496492,
+    "trend_acceleration": -0.010455817264988307,
+    "price_volatility": 0.01568372589748246,
+    "price_change_15m": 0.03136745179496492,
+    "volume_momentum": 0.0030584459651614715
+  },
+  "token_age_minutes": 180.68084003333334
+}

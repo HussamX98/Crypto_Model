@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_74",
+  "token_address": "3jm9oxLPqa1HLBMB6gbcNAPKpBv6hUuR42S5ymbQpump",
+  "token_symbol": "MBRIDGE28 ",
+  "entry_time": "2025-01-08T14:56:18.482488",
+  "market_price": 3.295008979797218e-05,
+  "entry_price_with_slippage": 3.62450987777694e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.25242169713685714,
+    "momentum_7m": 0.2356036315694987,
+    "trend_acceleration": 0.0339579286421374,
+    "price_change_15m": 0.36246069550726645
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_221758_13",
+  "token_address": "2129ABamYgT17PVNmad3PCbxu5h3SQC9DwvNX4vspump",
+  "token_symbol": "LLM",
+  "entry_time": "2025-01-09T22:57:48.071042",
+  "market_price": 9.768775164625534e-06,
+  "entry_price_with_slippage": 1.0745652681088088e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.46081874895396924,
+    "momentum_7m": 0.31352810250574303,
+    "trend_acceleration": 0.0633148320281524
+  },
+  "volume": 4259.0003373416985
+}

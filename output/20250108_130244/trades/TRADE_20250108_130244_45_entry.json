@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_45",
+  "token_address": "8VUG5kkGjRLuDsLFLv32TNxY7heeTDCR8L884Aa2pump",
+  "token_symbol": "VLM",
+  "entry_time": "2025-01-08T14:01:05.581397",
+  "market_price": 8.981163559629657e-06,
+  "entry_price_with_slippage": 9.879279915592624e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9422455133349261,
+  "features": {
+    "momentum_5m": 0.22235877416233407,
+    "momentum_7m": 0.3342430386909838,
+    "trend_acceleration": 0.02059841841816895,
+    "price_change_15m": 0.21336827000238912
+  }
+}

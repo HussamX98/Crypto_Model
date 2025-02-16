@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_5",
+  "token_address": "9X1a35ZLZQxHcAh9Sx6a3sXN97njMF1on3diTQsjpump",
+  "token_symbol": "ISS",
+  "entry_time": "2025-01-08T13:27:50.544546",
+  "market_price": 1.545279804918912e-05,
+  "entry_price_with_slippage": 1.6998077854108033e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9518761868810004,
+  "features": {
+    "momentum_5m": 0.19257039226561123,
+    "momentum_7m": 0.40479226810967184,
+    "trend_acceleration": 0.016116319654898625,
+    "price_change_15m": 0.5611614168665973
+  }
+}

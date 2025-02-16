@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_19",
+  "token_address": "H8QqgcK5vDZUsBBFxtb2E2sLJz8ThZxRcbWUc29Ypump",
+  "token_symbol": "Psyche",
+  "entry_time": "2025-01-23T17:22:19.871543",
+  "entry_price": 8.245382244072686e-06,
+  "market_price": 7.169897603541466e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.36605848333332
+}

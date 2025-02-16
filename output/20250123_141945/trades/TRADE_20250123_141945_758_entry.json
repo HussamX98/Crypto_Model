@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_758",
+  "token_address": "C8u32VrNNCdSwSo33EiDk8akna4REKwJ4MjGXPT1pump",
+  "token_symbol": "DVISION",
+  "entry_time": "2025-01-23T17:49:28.888442",
+  "entry_price": 8.096729291419174e-06,
+  "market_price": 7.040634166451456e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.44226426666668
+}

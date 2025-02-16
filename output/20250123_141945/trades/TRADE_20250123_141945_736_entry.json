@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_736",
+  "token_address": "Fps7yBFqPZZ2X1j6v8EPZnM4P12iDFi9B2p6jMG2pump",
+  "token_symbol": "AWCC",
+  "entry_time": "2025-01-23T17:48:29.605208",
+  "entry_price": 8.08434369694273e-06,
+  "market_price": 7.029864084298027e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 184.39087456666667
+}

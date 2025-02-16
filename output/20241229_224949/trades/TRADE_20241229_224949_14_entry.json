@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_14",
+  "token_address": "Ch28UcKRFW7wuFefQn6Bx7SiMYb7ZCHvuGm5rEwApump",
+  "token_symbol": "Timmy",
+  "entry_time": "2024-12-29T23:49:01.193571",
+  "market_price": 9.793461886325507e-06,
+  "entry_price_with_slippage": 1.1262481169274331e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.37315127011578,
+    "volatility_5m": 0.10203735935502302,
+    "momentum_7m": 0.31702553614276163,
+    "trend_acceleration": 0.02371411501989304,
+    "price_change_15m": 0.647281963835066,
+    "relative_volume": 3.080718246808258
+  }
+}

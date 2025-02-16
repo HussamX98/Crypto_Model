@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_24",
+  "token_address": "2sYZuBnjRh2KbhUx6D5j5FNuBSwQvwYT44c5RRCMpump",
+  "token_symbol": "DCA ",
+  "entry_time": "2024-12-29T18:35:04.032210",
+  "entry_price": 1.0005405733373322e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.8011614560401092,
+    "momentum_7m": 0.8011614560401092,
+    "trend_acceleration": 0.08468748578516339,
+    "price_change_15m": 0.8011614560401092
+  }
+}

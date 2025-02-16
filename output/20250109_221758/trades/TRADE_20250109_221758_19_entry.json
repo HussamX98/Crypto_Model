@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_19",
+  "token_address": "EsVk3RyRxqroc3EAjdagQdHHbCLKCdntHSdShRs9pump",
+  "token_symbol": "YOMAMAI",
+  "entry_time": "2025-01-09T23:03:54.075598",
+  "market_price": 8.710483267360198e-06,
+  "entry_price_with_slippage": 9.581531594096218e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.19774857853980654,
+    "momentum_7m": 0.1668362723089276,
+    "trend_acceleration": 0.028305094913130227,
+    "price_change_15m": -0.06742657413739739
+  },
+  "volume": 9472.51190672179
+}

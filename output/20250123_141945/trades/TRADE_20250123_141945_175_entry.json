@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_175",
+  "token_address": "28wZZYFT9yKFBgQef8g3fe5damKFsnR7wDRXVgB2pump",
+  "token_symbol": "CAESAR",
+  "entry_time": "2025-01-23T17:30:29.506030",
+  "entry_price": 8.459009480495703e-06,
+  "market_price": 7.355660417822351e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 186.28617146666664
+}

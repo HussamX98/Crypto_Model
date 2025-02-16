@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_1",
+  "token_address": "D6ECik7Fhxbxzsok7B1PhWsjAQV8mSqti913wh9fpump",
+  "token_symbol": "CHRIS",
+  "entry_time": "2024-12-31T22:26:18.363701",
+  "market_price": 1.0057116027135654e-05,
+  "entry_price_with_slippage": 1.1565683431206002e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.19579856544034846,
+    "momentum_7m": 0.32709900302811956
+  }
+}

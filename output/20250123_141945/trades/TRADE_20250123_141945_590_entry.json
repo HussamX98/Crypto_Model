@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_590",
+  "token_address": "FvTBAdetLiSwCgc6ZHmc3Qit4QqN4te8K1tnhWiMpump",
+  "token_symbol": "IMBUX",
+  "entry_time": "2025-01-23T17:43:25.094277",
+  "entry_price": 8.526689446524132e-06,
+  "market_price": 7.414512562194898e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 189.78154141666667
+}

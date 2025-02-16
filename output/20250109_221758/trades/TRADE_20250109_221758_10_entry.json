@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_10",
+  "token_address": "8KTDArqNQxBpDetPeceyZJAdQ4Jw8qASPhn3W2D8pump",
+  "token_symbol": "DM",
+  "entry_time": "2025-01-09T22:54:43.972299",
+  "market_price": 5.91230235778934e-06,
+  "entry_price_with_slippage": 6.503532593568275e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9249999999999999,
+  "features": {
+    "momentum_5m": 0.11476693888411371,
+    "momentum_7m": 0.11476693888411371,
+    "trend_acceleration": 0.013877178441245613,
+    "price_change_15m": 0.11476693888411371
+  },
+  "volume": 728.2411429428472
+}

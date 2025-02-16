@@ -1,0 +1,63 @@
+{
+  "session_timestamp": "20250123_141945",
+  "total_tokens_monitored": 0,
+  "total_trades_executed": 1304,
+  "active_tokens": 0,
+  "inactive_tokens_removed": 1500,
+  "active_trades": 0,
+  "profitable_trades": 1,
+  "stop_losses_hit": 7,
+  "monitoring_duration_hours": 5.185708594722223,
+  "feature_ranges": {
+    "momentum_5m": {
+      "abs_min": -0.4384,
+      "abs_max": 4.9762,
+      "core_min": -0.0474,
+      "core_max": 0.0437,
+      "median": 0.0
+    },
+    "momentum_7m": {
+      "abs_min": -1.081,
+      "abs_max": 4.8946,
+      "core_min": -0.1719,
+      "core_max": -0.0935,
+      "median": -0.1568
+    },
+    "trend_acceleration": {
+      "abs_min": -0.332,
+      "abs_max": 4.745,
+      "core_min": -0.2438,
+      "core_max": 0.0355,
+      "median": -0.198
+    },
+    "price_volatility": {
+      "abs_min": -0.547,
+      "abs_max": 4.9718,
+      "core_min": -0.3672,
+      "core_max": -0.0524,
+      "median": -0.2571
+    },
+    "volume_momentum": {
+      "abs_min": -2.234,
+      "abs_max": 4.0963,
+      "core_min": -0.2063,
+      "core_max": 0.237,
+      "median": -0.004
+    },
+    "price_change_15m": {
+      "abs_min": -2.2228,
+      "abs_max": 4.3905,
+      "core_min": -0.1537,
+      "core_max": 1.0833,
+      "median": 0.5327
+    }
+  },
+  "feature_weights": {
+    "momentum_5m": 0.6204827780914738,
+    "momentum_7m": 0.12436476566911349,
+    "trend_acceleration": 0.1194240542066629,
+    "price_volatility": 0.06613495200451722,
+    "price_change_15m": 0.045666290231507624,
+    "volume_momentum": 0.023927159796725016
+  }
+}

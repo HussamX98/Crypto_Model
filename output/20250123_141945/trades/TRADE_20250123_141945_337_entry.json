@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_337",
+  "token_address": "dqSdtpCHbP5JExhLdzdht2MT1mUEwPgeCWVQVTwpump",
+  "token_symbol": "IBA",
+  "entry_time": "2025-01-23T17:35:32.750338",
+  "entry_price": 5.468109700347023e-06,
+  "market_price": 4.7548780003017595e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.011293364976701747,
+    "momentum_7m": 0.011293364976701747,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.005646682488350874,
+    "price_change_15m": 0.011293364976701747,
+    "volume_momentum": 4.041072792659861e-05
+  },
+  "token_age_minutes": 180.47251278333334
+}

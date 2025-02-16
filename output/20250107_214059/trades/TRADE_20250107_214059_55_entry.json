@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_55",
+  "token_address": "A53fFSELteTVPiyLNV5GyB9T4rN5ZrYC682ymBYApump",
+  "token_symbol": "CPU",
+  "entry_time": "2025-01-07T22:15:54.807324",
+  "market_price": 1.3621735245168577e-05,
+  "entry_price_with_slippage": 1.4983908769685435e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.4101278979049603,
+    "momentum_7m": 0.3833917298628968,
+    "trend_acceleration": -0.02238858395519215,
+    "price_change_15m": 0.4776126932346636
+  }
+}

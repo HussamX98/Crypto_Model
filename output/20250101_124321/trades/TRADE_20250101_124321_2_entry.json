@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_2",
+  "token_address": "AZwZYUv4ndNSE2MbjXcvnkpSFTuNBgbg9iaKyhJJpump",
+  "token_symbol": "SHIDDED",
+  "entry_time": "2025-01-01T13:13:11.378529",
+  "market_price": 6.141435782202377e-05,
+  "entry_price_with_slippage": 7.062651149532732e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.38880459250076327,
+    "momentum_7m": 0.3469840717376691,
+    "trend_acceleration": 0.06696205390412437,
+    "price_change_15m": 6.793989998258939
+  }
+}

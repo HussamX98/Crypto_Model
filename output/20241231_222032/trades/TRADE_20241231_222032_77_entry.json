@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_77",
+  "token_address": "EEGQaFxDwRgq7vSNCEUwkkbEMEN6RnFQqooNLYJRpump",
+  "token_symbol": "Ghost",
+  "entry_time": "2025-01-01T00:47:18.843429",
+  "market_price": 6.232507987433324e-06,
+  "entry_price_with_slippage": 7.167384185548322e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.10098250780482432,
+    "momentum_7m": 0.13167208027956656,
+    "trend_acceleration": 0.040340526733961504
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_88",
+  "token_address": "DPb2MM5wEHLYoAknbM5YTzVcsuWuxBxuNJZz3cmBpump",
+  "token_symbol": "PIXEL",
+  "entry_time": "2025-01-01T00:51:29.698208",
+  "market_price": 6.751205598002584e-06,
+  "entry_price_with_slippage": 7.763886437702971e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.12003592093547222,
+    "momentum_7m": 0.12003592093547222,
+    "trend_acceleration": 0.005706655862425469,
+    "price_change_15m": 0.05250694396825617
+  }
+}

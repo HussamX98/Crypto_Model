@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_221758_12",
+  "token_symbol": "FAI",
+  "token_address": "DfoJDDTmA71ZZCbXzsNHjoGV8b87TncNUABQfcQppump",
+  "entry_time": "2025-01-09T22:57:40.347493",
+  "entry_price": 7.53740932604282e-06,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0140614666666667,
+  "highest_price_seen": 7.53740932604282e-06,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T22:57:40.349495",
+      "time_in_trade_minutes": 0.0,
+      "price": 6.852190296402563e-06,
+      "return_pct": -9.090909090909104,
+      "volume": 5389.704854816944,
+      "remaining_position_size": 100,
+      "highest_price_seen": 7.53740932604282e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:58:40.641270",
+      "time_in_trade_minutes": 1.0,
+      "price": 6.648805532268546e-06,
+      "return_pct": -11.78924687961449,
+      "volume": 5389.704854816944,
+      "remaining_position_size": 100,
+      "highest_price_seen": 7.53740932604282e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:58:40.641270",
+      "time_in_trade_minutes": 1.0,
+      "price": 6.648805532268546e-06,
+      "return_pct": -11.78924687961449,
+      "volume": 5389.704854816944,
+      "remaining_position_size": 100,
+      "highest_price_seen": 7.53740932604282e-06,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -11.79%"
+    }
+  ]
+}

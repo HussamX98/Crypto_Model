@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_10",
+  "token_symbol": "PYPRO",
+  "token_address": "BTPRv4Vgx1kp2z5PfKZ18YjqdVVKD2kM5bKRPVHApump",
+  "entry_time": "2024-12-31T18:54:55.704239",
+  "entry_price": 6.645193172677917e-06,
+  "initial_position_size": 2.27,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.07442842928111126,
+    "momentum_7m": 0.061562940979006164
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T18:54:55.706239",
+      "time_in_trade_minutes": 0.0,
+      "price": 5.778428845806884e-06,
+      "return_pct": -13.043478260869556,
+      "volume": 0.0,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:55:56.141779",
+      "time_in_trade_minutes": 1.01,
+      "price": 5.602956481595559e-06,
+      "return_pct": -15.684069130865485,
+      "volume": 0.0,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:56:56.402236",
+      "time_in_trade_minutes": 2.01,
+      "price": 5.602956481595559e-06,
+      "return_pct": -15.684069130865485,
+      "volume": 0.0,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:57:57.178270",
+      "time_in_trade_minutes": 3.02,
+      "price": 5.602956481595559e-06,
+      "return_pct": -15.684069130865485,
+      "volume": 5045.558748509084,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:58:57.454750",
+      "time_in_trade_minutes": 4.03,
+      "price": 5.602956481595559e-06,
+      "return_pct": -15.684069130865485,
+      "volume": 5045.558748509084,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:59:58.235834",
+      "time_in_trade_minutes": 5.04,
+      "price": 5.602956481595559e-06,
+      "return_pct": -15.684069130865485,
+      "volume": 5045.558748509084,
+      "remaining_position_size": 2.27,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.046795266666667
+}

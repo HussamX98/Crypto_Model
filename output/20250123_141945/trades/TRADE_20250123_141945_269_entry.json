@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_269",
+  "token_address": "5shypigjGfWFZ3Cs84zf8TQ4Z3vbhcn4bwWYkiQHpump",
+  "token_symbol": "LEIA",
+  "entry_time": "2025-01-23T17:32:38.827674",
+  "entry_price": 8.22427790740592e-06,
+  "market_price": 7.151546006439932e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.83146055
+}

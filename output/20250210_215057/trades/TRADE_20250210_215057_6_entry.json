@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_6",
+  "token_symbol": "BEAST",
+  "entry_time": "2025-02-10T21:57:22.744752",
+  "market_price": 5.640067221879452e-06,
+  "entry_price": 6.48607730516137e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0,
+    "volatility_5m": 0.0,
+    "momentum_7m": -0.1456158498325938
+  }
+}

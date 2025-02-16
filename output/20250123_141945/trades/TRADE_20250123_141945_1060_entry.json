@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1060",
+  "token_address": "46GMzeA8uW61P9wPzDSJhvKRbMaBG3Xf862yD7Arpump",
+  "token_symbol": "YOUR FIRED",
+  "entry_time": "2025-01-23T18:05:38.370630",
+  "entry_price": 8.39083654359116e-06,
+  "market_price": 7.296379603122749e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 213.35340178333334
+}

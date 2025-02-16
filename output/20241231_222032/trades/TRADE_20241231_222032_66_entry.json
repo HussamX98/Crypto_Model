@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_66",
+  "token_address": "7eGTvuVfqyc5GmddUvHKicj2qJLGdGEsNWB2SYEJpump",
+  "token_symbol": "CUNT",
+  "entry_time": "2025-01-01T00:41:41.387301",
+  "market_price": 8.836622228502802e-06,
+  "entry_price_with_slippage": 1.016211556277822e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.4498890855784696,
+    "momentum_7m": 0.41454030491021676
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_383",
+  "token_address": "96qMyV93G8kJ6fXF2MRnorVsV4kz8yvpo1j9NauNpump",
+  "token_symbol": "BLNK",
+  "entry_time": "2025-01-23T17:36:38.202012",
+  "entry_price": 8.001318509992585e-06,
+  "market_price": 6.957668269558769e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 189.29636426666667
+}

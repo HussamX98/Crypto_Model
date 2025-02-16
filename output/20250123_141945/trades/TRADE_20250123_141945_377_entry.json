@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_377",
+  "token_address": "H7wjG3Zdnh8MC8VzaNft5VNgWecrBEkCaVssKaVepump",
+  "token_symbol": "PAYPAL",
+  "entry_time": "2025-01-23T17:36:32.590198",
+  "entry_price": 1.8254873304688573e-05,
+  "market_price": 1.587380287364224e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.010901483181729565,
+    "momentum_7m": -0.10800957427949287,
+    "trend_acceleration": -0.0010468023251746228,
+    "price_volatility": 0.005020963177871174,
+    "price_change_15m": -0.10800957427949287,
+    "volume_momentum": 0.007701231689793531
+  },
+  "token_age_minutes": 184.170841
+}

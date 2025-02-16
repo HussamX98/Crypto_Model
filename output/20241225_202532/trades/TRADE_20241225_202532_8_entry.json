@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_8",
+  "token_address": "GM3vhnko7yu9skrzqZTQxLw3w6wWtyrRBTDYTN3vpump",
+  "token_symbol": "Memes",
+  "entry_time": "2024-12-25T22:12:09.886084",
+  "entry_price": 0.000295083124602578,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.1131044001336585,
+    "momentum_7m": 0.9610644264173622,
+    "trend_acceleration": 0.07453275750636304,
+    "price_change_15m": 0.6207021387137743
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_35",
+  "token_address": "7L8QTUaJQiNZGKdzh6WihNhP7rPHQoQTKZyFF7Jppump",
+  "token_symbol": "rolly",
+  "entry_time": "2025-01-08T13:53:59.512596",
+  "market_price": 4.111969015744348e-05,
+  "entry_price_with_slippage": 4.523165917318783e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9350484849416296,
+  "features": {
+    "momentum_5m": 0.35581918148209635,
+    "momentum_7m": 0.5096901981929862,
+    "trend_acceleration": 0.01350484849416296,
+    "price_change_15m": 0.34159085591035865
+  }
+}

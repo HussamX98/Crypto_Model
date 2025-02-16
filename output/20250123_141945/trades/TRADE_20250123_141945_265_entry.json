@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_265",
+  "token_address": "CmzaWEKuQJACe6wx3d8w4v5QtKmkhVJ6WkMegDxapump",
+  "token_symbol": "DIFO",
+  "entry_time": "2025-01-23T17:32:37.800703",
+  "entry_price": 8.08318970858759e-06,
+  "market_price": 7.028860616163122e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 182.85324166666666
+}

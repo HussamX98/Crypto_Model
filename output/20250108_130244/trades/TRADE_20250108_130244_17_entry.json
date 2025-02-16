@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_17",
+  "token_address": "CNvtoEychpuQZWxFRjUJd5m3u2hjcsx9noPet6hFpump",
+  "token_symbol": "toxic",
+  "entry_time": "2025-01-08T13:43:23.264096",
+  "market_price": 7.565826877779119e-06,
+  "entry_price_with_slippage": 8.322409565557031e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9456873634280021,
+  "features": {
+    "momentum_5m": 0.21853104514200306,
+    "momentum_7m": 0.21853104514200306,
+    "trend_acceleration": 0.025801455285079516,
+    "price_change_15m": 0.21853104514200306
+  }
+}

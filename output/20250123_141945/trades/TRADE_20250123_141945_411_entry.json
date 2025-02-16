@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_411",
+  "token_address": "wxkLdpXTHEF2ZeESyiYeUG6sga7EdECKu2g32nSpump",
+  "token_symbol": "order66",
+  "entry_time": "2025-01-23T17:37:41.021745",
+  "entry_price": 8.25305576820498e-06,
+  "market_price": 7.176570233221723e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 191.45649495
+}

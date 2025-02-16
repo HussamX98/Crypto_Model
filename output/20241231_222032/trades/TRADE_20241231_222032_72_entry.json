@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_72",
+  "token_address": "C7raCWgPLbXYEkRSBVkvxmg5DVv1Uanvf6pitTQpump",
+  "token_symbol": "TM",
+  "entry_time": "2025-01-01T00:43:32.349248",
+  "market_price": 0.1636954633486869,
+  "entry_price_with_slippage": 0.18824978285098992,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.2565719045042796,
+    "momentum_7m": 0.46888847700264247,
+    "trend_acceleration": 0.002436063839480959,
+    "price_change_15m": -0.6135336430304408
+  }
+}

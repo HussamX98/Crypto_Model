@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_12",
+  "token_address": "AJuxSMUAM2tYzPFb6aAxzW5f5VyowAo2HaN4tH5spump",
+  "token_symbol": "NIGGACOIN",
+  "entry_time": "2024-12-31T18:57:01.898906",
+  "market_price": 6.231649865277802e-06,
+  "entry_price_with_slippage": 7.166397345069472e-06,
+  "slippage_percent": 15,
+  "position_size": 20.05,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.12994179630059333,
+    "momentum_7m": 0.04922302346028573
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1106",
+  "token_address": "F4JgsiiZFz5TCzjkf8sCZE4pX2biGR4pfjzQvLvzpump",
+  "token_symbol": "Aircoin",
+  "entry_time": "2025-01-23T18:07:39.688475",
+  "entry_price": 8.321687586402337e-06,
+  "market_price": 7.236250075132467e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 220.33261973333336
+}

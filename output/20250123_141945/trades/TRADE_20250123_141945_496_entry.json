@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_496",
+  "token_address": "J9AYLHt78buoeDjAuFezm8mZYzR7SptPZ9iECSc2pump",
+  "token_symbol": "Trump pile",
+  "entry_time": "2025-01-23T17:39:39.264826",
+  "entry_price": 7.887501609239125e-06,
+  "market_price": 6.8586970515122835e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.18057231666668
+}

@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_5",
+  "token_address": "EWoR2csogrLD13J1EoQHK4rBaqPLryP9rbhcs8MWpump",
+  "token_symbol": "PVE",
+  "entry_time": "2024-12-30T20:06:13.597508",
+  "market_price": 1.4880843049057696e-05,
+  "entry_price_with_slippage": 1.711296950641635e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.0157645914142819,
+    "volume_change_5m": 0.22452046224850797,
+    "volatility_5m": 0.25093027839698234,
+    "momentum_7m": 1.706942378617264,
+    "trend_acceleration": 0.02570696034277689,
+    "price_change_15m": 0.7187194740513194,
+    "volume_change_15m": 0,
+    "relative_volume": 2.275499263620738
+  }
+}

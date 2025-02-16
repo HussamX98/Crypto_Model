@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_130202_4",
+  "token_address": "2tWaXMhTk4yAm6ZiAzis8z1GynrXpQKdRctU12TNpump",
+  "token_symbol": "CFG",
+  "entry_time": "2025-01-09T13:42:16.839892",
+  "market_price": 5.274647080993386e-06,
+  "entry_price_with_slippage": 5.802111789092725e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.2886512192136177,
+    "momentum_7m": 0.4106544204912186,
+    "trend_acceleration": 0.02161845405558066,
+    "price_change_15m": 0.40973815572672656
+  }
+}

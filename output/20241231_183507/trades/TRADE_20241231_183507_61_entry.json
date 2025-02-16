@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_61",
+  "token_address": "AwUWsMg9nCyvipdUTUhVZsZdCQyeVH6sikUQzZbppump",
+  "token_symbol": "pube",
+  "entry_time": "2024-12-31T20:32:27.745740",
+  "market_price": 4.695859337085207e-05,
+  "entry_price_with_slippage": 5.4002382376479874e-05,
+  "slippage_percent": 15,
+  "position_size": 9.51,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.09658219714104832,
+    "momentum_7m": 0.1539269962652694
+  }
+}

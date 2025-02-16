@@ -1,0 +1,259 @@
+{
+  "trade_id": "TRADE_20241231_222032_2",
+  "token_symbol": "SMOG",
+  "token_address": "7GgwkYrtqKLsdkG9hg8SSrKP2yFnmvh7vHca271Apump",
+  "entry_time": "2024-12-31T22:26:38.767867",
+  "entry_price": 4.1207084919012333e-05,
+  "initial_position_size": 100,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.08359383016416766,
+    "momentum_7m": 0.12047957147196553
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T22:26:38.769868",
+      "time_in_trade_minutes": 0.0,
+      "price": 3.58322477556629e-05,
+      "return_pct": -13.043478260869556,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:27:39.049765",
+      "time_in_trade_minutes": 1.0,
+      "price": 3.703936422984331e-05,
+      "return_pct": -10.114087655946024,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:28:39.343084",
+      "time_in_trade_minutes": 2.01,
+      "price": 3.660862134140053e-05,
+      "return_pct": -11.159400347414872,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:29:39.648185",
+      "time_in_trade_minutes": 3.01,
+      "price": 3.665755059177829e-05,
+      "return_pct": -11.040660449958095,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:30:39.895411",
+      "time_in_trade_minutes": 4.02,
+      "price": 3.740296920987697e-05,
+      "return_pct": -9.231703035077343,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:31:40.195692",
+      "time_in_trade_minutes": 5.02,
+      "price": 3.859433648306375e-05,
+      "return_pct": -6.340532073752925,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:32:40.569379",
+      "time_in_trade_minutes": 6.03,
+      "price": 3.9867915238478514e-05,
+      "return_pct": -3.2498529880621296,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:33:40.915128",
+      "time_in_trade_minutes": 7.04,
+      "price": 4.062986922675107e-05,
+      "return_pct": -1.4007680800418476,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1207084919012333e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:34:41.171048",
+      "time_in_trade_minutes": 8.04,
+      "price": 4.1463436086519e-05,
+      "return_pct": 0.6221045919906576,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.1463436086519e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:35:41.422742",
+      "time_in_trade_minutes": 9.04,
+      "price": 4.17366310476342e-05,
+      "return_pct": 1.2850851489801585,
+      "volume": 9828.995183971838,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.17366310476342e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:36:41.706149",
+      "time_in_trade_minutes": 10.05,
+      "price": 4.305884199756496e-05,
+      "return_pct": 4.493783246720895,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.305884199756496e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:37:42.037263",
+      "time_in_trade_minutes": 11.05,
+      "price": 4.3199366753117294e-05,
+      "return_pct": 4.83480410715913,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.3199366753117294e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:38:42.559757",
+      "time_in_trade_minutes": 12.06,
+      "price": 4.4018434627308947e-05,
+      "return_pct": 6.822491117296914,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.4018434627308947e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:39:42.830513",
+      "time_in_trade_minutes": 13.07,
+      "price": 4.497857671274303e-05,
+      "return_pct": 9.152532388891665,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.497857671274303e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:40:43.087094",
+      "time_in_trade_minutes": 14.07,
+      "price": 4.613291850863626e-05,
+      "return_pct": 11.95385113823284,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.613291850863626e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:41:43.364767",
+      "time_in_trade_minutes": 15.08,
+      "price": 4.72150754098559e-05,
+      "return_pct": 14.579993956504222,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.72150754098559e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:42:43.708193",
+      "time_in_trade_minutes": 16.08,
+      "price": 4.7769493519335664e-05,
+      "return_pct": 15.925437611568416,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.7769493519335664e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:43:44.162149",
+      "time_in_trade_minutes": 17.09,
+      "price": 4.8837958882839396e-05,
+      "return_pct": 18.518354255887417,
+      "volume": 12615.145250152673,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.8837958882839396e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:44:44.444194",
+      "time_in_trade_minutes": 18.09,
+      "price": 4.973782749531828e-05,
+      "return_pct": 20.70212584334008,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 4.973782749531828e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:45:44.689759",
+      "time_in_trade_minutes": 19.1,
+      "price": 5.0769073618225205e-05,
+      "return_pct": 23.204720057256733,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 5.0769073618225205e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:46:44.955164",
+      "time_in_trade_minutes": 20.1,
+      "price": 5.2024690138713845e-05,
+      "return_pct": 26.251808981300773,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 5.2024690138713845e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:47:45.195567",
+      "time_in_trade_minutes": 21.11,
+      "price": 5.282565455012191e-05,
+      "return_pct": 28.19556310266671,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 5.282565455012191e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:48:45.560202",
+      "time_in_trade_minutes": 22.11,
+      "price": 1.4226875043177392e-05,
+      "return_pct": -65.47468700797778,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 5.282565455012191e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T22:48:45.560202",
+      "time_in_trade_minutes": 22.11,
+      "price": 1.4226875043177392e-05,
+      "return_pct": -65.47468700797778,
+      "volume": 14403.007772228035,
+      "remaining_position_size": 100,
+      "highest_price_seen": 5.282565455012191e-05,
+      "event": "stop_loss_triggered",
+      "reason": "Down -65.47% after 22.1 minutes"
+    }
+  ],
+  "monitoring_duration_minutes": 22.184374916666666,
+  "highest_price_seen": 5.282565455012191e-05,
+  "take_profit_hit": false
+}

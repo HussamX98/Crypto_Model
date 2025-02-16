@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_53",
+  "token_address": "Av55FhQRpzvnC8Py88ZzR5564WGPUuMMaYnoxsZ1pump",
+  "token_symbol": "PIXMUS",
+  "entry_time": "2025-01-01T00:30:23.940283",
+  "market_price": 6.762386750173359e-06,
+  "entry_price_with_slippage": 7.776744762699362e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.1419475573697775,
+    "momentum_7m": 0.12210431840239644
+  }
+}

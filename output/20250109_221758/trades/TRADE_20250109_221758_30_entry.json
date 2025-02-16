@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_30",
+  "token_address": "JCD1EJkGq6PEmyYZwtNGYeUwpNvPcmF8VZzvxP1opump",
+  "token_symbol": "FATASS",
+  "entry_time": "2025-01-09T23:10:39.439035",
+  "market_price": 1.0215555142071079e-05,
+  "entry_price_with_slippage": 1.1237110656278189e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.2362589362344505,
+    "momentum_7m": 0.26644871553629734,
+    "trend_acceleration": 0.019415656203059406,
+    "price_change_15m": 0.21770178940379936
+  },
+  "volume": 66567.62771535738
+}

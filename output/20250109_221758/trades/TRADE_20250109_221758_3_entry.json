@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_3",
+  "token_address": "5XoAwX8DFjMyJLbDCAKAB3hmzBL9TA8CqdanFvQrpump",
+  "token_symbol": "SMOKEY",
+  "entry_time": "2025-01-09T22:43:11.403021",
+  "market_price": 7.897433149074001e-06,
+  "entry_price_with_slippage": 8.687176463981402e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.16513978870539514,
+    "momentum_7m": 0.13940122170928104,
+    "trend_acceleration": 0.014191953014217884,
+    "price_change_15m": 0.49398764720443555
+  },
+  "volume": 6959.53081455501
+}

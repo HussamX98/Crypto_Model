@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_46",
+  "token_address": "Gkny84yZHkrxzf9B6EWEkFyfmGZyM7YhG37wWjWNpump",
+  "token_symbol": "pugi",
+  "entry_time": "2024-12-31T20:09:38.702255",
+  "market_price": 6.168741913572469e-06,
+  "entry_price_with_slippage": 7.094053200608338e-06,
+  "slippage_percent": 15,
+  "position_size": 1.87,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.06808041288361988,
+    "momentum_7m": 0.06147581106929034
+  }
+}

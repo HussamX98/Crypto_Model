@@ -1,0 +1,101 @@
+{
+  "trade_id": "TRADE_20241231_222032_17",
+  "token_symbol": "POPKM",
+  "token_address": "4StgsANixwXBQBJfCRtPcu459iE4KXtcCBqNNDQYpump",
+  "entry_time": "2024-12-31T23:14:48.527099",
+  "entry_price": 0.0034919456672877188,
+  "initial_position_size": 100,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.07558183038220778,
+    "momentum_7m": 0.39743613846590775
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T23:14:48.529100",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.0030793432724174007,
+      "return_pct": -11.815830891515466,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0034919456672877188,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:15:48.769271",
+      "time_in_trade_minutes": 1.0,
+      "price": 0.0046328404170495885,
+      "return_pct": 32.672179308220194,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0046328404170495885,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:16:49.033150",
+      "time_in_trade_minutes": 2.01,
+      "price": 0.00544777539150331,
+      "return_pct": 56.009741003064704,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00544777539150331,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:16:49.033150",
+      "time_in_trade_minutes": 2.01,
+      "price": 0.00544777539150331,
+      "return_pct": 56.009741003064704,
+      "volume": 0.0,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00544777539150331,
+      "event": "take_profit_hit",
+      "profit_level": "50.0%"
+    },
+    {
+      "timestamp": "2024-12-31T23:16:50.365881",
+      "time_in_trade_minutes": 2.03,
+      "price": 0.00570553308384201,
+      "return_pct": 63.39123306788561,
+      "volume": 0.0,
+      "remaining_position_size": 50.0,
+      "highest_price_seen": 0.00570553308384201,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:17:50.632336",
+      "time_in_trade_minutes": 3.04,
+      "price": 0.005801602138695482,
+      "return_pct": 66.14239428306257,
+      "volume": 0.0,
+      "remaining_position_size": 50.0,
+      "highest_price_seen": 0.005801602138695482,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:18:53.890334",
+      "time_in_trade_minutes": 4.09,
+      "price": 0.0037722716048655953,
+      "return_pct": 8.027786348566313,
+      "volume": 0.0,
+      "remaining_position_size": 50.0,
+      "highest_price_seen": 0.005801602138695482,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T23:18:53.890334",
+      "time_in_trade_minutes": 4.09,
+      "price": 0.0037722716048655953,
+      "return_pct": 8.027786348566313,
+      "volume": 0.0,
+      "remaining_position_size": 50.0,
+      "highest_price_seen": 0.005801602138695482,
+      "event": "trailing_stop_hit",
+      "highest_price": 0.005801602138695482,
+      "trailing_stop_price": 0.004351201604021611
+    }
+  ],
+  "monitoring_duration_minutes": 4.10178325,
+  "highest_price_seen": 0.005801602138695482,
+  "take_profit_hit": true
+}

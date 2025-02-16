@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250116_123938_3",
+  "token_symbol": "quvai",
+  "entry_time": "2025-01-16T16:07:28.972349",
+  "market_price": 9.360577488469129e-06,
+  "entry_price": 1.0764664111739497e-05,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.5698836085057974,
+    "volatility_5m": 0.46749757917076185,
+    "momentum_7m": 0.5698836085057974,
+    "trend_acceleration": -0.003279997087237141,
+    "price_change_15m": 0.5698836085057974
+  }
+}

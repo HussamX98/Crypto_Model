@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-01-23T17:39:24.082732",
+    "price": 9.204720125335496e-06,
+    "return_pct": -12.97030927918149,
+    "time_in_trade_minutes": 7.93179755,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:48:22.146665",
+    "price": 7.4725759173414085e-06,
+    "return_pct": -29.34755624084161,
+    "time_in_trade_minutes": 16.899529766666667,
+    "peak_return": 0
+  }
+]

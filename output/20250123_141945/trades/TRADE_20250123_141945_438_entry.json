@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_438",
+  "token_address": "3JHzZtQyWS3DmFVE3LjgvDqu9v8gLqMFmn8P545opump",
+  "token_symbol": "USDOP",
+  "entry_time": "2025-01-23T17:38:28.531849",
+  "entry_price": 8.299354724208062e-06,
+  "market_price": 7.216830194963533e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 189.50264926666665
+}

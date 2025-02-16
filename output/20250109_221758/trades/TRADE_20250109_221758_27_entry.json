@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_27",
+  "token_address": "HFztMg2RJnoz9AAigEZSDSm31xC9gUoWqE8LGWjkpump",
+  "token_symbol": "UHB",
+  "entry_time": "2025-01-09T23:08:37.094105",
+  "market_price": 7.091953722949461e-06,
+  "entry_price_with_slippage": 7.801149095244408e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.15897060899143067,
+    "momentum_7m": 0.1841057145558216,
+    "trend_acceleration": 0.019551657862475647,
+    "price_change_15m": 0.22317197066466088
+  },
+  "volume": 1550.5734007867127
+}

@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250116_123938_4",
+  "token_symbol": "AISHIT",
+  "entry_time": "2025-01-16T16:27:01.618138",
+  "market_price": 4.2253289463115664e-05,
+  "entry_price": 4.859128288258301e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4305290830742414,
+    "volatility_5m": 0.10136470713404214,
+    "momentum_7m": 0.5592634877017273,
+    "trend_acceleration": 0.025724018216601863,
+    "price_change_15m": 0.7383229759205161
+  }
+}

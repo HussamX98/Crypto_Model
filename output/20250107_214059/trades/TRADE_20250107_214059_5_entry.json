@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_5",
+  "token_address": "9DzgG3hEpXgTUGkph9m5DRsbdH5BEPXvaFUnByR6pump",
+  "token_symbol": "SND",
+  "entry_time": "2025-01-07T21:57:08.760152",
+  "market_price": 3.696942489971919e-05,
+  "entry_price_with_slippage": 4.066636738969111e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7020165102544971,
+  "features": {
+    "momentum_5m": 0.16253975255955577,
+    "momentum_7m": 0.45902008544657735,
+    "trend_acceleration": -0.018572081177361727,
+    "price_change_15m": 2.0155625676763407
+  }
+}

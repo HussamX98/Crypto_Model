@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_46",
+  "token_address": "DiWGB8ECgtMK3NnrpA7wJiqHcEiZfUueCciyxzV2pump",
+  "token_symbol": "ENTRO",
+  "entry_time": "2025-01-01T00:19:20.192386",
+  "market_price": 6.1603180905132066e-06,
+  "entry_price_with_slippage": 7.084365804090187e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.21631085181900378,
+    "momentum_7m": 0.16256813164346617
+  }
+}

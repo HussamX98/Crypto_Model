@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_12",
+  "token_address": "GmyDHSe7RR6W9fvKbCpf6CkMuUTQR6fNHSXSY1W7pump",
+  "token_symbol": "MLAI",
+  "entry_time": "2024-12-30T20:25:46.073499",
+  "market_price": 1.5113809176387346e-05,
+  "entry_price_with_slippage": 1.7380880552845445e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.7970469809215632,
+    "volume_change_5m": 0.07205102635362359,
+    "volatility_5m": 0.39852349046078156,
+    "momentum_7m": 0.7970469809215632,
+    "trend_acceleration": 0.0996308726151954,
+    "price_change_15m": 0.5771286104617874,
+    "volume_change_15m": 0,
+    "relative_volume": 2.8079241768536023
+  }
+}

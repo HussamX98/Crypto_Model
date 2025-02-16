@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_130202_5",
+  "token_address": "CQPDPfg2F8viAXiaRYKXZx7uvMojBGx6ghG95s4Kpump",
+  "token_symbol": "CTO",
+  "entry_time": "2025-01-09T13:57:38.028712",
+  "market_price": 7.367175908492243e-06,
+  "entry_price_with_slippage": 8.103893499341468e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.38438117588690157,
+    "momentum_7m": 0.38438117588690157,
+    "trend_acceleration": 0.024929421522181333,
+    "price_change_15m": 0.38438117588690157
+  }
+}

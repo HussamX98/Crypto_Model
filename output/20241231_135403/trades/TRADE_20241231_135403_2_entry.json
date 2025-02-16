@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_2",
+  "token_address": "5CGvuz2J9pf3YPifg9mZ9GKrdk3oLLdpndHFHpWGpump",
+  "token_symbol": "GOTH",
+  "entry_time": "2024-12-31T14:23:41.917682",
+  "market_price": 3.78201031615919e-05,
+  "entry_price_with_slippage": 4.3493118635830684e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.43993706923474285,
+    "momentum_7m": 0.5260883985699221,
+    "trend_acceleration": 0.034891379709571804,
+    "price_change_15m": 0.530842581388576
+  }
+}

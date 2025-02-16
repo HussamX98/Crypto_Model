@@ -1,0 +1,52 @@
+{
+  "summary_stats": {
+    "total_unique_tokens": 308,
+    "avg_price_increase": 134.0210371274757,
+    "median_price_increase": 9.110237833815757,
+    "avg_duration": 39.35064935064935,
+    "median_duration": 47.0,
+    "avg_token_age": 6496.53998917749,
+    "median_token_age": 377.1583333333333,
+    "spikes_within_hour": 100.0,
+    "spikes_in_first_hour": 0.0
+  },
+  "metrics_summary": {
+    "avg_volume": 1208781358.13619,
+    "median_volume": 834474063.5877535,
+    "min_volume": 0.0,
+    "max_volume": 6918989771.624011,
+    "avg_liquidity": 436980.90674542054,
+    "median_liquidity": 20415.234723776724,
+    "min_liquidity": 0.0,
+    "max_liquidity": 32957280.73136354,
+    "avg_marketcap": 79063488.55937502,
+    "median_marketcap": 20613.183040478354,
+    "min_marketcap": 92.37538143881434,
+    "max_marketcap": 18602583690.143936,
+    "avg_circulating_marketcap": 79063488.55937502,
+    "median_circulating_marketcap": 20613.183040478354,
+    "min_circulating_marketcap": 92.37538143881434,
+    "max_circulating_marketcap": 18602583690.143936
+  },
+  "duration_distribution": {
+    "45-60min": 52.27272727272727,
+    "0-15min": 19.805194805194805,
+    "15-30min": 16.233766233766232,
+    "30-45min": 11.688311688311687,
+    ">60min": 0.0
+  },
+  "increase_distribution": {
+    "5-10x": 53.896103896103895,
+    "10-20x": 20.12987012987013,
+    "20-50x": 14.285714285714285,
+    "50-100x": 7.792207792207792,
+    ">100x": 3.896103896103896
+  },
+  "age_distribution": {
+    "6-12hrs": 47.72727272727273,
+    "3-6hrs": 34.74025974025974,
+    ">12hrs": 17.532467532467532,
+    "<1hr": 0.0,
+    "1-3hrs": 0.0
+  }
+}

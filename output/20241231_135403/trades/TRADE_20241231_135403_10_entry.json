@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_10",
+  "token_address": "5TonZhnyoq1PqesVhEDXC3Gf3HE2JoSc6c9wjrXjpump",
+  "token_symbol": "SONA",
+  "entry_time": "2024-12-31T14:52:45.928060",
+  "market_price": 5.012261511173772e-05,
+  "entry_price_with_slippage": 5.764100737849837e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4442539318657015,
+    "momentum_7m": 0.5597149019337606,
+    "trend_acceleration": 0.02695488801815049,
+    "price_change_15m": 2.574503110550235
+  }
+}

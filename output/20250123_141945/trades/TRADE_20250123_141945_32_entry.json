@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_32",
+  "token_address": "GKNW13f3dzUByk1CUemQ5irwa2U7fWaARrZViagspump",
+  "token_symbol": "Wizard",
+  "entry_time": "2025-01-23T17:22:35.869224",
+  "entry_price": 8.265601785160465e-06,
+  "market_price": 7.187479813183014e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.64436978333333
+}

@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_15",
+  "token_address": "AtVAHP21x6TuKkGbVGV542SPmc6VZ2EhJULUbR34pump",
+  "token_symbol": "TMDD",
+  "entry_time": "2024-12-30T20:34:45.561849",
+  "market_price": 1.1541176095544988e-05,
+  "entry_price_with_slippage": 1.3272352509876735e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.42602286893745167,
+    "volume_change_5m": 0.17153096413211744,
+    "volatility_5m": 0.22884585160959134,
+    "momentum_7m": 0.55683068061598,
+    "trend_acceleration": 0.05626687520509957,
+    "price_change_15m": 0.7435060350585005,
+    "volume_change_15m": 0.301176321285499,
+    "relative_volume": 2.1155102591867214
+  }
+}

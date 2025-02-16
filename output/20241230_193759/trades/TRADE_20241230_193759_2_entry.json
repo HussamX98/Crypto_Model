@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_2",
+  "token_address": "24G4kGuvc7izHJUtfejE7dZY4xL2yCr94wmXYgWupump",
+  "token_symbol": "NOLOS",
+  "entry_time": "2024-12-30T19:56:10.830024",
+  "market_price": 1.2997918304786455e-05,
+  "entry_price_with_slippage": 1.4947606050504421e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3982696130626322,
+    "volume_change_5m": 0.0,
+    "volatility_5m": 0.10241831432617621,
+    "momentum_7m": 0.33030369862166453,
+    "trend_acceleration": 0.02739010540180535,
+    "price_change_15m": 0.8267757472695143,
+    "volume_change_15m": 0,
+    "relative_volume": 2.5714285714285707
+  }
+}

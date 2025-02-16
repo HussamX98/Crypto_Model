@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_264",
+  "token_address": "Hjd58KVdH7DsB7bpJZyC69CtnYk5reuViS11fgb6pump",
+  "token_symbol": "NDAS",
+  "entry_time": "2025-01-23T17:32:36.092877",
+  "entry_price": 7.947611969414541e-06,
+  "market_price": 6.910966929925689e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.80216393333333
+}

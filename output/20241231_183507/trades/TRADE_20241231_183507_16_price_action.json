@@ -1,0 +1,71 @@
+{
+  "trade_id": "TRADE_20241231_183507_16",
+  "token_symbol": "SUPERBASED",
+  "token_address": "8jihcvJubu1ZRprLr6AN6BLL3CYPK2Sx4WYQx4F1pump",
+  "entry_time": "2024-12-31T19:04:10.538711",
+  "entry_price": 1.450552997974351e-05,
+  "initial_position_size": 16.63,
+  "confidence_score": 0.8,
+  "features_at_entry": {
+    "momentum_5m": 0.050810584538568015,
+    "momentum_7m": 0.10798241601722314,
+    "trend_acceleration": 0.007247852318446074
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:04:10.540712",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.2613504330211749e-05,
+      "return_pct": -13.043478260869556,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:05:10.804708",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.2670486421288179e-05,
+      "return_pct": -12.650648139143538,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:06:11.072546",
+      "time_in_trade_minutes": 2.01,
+      "price": 1.2670486421288179e-05,
+      "return_pct": -12.650648139143538,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:07:11.313534",
+      "time_in_trade_minutes": 3.01,
+      "price": 1.2670486421288179e-05,
+      "return_pct": -12.650648139143538,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:08:11.892733",
+      "time_in_trade_minutes": 4.02,
+      "price": 1.1223470394811033e-05,
+      "return_pct": -22.62626453163561,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:09:13.513122",
+      "time_in_trade_minutes": 5.05,
+      "price": 1.1223470394811033e-05,
+      "return_pct": -22.62626453163561,
+      "volume": 23728.658985449867,
+      "remaining_position_size": 16.63,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.054683116666666
+}

@@ -1,0 +1,504 @@
+=== COMPLETE TRADE ANALYSIS ===
+
+Trade ID: TRADE_20250101_124321_1
+Token: dustry
+Entry Time: 2025-01-01T12:57:35.018624
+Entry Price: $0.00002120
+Market Price at Entry: $0.00001843
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.6340
+  momentum_7m: 1.1219
+  trend_acceleration: 0.0342
+  price_change_15m: 2.1188
+
+Trade Duration: 10.07 minutes
+Highest Price: $0.00002148
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:07:38.318300
+Exit Price: $0.00001178
+Return: -44.44%
+PnL: $-44.44
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_10
+Token: V
+Entry Time: 2025-01-01T13:56:02.286614
+Entry Price: $0.00001155
+Market Price at Entry: $0.00001004
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.8687
+  momentum_7m: 0.8687
+  trend_acceleration: 0.1086
+  price_change_15m: 0.8687
+
+Trade Duration: 10.17 minutes
+Highest Price: $0.00001155
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:06:12.382762
+Exit Price: $0.00000540
+Return: -53.23%
+PnL: $-53.23
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_11
+Token: Sigma
+Entry Time: 2025-01-01T14:00:40.196700
+Entry Price: $0.00000944
+Market Price at Entry: $0.00000821
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.5309
+  momentum_7m: 0.5309
+  trend_acceleration: 0.0664
+  price_change_15m: 0.5309
+
+Trade Duration: 10.16 minutes
+Highest Price: $0.00000944
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:10:49.783688
+Exit Price: $0.00000559
+Return: -40.84%
+PnL: $-40.84
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_12
+Token: wave
+Entry Time: 2025-01-01T14:03:42.156301
+Entry Price: $0.00001320
+Market Price at Entry: $0.00001148
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 1.1408
+  momentum_7m: 1.1408
+  trend_acceleration: 0.1426
+  price_change_15m: 1.1408
+
+Trade Duration: 10.12 minutes
+Highest Price: $0.00001320
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:13:48.865453
+Exit Price: $0.00000542
+Return: -58.93%
+PnL: $-58.93
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_13
+Token: SHERIFF
+Entry Time: 2025-01-01T14:06:58.996763
+Entry Price: $0.00002560
+Market Price at Entry: $0.00002226
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.2811
+  momentum_7m: 0.4384
+  trend_acceleration: 0.0225
+  price_change_15m: 0.5078
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_14
+Token: NIKYRA
+Entry Time: 2025-01-01T14:10:16.662908
+Entry Price: $0.00001019
+Market Price at Entry: $0.00000886
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.6492
+  momentum_7m: 0.6492
+  trend_acceleration: 0.0638
+  price_change_15m: 0.6492
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_15
+Token: CONVICTION
+Entry Time: 2025-01-01T14:11:32.149898
+Entry Price: $0.00008960
+Market Price at Entry: $0.00007791
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.7836
+  momentum_7m: 0.7852
+  trend_acceleration: 0.0772
+  price_change_15m: 0.6878
+
+Trade Duration: 10.20 minutes
+Highest Price: $0.00008960
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:21:43.588676
+Exit Price: $0.00006317
+Return: -29.50%
+PnL: $-29.50
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_16
+Token: CYBREXPL
+Entry Time: 2025-01-01T14:12:48.418340
+Entry Price: $0.00001073
+Market Price at Entry: $0.00000933
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.3670
+  momentum_7m: 0.3670
+  trend_acceleration: 0.0570
+  price_change_15m: 0.6559
+
+Trade Duration: 10.19 minutes
+Highest Price: $0.00001179
+Hit 100% Target: False
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_17
+Token: CYBREXPL
+Entry Time: 2025-01-01T14:13:48.913281
+Entry Price: $0.00001270
+Market Price at Entry: $0.00001105
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.6191
+  momentum_7m: 0.6191
+  trend_acceleration: 0.0231
+  price_change_15m: 0.9613
+
+Trade Duration: 10.17 minutes
+Highest Price: $0.00001270
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:22:59.278928
+Exit Price: $0.00000646
+Return: -49.16%
+PnL: $-49.16
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_18
+Token: SHERIFF
+Entry Time: 2025-01-01T14:27:09.708186
+Entry Price: $0.00007239
+Market Price at Entry: $0.00006295
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 1.5830
+  momentum_7m: 1.9430
+  trend_acceleration: 0.1185
+  price_change_15m: 1.5439
+
+Trade Duration: 10.20 minutes
+Highest Price: $0.00007239
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:37:21.328731
+Exit Price: $0.00001661
+Return: -77.06%
+PnL: $-77.06
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_19
+Token: resoAI
+Entry Time: 2025-01-01T14:30:21.807237
+Entry Price: $0.00007030
+Market Price at Entry: $0.00006113
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.3687
+  momentum_7m: 0.3278
+  trend_acceleration: 0.0242
+  price_change_15m: 0.6586
+
+Trade Duration: 10.12 minutes
+Highest Price: $0.00007030
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:40:28.836829
+Exit Price: $0.00002043
+Return: -70.94%
+PnL: $-70.94
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_2
+Token: SHIDDED
+Entry Time: 2025-01-01T13:13:11.378529
+Entry Price: $0.00007063
+Market Price at Entry: $0.00006141
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.3888
+  momentum_7m: 0.3470
+  trend_acceleration: 0.0670
+  price_change_15m: 6.7940
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_20
+Token: NIKYRA
+Entry Time: 2025-01-01T14:32:34.908832
+Entry Price: $0.00002568
+Market Price at Entry: $0.00002233
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 1.6961
+  momentum_7m: 1.4511
+  trend_acceleration: 0.1047
+  price_change_15m: 1.3307
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_21
+Token: NIKYRA
+Entry Time: 2025-01-01T14:34:38.273805
+Entry Price: $0.00003849
+Market Price at Entry: $0.00003347
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 2.6646
+  momentum_7m: 2.8694
+  trend_acceleration: 0.0446
+  price_change_15m: 2.2382
+
+Trade Duration: 10.07 minutes
+Highest Price: $0.00003849
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T14:44:42.086213
+Exit Price: $0.00001203
+Return: -68.75%
+PnL: $-68.75
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_3
+Token: PILU
+Entry Time: 2025-01-01T13:14:38.132125
+Entry Price: $0.00002733
+Market Price at Entry: $0.00002376
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 1.1212
+  momentum_7m: 1.9941
+  trend_acceleration: 0.0824
+  price_change_15m: 1.5034
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_4
+Token: CONVICTION
+Entry Time: 2025-01-01T13:15:59.436338
+Entry Price: $0.00001466
+Market Price at Entry: $0.00001275
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.3325
+  momentum_7m: 0.3358
+  trend_acceleration: 0.0255
+  price_change_15m: 0.7892
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_5
+Token: SHIDDED
+Entry Time: 2025-01-01T13:16:12.654486
+Entry Price: $0.00024281
+Market Price at Entry: $0.00021114
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 4.2224
+  momentum_7m: 4.1296
+  trend_acceleration: 0.2731
+  price_change_15m: 3.7337
+
+Trade Duration: 10.06 minutes
+Highest Price: $0.00024281
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:26:15.850158
+Exit Price: $0.00000899
+Return: -96.30%
+PnL: $-96.30
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_6
+Token: MScode
+Entry Time: 2025-01-01T13:22:36.580912
+Entry Price: $0.00002851
+Market Price at Entry: $0.00002479
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.8210
+  momentum_7m: 0.7508
+  trend_acceleration: 0.0618
+  price_change_15m: 1.0194
+
+Trade Duration: 10.08 minutes
+Highest Price: $0.00002851
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:32:40.531588
+Exit Price: $0.00002084
+Return: -26.92%
+PnL: $-26.92
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_7
+Token: KEKIUS
+Entry Time: 2025-01-01T13:25:46.658953
+Entry Price: $0.00001632
+Market Price at Entry: $0.00001419
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.4770
+  momentum_7m: 0.4862
+  trend_acceleration: 0.0406
+  price_change_15m: 0.5711
+
+Trade Duration: 10.14 minutes
+Highest Price: $0.00001632
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:35:54.922321
+Exit Price: $0.00000811
+Return: -50.32%
+PnL: $-50.32
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_8
+Token: HIVE
+Entry Time: 2025-01-01T13:37:05.311781
+Entry Price: $0.00001513
+Market Price at Entry: $0.00001316
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.2861
+  momentum_7m: 0.5905
+  trend_acceleration: 0.0361
+  price_change_15m: 0.7447
+
+Trade Duration: 10.20 minutes
+Highest Price: $0.00001513
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:47:17.003293
+Exit Price: $0.00000614
+Return: -59.44%
+PnL: $-59.44
+Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20250101_124321_9
+Token: YOA
+Entry Time: 2025-01-01T13:43:50.319616
+Entry Price: $0.00000945
+Market Price at Entry: $0.00000822
+Position Size: $100.00
+Confidence Score: 1.00
+
+Entry Features:
+  momentum_5m: 0.5339
+  momentum_7m: 0.5339
+  trend_acceleration: 0.0667
+  price_change_15m: 0.5339
+
+Trade Duration: 10.10 minutes
+Highest Price: $0.00000945
+Hit 100% Target: False
+
+Exit Details:
+Exit Time: 2025-01-01T13:53:56.199629
+Exit Price: $0.00000540
+Return: -42.88%
+PnL: $-42.88
+Exit Type: stop_loss
+
+==================================================
+
+
+=== TRADING STATISTICS ===
+Total Trades: 21
+Completed Trades: 14
+Profitable Trades: 0
+Win Rate: 0.00%
+Total PnL: $-768.71
+Average Return: -54.91%

@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_130202_7",
+  "token_symbol": "xtinguishr",
+  "token_address": "EV2c7kwDkddUEAtJwnarLpf6tgPTRjGpVvfPg4enpump",
+  "entry_time": "2025-01-09T14:29:21.083691",
+  "entry_price": 3.1981426987731e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0169568666666666,
+  "highest_price_seen": 3.1981426987731e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T14:29:21.084690",
+      "time_in_trade_minutes": 0.0,
+      "price": 2.9074024534300904e-05,
+      "return_pct": -9.090909090909104,
+      "volume": 73455.29029695205,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.1981426987731e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T14:30:21.599301",
+      "time_in_trade_minutes": 1.01,
+      "price": 2.8016511887683812e-05,
+      "return_pct": -12.397555310987974,
+      "volume": 73455.29029695205,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.1981426987731e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T14:30:21.599301",
+      "time_in_trade_minutes": 1.01,
+      "price": 2.8016511887683812e-05,
+      "return_pct": -12.397555310987974,
+      "volume": 73455.29029695205,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.1981426987731e-05,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -12.40%"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_57",
+  "token_address": "aFByMGLdnFtoV3ne1gx7GPCPQCv6P68VABxVRd4pump",
+  "token_symbol": "NY",
+  "entry_time": "2025-01-01T00:35:22.569183",
+  "market_price": 6.199937294093288e-06,
+  "entry_price_with_slippage": 7.1299278882072805e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.15253746416013625,
+    "momentum_7m": 0.15253746416013625
+  }
+}

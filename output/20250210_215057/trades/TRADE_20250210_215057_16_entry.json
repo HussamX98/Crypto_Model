@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_16",
+  "token_symbol": "PORTNOY",
+  "entry_time": "2025-02-10T21:59:22.544661",
+  "market_price": 5.64652506652556e-06,
+  "entry_price": 6.493503826504394e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.0006014498151357683,
+    "volatility_5m": 0.00030072490756788417,
+    "momentum_7m": -0.1405553041755706
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_16",
+  "token_address": "GdHCiEjiJv116uToB4p3B9BTM7NFqziuQSVXdyyZpump",
+  "token_symbol": "Bythqim",
+  "entry_time": "2025-01-23T17:21:23.209870",
+  "entry_price": 8.199385724427287e-06,
+  "market_price": 7.129900629936772e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.16029641666668
+}

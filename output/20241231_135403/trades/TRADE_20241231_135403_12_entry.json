@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_12",
+  "token_address": "CCTng4vbsX95VT9jB6rB8u1p2YPDzPMXzv5wozJfpump",
+  "token_symbol": "NINA",
+  "entry_time": "2024-12-31T14:53:08.836392",
+  "market_price": 4.044652602166175e-05,
+  "entry_price_with_slippage": 4.6513504924911005e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6698131199461708,
+    "momentum_7m": 0.6698131199461708,
+    "trend_acceleration": 0.0891292111477179,
+    "price_change_15m": 2.944750006803475
+  }
+}

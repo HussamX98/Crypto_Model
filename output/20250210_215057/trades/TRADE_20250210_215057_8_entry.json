@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_8",
+  "token_symbol": "ERROR",
+  "entry_time": "2025-02-10T21:57:25.602183",
+  "market_price": 5.654258282830197e-06,
+  "entry_price": 6.502397025254726e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.00024883621677385115,
+    "volatility_5m": 0.0006469927546303132,
+    "momentum_7m": -0.11878575204625597
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_40",
+  "token_address": "iRUEPba8EEJBjCHbnZD8TYypf4947hn6y6274QUpump",
+  "token_symbol": "AI ",
+  "entry_time": "2025-01-01T00:05:24.468030",
+  "market_price": 3.4580173421291756e-05,
+  "entry_price_with_slippage": 3.9767199434485515e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.10931403199544687,
+    "momentum_7m": 0.12837068461669432
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_88",
+  "token_address": "7iPiRa3o3AjManTvuHSh54raZMiJYJLd4RHRKpb8pump",
+  "token_symbol": "MMW",
+  "entry_time": "2025-01-07T22:24:16.290944",
+  "market_price": 0.00010963800914076976,
+  "entry_price_with_slippage": 0.00012060181005484675,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9549361733161663,
+  "features": {
+    "momentum_5m": 0.7708626233154747,
+    "momentum_7m": 0.902154564761708,
+    "trend_acceleration": 0.06062491108028373,
+    "price_change_15m": 1.5418768249698838
+  }
+}

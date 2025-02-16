@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_23",
+  "token_address": "GjMTEgFvFV5acMs1mAQrgGcDCDk2BWnWqgcLw18Hpump",
+  "token_symbol": "updawg",
+  "entry_time": "2024-12-29T18:27:51.557707",
+  "entry_price": 1.7442080611619596e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.9188016017975469,
+    "momentum_7m": 1.2563198635278083,
+    "trend_acceleration": 0.05929449095749424,
+    "price_change_15m": 1.2282854064064472
+  }
+}

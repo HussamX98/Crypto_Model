@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_15",
+  "token_address": "5NRQZrYxogPr57hhU7mRs2JoLCzsWzXQJXoMdxPvpump",
+  "token_symbol": "blo",
+  "entry_time": "2024-12-31T15:13:33.833417",
+  "market_price": 1.608063288156707e-05,
+  "entry_price_with_slippage": 1.849272781380213e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3213088106186808,
+    "momentum_7m": 0.32403705524006776,
+    "trend_acceleration": 0.03384202247379939,
+    "price_change_15m": 0.9064179583258398
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_74",
+  "token_address": "4sKmk1mrLJV7WMLVLMBgVntrxJZP7A3BeD39GfiFpump",
+  "token_symbol": "GTOAi",
+  "entry_time": "2025-01-01T00:46:23.095165",
+  "market_price": 6.746924806876883e-06,
+  "entry_price_with_slippage": 7.758963527908416e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.07771017198307906,
+    "momentum_7m": 0.10896010337415007
+  }
+}

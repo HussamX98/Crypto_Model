@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_183507_62",
+  "token_address": "DqT68nxTT3xTCJtzq4MDLktVYZdh1Vj6Tt5AnCTLpump",
+  "token_symbol": "MAR-A-LAGO",
+  "entry_time": "2024-12-31T20:32:45.339735",
+  "market_price": 0.0004482670017652955,
+  "entry_price_with_slippage": 0.0005155070520300898,
+  "slippage_percent": 15,
+  "position_size": 17.24,
+  "confidence_score": 0.6032904719384615,
+  "features": {
+    "momentum_5m": 0.09475141559548939,
+    "momentum_7m": 0.9768146301008105,
+    "trend_acceleration": -0.16711650738488226,
+    "price_change_15m": 121.56310932924124
+  }
+}

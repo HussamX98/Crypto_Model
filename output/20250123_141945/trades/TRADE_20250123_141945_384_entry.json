@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_384",
+  "token_address": "G5nDoYTzPRBtzurNQK4WjYyTbnNCrqvrtGaoDTh6pump",
+  "token_symbol": "BOA",
+  "entry_time": "2025-01-23T17:36:38.335013",
+  "entry_price": 8.558506652338949e-06,
+  "market_price": 7.4421796976860425e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.021919232744775474,
+    "momentum_7m": 0.021919232744775474,
+    "trend_acceleration": -0.007306410914925158,
+    "price_volatility": 0.010959616372387737,
+    "price_change_15m": 0.021919232744775474,
+    "volume_momentum": 3.075923360329469e-05
+  },
+  "token_age_minutes": 181.54102278333332
+}

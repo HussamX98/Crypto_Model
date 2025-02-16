@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_917",
+  "token_address": "GqyFMmf1PvGZrhKVyi3UgnyLDQVxRmsRUMiSHjoepump",
+  "token_symbol": "ABRA",
+  "entry_time": "2025-01-23T17:57:29.800999",
+  "entry_price": 8.088618020771899e-06,
+  "market_price": 7.033580887627738e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 208.44131023333333
+}

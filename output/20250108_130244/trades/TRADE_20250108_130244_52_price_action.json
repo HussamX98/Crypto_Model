@@ -1,0 +1,53 @@
+{
+  "trade_id": "TRADE_20250108_130244_52",
+  "token_symbol": "Paid?",
+  "token_address": "2zQGztSBxegmW4aNVCkVwM72V5Bro19qWRtzTtG6pump",
+  "entry_time": "2025-01-08T14:10:19.777048",
+  "entry_price": 3.260969878224218e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 2.0173727166666664,
+  "highest_price_seen": 3.260969878224218e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:10:19.778049",
+      "time_in_trade_minutes": 0.0,
+      "price": 2.9645180711129253e-05,
+      "return_pct": -9.090909090909093,
+      "volume": 56024.97096310201,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.260969878224218e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:11:20.036399",
+      "time_in_trade_minutes": 1.0,
+      "price": 2.5435980490241064e-05,
+      "return_pct": -21.998726022908276,
+      "volume": 56024.97096310201,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.260969878224218e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:12:20.296059",
+      "time_in_trade_minutes": 2.01,
+      "price": 1.9758678614351825e-05,
+      "return_pct": -39.40858286887477,
+      "volume": 56024.97096310201,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.260969878224218e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:12:20.296059",
+      "time_in_trade_minutes": 2.01,
+      "price": 1.9758678614351825e-05,
+      "return_pct": -39.40858286887477,
+      "volume": 56024.97096310201,
+      "remaining_position_size": 100,
+      "highest_price_seen": 3.260969878224218e-05,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 2.4457274086681634e-05
+    }
+  ]
+}

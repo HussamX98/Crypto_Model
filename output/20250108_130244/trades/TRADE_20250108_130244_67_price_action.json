@@ -1,0 +1,63 @@
+{
+  "trade_id": "TRADE_20250108_130244_67",
+  "token_symbol": "Morphology",
+  "token_address": "EXf3y44puAf8GCBSgKX5qKazMFNVZKVBruxHC9nupump",
+  "entry_time": "2025-01-08T14:33:25.999433",
+  "entry_price": 2.0016330585830618e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 3.038942716666667,
+  "highest_price_seen": 2.0016330585830618e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:33:26.000437",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.8196664168936923e-05,
+      "return_pct": -9.090909090909104,
+      "volume": 167539.10020108978,
+      "remaining_position_size": 100,
+      "highest_price_seen": 2.0016330585830618e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:34:26.758331",
+      "time_in_trade_minutes": 1.01,
+      "price": 1.6376408325237812e-05,
+      "return_pct": -18.18476291138733,
+      "volume": 167539.10020108978,
+      "remaining_position_size": 100,
+      "highest_price_seen": 2.0016330585830618e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:35:27.020862",
+      "time_in_trade_minutes": 2.02,
+      "price": 1.6795993320454408e-05,
+      "return_pct": -16.088549554911214,
+      "volume": 167539.10020108978,
+      "remaining_position_size": 100,
+      "highest_price_seen": 2.0016330585830618e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:36:27.256058",
+      "time_in_trade_minutes": 3.02,
+      "price": 1.3737801222372336e-05,
+      "return_pct": -31.367034714658427,
+      "volume": 167539.10020108978,
+      "remaining_position_size": 100,
+      "highest_price_seen": 2.0016330585830618e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:36:27.256058",
+      "time_in_trade_minutes": 3.02,
+      "price": 1.3737801222372336e-05,
+      "return_pct": -31.367034714658427,
+      "volume": 167539.10020108978,
+      "remaining_position_size": 100,
+      "highest_price_seen": 2.0016330585830618e-05,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 1.5012247939372963e-05
+    }
+  ]
+}

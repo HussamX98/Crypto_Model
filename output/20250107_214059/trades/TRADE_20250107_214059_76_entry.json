@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_76",
+  "token_address": "7nhddLBbPas6FmFQAM7xeysLQQgx8AtNj135K3chpump",
+  "token_symbol": "NODE",
+  "entry_time": "2025-01-07T22:20:49.653384",
+  "market_price": 0.00010270486549587272,
+  "entry_price_with_slippage": 0.00011297535204546,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.700650218418261,
+    "momentum_7m": 0.7848113702770678,
+    "trend_acceleration": -0.009530528099259111,
+    "price_change_15m": 0.48352847439487
+  }
+}

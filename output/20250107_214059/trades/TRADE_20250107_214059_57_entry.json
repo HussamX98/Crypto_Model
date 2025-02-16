@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_57",
+  "token_address": "F3pmN7oUWqhdmzpuYwzuyioWjNZboQBvd5975XJQpump",
+  "token_symbol": "CHILLCNDLE",
+  "entry_time": "2025-01-07T22:16:13.876452",
+  "market_price": 3.0892711628132725e-05,
+  "entry_price_with_slippage": 3.3981982790946e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.951696326664369,
+  "features": {
+    "momentum_5m": 0.6549345222488041,
+    "momentum_7m": 0.6519477529456961,
+    "trend_acceleration": 0.015169632666436894,
+    "price_change_15m": 0.33971914659787195
+  }
+}

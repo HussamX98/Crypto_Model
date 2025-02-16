@@ -1,0 +1,717 @@
+{
+    "45": {
+        "12HXYh3MHmyuraHtd82fGEKSwuhdsbPo1utXQKvXpump": {
+            "total_trades": 1,
+            "high_confidence_trades": 1,
+            "avg_return": 5.286948412736541,
+            "max_return": 5.286948412736541,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 10:14:00",
+                    "entry_price": 9.0476771328587e-05,
+                    "exit_price": 0.0004670715044021,
+                    "max_price": 0.0004783460225652,
+                    "return_multiple": 5.286948412736541,
+                    "confidence_score": 0.9382900595664978,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.15392596503775566,
+                        "momentum_5m": 0.15392596503775574,
+                        "trend_acceleration": 0.1260141360623676,
+                        "momentum_acc_7m": 0.13921916932668563,
+                        "momentum_acc_14m": 0.2572128210071098,
+                        "price_change_15m": 0.17089671879494361
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 24946,
+                "features_calculated": 24925,
+                "signals_generated": 1,
+                "trades_executed": 1,
+                "price_moves_5x": 1
+            }
+        },
+        "265sKc6C7wRcEkuLqzPCWUziHCqsp2Q1gXJo2H9Bpump": {
+            "total_trades": 6,
+            "high_confidence_trades": 5,
+            "avg_return": 24.09064397380207,
+            "max_return": 35.135000429137754,
+            "trades": [
+                {
+                    "entry_time": "2024-10-28 22:45:00",
+                    "entry_price": 6.132125000509997e-06,
+                    "exit_price": 8.198062713047859e-06,
+                    "max_price": 5.5509437951059824e-05,
+                    "return_multiple": 9.052235227827746,
+                    "confidence_score": 0.8923197388648987,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.11236134518539437,
+                        "momentum_5m": 0.11236134518539444,
+                        "trend_acceleration": 0.11236134518539444,
+                        "momentum_acc_7m": 0.14789387435004575,
+                        "momentum_acc_14m": 0.11236134518539455,
+                        "price_change_15m": 0.0728359799445359
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:26:00",
+                    "entry_price": 7.531925437373445e-06,
+                    "exit_price": 2.6431242695151385e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 31.454647422799948,
+                    "confidence_score": 0.9387044310569763,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.15603245673629454,
+                        "momentum_5m": 0.15603245673629462,
+                        "trend_acceleration": 0.11644059392947712,
+                        "momentum_acc_7m": 0.15603245673629465,
+                        "momentum_acc_14m": 0.1673704803418858,
+                        "price_change_15m": 0.14292517690242212
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:30:00",
+                    "entry_price": 8.341647295019048e-06,
+                    "exit_price": 2.894231943678213e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 28.40135175564972,
+                    "confidence_score": 0.913729727268219,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.2803025532552698,
+                        "momentum_5m": 0.23154267346543156,
+                        "trend_acceleration": 0.12427009651897533,
+                        "momentum_acc_7m": 0.2803025532552699,
+                        "momentum_acc_14m": 0.29164057686086114,
+                        "price_change_15m": 0.2803025532552698
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:38:00",
+                    "entry_price": 7.035259768489568e-06,
+                    "exit_price": 2.2602409831797478e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 33.67523969882695,
+                    "confidence_score": 0.982269823551178,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": -0.15659639950708423,
+                        "momentum_5m": -0.21540690132935042,
+                        "trend_acceleration": -0.32161765731785136,
+                        "momentum_acc_7m": -0.4368989527623541,
+                        "momentum_acc_14m": -0.15659639950708407,
+                        "price_change_15m": 0.07980789885005499
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:39:00",
+                    "entry_price": 6.742964455777412e-06,
+                    "exit_price": 2.2011458944264075e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 35.135000429137754,
+                    "confidence_score": 0.9473586678504944,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": -0.23328171999865652,
+                        "momentum_5m": -0.2480008679012884,
+                        "trend_acceleration": -0.07668532049157233,
+                        "momentum_acc_7m": -0.5317243933649781,
+                        "momentum_acc_14m": -0.27287358280547386,
+                        "price_change_15m": 0.0349485852724267
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:40:00",
+                    "entry_price": 3.471070269206752e-05,
+                    "exit_price": 2.3263047895136544e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 6.8253893085702995,
+                    "confidence_score": 0.9267443418502808,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 2.870692746128881,
+                        "momentum_5m": 2.79276741229481,
+                        "trend_acceleration": 3.1039744661275384,
+                        "momentum_acc_7m": 2.6801800166298237,
+                        "momentum_acc_14m": 2.7146602893925866,
+                        "price_change_15m": 4.1243329817802445
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 43155,
+                "features_calculated": 43134,
+                "signals_generated": 6,
+                "trades_executed": 6,
+                "price_moves_5x": 11
+            }
+        },
+        "28WdSGcReQCRW7WBWKsfo2AdVE5TTTyg6Z5Mi8jBFXmN": {
+            "total_trades": 5,
+            "high_confidence_trades": 5,
+            "avg_return": 5.330134368863507,
+            "max_return": 5.967073139893647,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 16:41:00",
+                    "entry_price": 1.9435507321271743e-05,
+                    "exit_price": 9.797352283188052e-05,
+                    "max_price": 9.797352283188052e-05,
+                    "return_multiple": 5.040955258453718,
+                    "confidence_score": 0.9882506132125854,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.21556013889892872,
+                        "momentum_5m": 0.46451593132772734,
+                        "trend_acceleration": -0.05962267126802681,
+                        "momentum_acc_7m": -0.21735459998334714,
+                        "momentum_acc_14m": 0.34443645559064884,
+                        "price_change_15m": 0.44857227217383605
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 16:43:00",
+                    "entry_price": 1.923083151386955e-05,
+                    "exit_price": 8.705580182881865e-05,
+                    "max_price": 9.797352283188052e-05,
+                    "return_multiple": 5.094606687247019,
+                    "confidence_score": 0.9344373941421509,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.44909400972599306,
+                        "momentum_5m": 0.09621430358887108,
+                        "trend_acceleration": 0.18792228050209944,
+                        "momentum_acc_7m": 0.5496702019308779,
+                        "momentum_acc_14m": 0.36456244903901897,
+                        "price_change_15m": 0.4652188324842613
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 16:53:00",
+                    "entry_price": 1.7775608442852655e-05,
+                    "exit_price": 7.007802795073629e-05,
+                    "max_price": 9.797352283188052e-05,
+                    "return_multiple": 5.511683222932064,
+                    "confidence_score": 0.9919412136077881,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": -0.16080411856060606,
+                        "momentum_5m": -0.13550665246960253,
+                        "trend_acceleration": 0.04073659368223378,
+                        "momentum_acc_7m": -0.5449018028840441,
+                        "momentum_acc_14m": -0.39436180077499494,
+                        "price_change_15m": 0.01326897797981662
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 16:54:00",
+                    "entry_price": 1.945326556915176e-05,
+                    "exit_price": 7.965754609631669e-05,
+                    "max_price": 9.797352283188052e-05,
+                    "return_multiple": 5.036353535791089,
+                    "confidence_score": 0.9580473303794861,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.0676549204677378,
+                        "momentum_5m": 0.17232341146086966,
+                        "trend_acceleration": 0.22845903902834389,
+                        "momentum_acc_7m": 0.06277322147727468,
+                        "momentum_acc_14m": -0.20752788969921762,
+                        "price_change_15m": 0.2711395442816754
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 16:55:00",
+                    "entry_price": 1.6419024961645892e-05,
+                    "exit_price": 7.419622813457356e-05,
+                    "max_price": 9.797352283188052e-05,
+                    "return_multiple": 5.967073139893647,
+                    "confidence_score": 0.9596858024597168,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": -0.20147555378406523,
+                        "momentum_5m": -0.1279204017125733,
+                        "trend_acceleration": -0.26913047425180314,
+                        "momentum_acc_7m": -0.2594394725077433,
+                        "momentum_acc_14m": -0.41703569268299384,
+                        "price_change_15m": -0.09446066251830293
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 24123,
+                "features_calculated": 24102,
+                "signals_generated": 5,
+                "trades_executed": 5,
+                "price_moves_5x": 6
+            }
+        },
+        "2ban8tt99mhYf9hCXygvSUWDTxNAq54YQGGP3iNFpump": {
+            "total_trades": 3,
+            "high_confidence_trades": 3,
+            "avg_return": 5.661451144213167,
+            "max_return": 6.138256578658972,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 19:07:00",
+                    "entry_price": 0.0036941576521325,
+                    "exit_price": 0.0036384938295434,
+                    "max_price": 0.0226756875108057,
+                    "return_multiple": 6.138256578658972,
+                    "confidence_score": 0.9614644646644592,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.5707214337961003,
+                        "momentum_5m": 0.2176745018553309,
+                        "trend_acceleration": 0.3336025203574217,
+                        "momentum_acc_7m": 0.3990692828210236,
+                        "momentum_acc_14m": -0.5630401171136923,
+                        "price_change_15m": 0.5942973476834237
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 19:11:00",
+                    "entry_price": 0.0041534665964788,
+                    "exit_price": 5.311279848994108e-05,
+                    "max_price": 0.0226756875108057,
+                    "return_multiple": 5.459460665948187,
+                    "confidence_score": 0.9858762621879578,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.1986769230119474,
+                        "momentum_5m": 0.1986883072093064,
+                        "trend_acceleration": -0.21760139234043593,
+                        "momentum_acc_7m": -0.32796753457704786,
+                        "momentum_acc_14m": 0.15200690934454034,
+                        "price_change_15m": 1.0319354490521313
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 19:12:00",
+                    "entry_price": 0.0042096192724478,
+                    "exit_price": 5.07546518864285e-06,
+                    "max_price": 0.0226756875108057,
+                    "return_multiple": 5.386636188032343,
+                    "confidence_score": 0.929905116558075,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.4042835482799217,
+                        "momentum_5m": 0.13952193133920882,
+                        "trend_acceleration": 0.20560662526797432,
+                        "momentum_acc_7m": 0.2552841123866502,
+                        "momentum_acc_14m": 0.2991265680734999,
+                        "price_change_15m": 0.8547016740653294
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 23717,
+                "features_calculated": 23696,
+                "signals_generated": 3,
+                "trades_executed": 3,
+                "price_moves_5x": 5
+            }
+        },
+        "2E3qS1oSVbeLxQEhdSrVDMn5ruhCg5JQCqPXKpwWpump": {
+            "total_trades": 5,
+            "high_confidence_trades": 4,
+            "avg_return": 6.087069289272187,
+            "max_return": 6.982582761527664,
+            "trades": [
+                {
+                    "entry_time": "2024-10-25 07:30:00",
+                    "entry_price": 5.574017029657773e-05,
+                    "exit_price": 0.0003892103522375,
+                    "max_price": 0.0003892103522375,
+                    "return_multiple": 6.982582761527664,
+                    "confidence_score": 0.8856194019317627,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.09286962694169221,
+                        "momentum_5m": 0.09286962694169229,
+                        "trend_acceleration": 0.06004604352220864,
+                        "momentum_acc_7m": 0.09823956874019668,
+                        "momentum_acc_14m": 0.08274432702480591,
+                        "price_change_15m": 0.08700093652047403
+                    }
+                },
+                {
+                    "entry_time": "2024-10-25 07:32:00",
+                    "entry_price": 5.769033166968717e-05,
+                    "exit_price": 0.0003981998630284,
+                    "max_price": 0.0003981998630284,
+                    "return_multiple": 6.902367372549365,
+                    "confidence_score": 0.9077615141868591,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.13110236938256217,
+                        "momentum_5m": 0.13452054507121697,
+                        "trend_acceleration": 0.03823274244086995,
+                        "momentum_acc_7m": 0.13647231118106667,
+                        "momentum_acc_14m": 0.12097706946567588,
+                        "price_change_15m": 0.1250283531916287
+                    }
+                },
+                {
+                    "entry_time": "2024-10-25 07:33:00",
+                    "entry_price": 6.610201225777289e-05,
+                    "exit_price": 0.0004031318248949,
+                    "max_price": 0.0004031318248949,
+                    "return_multiple": 6.098631662268284,
+                    "confidence_score": 0.9676055312156677,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.29601262853017724,
+                        "momentum_5m": 0.3016956931318616,
+                        "trend_acceleration": 0.16491025914761506,
+                        "momentum_acc_7m": 0.3013825703286817,
+                        "momentum_acc_14m": 0.29180143477053017,
+                        "price_change_15m": 0.28905297548110376
+                    }
+                },
+                {
+                    "entry_time": "2024-10-25 07:34:00",
+                    "entry_price": 7.470258536582003e-05,
+                    "exit_price": 0.0004031318248949,
+                    "max_price": 0.0004031318248949,
+                    "return_multiple": 5.396490936970327,
+                    "confidence_score": 0.969394862651825,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.4690522676025907,
+                        "momentum_5m": 0.41807847738733106,
+                        "trend_acceleration": 0.1730396390724135,
+                        "momentum_acc_7m": 0.47741887878925904,
+                        "momentum_acc_14m": 0.46905226760259094,
+                        "price_change_15m": 0.45676093119194794
+                    }
+                },
+                {
+                    "entry_time": "2024-10-25 07:35:00",
+                    "entry_price": 7.974480666686857e-05,
+                    "exit_price": 0.0003762584641701,
+                    "max_price": 0.0004031318248949,
+                    "return_multiple": 5.055273713045296,
+                    "confidence_score": 0.9795645475387573,
+                    "holding_period": 45,
+                    "features": {
+                        "momentum_7m": 0.5703344070133337,
+                        "momentum_5m": 0.4306142629350138,
+                        "trend_acceleration": 0.10128213941074303,
+                        "momentum_acc_7m": 0.5747002108455134,
+                        "momentum_acc_14m": 0.5757043488118383,
+                        "price_change_15m": 0.5550823588476603
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 30461,
+                "features_calculated": 30440,
+                "signals_generated": 5,
+                "trades_executed": 5,
+                "price_moves_5x": 5
+            }
+        }
+    },
+    "30": {
+        "12HXYh3MHmyuraHtd82fGEKSwuhdsbPo1utXQKvXpump": {
+            "total_trades": 1,
+            "high_confidence_trades": 1,
+            "avg_return": 5.136760265508673,
+            "max_return": 5.136760265508673,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 10:14:00",
+                    "entry_price": 9.0476771328587e-05,
+                    "exit_price": 0.0004647574839122,
+                    "max_price": 0.0004647574839122,
+                    "return_multiple": 5.136760265508673,
+                    "confidence_score": 0.9382900595664978,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.15392596503775566,
+                        "momentum_5m": 0.15392596503775574,
+                        "trend_acceleration": 0.1260141360623676,
+                        "momentum_acc_7m": 0.13921916932668563,
+                        "momentum_acc_14m": 0.2572128210071098,
+                        "price_change_15m": 0.17089671879494361
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 24961,
+                "features_calculated": 24940,
+                "signals_generated": 1,
+                "trades_executed": 1,
+                "price_moves_5x": 1
+            }
+        },
+        "265sKc6C7wRcEkuLqzPCWUziHCqsp2Q1gXJo2H9Bpump": {
+            "total_trades": 6,
+            "high_confidence_trades": 5,
+            "avg_return": 24.09064397380207,
+            "max_return": 35.135000429137754,
+            "trades": [
+                {
+                    "entry_time": "2024-10-28 22:45:00",
+                    "entry_price": 6.132125000509997e-06,
+                    "exit_price": 9.051781176526642e-06,
+                    "max_price": 5.5509437951059824e-05,
+                    "return_multiple": 9.052235227827746,
+                    "confidence_score": 0.8923197388648987,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.11236134518539437,
+                        "momentum_5m": 0.11236134518539444,
+                        "trend_acceleration": 0.11236134518539444,
+                        "momentum_acc_7m": 0.14789387435004575,
+                        "momentum_acc_14m": 0.11236134518539455,
+                        "price_change_15m": 0.0728359799445359
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:26:00",
+                    "entry_price": 7.531925437373445e-06,
+                    "exit_price": 0.0001711650325196,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 31.454647422799948,
+                    "confidence_score": 0.9387044310569763,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.15603245673629454,
+                        "momentum_5m": 0.15603245673629462,
+                        "trend_acceleration": 0.11644059392947712,
+                        "momentum_acc_7m": 0.15603245673629465,
+                        "momentum_acc_14m": 0.1673704803418858,
+                        "price_change_15m": 0.14292517690242212
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:30:00",
+                    "entry_price": 8.341647295019048e-06,
+                    "exit_price": 0.0001546614363368,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 28.40135175564972,
+                    "confidence_score": 0.913729727268219,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.2803025532552698,
+                        "momentum_5m": 0.23154267346543156,
+                        "trend_acceleration": 0.12427009651897533,
+                        "momentum_acc_7m": 0.2803025532552699,
+                        "momentum_acc_14m": 0.29164057686086114,
+                        "price_change_15m": 0.2803025532552698
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:38:00",
+                    "entry_price": 7.035259768489568e-06,
+                    "exit_price": 3.920512116125956e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 33.67523969882695,
+                    "confidence_score": 0.982269823551178,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": -0.15659639950708423,
+                        "momentum_5m": -0.21540690132935042,
+                        "trend_acceleration": -0.32161765731785136,
+                        "momentum_acc_7m": -0.4368989527623541,
+                        "momentum_acc_14m": -0.15659639950708407,
+                        "price_change_15m": 0.07980789885005499
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:39:00",
+                    "entry_price": 6.742964455777412e-06,
+                    "exit_price": 4.105486015184795e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 35.135000429137754,
+                    "confidence_score": 0.9473586678504944,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": -0.23328171999865652,
+                        "momentum_5m": -0.2480008679012884,
+                        "trend_acceleration": -0.07668532049157233,
+                        "momentum_acc_7m": -0.5317243933649781,
+                        "momentum_acc_14m": -0.27287358280547386,
+                        "price_change_15m": 0.0349485852724267
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 01:40:00",
+                    "entry_price": 3.471070269206752e-05,
+                    "exit_price": 3.441707765019491e-05,
+                    "max_price": 0.0002369140590474,
+                    "return_multiple": 6.8253893085702995,
+                    "confidence_score": 0.9267443418502808,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 2.870692746128881,
+                        "momentum_5m": 2.79276741229481,
+                        "trend_acceleration": 3.1039744661275384,
+                        "momentum_acc_7m": 2.6801800166298237,
+                        "momentum_acc_14m": 2.7146602893925866,
+                        "price_change_15m": 4.1243329817802445
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 43170,
+                "features_calculated": 43149,
+                "signals_generated": 6,
+                "trades_executed": 6,
+                "price_moves_5x": 10
+            }
+        },
+        "28WdSGcReQCRW7WBWKsfo2AdVE5TTTyg6Z5Mi8jBFXmN": {
+            "total_trades": 1,
+            "high_confidence_trades": 1,
+            "avg_return": 5.720170120313213,
+            "max_return": 5.720170120313213,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 16:55:00",
+                    "entry_price": 1.6419024961645892e-05,
+                    "exit_price": 9.391961599028364e-05,
+                    "max_price": 9.391961599028364e-05,
+                    "return_multiple": 5.720170120313213,
+                    "confidence_score": 0.9596858024597168,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": -0.20147555378406523,
+                        "momentum_5m": -0.1279204017125733,
+                        "trend_acceleration": -0.26913047425180314,
+                        "momentum_acc_7m": -0.2594394725077433,
+                        "momentum_acc_14m": -0.41703569268299384,
+                        "price_change_15m": -0.09446066251830293
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 24138,
+                "features_calculated": 24117,
+                "signals_generated": 1,
+                "trades_executed": 1,
+                "price_moves_5x": 1
+            }
+        },
+        "2ban8tt99mhYf9hCXygvSUWDTxNAq54YQGGP3iNFpump": {
+            "total_trades": 3,
+            "high_confidence_trades": 3,
+            "avg_return": 5.1681251748439685,
+            "max_return": 5.2629769393946235,
+            "trades": [
+                {
+                    "entry_time": "2024-10-29 19:07:00",
+                    "entry_price": 0.0036941576521325,
+                    "exit_price": 0.0186504174185883,
+                    "max_price": 0.0186504174185883,
+                    "return_multiple": 5.048625200882292,
+                    "confidence_score": 0.9614644646644592,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.5707214337961003,
+                        "momentum_5m": 0.2176745018553309,
+                        "trend_acceleration": 0.3336025203574217,
+                        "momentum_acc_7m": 0.3990692828210236,
+                        "momentum_acc_14m": -0.5630401171136923,
+                        "price_change_15m": 0.5942973476834237
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 19:11:00",
+                    "entry_price": 0.0041534665964788,
+                    "exit_price": 0.0190967169995589,
+                    "max_price": 0.0218595989158138,
+                    "return_multiple": 5.2629769393946235,
+                    "confidence_score": 0.9858762621879578,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.1986769230119474,
+                        "momentum_5m": 0.1986883072093064,
+                        "trend_acceleration": -0.21760139234043593,
+                        "momentum_acc_7m": -0.32796753457704786,
+                        "momentum_acc_14m": 0.15200690934454034,
+                        "price_change_15m": 1.0319354490521313
+                    }
+                },
+                {
+                    "entry_time": "2024-10-29 19:12:00",
+                    "entry_price": 0.0042096192724478,
+                    "exit_price": 0.0166271485032737,
+                    "max_price": 0.0218595989158138,
+                    "return_multiple": 5.192773384254992,
+                    "confidence_score": 0.929905116558075,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.4042835482799217,
+                        "momentum_5m": 0.13952193133920882,
+                        "trend_acceleration": 0.20560662526797432,
+                        "momentum_acc_7m": 0.2552841123866502,
+                        "momentum_acc_14m": 0.2991265680734999,
+                        "price_change_15m": 0.8547016740653294
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 23732,
+                "features_calculated": 23711,
+                "signals_generated": 3,
+                "trades_executed": 3,
+                "price_moves_5x": 3
+            }
+        },
+        "2E3qS1oSVbeLxQEhdSrVDMn5ruhCg5JQCqPXKpwWpump": {
+            "total_trades": 2,
+            "high_confidence_trades": 2,
+            "avg_return": 5.690296615454628,
+            "max_return": 6.076951848420549,
+            "trades": [
+                {
+                    "entry_time": "2024-10-25 07:32:00",
+                    "entry_price": 5.769033166968717e-05,
+                    "exit_price": 0.0003505813676761,
+                    "max_price": 0.0003505813676761,
+                    "return_multiple": 6.076951848420549,
+                    "confidence_score": 0.9077615141868591,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.13110236938256217,
+                        "momentum_5m": 0.13452054507121697,
+                        "trend_acceleration": 0.03823274244086995,
+                        "momentum_acc_7m": 0.13647231118106667,
+                        "momentum_acc_14m": 0.12097706946567588,
+                        "price_change_15m": 0.1250283531916287
+                    }
+                },
+                {
+                    "entry_time": "2024-10-25 07:33:00",
+                    "entry_price": 6.610201225777289e-05,
+                    "exit_price": 0.0003432764613677,
+                    "max_price": 0.0003505813676761,
+                    "return_multiple": 5.303641382488705,
+                    "confidence_score": 0.9676055312156677,
+                    "holding_period": 30,
+                    "features": {
+                        "momentum_7m": 0.29601262853017724,
+                        "momentum_5m": 0.3016956931318616,
+                        "trend_acceleration": 0.16491025914761506,
+                        "momentum_acc_7m": 0.3013825703286817,
+                        "momentum_acc_14m": 0.29180143477053017,
+                        "price_change_15m": 0.28905297548110376
+                    }
+                }
+            ],
+            "diagnostics": {
+                "points_analyzed": 30476,
+                "features_calculated": 30455,
+                "signals_generated": 2,
+                "trades_executed": 2,
+                "price_moves_5x": 2
+            }
+        }
+    }
+}

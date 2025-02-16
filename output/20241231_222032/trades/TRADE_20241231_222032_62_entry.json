@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_62",
+  "token_address": "J4cgMnpsugiBCccCPbnEKGp1p5DPnq1KQNF8R7Mopump",
+  "token_symbol": "KERMIT",
+  "entry_time": "2025-01-01T00:38:40.666496",
+  "market_price": 6.659259117678378e-06,
+  "entry_price_with_slippage": 7.658147985330135e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.18581773006652358,
+    "momentum_7m": 0.18581772417592934
+  }
+}

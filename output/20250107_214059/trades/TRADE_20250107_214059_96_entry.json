@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_96",
+  "token_address": "CR94WK86LyfeTU9EFXn6FXfx35YsT19uLRj9tUe1pump",
+  "token_symbol": "RGT",
+  "entry_time": "2025-01-07T22:26:51.887467",
+  "market_price": 7.072508240033968e-06,
+  "entry_price_with_slippage": 7.779759064037365e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.2079840184123365,
+    "momentum_7m": 0.23075826829781598,
+    "trend_acceleration": 0.02289743714684936,
+    "price_change_15m": -0.15368719385776186
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_79",
+  "token_address": "D1fdNWNWEVrohVRwiCATUe3JEagZ1majqPSWUgWtpump",
+  "token_symbol": "GM",
+  "entry_time": "2025-01-01T00:47:20.159480",
+  "market_price": 3.596123370339377e-05,
+  "entry_price_with_slippage": 4.135541875890283e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6668287005067155,
+  "features": {
+    "momentum_5m": 0.8404588783559819,
+    "momentum_7m": 0.5255677411855368,
+    "trend_acceleration": 0.05376649193690164
+  }
+}

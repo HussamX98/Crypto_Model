@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_32",
+  "token_address": "4u2AmArVZrJfRM7FYdLSXnSFM2YGRGaVFMXpmrWapump",
+  "token_symbol": "LADYBOY",
+  "entry_time": "2024-12-31T23:48:06.742030",
+  "market_price": 1.0607136539904556e-05,
+  "entry_price_with_slippage": 1.2198207020890238e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.26270120493252325,
+    "momentum_7m": 0.4556187122258415
+  }
+}

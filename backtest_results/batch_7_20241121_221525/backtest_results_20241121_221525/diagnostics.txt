@@ -1,0 +1,14 @@
+=== BACKTEST DIAGNOSTICS ===
+
+
+Holding Period: 45 minutes
+--------------------------------------------------
+Total Trades: 302
+High Confidence Trades: 255
+Average Return: 7.54x
+
+Holding Period: 30 minutes
+--------------------------------------------------
+Total Trades: 153
+High Confidence Trades: 129
+Average Return: 7.23x

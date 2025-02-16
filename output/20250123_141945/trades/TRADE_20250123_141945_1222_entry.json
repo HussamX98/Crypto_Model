@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1222",
+  "token_address": "BjQnxx2xH2mLPuY4Hu3wMXfPUKE97CADpVj9U3mBpump",
+  "token_symbol": "OFDSOS",
+  "entry_time": "2025-01-23T18:18:39.209468",
+  "entry_price": 8.019635010192528e-06,
+  "market_price": 6.973595661036981e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 189.55753786666668
+}

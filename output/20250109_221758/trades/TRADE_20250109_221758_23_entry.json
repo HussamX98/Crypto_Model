@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_23",
+  "token_address": "F1GV5WVPbCwGPitZcXh6DG48wJWHN8QS7dVGLjMDpump",
+  "token_symbol": "PULSE",
+  "entry_time": "2025-01-09T23:05:19.598682",
+  "market_price": 8.461350856777587e-06,
+  "entry_price_with_slippage": 9.307485942455347e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.340059484292373,
+    "momentum_7m": 0.340059484292373,
+    "trend_acceleration": 0.0432816260881692,
+    "price_change_15m": 0.3840095725032129
+  },
+  "volume": 50784.905254771205
+}

@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_31",
+  "token_address": "PdxK2h5LRHpWjqwAboT6Tz1waHuSZg7d36D721Rpump",
+  "token_symbol": "cto",
+  "entry_time": "2025-01-09T23:10:45.252515",
+  "market_price": 7.5070698686938945e-06,
+  "entry_price_with_slippage": 8.257776855563284e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4211285903737565,
+    "momentum_7m": 0.4211285903737565,
+    "trend_acceleration": 0.050303283802813376,
+    "price_change_15m": 0.41182088508056536
+  },
+  "volume": 2328.332296763822
+}

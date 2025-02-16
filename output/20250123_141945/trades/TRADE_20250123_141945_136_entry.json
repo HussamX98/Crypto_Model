@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_136",
+  "token_address": "i65pjJoSwgPdF1EPoCaVXcVSbs56hW72N4CtFEapump",
+  "token_symbol": "JRAM",
+  "entry_time": "2025-01-23T17:29:22.535358",
+  "entry_price": 8.305380676705257e-06,
+  "market_price": 7.2220701536567465e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 183.9667172166667
+}

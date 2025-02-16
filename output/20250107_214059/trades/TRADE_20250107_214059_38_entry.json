@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_38",
+  "token_address": "2MbPmu5s6DqUa2rhsY3zRSYCcJJ2iooay19MjTLSpump",
+  "token_symbol": "AgentFi",
+  "entry_time": "2025-01-07T22:09:51.559238",
+  "market_price": 7.123045971340643e-06,
+  "entry_price_with_slippage": 7.835350568474708e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9010326735610952,
+  "features": {
+    "momentum_5m": 0.19429312330888404,
+    "momentum_7m": 0.19429312330888404,
+    "trend_acceleration": 0.025774698071790253,
+    "price_change_15m": 0.17722995545166453
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_2",
+  "token_symbol": "MYB",
+  "entry_time": "2025-02-10T21:56:23.849862",
+  "market_price": 5.628438950695477e-06,
+  "entry_price": 6.472704793299798e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0006544163513877432,
+    "volatility_5m": 0.0003272081756938716,
+    "momentum_7m": -0.11679067211117988
+  }
+}

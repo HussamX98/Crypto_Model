@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_11",
+  "token_address": "3W4FTTdFHvibVceebwutvnppbgRUuPxD58mZgEjWpump",
+  "token_symbol": "loopy",
+  "entry_time": "2024-12-29T23:37:54.631940",
+  "market_price": 0.00030090054595892563,
+  "entry_price_with_slippage": 0.0003460356278527645,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.7659489675404028,
+    "volatility_5m": 0.30156656540447363,
+    "momentum_7m": 1.09726285900744,
+    "trend_acceleration": 0.09523613107313036,
+    "price_change_15m": 1.09726285900744,
+    "relative_volume": 2.949101809972895
+  }
+}

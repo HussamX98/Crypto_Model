@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_130202_6",
+  "token_address": "CNGPg4GADfzP8Wi9GavAwFGdTgQ9xPimU4x5c1eSpump",
+  "token_symbol": "SCARED",
+  "entry_time": "2025-01-09T14:01:47.731074",
+  "market_price": 8.492538772919968e-06,
+  "entry_price_with_slippage": 9.341792650211964e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3961140199431368,
+    "momentum_7m": 0.39603828078602654,
+    "trend_acceleration": 0.04931691672171126,
+    "price_change_15m": 0.47476992290221776
+  }
+}

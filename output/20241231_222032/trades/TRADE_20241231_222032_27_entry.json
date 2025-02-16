@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_27",
+  "token_address": "BzehoPZm18JVwQP9wsJBzW88FjUwNWJBpj5WG6Hcpump",
+  "token_symbol": "HNY",
+  "entry_time": "2024-12-31T23:35:28.285520",
+  "market_price": 0.00013562135093943715,
+  "entry_price_with_slippage": 0.0001559645535803527,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.1490596389591925,
+    "momentum_7m": 0.19602507621864174,
+    "trend_acceleration": 0.0
+  }
+}

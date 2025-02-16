@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_183507_45",
+  "token_address": "B9UjmTtybT8R8WtCQVo8A5JXJ2eQDusYYzAe5Qjkpump",
+  "token_symbol": "BananaCoin",
+  "entry_time": "2024-12-31T20:09:11.703023",
+  "market_price": 0.0016643742734958628,
+  "entry_price_with_slippage": 0.001914030414520242,
+  "slippage_percent": 15,
+  "position_size": 54.61,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.5398416052039829,
+    "momentum_7m": 0.4507658086861126,
+    "trend_acceleration": 0.0811786288846251,
+    "price_change_15m": -0.0036238884405156435
+  }
+}

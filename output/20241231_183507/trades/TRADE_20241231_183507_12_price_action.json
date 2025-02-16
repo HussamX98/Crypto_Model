@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_12",
+  "token_symbol": "NIGGACOIN",
+  "token_address": "AJuxSMUAM2tYzPFb6aAxzW5f5VyowAo2HaN4tH5spump",
+  "entry_time": "2024-12-31T18:57:01.898906",
+  "entry_price": 7.166397345069472e-06,
+  "initial_position_size": 20.05,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.12994179630059333,
+    "momentum_7m": 0.04922302346028573
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T18:57:01.901410",
+      "time_in_trade_minutes": 0.0,
+      "price": 6.231649865277802e-06,
+      "return_pct": -13.043478260869556,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:58:02.130049",
+      "time_in_trade_minutes": 1.0,
+      "price": 5.867537539391914e-06,
+      "return_pct": -18.124306302541015,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T18:59:02.667727",
+      "time_in_trade_minutes": 2.01,
+      "price": 5.867537539391914e-06,
+      "return_pct": -18.124306302541015,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:00:02.909738",
+      "time_in_trade_minutes": 3.02,
+      "price": 5.867537539391914e-06,
+      "return_pct": -18.124306302541015,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:01:03.301854",
+      "time_in_trade_minutes": 4.02,
+      "price": 5.867537539391914e-06,
+      "return_pct": -18.124306302541015,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:02:03.642826",
+      "time_in_trade_minutes": 5.03,
+      "price": 5.867537539391914e-06,
+      "return_pct": -18.124306302541015,
+      "volume": 4263.037591822501,
+      "remaining_position_size": 20.05,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.03750195
+}

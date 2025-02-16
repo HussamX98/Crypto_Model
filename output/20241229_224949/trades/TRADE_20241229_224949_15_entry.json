@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_15",
+  "token_address": "BJ25xfts1Gsh691a8xbVQ4L2sNauuz6QbWQ6Yhhtpump",
+  "token_symbol": "GAI",
+  "entry_time": "2024-12-30T00:09:08.136956",
+  "market_price": 1.3905536756786069e-05,
+  "entry_price_with_slippage": 1.599136727030398e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4721014333028486,
+    "volatility_5m": 0.16049706011955167,
+    "momentum_7m": 0.4988411540660713,
+    "trend_acceleration": 0.04349472948520172,
+    "price_change_15m": 0.537610889261058,
+    "relative_volume": 1.3501406834829448
+  }
+}

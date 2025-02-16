@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1247",
+  "token_address": "38BZkQsa2sCqtkitzS9WN7CqPMi83CW5VcmJBzmWpump",
+  "token_symbol": "Wake up",
+  "entry_time": "2025-01-23T18:20:46.585915",
+  "entry_price": 7.861531199808151e-06,
+  "market_price": 6.8361140867896974e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 184.83690978333334
+}

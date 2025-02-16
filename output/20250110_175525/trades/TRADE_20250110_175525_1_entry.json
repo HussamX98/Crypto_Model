@@ -1,0 +1,23 @@
+{
+  "trade_id": "TRADE_20250110_175525_1",
+  "token_address": "8pmHmS12ci2MWhBSBjyyaofJm7nCzVegBLqs2Agzpump",
+  "token_symbol": "CHILLWAII",
+  "entry_time": "2025-01-10T18:22:58.095430",
+  "market_price": 1.2038153774136246e-05,
+  "entry_price": 1.3241969151549871e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.875,
+  "features": {
+    "momentum_5m": 0.4778792660477167,
+    "volatility_5m": 0.11814058939436452,
+    "momentum_7m": 0.5890244563069831,
+    "trend_acceleration": 0.005678435386921179,
+    "price_change_15m": 0.7760385235024687
+  },
+  "volume": 6219.214356993045,
+  "feature_analysis": {
+    "momentum_alignment": 1.2325800639531586,
+    "volume_increase": 2.5
+  }
+}

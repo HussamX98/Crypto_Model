@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_33",
+  "token_address": "GzWZFapCxMSQsuxSBudE53CRMz2NpaXCou3BKpYDpump",
+  "token_symbol": "ANUS",
+  "entry_time": "2024-12-31T23:48:20.298368",
+  "market_price": 1.7418583874196995e-05,
+  "entry_price_with_slippage": 2.0031371455326542e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.09866834771506938,
+    "momentum_7m": 0.11255411914900337,
+    "trend_acceleration": 0.009962410831383162
+  }
+}

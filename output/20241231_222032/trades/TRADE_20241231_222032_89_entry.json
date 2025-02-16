@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_89",
+  "token_address": "9U7HCznxMXj38MvKWtpktFRjsZFDR4LbeW5MV35apump",
+  "token_symbol": "OCTO",
+  "entry_time": "2025-01-01T00:51:46.875168",
+  "market_price": 3.6634522822133e-05,
+  "entry_price_with_slippage": 4.212970124545295e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.09867507820954913,
+    "momentum_7m": 0.12229885097493964
+  }
+}

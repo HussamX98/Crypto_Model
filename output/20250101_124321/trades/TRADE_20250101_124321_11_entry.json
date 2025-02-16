@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_11",
+  "token_address": "3asxArjET5ZZjf5pTturm9v92L4qmTtxutHtCm4npump",
+  "token_symbol": "Sigma",
+  "entry_time": "2025-01-01T14:00:40.196700",
+  "market_price": 8.211536818839997e-06,
+  "entry_price_with_slippage": 9.443267341665996e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.5309282638783122,
+    "momentum_7m": 0.5309282638783122,
+    "trend_acceleration": 0.06636603298478902,
+    "price_change_15m": 0.5309282638783122
+  }
+}

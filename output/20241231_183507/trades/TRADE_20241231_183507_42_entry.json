@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_42",
+  "token_address": "4PBihS1xeiNnwD1DbjLyic4fJ2f3P3EBQxGg2X4Qpump",
+  "token_symbol": "COKESHARK",
+  "entry_time": "2024-12-31T20:03:56.744159",
+  "market_price": 6.347660517019006e-06,
+  "entry_price_with_slippage": 7.299809594571856e-06,
+  "slippage_percent": 15,
+  "position_size": 1.5,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.06320976075373208,
+    "momentum_7m": 0.06061302688313641
+  }
+}

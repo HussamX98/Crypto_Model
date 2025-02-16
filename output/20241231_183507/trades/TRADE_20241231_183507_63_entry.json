@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_63",
+  "token_address": "VRRreF6Nx9skgfvUTkwxSpvo5cjghUXpUvmU8wbpump",
+  "token_symbol": "KEEPER",
+  "entry_time": "2024-12-31T20:35:20.117982",
+  "market_price": 0.001974479005587318,
+  "entry_price_with_slippage": 0.0022706508564254153,
+  "slippage_percent": 15,
+  "position_size": 30.0,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.03033603271877272,
+    "momentum_7m": 0.03631842104296279
+  }
+}

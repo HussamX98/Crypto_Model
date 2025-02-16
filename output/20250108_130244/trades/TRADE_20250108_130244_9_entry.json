@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_9",
+  "token_address": "7jf383H63vbtsJ7jz77XeqeasdPXQiRmsYYtCEVpump",
+  "token_symbol": "DAI",
+  "entry_time": "2025-01-08T13:32:52.063628",
+  "market_price": 7.612105301974487e-05,
+  "entry_price_with_slippage": 8.373315832171936e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9834264172374778,
+  "features": {
+    "momentum_5m": 0.23223044387451508,
+    "momentum_7m": 0.2768093940852221,
+    "trend_acceleration": 0.018342641723747777,
+    "price_change_15m": 0.9158813637139389
+  }
+}

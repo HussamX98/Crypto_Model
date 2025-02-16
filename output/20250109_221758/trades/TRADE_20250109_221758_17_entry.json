@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_17",
+  "token_address": "FPxoNdbTpuNHQFg4E5QJqprPxPByKow6H9hciwvzpump",
+  "token_symbol": "SAM",
+  "entry_time": "2025-01-09T23:02:45.484623",
+  "market_price": 0.010483641449151482,
+  "entry_price_with_slippage": 0.01153200559406663,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.14386066763542193,
+    "momentum_7m": 0.2526290779171072,
+    "trend_acceleration": 0.010276876850475986,
+    "price_change_15m": 0.38877096902227803
+  },
+  "volume": 766038.313194332
+}

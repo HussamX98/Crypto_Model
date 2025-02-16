@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_42",
+  "token_address": "GQjW44eQgjkBLyjwM5jE8UtFV9f4HCabUeVm53Wzpump",
+  "token_symbol": "VERDANSK",
+  "entry_time": "2025-01-07T22:13:00.385138",
+  "market_price": 1.9109306291737598e-05,
+  "entry_price_with_slippage": 2.102023692091136e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7566302806535724,
+  "features": {
+    "momentum_5m": 0.264487843099819,
+    "momentum_7m": 0.3759859245786097,
+    "trend_acceleration": -0.009148672622525583,
+    "price_change_15m": 1.915338456575495
+  }
+}

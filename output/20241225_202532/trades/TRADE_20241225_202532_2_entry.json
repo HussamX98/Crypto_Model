@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_2",
+  "token_address": "CGbTpyM5rKjHhDxTLxEbi211ahjueds3Yqw3m7UZpump",
+  "token_symbol": "INTERCAT",
+  "entry_time": "2024-12-25T21:16:44.949651",
+  "entry_price": 1.6349781352856303e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.49837464162635525,
+    "momentum_7m": 0.6014200162179182,
+    "trend_acceleration": 0.02449442829277143,
+    "price_change_15m": 1.2451986283604324
+  }
+}

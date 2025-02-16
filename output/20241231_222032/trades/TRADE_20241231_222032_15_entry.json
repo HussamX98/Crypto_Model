@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_15",
+  "token_address": "2gQKghqxNjjRzZVQksrNXW6i8gsb3TznCVGU9aE6pump",
+  "token_symbol": "TIM",
+  "entry_time": "2024-12-31T23:13:16.655105",
+  "market_price": 7.957425469088743e-06,
+  "entry_price_with_slippage": 9.151039289452054e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.1143151583019375,
+    "momentum_7m": 0.2246191315320163
+  }
+}

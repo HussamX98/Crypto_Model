@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_22",
+  "token_address": "8AnL7ntBEY6Cp3CQQpXrMpwaAe2j5iyLy8A2Goccpump",
+  "token_symbol": "yod16z",
+  "entry_time": "2025-01-23T17:22:22.613066",
+  "entry_price": 8.694585604073693e-06,
+  "market_price": 7.560509220933646e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.52020053333334
+}

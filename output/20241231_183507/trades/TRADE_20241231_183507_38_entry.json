@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_38",
+  "token_address": "6DLyeLFH7zF8bRdVpp13W5T58cum2snu8Dg89McHpump",
+  "token_symbol": "Swipe Way",
+  "entry_time": "2024-12-31T19:49:32.577060",
+  "market_price": 1.2476991832381078e-05,
+  "entry_price_with_slippage": 1.4348540607238238e-05,
+  "slippage_percent": 15,
+  "position_size": 46.28,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.6606528419670237,
+    "momentum_7m": 0.6065985072221056
+  }
+}

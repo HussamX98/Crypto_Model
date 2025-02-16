@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_95",
+  "token_address": "FF5cQdxbc2YXZNaQHDNiGu11gH6cu7MXpCcpDnf2pump",
+  "token_symbol": "TRUMP25",
+  "entry_time": "2025-01-01T00:54:56.489705",
+  "market_price": 8.395220733774055e-06,
+  "entry_price_with_slippage": 9.654503843840162e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.7846649664305343,
+  "features": {
+    "momentum_5m": 0.47940688254930586,
+    "momentum_7m": 0.4427168750154675,
+    "trend_acceleration": 0.0632790997400002
+  }
+}

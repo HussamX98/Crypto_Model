@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_478",
+  "token_address": "6uwm2cTFTGCnN2K6E7gvYkp9WsPxd3BKMBaMGvpTpump",
+  "token_symbol": "GROK",
+  "entry_time": "2025-01-23T17:39:33.851627",
+  "entry_price": 7.949500229596318e-06,
+  "market_price": 6.912608895301146e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 182.37960093333334
+}

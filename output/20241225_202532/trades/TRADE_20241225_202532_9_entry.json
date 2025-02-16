@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_9",
+  "token_address": "B76U9C8sPmWz9TuLRr23rYDRP3TYp16U2hAWKmnWpump",
+  "token_symbol": "KIDS",
+  "entry_time": "2024-12-25T22:21:12.399437",
+  "entry_price": 4.936053212882369e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.0541178484166438,
+    "momentum_7m": 1.3651295390971656,
+    "trend_acceleration": 0.08075181788863704,
+    "price_change_15m": 1.9457088107492395
+  }
+}

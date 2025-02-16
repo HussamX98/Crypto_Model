@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_183507_59",
+  "token_address": "DfzQK6TKaC8wP4NoAeUndpdQ6Rap6B9NzQYukPhgpump",
+  "token_symbol": "MIKEY COIN",
+  "entry_time": "2024-12-31T20:27:39.034930",
+  "market_price": 5.638356889225289e-06,
+  "entry_price_with_slippage": 6.484110422609081e-06,
+  "slippage_percent": 15,
+  "position_size": 40.0,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.046413809924311655,
+    "momentum_7m": 0.046413809924311655,
+    "trend_acceleration": 0.005801726240538957,
+    "price_change_15m": 0.046413809924311655
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_15",
+  "token_address": "GTZ4wz7htsVwj4rM4Si7KsvPQT8XV1Z9K5wjHQrspump",
+  "token_symbol": "CONVICTION",
+  "entry_time": "2025-01-01T14:11:32.149898",
+  "market_price": 7.79093103238107e-05,
+  "entry_price_with_slippage": 8.959570687238231e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.7836026535397396,
+    "momentum_7m": 0.7852474801098237,
+    "trend_acceleration": 0.07720716955910592,
+    "price_change_15m": 0.6877536627994381
+  }
+}

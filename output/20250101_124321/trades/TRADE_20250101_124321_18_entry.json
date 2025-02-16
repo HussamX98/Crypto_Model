@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_18",
+  "token_address": "3GXfP4nvCvhNuzYGAuUzmjHtDdFVbMvcguyejnDxpump",
+  "token_symbol": "SHERIFF",
+  "entry_time": "2025-01-01T14:27:09.708186",
+  "market_price": 6.294795638420568e-05,
+  "entry_price_with_slippage": 7.239014984183653e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.583009412435577,
+    "momentum_7m": 1.942968666065973,
+    "trend_acceleration": 0.11849907186252348,
+    "price_change_15m": 1.5438510325162484
+  }
+}

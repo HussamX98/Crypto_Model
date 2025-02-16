@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_183507_13",
+  "token_address": "8zcvB1Ej3Dqd9Jy42B7zQadqVogCDjRifrSQvio1pump",
+  "token_symbol": "VERBO",
+  "entry_time": "2024-12-31T19:00:11.502711",
+  "market_price": 5.576941393181459e-06,
+  "entry_price_with_slippage": 6.413482602158677e-06,
+  "slippage_percent": 15,
+  "position_size": 30.0,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.03563272070881918,
+    "momentum_7m": 0.03668863261629607,
+    "trend_acceleration": 0.004454090088602397
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_3",
+  "token_address": "3PqXdyspzJeGhePRNdKErAApVvymPKdratb17Vahpump",
+  "token_symbol": "LFG2025",
+  "entry_time": "2024-12-31T14:26:09.755718",
+  "market_price": 1.2462765046794474e-05,
+  "entry_price_with_slippage": 1.4332179803813644e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.8841590039362652,
+    "momentum_7m": 0.8841590039362652,
+    "trend_acceleration": 0.07921520066752163,
+    "price_change_15m": 0.8363066456667456
+  }
+}

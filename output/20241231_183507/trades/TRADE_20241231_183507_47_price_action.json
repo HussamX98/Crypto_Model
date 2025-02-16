@@ -1,0 +1,72 @@
+{
+  "trade_id": "TRADE_20241231_183507_47",
+  "token_symbol": "MAR-A-LAGO",
+  "token_address": "sALXzVubL2dFwntVfdH7HDbCSnCyCnGQewZHaicpump",
+  "entry_time": "2024-12-31T20:10:09.669348",
+  "entry_price": 0.0041925127372005435,
+  "initial_position_size": 35.6,
+  "confidence_score": 0.6005848830830145,
+  "features_at_entry": {
+    "momentum_5m": 0.6352287026826837,
+    "momentum_7m": 0.7134775099974167,
+    "trend_acceleration": -1.7115244236226392,
+    "price_change_15m": 683.8973661854093
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T20:10:09.670348",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.003645663249739603,
+      "return_pct": -13.043478260869568,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:11:10.117360",
+      "time_in_trade_minutes": 1.01,
+      "price": 0.003645663249739603,
+      "return_pct": -13.043478260869568,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:12:10.443613",
+      "time_in_trade_minutes": 2.01,
+      "price": 0.001011129611068645,
+      "return_pct": -75.88249161184888,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:13:10.713725",
+      "time_in_trade_minutes": 3.02,
+      "price": 0.0009895399084608211,
+      "return_pct": -76.39745015726382,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:14:11.020029",
+      "time_in_trade_minutes": 4.02,
+      "price": 0.0009432219209110977,
+      "return_pct": -77.5022288533126,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:15:11.331347",
+      "time_in_trade_minutes": 5.03,
+      "price": 0.001380700180327806,
+      "return_pct": -67.0674779810034,
+      "volume": 17730.070827535375,
+      "remaining_position_size": 35.6,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.032394483333333
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_17",
+  "token_address": "Hc5S71tnBY2AdWsu3s4DddTVhHfxEFEpjqKBkgLHpump",
+  "token_symbol": "LOCKINMF",
+  "entry_time": "2024-12-29T16:14:13.240177",
+  "entry_price": 9.50903501472201e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.47893443647993705,
+    "momentum_7m": 0.47893443647993705,
+    "trend_acceleration": 0.04167277789110649,
+    "price_change_15m": 0.5779973112444605
+  }
+}

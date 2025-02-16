@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_18",
+  "token_symbol": "S\ud835\uddcdeel",
+  "entry_time": "2025-02-10T21:59:40.124382",
+  "market_price": 5.904653396701277e-06,
+  "entry_price": 6.790351406206468e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0,
+    "volatility_5m": 0.0,
+    "momentum_7m": -0.11790680606989035
+  }
+}

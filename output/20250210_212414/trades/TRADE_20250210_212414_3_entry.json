@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_212414_3",
+  "token_symbol": "$GENO",
+  "entry_time": "2025-02-10T21:31:32.375334",
+  "market_price": 4.930543058491759e-05,
+  "entry_price": 5.670124517265523e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.3596844198518372,
+    "volatility_5m": 0.006876953984992831,
+    "momentum_7m": 0.48258451177826167
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2025-01-23T17:30:26.404903",
+    "price": 9.652825246686566e-06,
+    "return_pct": -13.043478260869556,
+    "time_in_trade_minutes": 0.06257221666666667,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:31:26.689583",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 1.0673168833333333,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:32:28.332803",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 2.094703883333333,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:33:28.628111",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 3.0996256833333335,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:34:32.491286",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 4.164011933333333,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:35:32.808337",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 5.169296116666667,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:36:33.110199",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 6.17432715,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:37:34.648750",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 7.199969666666666,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:38:36.158364",
+    "price": 9.660511734872997e-06,
+    "return_pct": -12.974235292101376,
+    "time_in_trade_minutes": 8.2251299,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:46:22.846223",
+    "price": 8.708990141361354e-06,
+    "return_pct": -21.545923478401953,
+    "time_in_trade_minutes": 16.003260883333333,
+    "peak_return": 0
+  }
+]

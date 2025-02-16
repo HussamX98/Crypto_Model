@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1235",
+  "token_address": "Eyyw4ynJHmXhgvPNiarpuqQP1WKj57UDAiLm39Wnpump",
+  "token_symbol": "BUNNY",
+  "entry_time": "2025-01-23T18:19:38.590132",
+  "entry_price": 7.975006939988425e-06,
+  "market_price": 6.934788643468196e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 194.65665931666666
+}

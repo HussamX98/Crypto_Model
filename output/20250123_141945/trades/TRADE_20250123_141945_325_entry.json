@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_325",
+  "token_address": "y6BYc3v9opuLsPKNiVxbnM7y1U3w8LJNXwuEuBHpump",
+  "token_symbol": "GOAT",
+  "entry_time": "2025-01-23T17:35:26.730756",
+  "entry_price": 8.172990355009739e-06,
+  "market_price": 7.106948134791077e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 181.77879591666667
+}

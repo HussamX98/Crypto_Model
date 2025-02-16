@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_5",
+  "token_symbol": "FUCK JOHN",
+  "entry_time": "2025-02-10T21:57:02.295489",
+  "market_price": 5.628317144794263e-06,
+  "entry_price": 6.472564716513402e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.003697640419830006,
+    "volatility_5m": 0.001848820209915003,
+    "momentum_7m": -0.09433659196630617
+  }
+}

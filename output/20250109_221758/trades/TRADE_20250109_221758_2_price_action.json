@@ -1,0 +1,63 @@
+{
+  "trade_id": "TRADE_20250109_221758_2",
+  "token_symbol": "HIVcoin",
+  "token_address": "8o2fKcvJkLNto6uZ2JDbxN73XGS6q5aWdihXi4Mzpump",
+  "entry_time": "2025-01-09T22:40:38.329366",
+  "entry_price": 8.644926894879535e-06,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 3.02245095,
+  "highest_price_seen": 8.644926894879535e-06,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T22:40:38.330366",
+      "time_in_trade_minutes": 0.0,
+      "price": 7.859024449890485e-06,
+      "return_pct": -9.090909090909104,
+      "volume": 4973.235597518062,
+      "remaining_position_size": 100,
+      "highest_price_seen": 8.644926894879535e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:41:38.608116",
+      "time_in_trade_minutes": 1.0,
+      "price": 7.859024449890485e-06,
+      "return_pct": -9.090909090909104,
+      "volume": 4973.235597518062,
+      "remaining_position_size": 100,
+      "highest_price_seen": 8.644926894879535e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:42:38.861767",
+      "time_in_trade_minutes": 2.01,
+      "price": 7.859024449890485e-06,
+      "return_pct": -9.090909090909104,
+      "volume": 4973.235597518062,
+      "remaining_position_size": 100,
+      "highest_price_seen": 8.644926894879535e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:43:39.120749",
+      "time_in_trade_minutes": 3.01,
+      "price": 7.779193844102055e-06,
+      "return_pct": -10.014347851689308,
+      "volume": 4973.235597518062,
+      "remaining_position_size": 100,
+      "highest_price_seen": 8.644926894879535e-06,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:43:39.120749",
+      "time_in_trade_minutes": 3.01,
+      "price": 7.779193844102055e-06,
+      "return_pct": -10.014347851689308,
+      "volume": 4973.235597518062,
+      "remaining_position_size": 100,
+      "highest_price_seen": 8.644926894879535e-06,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -10.01%"
+    }
+  ]
+}

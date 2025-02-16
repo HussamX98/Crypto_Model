@@ -1,0 +1,398 @@
+=== TRADE ANALYSIS REPORT ===
+
+OVERALL PERFORMANCE
+Total Trades: 19
+Profitable Trades: 0
+Win Rate: 0.00%
+Total PnL: $-781.39
+Average Win: $0.00
+Average Loss: $-41.13
+Largest Win: $0.00
+Largest Loss: $-89.19
+Stop Losses Hit: 18
+Average Trade Duration: 12.29 minutes
+
+FEATURE ANALYSIS
+
+momentum_5m:
+  mean: 0.7132
+  median: 0.5586
+  std: 0.5118
+  min: 0.2073
+  max: 2.5508
+
+momentum_7m:
+  mean: 0.7340
+  median: 0.5586
+  std: 0.4971
+  min: 0.3171
+  max: 2.5508
+
+trend_acceleration:
+  mean: 0.0718
+  median: 0.0570
+  std: 0.0501
+  min: 0.0235
+  max: 0.2124
+
+price_change_15m:
+  mean: 1.6378
+  median: 1.0407
+  std: 1.1540
+  min: 0.5308
+  max: 4.9678
+
+TOKEN PERFORMANCE
+
+SONA:
+  Trades: 1
+  Total PnL: $-70.62
+
+LUMI:
+  Trades: 1
+  Total PnL: $-61.10
+
+NINA:
+  Trades: 1
+  Total PnL: $-66.00
+
+APESCOIN:
+  Trades: 1
+  Total PnL: $-15.86
+
+BOOTY:
+  Trades: 1
+  Total PnL: $-43.71
+
+blo:
+  Trades: 2
+  Total PnL: $-10.98
+
+HYPU:
+  Trades: 2
+  Total PnL: $-90.65
+
+GOTH:
+  Trades: 2
+  Total PnL: $-58.11
+
+CHTTR:
+  Trades: 1
+  Total PnL: $-89.19
+
+NURSECOIN:
+  Trades: 2
+  Total PnL: $-60.72
+
+VOYANT:
+  Trades: 1
+  Total PnL: $-27.10
+
+LFG2025:
+  Trades: 1
+  Total PnL: $-54.34
+
+Chungo:
+  Trades: 1
+  Total PnL: $-19.89
+
+Trumpius:
+  Trades: 1
+  Total PnL: $-75.99
+
+DARKCOIN:
+  Trades: 1
+  Total PnL: $-37.14
+
+HOURLY DISTRIBUTION
+
+Hour 14:00:
+  Trades: 13
+  PnL: $-512.05
+
+Hour 15:00:
+  Trades: 6
+  PnL: $-269.34
+
+INDIVIDUAL TRADE DETAILS
+
+Trade ID: TRADE_20241231_135403_10
+Token: SONA
+Entry Price: $0.00005764
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.4443
+  momentum_7m: 0.5597
+  trend_acceleration: 0.0270
+  price_change_15m: 2.5745
+Exit Price: $0.00001693
+Return: -70.62%
+PnL: $-70.62
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_11
+Token: LUMI
+Entry Price: $0.00004367
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.5186
+  momentum_7m: 0.4756
+  trend_acceleration: 0.0969
+  price_change_15m: 2.3326
+Exit Price: $0.00001699
+Return: -61.10%
+PnL: $-61.10
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_12
+Token: NINA
+Entry Price: $0.00004651
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.6698
+  momentum_7m: 0.6698
+  trend_acceleration: 0.0891
+  price_change_15m: 2.9448
+Exit Price: $0.00001581
+Return: -66.00%
+PnL: $-66.00
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_13
+Token: APESCOIN
+Entry Price: $0.00001377
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.5592
+  momentum_7m: 0.5417
+  trend_acceleration: 0.0235
+  price_change_15m: 0.9188
+Exit Price: $0.00001159
+Return: -15.86%
+PnL: $-15.86
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_14
+Token: BOOTY
+Entry Price: $0.00000973
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.5586
+  momentum_7m: 0.5586
+  trend_acceleration: 0.0666
+  price_change_15m: 0.5583
+Exit Price: $0.00000548
+Return: -43.71%
+PnL: $-43.71
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_15
+Token: blo
+Entry Price: $0.00001849
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.3213
+  momentum_7m: 0.3240
+  trend_acceleration: 0.0338
+  price_change_15m: 0.9064
+
+Trade ID: TRADE_20241231_135403_16
+Token: HYPU
+Entry Price: $0.00002411
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 1.2540
+  momentum_7m: 1.2540
+  trend_acceleration: 0.1706
+  price_change_15m: 1.0087
+Exit Price: $0.00000540
+Return: -77.60%
+PnL: $-77.60
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_17
+Token: GOTH
+Entry Price: $0.00005632
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.4051
+  momentum_7m: 0.3171
+  trend_acceleration: 0.0574
+  price_change_15m: 1.0407
+Exit Price: $0.00004004
+Return: -28.91%
+PnL: $-28.91
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_18
+Token: CHTTR
+Entry Price: $0.00003949
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 1.1354
+  momentum_7m: 1.1354
+  trend_acceleration: 0.0421
+  price_change_15m: 4.9678
+Exit Price: $0.00000427
+Return: -89.19%
+PnL: $-89.19
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_19
+Token: NURSECOIN
+Entry Price: $0.00001967
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.4390
+  momentum_7m: 0.4888
+  trend_acceleration: 0.0494
+  price_change_15m: 0.5403
+Exit Price: $0.00001378
+Return: -29.94%
+PnL: $-29.94
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_1
+Token: VOYANT
+Entry Price: $0.00001818
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.7965
+  momentum_7m: 0.5820
+  trend_acceleration: 0.0238
+  price_change_15m: 1.4815
+Exit Price: $0.00001326
+Return: -27.10%
+PnL: $-27.10
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_2
+Token: GOTH
+Entry Price: $0.00004349
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.4399
+  momentum_7m: 0.5261
+  trend_acceleration: 0.0349
+  price_change_15m: 0.5308
+Exit Price: $0.00003079
+Return: -29.20%
+PnL: $-29.20
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_3
+Token: LFG2025
+Entry Price: $0.00001433
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.8842
+  momentum_7m: 0.8842
+  trend_acceleration: 0.0792
+  price_change_15m: 0.8363
+Exit Price: $0.00000654
+Return: -54.34%
+PnL: $-54.34
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_4
+Token: blo
+Entry Price: $0.00001503
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.5615
+  momentum_7m: 0.7206
+  trend_acceleration: 0.0323
+  price_change_15m: 0.5359
+Exit Price: $0.00001338
+Return: -10.98%
+PnL: $-10.98
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_5
+Token: Chungo
+Entry Price: $0.00240012
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.2073
+  momentum_7m: 0.3910
+  trend_acceleration: 0.1028
+  price_change_15m: 1.6177
+Exit Price: $0.00192286
+Return: -19.89%
+PnL: $-19.89
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_6
+Token: HYPU
+Entry Price: $0.00331315
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.9819
+  momentum_7m: 0.9819
+  trend_acceleration: 0.1227
+  price_change_15m: 2.2136
+Exit Price: $0.00288082
+Return: -13.05%
+PnL: $-13.05
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_7
+Token: Trumpius
+Entry Price: $0.00002337
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 2.5508
+  momentum_7m: 2.5508
+  trend_acceleration: 0.2124
+  price_change_15m: 2.6246
+Exit Price: $0.00000561
+Return: -75.99%
+PnL: $-75.99
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_8
+Token: DARKCOIN
+Entry Price: $0.00002709
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.3817
+  momentum_7m: 0.5498
+  trend_acceleration: 0.0570
+  price_change_15m: 2.8691
+Exit Price: $0.00001703
+Return: -37.14%
+PnL: $-37.14
+Exit Type: stop_loss
+
+Trade ID: TRADE_20241231_135403_9
+Token: NURSECOIN
+Entry Price: $0.00001209
+Position Size: $100.00
+Confidence Score: 1.00
+Features:
+  momentum_5m: 0.4421
+  momentum_7m: 0.4345
+  trend_acceleration: 0.0432
+  price_change_15m: 0.6153
+Exit Price: $0.00000837
+Return: -30.79%
+PnL: $-30.79
+Exit Type: stop_loss

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_37",
+  "token_address": "4Kd8TMLyhAmBWAgbCsYPDAssqtZm1u9wP5ZSNChEpump",
+  "token_symbol": "PABLO",
+  "entry_time": "2025-01-08T13:55:11.160503",
+  "market_price": 6.6297603487001144e-06,
+  "entry_price_with_slippage": 7.292736383570126e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9434104057166759,
+  "features": {
+    "momentum_5m": 0.21511560857501366,
+    "momentum_7m": 0.21511560857501366,
+    "trend_acceleration": 0.026889451071876708,
+    "price_change_15m": 0.21511560857501366
+  }
+}

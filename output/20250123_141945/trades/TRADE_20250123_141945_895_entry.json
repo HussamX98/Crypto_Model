@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_895",
+  "token_address": "GXhZxnz7LyXgr3TCcFFwaVJTN6Vkvwtvg7vg6n6epump",
+  "token_symbol": "MINSA",
+  "entry_time": "2025-01-23T17:56:30.127143",
+  "entry_price": 8.38120929601795e-06,
+  "market_price": 7.28800808349387e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 194.47284703333335
+}

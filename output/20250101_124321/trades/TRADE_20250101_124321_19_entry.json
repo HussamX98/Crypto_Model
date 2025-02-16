@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_19",
+  "token_address": "H82grBi7SNcUxJRWMCApHkmATUAL4k5CZZJKchwTpump",
+  "token_symbol": "resoAI",
+  "entry_time": "2025-01-01T14:30:21.807237",
+  "market_price": 6.112710100383291e-05,
+  "entry_price_with_slippage": 7.029616615440785e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.36867999572978505,
+    "momentum_7m": 0.3278396496496241,
+    "trend_acceleration": 0.024246473923637296,
+    "price_change_15m": 0.6586368974520005
+  }
+}

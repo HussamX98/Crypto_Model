@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_11",
+  "token_address": "9xGBTL2z7UrmiYAr6hkZApuF3AaRbmxSxXqZ8vtSpump",
+  "token_symbol": "2025AI",
+  "entry_time": "2024-12-31T23:01:14.189842",
+  "market_price": 7.400497521780236e-06,
+  "entry_price_with_slippage": 8.510572150047272e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6984443375926881,
+  "features": {
+    "momentum_5m": 0.7578598269520076,
+    "momentum_7m": 0.3829231088392966,
+    "trend_acceleration": 0.03824573902491085,
+    "price_change_15m": 0.0389735265053226
+  }
+}

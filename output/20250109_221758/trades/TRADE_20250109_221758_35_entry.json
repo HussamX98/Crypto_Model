@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_35",
+  "token_address": "94S3CeAFV4R1hfW3kL4Uxk6MGinPAMqnvVPFWU2Apump",
+  "token_symbol": "BTCLM",
+  "entry_time": "2025-01-09T23:18:50.794507",
+  "market_price": 6.316209084770881e-06,
+  "entry_price_with_slippage": 6.94782999324797e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.10318226531020636,
+    "momentum_7m": 0.10318226531020636,
+    "trend_acceleration": 0.011975819880357147,
+    "price_change_15m": -0.02193456358222634
+  },
+  "volume": 6481.281675114482
+}

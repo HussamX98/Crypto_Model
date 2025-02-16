@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_5",
+  "token_address": "HqF3ks2tSbSZDkS4V6Q1nT1UvPxqBQUKdwMH2zuDpump",
+  "token_symbol": "1SOL",
+  "entry_time": "2024-12-25T22:06:07.124761",
+  "entry_price": 2.16033273310075e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.4488249622439302,
+    "momentum_7m": 0.5106658783065292,
+    "trend_acceleration": 0.02132923202919873,
+    "price_change_15m": 0.6180470309331936
+  }
+}

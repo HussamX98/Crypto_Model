@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_186",
+  "token_address": "2LfbAhEmqtLxFRtfCEme5SwgyB1RrDwdmcDYQWwCpump",
+  "token_symbol": "DD",
+  "entry_time": "2025-01-23T17:30:33.294476",
+  "entry_price": 8.331217628338097e-06,
+  "market_price": 7.244537068120086e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.13700393333332
+}

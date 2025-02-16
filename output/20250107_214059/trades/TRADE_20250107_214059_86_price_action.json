@@ -1,0 +1,138 @@
+{
+  "trade_id": "TRADE_20250107_214059_86",
+  "error": "MarketMonitor.exit_trade() got an unexpected keyword argument 'exit_type'",
+  "price_action": [
+    {
+      "timestamp": "2025-01-07T22:23:51.218119",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.00015119240798597684,
+      "return_pct": -8.924722801143247,
+      "volume": 344480.7730617661,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0001660081776702786,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:24:51.508307",
+      "time_in_trade_minutes": 1.0,
+      "price": 0.00019505880575467236,
+      "return_pct": 17.499516284127537,
+      "volume": 344480.7730617661,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00019505880575467236,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:25:51.761538",
+      "time_in_trade_minutes": 2.01,
+      "price": 0.00022072133137182007,
+      "return_pct": 32.95810752781794,
+      "volume": 344480.7730617661,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00022072133137182007,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:26:52.135467",
+      "time_in_trade_minutes": 3.02,
+      "price": 0.0001838785073349709,
+      "return_pct": 10.764728530534162,
+      "volume": 344480.7730617661,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00022072133137182007,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:27:52.459153",
+      "time_in_trade_minutes": 4.02,
+      "price": 0.00018297820841497395,
+      "return_pct": 10.22240649999835,
+      "volume": 344480.7730617661,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00022072133137182007,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:28:52.753055",
+      "time_in_trade_minutes": 5.03,
+      "price": 0.00021191627052783,
+      "return_pct": 27.654115298303527,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00022072133137182007,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:29:52.987565",
+      "time_in_trade_minutes": 6.03,
+      "price": 0.00023120132882036086,
+      "return_pct": 39.27104800798868,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00023120132882036086,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:30:53.509606",
+      "time_in_trade_minutes": 7.04,
+      "price": 0.00025362786430571747,
+      "return_pct": 52.78034363431598,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:31:53.760398",
+      "time_in_trade_minutes": 8.04,
+      "price": 0.00024506369641928835,
+      "return_pct": 47.62146049577625,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:32:54.003744",
+      "time_in_trade_minutes": 9.05,
+      "price": 0.00021400532300312836,
+      "return_pct": 28.91251865205131,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:33:54.286621",
+      "time_in_trade_minutes": 10.05,
+      "price": 0.0001481120311892412,
+      "return_pct": -10.7802800634209,
+      "volume": 441624.4110189527,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:34:54.538744",
+      "time_in_trade_minutes": 11.06,
+      "price": 0.0001701898502999856,
+      "return_pct": 2.5189558059076633,
+      "volume": 550637.7476833796,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:34:54.538744",
+      "time_in_trade_minutes": 11.06,
+      "price": 0.0001701898502999856,
+      "return_pct": 2.5189558059076633,
+      "volume": 550637.7476833796,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.00025362786430571747,
+      "event": "trailing_stop_hit",
+      "highest_price": 0.00025362786430571747,
+      "trailing_stop_price": 0.000202902291444574
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_75",
+  "token_address": "43qPsVkAbvEDwtVAcrKXMBnYr5R1xdgJ8VbgeBxkpump",
+  "token_symbol": "HHW",
+  "entry_time": "2025-01-01T00:46:32.805171",
+  "market_price": 7.1271318916653474e-06,
+  "entry_price_with_slippage": 8.196201675415148e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.2931198746795285,
+    "momentum_7m": 0.10684446788519386
+  }
+}

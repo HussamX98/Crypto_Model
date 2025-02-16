@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1047",
+  "token_address": "65Mdv4meFjLqk5FoL58gGR7sAvfEEUmtp7PPms7Ypump",
+  "token_symbol": "DiFi",
+  "entry_time": "2025-01-23T18:04:41.535543",
+  "entry_price": 8.772732267142386e-06,
+  "market_price": 7.6284628409933805e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 181.48115311666666
+}

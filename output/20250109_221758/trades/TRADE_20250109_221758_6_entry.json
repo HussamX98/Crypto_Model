@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_6",
+  "token_address": "8o2fKcvJkLNto6uZ2JDbxN73XGS6q5aWdihXi4Mzpump",
+  "token_symbol": "HIVcoin",
+  "entry_time": "2025-01-09T22:47:40.765529",
+  "market_price": 8.578904919426603e-06,
+  "entry_price_with_slippage": 9.436795411369264e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.875,
+  "features": {
+    "momentum_5m": 0.1028012788151389,
+    "momentum_7m": 0.09159921490588419,
+    "trend_acceleration": 0.013672931638858285,
+    "price_change_15m": 0.3643774596158422
+  },
+  "volume": 4973.235597518062
+}

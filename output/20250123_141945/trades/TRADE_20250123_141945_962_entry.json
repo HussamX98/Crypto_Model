@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_962",
+  "token_address": "EmXtU5zvyGe1Q9ffGQbBbvToejt1ETNYqJaLSfWbpump",
+  "token_symbol": "INFINITE",
+  "entry_time": "2025-01-23T17:59:30.524045",
+  "entry_price": 2.1665276134409047e-05,
+  "market_price": 1.8839370551660042e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": -0.06700425309095004,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 199.9278732
+}

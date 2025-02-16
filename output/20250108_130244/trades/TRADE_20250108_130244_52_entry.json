@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_52",
+  "token_address": "2zQGztSBxegmW4aNVCkVwM72V5Bro19qWRtzTtG6pump",
+  "token_symbol": "Paid?",
+  "entry_time": "2025-01-08T14:10:19.777048",
+  "market_price": 2.9645180711129253e-05,
+  "entry_price_with_slippage": 3.260969878224218e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.23036213416179363,
+    "momentum_7m": 0.275925117712593,
+    "trend_acceleration": 0.03454659547374779,
+    "price_change_15m": 0.47450930586639695
+  }
+}

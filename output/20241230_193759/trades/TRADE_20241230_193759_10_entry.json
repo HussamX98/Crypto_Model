@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_10",
+  "token_address": "C95zgEigfmyy1W15cNVvJGJ9Uyz5MansGyP8mPzqpump",
+  "token_symbol": "GRIND",
+  "entry_time": "2024-12-30T20:23:30.274610",
+  "market_price": 2.3664094590897258e-05,
+  "entry_price_with_slippage": 2.7213708779531843e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.8733178112998072,
+    "volume_change_5m": 0,
+    "volatility_5m": 0.26375805536936814,
+    "momentum_7m": 1.3036893267436427,
+    "trend_acceleration": 0.06708649528960557,
+    "price_change_15m": 2.957225034885209,
+    "volume_change_15m": 0,
+    "relative_volume": 0.0
+  }
+}

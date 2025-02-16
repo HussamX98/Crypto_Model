@@ -1,0 +1,70 @@
+{
+  "trade_id": "TRADE_20241231_183507_41",
+  "token_symbol": "CTT",
+  "token_address": "62a87wQCe6iCWzaeVfpRNAjdERNhi7uLyamsKzxgpump",
+  "entry_time": "2024-12-31T19:56:16.635459",
+  "entry_price": 1.3313332798372273e-05,
+  "initial_position_size": 41.74,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.42297797422518957,
+    "momentum_7m": 0.337854725802625
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:56:16.637459",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.1576811129019368e-05,
+      "return_pct": -13.043478260869556,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:57:16.879039",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.3712054317567392e-05,
+      "return_pct": 2.9949038699300656,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:58:17.152151",
+      "time_in_trade_minutes": 2.01,
+      "price": 1.9374405170686445e-05,
+      "return_pct": 45.52633412014772,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:59:17.414881",
+      "time_in_trade_minutes": 3.01,
+      "price": 5.485580441994842e-06,
+      "return_pct": -58.7963395411739,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:00:17.715176",
+      "time_in_trade_minutes": 4.02,
+      "price": 5.327361922584204e-06,
+      "return_pct": -59.98476111679907,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:01:18.009750",
+      "time_in_trade_minutes": 5.02,
+      "price": 5.321913693180026e-06,
+      "return_pct": -60.02568422363257,
+      "volume": 0.0,
+      "remaining_position_size": 41.74,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 6.028077683333334
+}

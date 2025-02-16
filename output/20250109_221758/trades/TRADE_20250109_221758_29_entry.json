@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_29",
+  "token_address": "UWK2T1W8jaBugJuVCZ4oUARzWR2ZwqRv2QMnMPcpump",
+  "token_symbol": "CRW",
+  "entry_time": "2025-01-09T23:10:37.948792",
+  "market_price": 6.894492968618918e-06,
+  "entry_price_with_slippage": 7.5839422654808105e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9249999999999999,
+  "features": {
+    "momentum_5m": 0.14297281320722965,
+    "momentum_7m": 0.13856676429047066,
+    "trend_acceleration": 0.017871601650903707,
+    "price_change_15m": 0.11990757583078637
+  },
+  "volume": 1322.468142145396
+}

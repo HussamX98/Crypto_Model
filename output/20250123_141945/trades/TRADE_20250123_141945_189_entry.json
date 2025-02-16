@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_189",
+  "token_address": "CZ7wEKM1dr3ShR6GY5YHFh4CFfZ7LQuHfe9eFDYSpump",
+  "token_symbol": "CWG",
+  "entry_time": "2025-01-23T17:30:33.817742",
+  "entry_price": 8.24034946699756e-06,
+  "market_price": 7.165521275650053e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 190.7279580166667
+}

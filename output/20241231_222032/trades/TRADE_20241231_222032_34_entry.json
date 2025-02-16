@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_34",
+  "token_address": "6fFguGzbUkmFDjb3yxxyPUMNy2Qk3pUhCQ2AtKZGpump",
+  "token_symbol": "MNL",
+  "entry_time": "2024-12-31T23:51:21.055614",
+  "market_price": 6.8023390732244475e-06,
+  "entry_price_with_slippage": 7.822689934208113e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.1567402186434086,
+    "momentum_7m": 0.15027351132243916,
+    "trend_acceleration": 0.005991984862074973,
+    "price_change_15m": -0.2071135118828903
+  }
+}

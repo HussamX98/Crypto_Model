@@ -1,0 +1,900 @@
+=== TRADE ANALYSIS REPORT ===
+
+OVERALL PERFORMANCE
+Total Trades: 64
+Profitable Trades: 0
+Win Rate: 0.00%
+Total PnL: $-422.85
+Average Hold Time: 10.07 minutes
+Take Profit Rate: 12.50%
+Stop Loss Rate: 76.56%
+Largest Profit: $-inf
+Largest Loss: $-31.42
+
+FEATURE ANALYSIS
+
+momentum_5m:
+  mean: 0.1834
+  median: 0.0944
+  min: 0.0266
+  max: 1.4083
+  std: 0.2398
+
+momentum_7m:
+  mean: 0.2259
+  median: 0.0943
+  min: 0.0278
+  max: 1.5260
+  std: 0.2983
+
+trend_acceleration:
+  mean: -0.0679
+  median: 0.0045
+  min: -1.7115
+  max: 0.0934
+  std: 0.3535
+
+price_change_15m:
+  mean: 100.5645
+  median: 0.0158
+  min: -0.4655
+  max: 683.8974
+  std: 224.0502
+
+DETAILED TRADE LIST
+
+Trade ID: TRADE_20241231_183507_1
+Token: SHART
+Entry Price: $0.00001330
+Position Size: $51.27
+Exit Price: $0.00000948
+Return: -28.75%
+PnL: $-14.74
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.07 minutes
+Features:
+  momentum_5m: 0.3979
+  momentum_7m: 0.5139
+
+Trade ID: TRADE_20241231_183507_10
+Token: PYPRO
+Entry Price: $0.00000665
+Position Size: $2.27
+Exit Price: $0.00000560
+Return: -15.68%
+PnL: $-0.36
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.05 minutes
+Features:
+  momentum_5m: 0.0744
+  momentum_7m: 0.0616
+
+Trade ID: TRADE_20241231_183507_11
+Token: AI 
+Entry Price: $0.00003938
+Position Size: $4.83
+Exit Price: $0.00000702
+Return: -82.18%
+PnL: $-3.97
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 27.38 minutes
+Features:
+  momentum_5m: 0.0697
+  momentum_7m: 0.1068
+
+Trade ID: TRADE_20241231_183507_12
+Token: NIGGACOIN
+Entry Price: $0.00000717
+Position Size: $20.05
+Exit Price: $0.00000587
+Return: -18.12%
+PnL: $-3.63
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.04 minutes
+Features:
+  momentum_5m: 0.1299
+  momentum_7m: 0.0492
+
+Trade ID: TRADE_20241231_183507_13
+Token: VERBO
+Entry Price: $0.00000641
+Position Size: $30.00
+Exit Price: $0.00000574
+Return: -10.44%
+PnL: $-3.13
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.09 minutes
+Features:
+  momentum_5m: 0.0356
+  momentum_7m: 0.0367
+  trend_acceleration: 0.0045
+
+Trade ID: TRADE_20241231_183507_14
+Token: EM
+Entry Price: $0.00135371
+Position Size: $30.00
+Exit Price: $0.00001745
+Return: -98.71%
+PnL: $-29.61
+Exit Type: stop_loss
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0390
+  momentum_7m: 0.0470
+
+Trade ID: TRADE_20241231_183507_15
+Token: KEEPER
+Entry Price: $0.00229085
+Position Size: $30.00
+Exit Price: $0.00031625
+Return: -86.20%
+PnL: $-25.86
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 26.34 minutes
+Features:
+  momentum_5m: 0.0344
+  momentum_7m: 0.0415
+
+Trade ID: TRADE_20241231_183507_16
+Token: SUPERBASED
+Entry Price: $0.00001451
+Position Size: $16.63
+Exit Price: $0.00001122
+Return: -22.63%
+PnL: $-3.76
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.05 minutes
+Features:
+  momentum_5m: 0.0508
+  momentum_7m: 0.1080
+  trend_acceleration: 0.0072
+
+Trade ID: TRADE_20241231_183507_17
+Token: 2026
+Entry Price: $0.00000674
+Position Size: $16.13
+Exit Price: $0.00000562
+Return: -16.64%
+PnL: $-2.68
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.13 minutes
+Features:
+  momentum_5m: 0.0293
+  momentum_7m: 0.0679
+
+Trade ID: TRADE_20241231_183507_18
+Token: TM
+Entry Price: $0.00000657
+Position Size: $10.92
+Exit Price: $0.00000586
+Return: -10.88%
+PnL: $-1.19
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 13.11 minutes
+Features:
+  momentum_5m: 0.0602
+  momentum_7m: 0.0616
+  trend_acceleration: 0.0001
+
+Trade ID: TRADE_20241231_183507_19
+Token: Annie
+Entry Price: $0.00000683
+Position Size: $7.08
+Exit Price: $0.00000557
+Return: -18.52%
+PnL: $-1.31
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 5.16 minutes
+Features:
+  momentum_5m: 0.1078
+  momentum_7m: 0.1043
+
+Trade ID: TRADE_20241231_183507_2
+Token: SUPERBASED
+Entry Price: $0.00001158
+Position Size: $45.31
+Exit Price: $0.00001000
+Return: -13.69%
+PnL: $-6.20
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.07 minutes
+Features:
+  momentum_5m: 0.7276
+  momentum_7m: 0.4949
+
+Trade ID: TRADE_20241231_183507_20
+Token: ROCKY
+Entry Price: $0.00000765
+Position Size: $18.05
+Exit Price: $0.00000586
+Return: -23.35%
+PnL: $-4.22
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.08 minutes
+Features:
+  momentum_5m: 0.1550
+  momentum_7m: 0.1550
+  trend_acceleration: 0.0206
+
+Trade ID: TRADE_20241231_183507_21
+Token: CCHEETAH
+Entry Price: $0.00000640
+Position Size: $30.00
+Exit Price: $0.00000557
+Return: -13.04%
+PnL: $-3.91
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.11 minutes
+Features:
+  momentum_5m: 0.0353
+  momentum_7m: 0.0353
+  trend_acceleration: 0.0044
+  price_change_15m: 0.0353
+
+Trade ID: TRADE_20241231_183507_22
+Token: YO-YO COIN
+Entry Price: $0.00001044
+Position Size: $40.51
+Exit Price: $0.00000693
+Return: -33.63%
+PnL: $-13.62
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.11 minutes
+Features:
+  momentum_5m: 0.3702
+  momentum_7m: 0.3712
+
+Trade ID: TRADE_20241231_183507_23
+Token: 2026
+Entry Price: $0.00000661
+Position Size: $30.00
+Exit Price: $0.00000574
+Return: -13.08%
+PnL: $-3.92
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.09 minutes
+Features:
+  momentum_5m: 0.0285
+  momentum_7m: 0.0305
+
+Trade ID: TRADE_20241231_183507_24
+Token: 2026
+Entry Price: $0.00004231
+Position Size: $42.99
+Had Take Profit: True
+Hold Time: 18.27 minutes
+Features:
+  momentum_5m: 0.4050
+  momentum_7m: 0.3541
+  trend_acceleration: 0.0218
+  price_change_15m: -0.4655
+
+Trade ID: TRADE_20241231_183507_25
+Token: HYENA
+Entry Price: $0.00230171
+Position Size: $30.00
+Exit Price: $0.00000353
+Return: -99.85%
+PnL: $-29.95
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.12 minutes
+Features:
+  momentum_5m: 0.0266
+  momentum_7m: 0.0342
+
+Trade ID: TRADE_20241231_183507_26
+Token: JESUS
+Entry Price: $0.00000729
+Position Size: $11.09
+Exit Price: $0.00000635
+Return: -12.82%
+PnL: $-1.42
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.06 minutes
+Features:
+  momentum_5m: 0.0653
+  momentum_7m: 0.0605
+  trend_acceleration: 0.0036
+
+Trade ID: TRADE_20241231_183507_27
+Token: norugpls
+Entry Price: $0.00000732
+Position Size: $30.00
+Exit Price: $0.00000636
+Return: -13.06%
+PnL: $-3.92
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.12 minutes
+Features:
+  momentum_5m: 0.0477
+  momentum_7m: 0.0477
+  trend_acceleration: 0.0043
+  price_change_15m: -0.2161
+
+Trade ID: TRADE_20241231_183507_28
+Token: YO-YO COIN
+Entry Price: $0.00001593
+Position Size: $12.47
+Had Take Profit: True
+Hold Time: 18.19 minutes
+Features:
+  momentum_5m: 0.8049
+  momentum_7m: 0.9977
+
+Trade ID: TRADE_20241231_183507_29
+Token: TM
+Entry Price: $0.00000673
+Position Size: $30.00
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0322
+  momentum_7m: 0.0322
+  trend_acceleration: 0.0000
+
+Trade ID: TRADE_20241231_183507_3
+Token: IMU
+Entry Price: $0.00000709
+Position Size: $11.08
+Exit Price: $0.00000562
+Return: -20.67%
+PnL: $-2.29
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.14 minutes
+Features:
+  momentum_5m: 0.1377
+  momentum_7m: 0.1377
+
+Trade ID: TRADE_20241231_183507_30
+Token: OnlyChills
+Entry Price: $0.00004016
+Position Size: $4.11
+Exit Price: $0.00000537
+Return: -86.63%
+PnL: $-3.56
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.04 minutes
+Features:
+  momentum_5m: 0.0783
+  momentum_7m: 0.0867
+
+Trade ID: TRADE_20241231_183507_31
+Token: KEEPER
+Entry Price: $0.00228958
+Position Size: $30.00
+Exit Price: $0.00012117
+Return: -94.71%
+PnL: $-28.41
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 56.31 minutes
+Features:
+  momentum_5m: 0.0282
+  momentum_7m: 0.0452
+
+Trade ID: TRADE_20241231_183507_32
+Token: TIPPY
+Entry Price: $0.00181790
+Position Size: $10.56
+Exit Price: $0.00001448
+Return: -99.20%
+PnL: $-10.48
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.06 minutes
+Features:
+  momentum_5m: 0.0795
+  momentum_7m: 0.1876
+
+Trade ID: TRADE_20241231_183507_33
+Token: HYENA
+Entry Price: $0.00238608
+Position Size: $30.00
+Exit Price: $0.00014045
+Return: -94.11%
+PnL: $-28.23
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 32.18 minutes
+Features:
+  momentum_5m: 0.0316
+  momentum_7m: 0.0395
+
+Trade ID: TRADE_20241231_183507_34
+Token: Minut
+Entry Price: $0.00000680
+Position Size: $9.87
+Exit Price: $0.00000588
+Return: -13.59%
+PnL: $-1.34
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.07 minutes
+Features:
+  momentum_5m: 0.0940
+  momentum_7m: 0.0940
+  trend_acceleration: 0.0183
+
+Trade ID: TRADE_20241231_183507_35
+Token: GIGATRUMP
+Entry Price: $0.00003950
+Position Size: $6.31
+Exit Price: $0.00000595
+Return: -84.94%
+PnL: $-5.36
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 7.04 minutes
+Features:
+  momentum_5m: 0.0937
+  momentum_7m: 0.1062
+
+Trade ID: TRADE_20241231_183507_36
+Token: OnlyChills
+Entry Price: $0.00004157
+Position Size: $12.51
+Exit Price: $0.00000628
+Return: -84.89%
+PnL: $-10.62
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 9.05 minutes
+Features:
+  momentum_5m: 0.1350
+  momentum_7m: 0.1630
+
+Trade ID: TRADE_20241231_183507_37
+Token: 2026
+Entry Price: $0.00005418
+Position Size: $9.87
+Exit Price: $0.00004263
+Return: -21.33%
+PnL: $-2.11
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.03 minutes
+Features:
+  momentum_5m: 0.1514
+  momentum_7m: 0.1049
+
+Trade ID: TRADE_20241231_183507_38
+Token: Swipe Way
+Entry Price: $0.00001435
+Position Size: $46.28
+Exit Price: $0.00000543
+Return: -62.13%
+PnL: $-11.64
+Exit Type: stop_loss
+Had Take Profit: True
+Hold Time: 17.11 minutes
+Features:
+  momentum_5m: 0.6607
+  momentum_7m: 0.6066
+
+Trade ID: TRADE_20241231_183507_39
+Token: JRD
+Entry Price: $0.00002139
+Position Size: $42.87
+Exit Price: $0.00000572
+Return: -73.28%
+PnL: $-31.42
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 9.06 minutes
+Features:
+  momentum_5m: 0.4913
+  momentum_7m: 0.0343
+
+Trade ID: TRADE_20241231_183507_4
+Token: past
+Entry Price: $0.00000671
+Position Size: $4.65
+Exit Price: $0.00000591
+Return: -11.93%
+PnL: $-0.55
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.09 minutes
+Features:
+  momentum_5m: 0.0879
+  momentum_7m: 0.0879
+  trend_acceleration: 0.0107
+
+Trade ID: TRADE_20241231_183507_40
+Token: YO-YO COIN
+Entry Price: $0.00009818
+Position Size: $43.79
+Had Take Profit: True
+Hold Time: 8.09 minutes
+Features:
+  momentum_5m: 0.3130
+  momentum_7m: 0.5532
+  trend_acceleration: 0.0934
+
+Trade ID: TRADE_20241231_183507_41
+Token: CTT
+Entry Price: $0.00001331
+Position Size: $41.74
+Exit Price: $0.00000532
+Return: -60.03%
+PnL: $-25.05
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.03 minutes
+Features:
+  momentum_5m: 0.4230
+  momentum_7m: 0.3379
+
+Trade ID: TRADE_20241231_183507_42
+Token: COKESHARK
+Entry Price: $0.00000730
+Position Size: $1.50
+Exit Price: $0.00000635
+Return: -12.94%
+PnL: $-0.19
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 17.09 minutes
+Features:
+  momentum_5m: 0.0632
+  momentum_7m: 0.0606
+
+Trade ID: TRADE_20241231_183507_43
+Token: OnlyChills
+Entry Price: $0.00003959
+Position Size: $5.75
+Exit Price: $0.00001161
+Return: -70.68%
+PnL: $-4.06
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 10.05 minutes
+Features:
+  momentum_5m: 0.0995
+  momentum_7m: 0.0916
+
+Trade ID: TRADE_20241231_183507_44
+Token: MAR-A-LAGO
+Entry Price: $0.00000638
+Position Size: $30.00
+Exit Price: $0.00000554
+Return: -13.17%
+PnL: $-3.95
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.06 minutes
+Features:
+  momentum_5m: 0.0364
+  momentum_7m: 0.0364
+  trend_acceleration: 0.0000
+
+Trade ID: TRADE_20241231_183507_45
+Token: BananaCoin
+Entry Price: $0.00191403
+Position Size: $54.61
+Exit Price: $0.00128256
+Return: -32.99%
+PnL: $-18.02
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 8.05 minutes
+Features:
+  momentum_5m: 0.5398
+  momentum_7m: 0.4508
+  trend_acceleration: 0.0812
+  price_change_15m: -0.0036
+
+Trade ID: TRADE_20241231_183507_46
+Token: pugi
+Entry Price: $0.00000709
+Position Size: $1.87
+Exit Price: $0.00000602
+Return: -15.14%
+PnL: $-0.28
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.03 minutes
+Features:
+  momentum_5m: 0.0681
+  momentum_7m: 0.0615
+
+Trade ID: TRADE_20241231_183507_47
+Token: MAR-A-LAGO
+Entry Price: $0.00419251
+Position Size: $35.60
+Exit Price: $0.00138070
+Return: -67.07%
+PnL: $-23.88
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 6.03 minutes
+Features:
+  momentum_5m: 0.6352
+  momentum_7m: 0.7135
+  trend_acceleration: -1.7115
+  price_change_15m: 683.8974
+
+Trade ID: TRADE_20241231_183507_48
+Token: YO-YO COIN
+Entry Price: $0.00019544
+Position Size: $6.43
+Had Take Profit: True
+Hold Time: 19.14 minutes
+Features:
+  momentum_5m: 0.1402
+  momentum_7m: 0.0616
+
+Trade ID: TRADE_20241231_183507_49
+Token: pube
+Entry Price: $0.00002282
+Position Size: $37.05
+Had Take Profit: True
+Hold Time: 13.11 minutes
+Features:
+  momentum_5m: 1.4083
+  momentum_7m: 1.5260
+  trend_acceleration: 0.0626
+
+Trade ID: TRADE_20241231_183507_5
+Token: 2026
+Entry Price: $0.00000748
+Position Size: $22.54
+Exit Price: $0.00000656
+Return: -12.33%
+PnL: $-2.78
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.13 minutes
+Features:
+  momentum_5m: 0.2053
+  momentum_7m: 0.1926
+  trend_acceleration: 0.0000
+
+Trade ID: TRADE_20241231_183507_50
+Token: 2026
+Entry Price: $0.00002734
+Position Size: $30.25
+Exit Price: $0.00002423
+Return: -11.40%
+PnL: $-3.45
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 18.10 minutes
+Features:
+  momentum_5m: 0.1653
+  momentum_7m: 0.0412
+  trend_acceleration: 0.0221
+  price_change_15m: -0.3410
+
+Trade ID: TRADE_20241231_183507_51
+Token: GIGATRUMP
+Entry Price: $0.00004067
+Position Size: $10.45
+Exit Price: $0.00000589
+Return: -85.52%
+PnL: $-8.94
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 7.04 minutes
+Features:
+  momentum_5m: 0.1330
+  momentum_7m: 0.1324
+
+Trade ID: TRADE_20241231_183507_52
+Token: truefrens
+Entry Price: $0.00016244
+Position Size: $20.47
+Had Take Profit: True
+Hold Time: 20.14 minutes
+Features:
+  momentum_5m: 0.2455
+  momentum_7m: 0.9468
+  trend_acceleration: -0.0184
+
+Trade ID: TRADE_20241231_183507_53
+Token: HYENA
+Entry Price: $0.00227244
+Position Size: $30.00
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0275
+  momentum_7m: 0.0336
+
+Trade ID: TRADE_20241231_183507_54
+Token: NUTTY
+Entry Price: $0.00001049
+Position Size: $39.03
+Exit Price: $0.00000877
+Return: -16.39%
+PnL: $-6.40
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 7.03 minutes
+Features:
+  momentum_5m: 0.0406
+  momentum_7m: 0.4305
+
+Trade ID: TRADE_20241231_183507_55
+Token: HYPU
+Entry Price: $0.00133711
+Position Size: $30.00
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0313
+  momentum_7m: 0.0425
+
+Trade ID: TRADE_20241231_183507_56
+Token: DRUNK2025
+Entry Price: $0.00001760
+Position Size: $8.05
+Exit Price: $0.00000581
+Return: -67.00%
+PnL: $-5.39
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.06 minutes
+Features:
+  momentum_5m: 0.0953
+  momentum_7m: 0.0946
+  trend_acceleration: 0.0151
+
+Trade ID: TRADE_20241231_183507_57
+Token: OnlyChills
+Entry Price: $0.00003907
+Position Size: $15.72
+Exit Price: $0.00000649
+Return: -83.38%
+PnL: $-13.11
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 9.09 minutes
+Features:
+  momentum_5m: 0.0484
+  momentum_7m: 0.0615
+
+Trade ID: TRADE_20241231_183507_58
+Token: Emotion
+Entry Price: $0.00001260
+Position Size: $30.90
+Had Take Profit: False
+Features:
+  momentum_5m: 0.1426
+  momentum_7m: 0.4467
+
+Trade ID: TRADE_20241231_183507_59
+Token: MIKEY COIN
+Entry Price: $0.00000648
+Position Size: $40.00
+Exit Price: $0.00000555
+Return: -14.35%
+PnL: $-5.74
+Exit Type: stop_loss
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0464
+  momentum_7m: 0.0464
+  trend_acceleration: 0.0058
+  price_change_15m: 0.0464
+
+Trade ID: TRADE_20241231_183507_6
+Token: 2026
+Entry Price: $0.00003830
+Position Size: $22.19
+Had Take Profit: True
+Hold Time: 13.20 minutes
+Features:
+  momentum_5m: 0.1769
+  momentum_7m: 0.8373
+  trend_acceleration: -0.0404
+
+Trade ID: TRADE_20241231_183507_60
+Token: $CHILLZ
+Entry Price: $0.00004331
+Position Size: $18.91
+Had Take Profit: False
+Features:
+  momentum_5m: 0.1915
+  momentum_7m: 0.2078
+
+Trade ID: TRADE_20241231_183507_61
+Token: pube
+Entry Price: $0.00005400
+Position Size: $9.51
+Exit Price: $0.00004014
+Return: -25.67%
+PnL: $-2.44
+Exit Type: stop_loss
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0966
+  momentum_7m: 0.1539
+
+Trade ID: TRADE_20241231_183507_62
+Token: MAR-A-LAGO
+Entry Price: $0.00051551
+Position Size: $17.24
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0948
+  momentum_7m: 0.9768
+  trend_acceleration: -0.1671
+  price_change_15m: 121.5631
+
+Trade ID: TRADE_20241231_183507_63
+Token: KEEPER
+Entry Price: $0.00227065
+Position Size: $30.00
+Had Take Profit: False
+Features:
+  momentum_5m: 0.0303
+  momentum_7m: 0.0363
+
+Trade ID: TRADE_20241231_183507_64
+Token: 2026
+Entry Price: $0.00003144
+Position Size: $13.78
+Had Take Profit: False
+Features:
+  momentum_5m: 0.1897
+  momentum_7m: 0.1285
+
+Trade ID: TRADE_20241231_183507_7
+Token: 2026
+Entry Price: $0.00000757
+Position Size: $13.51
+Exit Price: $0.00000666
+Return: -12.06%
+PnL: $-1.63
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 14.17 minutes
+Features:
+  momentum_5m: 0.1663
+  momentum_7m: 0.1476
+
+Trade ID: TRADE_20241231_183507_8
+Token: x1000
+Entry Price: $0.00000858
+Position Size: $1.83
+Exit Price: $0.00000771
+Return: -10.14%
+PnL: $-0.19
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 12.09 minutes
+Features:
+  momentum_5m: 0.0525
+  momentum_7m: 0.0765
+
+Trade ID: TRADE_20241231_183507_9
+Token: INFINITE
+Entry Price: $0.00000646
+Position Size: $30.00
+Exit Price: $0.00000561
+Return: -13.06%
+PnL: $-3.92
+Exit Type: stop_loss
+Had Take Profit: False
+Hold Time: 11.13 minutes
+Features:
+  momentum_5m: 0.0332
+  momentum_7m: 0.0278

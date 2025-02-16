@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_54",
+  "token_address": "GD6jcR67R5LHKUWq5Y3k1dxgAae6UQ8hZWa7Za5Qpump",
+  "token_symbol": "NUTTY",
+  "entry_time": "2024-12-31T20:22:20.488167",
+  "market_price": 9.122191109038139e-06,
+  "entry_price_with_slippage": 1.049051977539386e-05,
+  "slippage_percent": 15,
+  "position_size": 39.03,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.0405751373797818,
+    "momentum_7m": 0.4304741928861979
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_24",
+  "token_address": "BXevS7vuuuTX47B6DGzmNNdo97Wegocw1ViVT45Dpump",
+  "token_symbol": "BR",
+  "entry_time": "2025-01-09T23:05:37.040215",
+  "market_price": 7.183588915046162e-06,
+  "entry_price_with_slippage": 7.90194780655078e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.20268529499507792,
+    "momentum_7m": 0.20268529499507792,
+    "trend_acceleration": 0.016276272569205108,
+    "price_change_15m": 0.23039767466894023
+  },
+  "volume": 1550.9380786635318
+}

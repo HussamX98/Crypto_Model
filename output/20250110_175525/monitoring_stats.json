@@ -1,0 +1,37 @@
+{
+  "session_timestamp": "20250110_175525",
+  "monitoring_duration_hours": 5.550002655277777,
+  "total_tokens_monitored": 1000,
+  "active_tokens": 560,
+  "inactive_tokens": 440,
+  "total_trades": 1,
+  "profitable_trades": 0,
+  "stop_losses_hit": 0,
+  "win_rate": 0.0,
+  "active_trades": 0,
+  "configuration": {
+    "feature_thresholds": {
+      "momentum_5m": {
+        "min": 0.25,
+        "max": 0.8
+      },
+      "momentum_7m": {
+        "min": 0.4,
+        "max": 1.2
+      },
+      "trend_acceleration": {
+        "min": 0.02,
+        "max": 0.07
+      },
+      "price_change_15m": {
+        "min": 0.5,
+        "max": 1.2
+      }
+    },
+    "min_confidence": 0.85,
+    "volume_thresholds": {
+      "min_volume": 500,
+      "min_rolling_volume": 2500
+    }
+  }
+}

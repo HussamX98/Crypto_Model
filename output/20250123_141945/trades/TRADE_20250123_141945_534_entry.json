@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_534",
+  "token_address": "CQKKvuLyx7a2YnvBM6uY9viKUdmPSthMeU7223Kzpump",
+  "token_symbol": "CEO",
+  "entry_time": "2025-01-23T17:40:37.344171",
+  "entry_price": 1.9278395661660998e-05,
+  "market_price": 1.6763822314487826e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.0003011205067690037,
+    "momentum_7m": -0.0003011205067690037,
+    "trend_acceleration": 0.001966524591398233,
+    "price_volatility": 0.0013905428739477952,
+    "price_change_15m": -0.039519737649454934,
+    "volume_momentum": 4.0701603676307485e-06
+  },
+  "token_age_minutes": 182.29784556666667
+}

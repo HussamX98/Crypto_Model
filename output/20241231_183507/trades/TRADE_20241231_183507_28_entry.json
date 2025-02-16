@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_28",
+  "token_address": "J6dUNkXq1Su6dKBPER8Zq5pcqLwh6JbWHJqAeoYvpump",
+  "token_symbol": "YO-YO COIN",
+  "entry_time": "2024-12-31T19:27:49.868839",
+  "market_price": 1.3848192330665375e-05,
+  "entry_price_with_slippage": 1.5925421180265178e-05,
+  "slippage_percent": 15,
+  "position_size": 12.47,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.804852331859528,
+    "momentum_7m": 0.9976676737139192
+  }
+}

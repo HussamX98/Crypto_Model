@@ -1,0 +1,134 @@
+{
+  "trade_id": "TRADE_20241231_183507_18",
+  "token_symbol": "TM",
+  "token_address": "td51prFb5iyFho2Str5NgSHHkXPM7G82AdDwReZpump",
+  "entry_time": "2024-12-31T19:08:19.858165",
+  "entry_price": 6.571069953605134e-06,
+  "initial_position_size": 10.92,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.060227243582122725,
+    "momentum_7m": 0.06160946677234236,
+    "trend_acceleration": 0.00010550205695092352
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T19:08:19.859165",
+      "time_in_trade_minutes": 0.0,
+      "price": 5.713973872700117e-06,
+      "return_pct": -13.043478260869568,
+      "volume": 0.0,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:09:20.284497",
+      "time_in_trade_minutes": 1.01,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 0.0,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:10:20.641135",
+      "time_in_trade_minutes": 2.01,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 0.0,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:11:20.928162",
+      "time_in_trade_minutes": 3.02,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:12:21.390633",
+      "time_in_trade_minutes": 4.03,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:13:21.640253",
+      "time_in_trade_minutes": 5.03,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:14:21.945222",
+      "time_in_trade_minutes": 6.03,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:15:22.303076",
+      "time_in_trade_minutes": 7.04,
+      "price": 5.709789144606908e-06,
+      "return_pct": -13.107162381153703,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:16:22.566074",
+      "time_in_trade_minutes": 8.05,
+      "price": 5.705073614655747e-06,
+      "return_pct": -13.178924361842615,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:17:22.821787",
+      "time_in_trade_minutes": 9.05,
+      "price": 5.878863269809695e-06,
+      "return_pct": -10.534154843621302,
+      "volume": 2186.080359394383,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:18:23.163139",
+      "time_in_trade_minutes": 10.06,
+      "price": 6.0646858385059305e-06,
+      "return_pct": -7.70626577824487,
+      "volume": 2618.956758623478,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:19:24.233319",
+      "time_in_trade_minutes": 11.07,
+      "price": 6.059898012413154e-06,
+      "return_pct": -7.779127977651978,
+      "volume": 2618.956758623478,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T19:20:24.504087",
+      "time_in_trade_minutes": 12.08,
+      "price": 5.856127386663497e-06,
+      "return_pct": -10.880154556099242,
+      "volume": 2618.956758623478,
+      "remaining_position_size": 10.92,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 13.105356166666667
+}

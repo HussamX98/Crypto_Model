@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_669",
+  "token_address": "CqLMJ3fPj73s7XGNG9JPwNz8Ka6CbicZzHKVq1Fkpump",
+  "token_symbol": "SNS",
+  "entry_time": "2025-01-23T17:45:34.297630",
+  "entry_price": 8.15315021042342e-06,
+  "market_price": 7.0896958351508e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 181.06459416666667
+}

@@ -1,0 +1,9 @@
+{
+  "trade_id": "TRADE_20250211_105802_17",
+  "exit_type": "persistent_loss",
+  "exit_time": "2025-02-11T19:39:28.969129",
+  "exit_price": 0.00015769973998180974,
+  "return_pct": -16.266616756664508,
+  "time_in_trade_minutes": 15.230387166666667,
+  "peak_return": 0
+}

@@ -1,0 +1,122 @@
+{
+  "trade_id": "TRADE_20250107_214059_54",
+  "token_symbol": "DOGE",
+  "token_address": "FEGCyJ3CReqoUKyaWqE53yF4A4ZzogD1JobwD48Lpump",
+  "entry_time": "2025-01-07T22:15:35.965676",
+  "entry_price": 1.1373908410624535e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 11.062271983333334,
+  "highest_price_seen": 1.1373908410624535e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-07T22:15:35.967677",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.0339916736931394e-05,
+      "return_pct": -9.090909090909104,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:16:36.208012",
+      "time_in_trade_minutes": 1.0,
+      "price": 8.495281848909941e-06,
+      "return_pct": -25.30903588977055,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:17:36.481627",
+      "time_in_trade_minutes": 2.01,
+      "price": 9.142932900495669e-06,
+      "return_pct": -19.614853835510747,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:18:36.737215",
+      "time_in_trade_minutes": 3.01,
+      "price": 9.245413784053014e-06,
+      "return_pct": -18.71383652591455,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:19:36.996545",
+      "time_in_trade_minutes": 4.02,
+      "price": 9.315407629386998e-06,
+      "return_pct": -18.098446962300685,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:20:37.350346",
+      "time_in_trade_minutes": 5.02,
+      "price": 9.250808633301623e-06,
+      "return_pct": -18.66640472803257,
+      "volume": 2914.908359489815,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:21:38.161001",
+      "time_in_trade_minutes": 6.04,
+      "price": 9.194184651467172e-06,
+      "return_pct": -19.16424574969543,
+      "volume": 9580.694208109257,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:22:38.542047",
+      "time_in_trade_minutes": 7.04,
+      "price": 9.017635445804533e-06,
+      "return_pct": -20.71647563663316,
+      "volume": 9580.694208109257,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:23:38.848310",
+      "time_in_trade_minutes": 8.05,
+      "price": 8.840096122627919e-06,
+      "return_pct": -22.277410688745704,
+      "volume": 9580.694208109257,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:24:39.110424",
+      "time_in_trade_minutes": 9.05,
+      "price": 8.555966690165952e-06,
+      "return_pct": -24.775491578834085,
+      "volume": 9580.694208109257,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-07T22:25:39.402724",
+      "time_in_trade_minutes": 10.06,
+      "price": 8.534480257590478e-06,
+      "return_pct": -24.964401422308857,
+      "volume": 9580.694208109257,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1373908410624535e-05,
+      "event": "monitoring"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_3",
+  "token_address": "Bfjb77o1zfLB1VhQaVgXFKmn4K8Dynhdt23uWpd3pump",
+  "token_symbol": "HOLE",
+  "entry_time": "2024-12-29T14:54:32.512648",
+  "entry_price": 1.5961010001720503e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.25752269369979297,
+    "momentum_7m": 0.749847007435507,
+    "trend_acceleration": 0.047481787872677664,
+    "price_change_15m": 1.8745964206105308
+  }
+}

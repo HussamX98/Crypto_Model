@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_12",
+  "token_address": "6hEQhjbKZ6Pj76X4mctbuP2AAFT91U3YVbK5YGQjpump",
+  "token_symbol": "wave",
+  "entry_time": "2025-01-01T14:03:42.156301",
+  "market_price": 1.1478689195844044e-05,
+  "entry_price_with_slippage": 1.3200492575220649e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.1407837273006893,
+    "momentum_7m": 1.1407837273006893,
+    "trend_acceleration": 0.14259796591258617,
+    "price_change_15m": 1.1407837273006893
+  }
+}

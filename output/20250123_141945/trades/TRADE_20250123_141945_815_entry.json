@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_815",
+  "token_address": "ByBpMBzASuUfGWGEYsCycz8XcATsB8NGd6vUcVPpump",
+  "token_symbol": "NDA",
+  "entry_time": "2025-01-23T17:51:31.887020",
+  "entry_price": 9.686064441021805e-05,
+  "market_price": 8.422664731323309e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.004432375430395208,
+    "momentum_7m": 0.004432375430395208,
+    "trend_acceleration": 0.022519994387352193,
+    "price_volatility": 0.010658402556454344,
+    "price_change_15m": -0.07412115364835714,
+    "volume_momentum": 3.923455668752851e-05
+  },
+  "token_age_minutes": 207.42776725000002
+}

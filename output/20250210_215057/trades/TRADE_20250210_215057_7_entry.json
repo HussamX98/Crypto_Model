@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_7",
+  "token_symbol": "JEW",
+  "entry_time": "2025-02-10T21:57:25.575183",
+  "market_price": 5.637460019688759e-06,
+  "entry_price": 6.483079022642072e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.0013019190801883962,
+    "volatility_5m": 0.0008121175700380582,
+    "momentum_7m": -0.1299182525736654
+  }
+}

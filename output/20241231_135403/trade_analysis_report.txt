@@ -1,0 +1,686 @@
+=== TRADE ANALYSIS REPORT ===
+
+Analysis Date: 2024-12-31 16:11:25
+
+
+=== DETAILED TRADE ANALYSIS ===
+
+Trade ID: TRADE_20241231_135403_1
+Token: VOYANT (7fTEmJSowqJDGeGPZviVJLs8vBYNDjUoBFqZ52Aapump)
+Entry Time: 2024-12-31T14:16:50.221871
+Entry Price (with 15% slippage): $0.00001818
+Market Price at Entry: $0.00001581
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.7965
+  momentum_7m: 0.5820
+  trend_acceleration: 0.0238
+  price_change_15m: 1.4815
+
+Timeframe Results:
+  5min: Price=$0.00001326, Return=-27.10%, PnL=$-27.10
+  15min: Price=$0.00004818, Return=164.98%, PnL=$164.98
+  30min: Price=$0.00000574, Return=-68.42%, PnL=$-68.42
+  45min: Price=$0.00000555, Return=-69.49%, PnL=$-69.49
+  60min: Price=$0.00000546, Return=-69.95%, PnL=$-69.95
+
+Final Outcome:
+  Return: -27.10%
+  PnL: $-27.10
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_10
+Token: SONA (5TonZhnyoq1PqesVhEDXC3Gf3HE2JoSc6c9wjrXjpump)
+Entry Time: 2024-12-31T14:52:45.928060
+Entry Price (with 15% slippage): $0.00005764
+Market Price at Entry: $0.00005012
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.4443
+  momentum_7m: 0.5597
+  trend_acceleration: 0.0270
+  price_change_15m: 2.5745
+
+Timeframe Results:
+  5min: Price=$0.00001716, Return=-70.23%, PnL=$-70.23
+  15min: Price=$0.00000382, Return=-93.37%, PnL=$-93.37
+  30min: Price=$0.00000359, Return=-93.77%, PnL=$-93.77
+  45min: Price=$0.00000359, Return=-93.77%, PnL=$-93.77
+  60min: Price=$0.00000364, Return=-93.69%, PnL=$-93.69
+
+Final Outcome:
+  Return: -70.62%
+  PnL: $-70.62
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_11
+Token: LUMI (6gWqJUEEgMmShUzdGnpAowHaJaJBKwRgUd7NvQEtpump)
+Entry Time: 2024-12-31T14:53:03.971028
+Entry Price (with 15% slippage): $0.00004367
+Market Price at Entry: $0.00003797
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.5186
+  momentum_7m: 0.4756
+  trend_acceleration: 0.0969
+  price_change_15m: 2.3326
+
+Timeframe Results:
+  5min: Price=$0.00001699, Return=-61.10%, PnL=$-61.10
+  15min: Price=$0.00000357, Return=-91.82%, PnL=$-91.82
+  30min: Price=$0.00000415, Return=-90.50%, PnL=$-90.50
+  45min: Price=$0.00000415, Return=-90.50%, PnL=$-90.50
+  60min: Price=$0.00000414, Return=-90.53%, PnL=$-90.53
+
+Final Outcome:
+  Return: -61.10%
+  PnL: $-61.10
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_12
+Token: NINA (CCTng4vbsX95VT9jB6rB8u1p2YPDzPMXzv5wozJfpump)
+Entry Time: 2024-12-31T14:53:08.836392
+Entry Price (with 15% slippage): $0.00004651
+Market Price at Entry: $0.00004045
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.6698
+  momentum_7m: 0.6698
+  trend_acceleration: 0.0891
+  price_change_15m: 2.9448
+
+Timeframe Results:
+  5min: Price=$0.00001577, Return=-66.10%, PnL=$-66.10
+  15min: Price=$0.00000578, Return=-87.58%, PnL=$-87.58
+  30min: Price=$0.00000569, Return=-87.76%, PnL=$-87.76
+  45min: Price=$0.00000569, Return=-87.76%, PnL=$-87.76
+  60min: Price=$0.00000569, Return=-87.76%, PnL=$-87.76
+
+Final Outcome:
+  Return: -66.00%
+  PnL: $-66.00
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_13
+Token: APESCOIN (DJR34BZX7ocWdv1WPzyiNEXBgqh4VtwyLHp93Jd4pump)
+Entry Time: 2024-12-31T14:57:58.707316
+Entry Price (with 15% slippage): $0.00001377
+Market Price at Entry: $0.00001198
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.5592
+  momentum_7m: 0.5417
+  trend_acceleration: 0.0235
+  price_change_15m: 0.9188
+
+Timeframe Results:
+  5min: Price=$0.00001446, Return=4.99%, PnL=$4.99
+  15min: Price=$0.00001319, Return=-4.22%, PnL=$-4.22
+  30min: Price=$0.00001039, Return=-24.57%, PnL=$-24.57
+  45min: Price=$0.00001095, Return=-20.46%, PnL=$-20.46
+  60min: Price=$0.00001067, Return=-22.53%, PnL=$-22.53
+
+Final Outcome:
+  Return: -15.86%
+  PnL: $-15.86
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_14
+Token: BOOTY (DU9keYhR2FLeSa5rLizQTpzF2hgzknMLwruHC4W5pump)
+Entry Time: 2024-12-31T15:01:59.192571
+Entry Price (with 15% slippage): $0.00000973
+Market Price at Entry: $0.00000846
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.5586
+  momentum_7m: 0.5586
+  trend_acceleration: 0.0666
+  price_change_15m: 0.5583
+
+Timeframe Results:
+  5min: Price=$0.00000548, Return=-43.71%, PnL=$-43.71
+  15min: Price=$0.00000548, Return=-43.71%, PnL=$-43.71
+  30min: Price=$0.00000548, Return=-43.71%, PnL=$-43.71
+  45min: Price=$0.00000548, Return=-43.71%, PnL=$-43.71
+
+Final Outcome:
+  Return: -43.71%
+  PnL: $-43.71
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_15
+Token: blo (5NRQZrYxogPr57hhU7mRs2JoLCzsWzXQJXoMdxPvpump)
+Entry Time: 2024-12-31T15:13:33.833417
+Entry Price (with 15% slippage): $0.00001849
+Market Price at Entry: $0.00001608
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.3213
+  momentum_7m: 0.3240
+  trend_acceleration: 0.0338
+  price_change_15m: 0.9064
+
+Timeframe Results:
+  5min: Price=$0.00001822, Return=-1.47%, PnL=$-1.47
+  15min: Price=$0.00002917, Return=57.74%, PnL=$57.74
+  30min: Price=$0.00004168, Return=125.39%, PnL=$125.39
+  45min: Price=$0.00003214, Return=73.80%, PnL=$73.80
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_16
+Token: HYPU (HqoV4KyvupoQHFUsTkukseYmsi6phuJueKmXCzvdpump)
+Entry Time: 2024-12-31T15:15:04.265390
+Entry Price (with 15% slippage): $0.00002411
+Market Price at Entry: $0.00002096
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 1.2540
+  momentum_7m: 1.2540
+  trend_acceleration: 0.1706
+  price_change_15m: 1.0087
+
+Timeframe Results:
+  5min: Price=$0.00004625, Return=91.87%, PnL=$91.87
+  15min: Price=$0.00005437, Return=125.55%, PnL=$125.55
+  30min: Price=$0.00000540, Return=-77.60%, PnL=$-77.60
+  45min: Price=$0.00000539, Return=-77.65%, PnL=$-77.65
+
+Final Outcome:
+  Return: -77.60%
+  PnL: $-77.60
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_17
+Token: GOTH (5CGvuz2J9pf3YPifg9mZ9GKrdk3oLLdpndHFHpWGpump)
+Entry Time: 2024-12-31T15:29:45.581544
+Entry Price (with 15% slippage): $0.00005632
+Market Price at Entry: $0.00004898
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.4051
+  momentum_7m: 0.3171
+  trend_acceleration: 0.0574
+  price_change_15m: 1.0407
+
+Timeframe Results:
+  5min: Price=$0.00004004, Return=-28.91%, PnL=$-28.91
+  15min: Price=$0.00001998, Return=-64.52%, PnL=$-64.52
+  30min: Price=$0.00002274, Return=-59.62%, PnL=$-59.62
+
+Final Outcome:
+  Return: -28.91%
+  PnL: $-28.91
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_18
+Token: CHTTR (FxwjyewsutYQpLKRZJuEyG5jJeNwcn4bnsNStDRRpump)
+Entry Time: 2024-12-31T15:36:56.675051
+Entry Price (with 15% slippage): $0.00003949
+Market Price at Entry: $0.00003434
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 1.1354
+  momentum_7m: 1.1354
+  trend_acceleration: 0.0421
+  price_change_15m: 4.9678
+
+Timeframe Results:
+  5min: Price=$0.00000427, Return=-89.19%, PnL=$-89.19
+  15min: Price=$0.00000452, Return=-88.56%, PnL=$-88.56
+
+Final Outcome:
+  Return: -89.19%
+  PnL: $-89.19
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_19
+Token: NURSECOIN (BaCyJs18i7huC4zqXcaXFa9oAQ8JXRT4mSSM6ryjpump)
+Entry Time: 2024-12-31T15:39:29.774456
+Entry Price (with 15% slippage): $0.00001967
+Market Price at Entry: $0.00001710
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.4390
+  momentum_7m: 0.4888
+  trend_acceleration: 0.0494
+  price_change_15m: 0.5403
+
+Timeframe Results:
+  5min: Price=$0.00001600, Return=-18.64%, PnL=$-18.64
+  15min: Price=$0.00001558, Return=-20.81%, PnL=$-20.81
+
+Final Outcome:
+  Return: -29.94%
+  PnL: $-29.94
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_2
+Token: GOTH (5CGvuz2J9pf3YPifg9mZ9GKrdk3oLLdpndHFHpWGpump)
+Entry Time: 2024-12-31T14:23:41.917682
+Entry Price (with 15% slippage): $0.00004349
+Market Price at Entry: $0.00003782
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.4399
+  momentum_7m: 0.5261
+  trend_acceleration: 0.0349
+  price_change_15m: 0.5308
+
+Timeframe Results:
+  5min: Price=$0.00006497, Return=49.37%, PnL=$49.37
+  15min: Price=$0.00005967, Return=37.19%, PnL=$37.19
+  30min: Price=$0.00004721, Return=8.54%, PnL=$8.54
+  45min: Price=$0.00002774, Return=-36.21%, PnL=$-36.21
+  60min: Price=$0.00003800, Return=-12.63%, PnL=$-12.63
+
+Final Outcome:
+  Return: -29.20%
+  PnL: $-29.20
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_3
+Token: LFG2025 (3PqXdyspzJeGhePRNdKErAApVvymPKdratb17Vahpump)
+Entry Time: 2024-12-31T14:26:09.755718
+Entry Price (with 15% slippage): $0.00001433
+Market Price at Entry: $0.00001246
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.8842
+  momentum_7m: 0.8842
+  trend_acceleration: 0.0792
+  price_change_15m: 0.8363
+
+Timeframe Results:
+  5min: Price=$0.00000654, Return=-54.34%, PnL=$-54.34
+  15min: Price=$0.00000543, Return=-62.08%, PnL=$-62.08
+  30min: Price=$0.00000543, Return=-62.08%, PnL=$-62.08
+  45min: Price=$0.00000543, Return=-62.08%, PnL=$-62.08
+  60min: Price=$0.00000543, Return=-62.08%, PnL=$-62.08
+
+Final Outcome:
+  Return: -54.34%
+  PnL: $-54.34
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_4
+Token: blo (5NRQZrYxogPr57hhU7mRs2JoLCzsWzXQJXoMdxPvpump)
+Entry Time: 2024-12-31T14:30:48.869897
+Entry Price (with 15% slippage): $0.00001503
+Market Price at Entry: $0.00001307
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.5615
+  momentum_7m: 0.7206
+  trend_acceleration: 0.0323
+  price_change_15m: 0.5359
+
+Timeframe Results:
+  5min: Price=$0.00001930, Return=28.43%, PnL=$28.43
+  15min: Price=$0.00002437, Return=62.13%, PnL=$62.13
+  30min: Price=$0.00001483, Return=-1.32%, PnL=$-1.32
+  45min: Price=$0.00001721, Return=14.52%, PnL=$14.52
+  60min: Price=$0.00003202, Return=113.04%, PnL=$113.04
+
+Final Outcome:
+  Return: -10.98%
+  PnL: $-10.98
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_5
+Token: Chungo (3UWnPRWsgE1s3N7615tZo123u3KN9WRxQaSeEVFtpump)
+Entry Time: 2024-12-31T14:31:11.882283
+Entry Price (with 15% slippage): $0.00240012
+Market Price at Entry: $0.00208706
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.2073
+  momentum_7m: 0.3910
+  trend_acceleration: 0.1028
+  price_change_15m: 1.6177
+
+Timeframe Results:
+  5min: Price=$0.00396601, Return=65.24%, PnL=$65.24
+  15min: Price=$0.00006736, Return=-97.19%, PnL=$-97.19
+  30min: Price=$0.26509719, Return=10945.15%, PnL=$10945.15
+  45min: Price=$0.26509719, Return=10945.15%, PnL=$10945.15
+  60min: Price=$0.26509719, Return=10945.15%, PnL=$10945.15
+
+Final Outcome:
+  Return: -19.89%
+  PnL: $-19.89
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_6
+Token: HYPU (BUDXpnu7opuGuJkQZdet9nAxSzb67MLJpkzJmaKkpump)
+Entry Time: 2024-12-31T14:33:00.698606
+Entry Price (with 15% slippage): $0.00331315
+Market Price at Entry: $0.00288100
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.9819
+  momentum_7m: 0.9819
+  trend_acceleration: 0.1227
+  price_change_15m: 2.2136
+
+Timeframe Results:
+  5min: Price=$0.00335433, Return=1.24%, PnL=$1.24
+  15min: Price=$0.00318030, Return=-4.01%, PnL=$-4.01
+  30min: Price=$0.00456184, Return=37.69%, PnL=$37.69
+  45min: Price=$0.00707044, Return=113.41%, PnL=$113.41
+  60min: Price=$0.00530257, Return=60.05%, PnL=$60.05
+
+Final Outcome:
+  Return: -13.05%
+  PnL: $-13.05
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_7
+Token: Trumpius (G3zun1u6xRzxspyGsXiieBqksDyirDAA5xvrVmk8pump)
+Entry Time: 2024-12-31T14:39:56.661068
+Entry Price (with 15% slippage): $0.00002337
+Market Price at Entry: $0.00002032
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 2.5508
+  momentum_7m: 2.5508
+  trend_acceleration: 0.2124
+  price_change_15m: 2.6246
+
+Timeframe Results:
+  5min: Price=$0.00004949, Return=111.73%, PnL=$111.73
+  15min: Price=$0.00006498, Return=178.03%, PnL=$178.03
+  30min: Price=$0.00000551, Return=-76.44%, PnL=$-76.44
+  45min: Price=$0.00000548, Return=-76.56%, PnL=$-76.56
+  60min: Price=$0.00000548, Return=-76.56%, PnL=$-76.56
+
+Final Outcome:
+  Return: -75.99%
+  PnL: $-75.99
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_8
+Token: DARKCOIN (9sfvXyE6UA3Gie47ZQwDTMYBCBoZ9h2CNzTovLDppump)
+Entry Time: 2024-12-31T14:47:46.749147
+Entry Price (with 15% slippage): $0.00002709
+Market Price at Entry: $0.00002355
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.3817
+  momentum_7m: 0.5498
+  trend_acceleration: 0.0570
+  price_change_15m: 2.8691
+
+Timeframe Results:
+  5min: Price=$0.00003610, Return=33.27%, PnL=$33.27
+  15min: Price=$0.00004954, Return=82.90%, PnL=$82.90
+  30min: Price=$0.00003081, Return=13.75%, PnL=$13.75
+  45min: Price=$0.00001506, Return=-44.41%, PnL=$-44.41
+  60min: Price=$0.00001146, Return=-57.69%, PnL=$-57.69
+
+Final Outcome:
+  Return: -37.14%
+  PnL: $-37.14
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_135403_9
+Token: NURSECOIN (BaCyJs18i7huC4zqXcaXFa9oAQ8JXRT4mSSM6ryjpump)
+Entry Time: 2024-12-31T14:51:50.833237
+Entry Price (with 15% slippage): $0.00001209
+Market Price at Entry: $0.00001052
+Position Size: $100.00
+Confidence Score: 1.00
+
+Features at Entry:
+  momentum_5m: 0.4421
+  momentum_7m: 0.4345
+  trend_acceleration: 0.0432
+  price_change_15m: 0.6153
+
+Timeframe Results:
+  5min: Price=$0.00000837, Return=-30.79%, PnL=$-30.79
+  15min: Price=$0.00001144, Return=-5.37%, PnL=$-5.37
+  30min: Price=$0.00001056, Return=-12.69%, PnL=$-12.69
+  45min: Price=$0.00001161, Return=-3.98%, PnL=$-3.98
+  60min: Price=$0.00001598, Return=32.13%, PnL=$32.13
+
+Final Outcome:
+  Return: -30.79%
+  PnL: $-30.79
+  Exit Type: stop_loss
+
+==================================================
+
+
+=== FEATURE ANALYSIS ===
+
+
+Feature: momentum_5m
+Correlation with Returns: -0.545
+
+All Trades Thresholds:
+  min: 0.3697
+  max: 1.1591
+  mean: 0.7132
+  median: 0.5586
+
+Profitable Trades Thresholds:
+  min: N/A
+  max: N/A
+  mean: N/A
+  median: N/A
+
+Feature: momentum_7m
+Correlation with Returns: -0.544
+
+All Trades Thresholds:
+  min: 0.3776
+  max: 1.1591
+  mean: 0.7340
+  median: 0.5586
+
+Profitable Trades Thresholds:
+  min: N/A
+  max: N/A
+  mean: N/A
+  median: N/A
+
+Feature: trend_acceleration
+Correlation with Returns: -0.438
+
+All Trades Thresholds:
+  min: 0.0263
+  max: 0.1323
+  mean: 0.0718
+  median: 0.0570
+
+Profitable Trades Thresholds:
+  min: N/A
+  max: N/A
+  mean: N/A
+  median: N/A
+
+Feature: price_change_15m
+Correlation with Returns: -0.611
+
+All Trades Thresholds:
+  min: 0.5394
+  max: 2.8842
+  mean: 1.6378
+  median: 1.0407
+
+Profitable Trades Thresholds:
+  min: N/A
+  max: N/A
+  mean: N/A
+  median: N/A
+
+=== TIMEFRAME ANALYSIS ===
+
+
+Timeframe: 5min
+Total Trades: 19
+Profitable Trades: 8
+Win Rate: 42.11%
+Mean Return: -5.55%
+Median Return: -18.64%
+Return Std Dev: 55.11%
+Total PnL: $-105.43
+Mean PnL: $-5.55
+
+Timeframe: 15min
+Total Trades: 19
+Profitable Trades: 7
+Win Rate: 36.84%
+Mean Return: 2.38%
+Median Return: -5.37%
+Return Std Dev: 86.62%
+Total PnL: $45.27
+Mean PnL: $2.38
+
+Timeframe: 30min
+Total Trades: 17
+Profitable Trades: 5
+Win Rate: 29.41%
+Mean Return: 613.65%
+Median Return: -43.71%
+Return Std Dev: 2583.47%
+Total PnL: $10432.05
+Mean PnL: $613.65
+
+Timeframe: 45min
+Total Trades: 16
+Profitable Trades: 4
+Win Rate: 25.00%
+Mean Return: 652.52%
+Median Return: -44.06%
+Return Std Dev: 2658.16%
+Total PnL: $10440.30
+Mean PnL: $652.52
+
+Timeframe: 60min
+Total Trades: 13
+Profitable Trades: 4
+Win Rate: 30.77%
+Mean Return: 813.61%
+Median Return: -57.69%
+Return Std Dev: 2925.37%
+Total PnL: $10576.96
+Mean PnL: $813.61
+
+=== OVERALL TRADING STATISTICS ===
+
+Total Trades: 19
+Profitable Trades: 0
+Win Rate: 0.00%
+Stop Losses Hit: 18
+Mean Return: -41.13%
+Median Return: -30.79%
+Return Std Dev: 25.28%
+Total PnL: $-781.39
+Mean PnL per Trade: $-41.13
+Best Trade PnL: $0.00
+Worst Trade PnL: $-89.19
+
+=== STRATEGY RECOMMENDATIONS ===
+
+1. Feature Adjustments:
+
+price_change_15m:
+  - Correlation with returns: -0.611
+
+momentum_5m:
+  - Correlation with returns: -0.545
+
+momentum_7m:
+  - Correlation with returns: -0.544
+
+trend_acceleration:
+  - Correlation with returns: -0.438
+
+2. Timeframe Strategy:
+Best performing timeframe: 60min
+  - Mean PnL: $813.61
+  - Win Rate: 30.77%
+
+3. Stop Loss Adjustments:
+  - Consider loosening stop loss criteria
+  - Current stop losses may be too tight
+  - Analyze price action before stop loss triggers
+
+4. Position Sizing Recommendations:
+  - Consider reducing position size due to high volatility
+
+5. Confidence Score Analysis:
+  - High confidence trades (>0.95) average return: -41.13%
+  - Review confidence score calculation method

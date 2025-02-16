@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_927",
+  "token_address": "6hirQdKKeFRFc5kHoFsTw8CNARuCqjTULjAmPvkbpump",
+  "token_symbol": "SFR",
+  "entry_time": "2025-01-23T17:57:34.130551",
+  "entry_price": 8.299424961745775e-06,
+  "market_price": 7.216891271083283e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 209.73370463333333
+}

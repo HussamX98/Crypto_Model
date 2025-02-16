@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_183507_16",
+  "token_address": "8jihcvJubu1ZRprLr6AN6BLL3CYPK2Sx4WYQx4F1pump",
+  "token_symbol": "SUPERBASED",
+  "entry_time": "2024-12-31T19:04:10.538711",
+  "market_price": 1.2613504330211749e-05,
+  "entry_price_with_slippage": 1.450552997974351e-05,
+  "slippage_percent": 15,
+  "position_size": 16.63,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.050810584538568015,
+    "momentum_7m": 0.10798241601722314,
+    "trend_acceleration": 0.007247852318446074
+  }
+}

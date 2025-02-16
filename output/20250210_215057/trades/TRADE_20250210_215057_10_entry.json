@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_10",
+  "token_symbol": "$mCats",
+  "entry_time": "2025-02-10T21:58:00.275750",
+  "market_price": 5.675378011885744e-06,
+  "entry_price": 6.526684713668605e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.04572308658952662,
+    "volatility_5m": 0.02286154329476331,
+    "momentum_7m": -0.10378927690577389
+  }
+}

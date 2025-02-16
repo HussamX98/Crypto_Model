@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_714",
+  "token_address": "5VezsZig4p1Z3D6a45dGRzEzqPM96KsfChX5ZcYpump",
+  "token_symbol": "WCAIC",
+  "entry_time": "2025-01-23T17:47:33.742822",
+  "entry_price": 5.596663650801892e-06,
+  "market_price": 4.8666640441755585e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 181.0676397833333
+}

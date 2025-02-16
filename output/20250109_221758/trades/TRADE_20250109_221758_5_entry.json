@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_5",
+  "token_address": "HfBwr2moB9hYApAfbGb9GACnqRnHHuDwKyPNejR2pump",
+  "token_symbol": "$LGTB",
+  "entry_time": "2025-01-09T22:47:08.612117",
+  "market_price": 4.711314713611514e-05,
+  "entry_price_with_slippage": 5.182446184972666e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.875,
+  "features": {
+    "momentum_5m": 0.10228330904555949,
+    "momentum_7m": 0.14156216158892065,
+    "trend_acceleration": 0.0010565591796843354,
+    "price_change_15m": 0.3337296415782971
+  },
+  "volume": 10671.544698457707
+}

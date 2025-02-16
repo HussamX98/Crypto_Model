@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_578",
+  "token_address": "5KYgeHfydncdoy5nS8Lzjzyw7qarDgosVQwu4Kkpump",
+  "token_symbol": null,
+  "entry_time": "2025-01-23T17:42:36.627169",
+  "entry_price": 5.326189263727952e-06,
+  "market_price": 4.631468924980828e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.004697700140076311,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.22161316666669
+}

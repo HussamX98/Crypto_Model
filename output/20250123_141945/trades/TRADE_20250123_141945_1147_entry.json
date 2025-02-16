@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1147",
+  "token_address": "5A6fbc5GE1VvU7LX7UBcJSDmp4WLsQoPnzrCfDA5pump",
+  "token_symbol": "MEOW",
+  "entry_time": "2025-01-23T18:13:37.448475",
+  "entry_price": 8.106638382863109e-06,
+  "market_price": 7.049250767707052e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 203.54283983333335
+}

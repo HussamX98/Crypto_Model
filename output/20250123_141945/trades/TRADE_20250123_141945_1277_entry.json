@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1277",
+  "token_address": "2iQausfJmVAkGpPDcRUes6prsV8EBWVsQgpFoebqpump",
+  "token_symbol": "DECAI",
+  "entry_time": "2025-01-23T18:23:40.333807",
+  "entry_price": 7.973323770356238e-06,
+  "market_price": 6.933325017701078e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 195.76112433333336
+}

@@ -1,0 +1,73 @@
+=== XGBOOST MODEL DECISION RULES ===
+
+Feature Importance (by usage frequency):
+--------------------------------------------------
+Feature 0: Used 8791 times
+Feature 3: Used 1762 times
+Feature 2: Used 1692 times
+Feature 1: Used 937 times
+Feature 4: Used 647 times
+Feature 5: Used 339 times
+
+Feature Decision Ranges:
+--------------------------------------------------
+
+Feature 0:
+  Range: -0.4384 to 4.9762
+  Mean: 0.0079
+  Std: 0.3093
+  Percentiles:
+    25th: -0.0474
+    50th: 0.0000
+    75th: 0.0437
+
+Feature 3:
+  Range: -1.0810 to 4.8946
+  Mean: -0.0506
+  Std: 0.4234
+  Percentiles:
+    25th: -0.1719
+    50th: -0.1568
+    75th: -0.0935
+
+Feature 2:
+  Range: -0.3320 to 4.7450
+  Mean: 0.0421
+  Std: 0.5938
+  Percentiles:
+    25th: -0.2438
+    50th: -0.1980
+    75th: 0.0355
+
+Feature 1:
+  Range: -0.5470 to 4.9718
+  Mean: -0.0808
+  Std: 0.6119
+  Percentiles:
+    25th: -0.3672
+    50th: -0.2571
+    75th: -0.0524
+
+Feature 5:
+  Range: -2.2340 to 4.0963
+  Mean: 0.0393
+  Std: 0.6290
+  Percentiles:
+    25th: -0.2063
+    50th: -0.0040
+    75th: 0.2370
+
+Feature 4:
+  Range: -2.2228 to 4.3905
+  Mean: 0.5054
+  Std: 1.5811
+  Percentiles:
+    25th: -0.1537
+    50th: 0.5327
+    75th: 1.0833
+
+Model Structure:
+--------------------------------------------------
+Total Trees: 200
+Features Used: 6
+Base Score: 5E-1

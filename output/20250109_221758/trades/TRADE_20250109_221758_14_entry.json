@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_14",
+  "token_address": "BBbpz5x5RYH7yo2GNbd4RcANF2jFBeytau3ax95rpump",
+  "token_symbol": "Ballsack",
+  "entry_time": "2025-01-09T22:59:40.248676",
+  "market_price": 8.32387561606982e-06,
+  "entry_price_with_slippage": 9.156263177676804e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.11705557313970094,
+    "momentum_7m": 0.13236263470628784,
+    "trend_acceleration": 0.010829546489472153,
+    "price_change_15m": 0.20847801155630163
+  },
+  "volume": 2139.4469920816505
+}

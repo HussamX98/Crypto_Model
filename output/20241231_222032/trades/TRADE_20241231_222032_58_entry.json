@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_222032_58",
+  "token_address": "G92aJwMLxk7pku8LBkLgF5zPK7WsJtxFGU4mK8J2pump",
+  "token_symbol": "3",
+  "entry_time": "2025-01-01T00:37:18.245468",
+  "market_price": 7.373882753546028e-06,
+  "entry_price_with_slippage": 8.479965166577932e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.08269944250000005,
+    "momentum_7m": 0.10730576707509143,
+    "trend_acceleration": 0.030727335072071718
+  }
+}

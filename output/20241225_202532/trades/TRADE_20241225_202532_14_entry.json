@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241225_202532_14",
+  "token_address": "FwPhy5bys5UiswJmp4wVKyAsoY6kpMhSZLVYeaEGpump",
+  "token_symbol": "Hankinson",
+  "entry_time": "2024-12-26T00:11:08.585296",
+  "entry_price": 3.0273110285226233e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6053533261268556,
+    "momentum_7m": 0.48428405611035497,
+    "trend_acceleration": 0.06792646184284304,
+    "price_change_15m": 0.7780578069660891
+  }
+}

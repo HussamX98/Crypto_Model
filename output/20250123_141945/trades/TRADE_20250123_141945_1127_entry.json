@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1127",
+  "token_address": "pubYyW8rJxvZLL8f9DDtz6uoSDM4nUs1k4BDpgwpump",
+  "token_symbol": "DFT",
+  "entry_time": "2025-01-23T18:10:40.962513",
+  "entry_price": 5.4317172029034305e-06,
+  "market_price": 4.7232323503508095e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 200.5588873
+}

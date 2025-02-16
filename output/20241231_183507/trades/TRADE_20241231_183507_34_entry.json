@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_183507_34",
+  "token_address": "GHRoE7SVmcxSxCWofyj8wEPdrKTwGMYvw1wXC6i3pump",
+  "token_symbol": "Minut",
+  "entry_time": "2024-12-31T19:42:58.716003",
+  "market_price": 5.913186350090628e-06,
+  "entry_price_with_slippage": 6.800164302604222e-06,
+  "slippage_percent": 15,
+  "position_size": 9.87,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.09396811871246924,
+    "momentum_7m": 0.09396811871246924,
+    "trend_acceleration": 0.018321631096460234
+  }
+}

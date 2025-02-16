@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1152",
+  "token_address": "Fy3K25bWbAsKj2dW719o8woDde4T39K8p5vjJButpump",
+  "token_symbol": "DAEO",
+  "entry_time": "2025-01-23T18:13:43.603362",
+  "entry_price": 8.095181373256037e-06,
+  "market_price": 7.039288150657424e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.7518819
+}

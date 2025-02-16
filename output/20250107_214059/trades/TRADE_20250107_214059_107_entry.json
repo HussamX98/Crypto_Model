@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_107",
+  "token_address": "8Pk264i2C4S8KQ9PQsoZyLKUtB2mFX5fBNAzQqZtpump",
+  "token_symbol": "1v1",
+  "entry_time": "2025-01-07T22:36:52.830839",
+  "market_price": 3.8641713068329194e-05,
+  "entry_price_with_slippage": 4.250588437516212e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9715600142519314,
+  "features": {
+    "momentum_5m": 0.1772480114015451,
+    "momentum_7m": 0.5078859073860873,
+    "trend_acceleration": 0.047683569810849716,
+    "price_change_15m": 0.7225782869259523
+  }
+}

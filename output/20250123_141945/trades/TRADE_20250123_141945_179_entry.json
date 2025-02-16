@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_179",
+  "token_address": "J7EUsbFMmNVVShqqJ3xirH4TeETAU9CzHryMVwR5pump",
+  "token_symbol": "FOX",
+  "entry_time": "2025-01-23T17:30:29.597030",
+  "entry_price": 1.0008038743996111e-05,
+  "market_price": 8.702642386083576e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.01649763312603625,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 188.63139876666668
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_725",
+  "token_address": "YQVbVNePbTdEBRgkj9HPxQDRDy39tRmFz13D6SRpump",
+  "token_symbol": "ADAM",
+  "entry_time": "2025-01-23T17:48:25.155131",
+  "entry_price": 5.848537600187841e-06,
+  "market_price": 5.085684869728557e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.026579540204138885,
+    "momentum_7m": 0.026579540204138885,
+    "trend_acceleration": 0.026579540204138885,
+    "price_volatility": 0.018794573119167077,
+    "price_change_15m": 0.026579540204138885,
+    "volume_momentum": 1.706251053334995e-06
+  },
+  "token_age_minutes": 188.97081346666667
+}

@@ -1,0 +1,123 @@
+{
+  "trade_id": "TRADE_20250108_130244_76",
+  "token_symbol": "GROK",
+  "token_address": "41LW6fZMzBx1bQQcZ9VuWULRGfVsgwJ8DskUhHhgpump",
+  "entry_time": "2025-01-08T14:58:27.379119",
+  "entry_price": 1.282358057323595e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 9.054706833333334,
+  "highest_price_seen": 1.282358057323595e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:58:27.380120",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.1657800521123589e-05,
+      "return_pct": -9.090909090909104,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:59:27.630974",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.2112663743735469e-05,
+      "return_pct": -5.543824717600576,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:00:27.911435",
+      "time_in_trade_minutes": 2.01,
+      "price": 1.25697136204698e-05,
+      "return_pct": -1.9796885223772431,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:01:28.136206",
+      "time_in_trade_minutes": 3.01,
+      "price": 1.2491684221421459e-05,
+      "return_pct": -2.5881722341043356,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:02:28.396933",
+      "time_in_trade_minutes": 4.02,
+      "price": 1.1571538483003006e-05,
+      "return_pct": -9.763592025507107,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:03:28.646136",
+      "time_in_trade_minutes": 5.02,
+      "price": 1.1569421138123117e-05,
+      "return_pct": -9.780103364659197,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:04:29.126085",
+      "time_in_trade_minutes": 6.03,
+      "price": 1.0750317118079418e-05,
+      "return_pct": -16.167586293984325,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:05:29.504052",
+      "time_in_trade_minutes": 7.04,
+      "price": 1.025370393427211e-05,
+      "return_pct": -20.040242460264345,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:06:29.768483",
+      "time_in_trade_minutes": 8.04,
+      "price": 9.66237032711315e-06,
+      "return_pct": -24.651541182815585,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:07:30.017338",
+      "time_in_trade_minutes": 9.04,
+      "price": 9.281343552213758e-06,
+      "return_pct": -27.622839040877412,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T15:07:30.017338",
+      "time_in_trade_minutes": 9.04,
+      "price": 9.281343552213758e-06,
+      "return_pct": -27.622839040877412,
+      "volume": 3566.9357450462185,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.282358057323595e-05,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 9.617685429926961e-06
+    }
+  ]
+}

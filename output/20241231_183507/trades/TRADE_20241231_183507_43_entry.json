@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_183507_43",
+  "token_address": "7D2vdhj556UTokFdbMVnLxqPrMhkPEEqQNFgGUYMpump",
+  "token_symbol": "OnlyChills",
+  "entry_time": "2024-12-31T20:04:57.707021",
+  "market_price": 3.4428922085110655e-05,
+  "entry_price_with_slippage": 3.959326039787725e-05,
+  "slippage_percent": 15,
+  "position_size": 5.75,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.09948297294460273,
+    "momentum_7m": 0.09158163034354128
+  }
+}

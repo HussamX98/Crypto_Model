@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1033",
+  "token_address": "xGHs5JNNu12ksSwjgXcxmV1MLsuiqW2Wem37u54pump",
+  "token_symbol": "TRUMP_IS_B",
+  "entry_time": "2025-01-23T18:04:33.178541",
+  "entry_price": 8.262054039022402e-06,
+  "market_price": 7.18439481654122e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 211.90264306666668
+}

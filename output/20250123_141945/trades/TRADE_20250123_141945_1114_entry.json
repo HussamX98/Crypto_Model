@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1114",
+  "token_address": "B2kd73Gt1hUbLgpUbxUjLEgZE5GqRGqz4YC6HNjKpump",
+  "token_symbol": "PUMPFUN",
+  "entry_time": "2025-01-23T18:08:36.632170",
+  "entry_price": 8.627204421367567e-06,
+  "market_price": 7.50191688814571e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 220.90731698333332
+}

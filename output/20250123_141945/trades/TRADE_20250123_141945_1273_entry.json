@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1273",
+  "token_address": "GAHXxyagD812VyNX3XZhgvsU84ZTEDSxQxNDNnqvpump",
+  "token_symbol": "PRC",
+  "entry_time": "2025-01-23T18:23:36.616843",
+  "entry_price": 9.362906217459717e-06,
+  "market_price": 8.141657580399755e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": -0.0012194688320346092,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 224.00905316666666
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_4",
+  "token_address": "7uUAwpSAzvrDnvS14bRSZxzNHQ1PSjgA1BfdSESUpump",
+  "token_symbol": "EWW",
+  "entry_time": "2025-01-08T13:24:32.561217",
+  "market_price": 1.1213386352213843e-05,
+  "entry_price_with_slippage": 1.233472498743523e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.39775015007713455,
+    "momentum_7m": 0.5999702561316536,
+    "trend_acceleration": 0.03653778220791766,
+    "price_change_15m": 0.9720581121907512
+  }
+}

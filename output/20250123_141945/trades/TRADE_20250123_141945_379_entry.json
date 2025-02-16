@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_379",
+  "token_address": "7Qy6bBBqwfqbmDAEjtXjY6AaiML2115TYAv14kwvpump",
+  "token_symbol": "DeGOV",
+  "entry_time": "2025-01-23T17:36:33.203195",
+  "entry_price": 8.25276386273891e-06,
+  "market_price": 7.176316402381661e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.28797228333332
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_36",
+  "token_address": "HqNN7wbMRvcHZthz2dnawkeP9W15TdnkaftLvmMYpump",
+  "token_symbol": "DS",
+  "entry_time": "2025-01-08T13:54:14.860537",
+  "market_price": 6.663056750771624e-06,
+  "entry_price_with_slippage": 7.329362425848787e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9000277919685283,
+  "features": {
+    "momentum_5m": 0.2676379798792341,
+    "momentum_7m": 0.2503438427249576,
+    "trend_acceleration": 0.03395936906366456,
+    "price_change_15m": 0.15004168795279238
+  }
+}

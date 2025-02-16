@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_22",
+  "token_symbol": "MofoSnakes",
+  "entry_time": "2025-02-10T22:00:30.241593",
+  "market_price": 5.690167409150841e-06,
+  "entry_price": 6.543692520523467e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.0013974232119341456,
+    "volatility_5m": 0.0006987116059670728,
+    "momentum_7m": -0.12523813614409773
+  }
+}

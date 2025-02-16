@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_925",
+  "token_address": "F7bQ9jMZhZmPP6yuP6urWG73cxMkPx6mCBjKsTPjpump",
+  "token_symbol": "STR500",
+  "entry_time": "2025-01-23T17:57:33.201938",
+  "entry_price": 8.174942179937721e-06,
+  "market_price": 7.108645373858889e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 190.56672655
+}

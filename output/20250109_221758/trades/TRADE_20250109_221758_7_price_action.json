@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_221758_7",
+  "token_symbol": "FARTC\u0410T",
+  "token_address": "GerGFUmqWarZUWWx28MfV7ZjDWfEBd2wUcSJUcP3pump",
+  "entry_time": "2025-01-09T22:51:31.197538",
+  "entry_price": 1.3054466932400657e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0150651166666667,
+  "highest_price_seen": 1.3054466932400657e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T22:51:31.198539",
+      "time_in_trade_minutes": 0.0,
+      "price": 1.1867697211273324e-05,
+      "return_pct": -9.090909090909093,
+      "volume": 4916.2202987893525,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.3054466932400657e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:52:31.437402",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.1257321198792956e-05,
+      "return_pct": -13.766519482670391,
+      "volume": 4916.2202987893525,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.3054466932400657e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T22:52:31.437402",
+      "time_in_trade_minutes": 1.0,
+      "price": 1.1257321198792956e-05,
+      "return_pct": -13.766519482670391,
+      "volume": 4916.2202987893525,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.3054466932400657e-05,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -13.77%"
+    }
+  ]
+}

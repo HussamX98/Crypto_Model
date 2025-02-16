@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_15",
+  "token_address": "pi2W2G5FnDuSLxFviHiKPmVZ5dQVNS5tyjqD5j5pump",
+  "token_symbol": "Body",
+  "entry_time": "2025-01-08T13:41:20.673294",
+  "market_price": 7.228894743512376e-06,
+  "entry_price_with_slippage": 7.951784217863613e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9929538945570924,
+  "features": {
+    "momentum_5m": 0.23465011607080255,
+    "momentum_7m": 0.23619251948874087,
+    "trend_acceleration": 0.029777418485735133,
+    "price_change_15m": 0.2894308418356384
+  }
+}

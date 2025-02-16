@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_12",
+  "token_address": "NurVCaGBznfBsgqm6v6ULNRTnbHq5uAudYqyQ25pump",
+  "token_symbol": "VEXBOLTS",
+  "entry_time": "2024-12-31T23:01:47.184201",
+  "market_price": 7.552200123590856e-06,
+  "entry_price_with_slippage": 8.685030142129484e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.3371858249498574,
+    "momentum_7m": 0.38096691936795213,
+    "trend_acceleration": 0.013088808410530783,
+    "price_change_15m": 0.1291921312355171
+  }
+}

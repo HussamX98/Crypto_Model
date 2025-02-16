@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_215057_4",
+  "token_symbol": "SHIT",
+  "entry_time": "2025-02-10T21:56:40.155570",
+  "market_price": 5.64540806650577e-06,
+  "entry_price": 6.492219276481635e-06,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": -0.002350975470030714,
+    "volatility_5m": 0.0015255889082420632,
+    "momentum_7m": -0.13921164533121155
+  }
+}

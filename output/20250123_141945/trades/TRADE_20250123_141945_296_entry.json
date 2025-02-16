@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_296",
+  "token_address": "7kFN6fGXRkAL7R7hB9JwFD5zTHgkXK2QoCtf8hPfpump",
+  "token_symbol": "NEXURAI",
+  "entry_time": "2025-01-23T17:33:35.746667",
+  "entry_price": 9.052599682136389e-06,
+  "market_price": 7.871825810553383e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 180.11641023333334
+}

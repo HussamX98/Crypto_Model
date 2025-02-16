@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250109_130202_3",
+  "token_symbol": "BOND",
+  "token_address": "9uaquG97Y4sCmU6b4WAVKhxGABkK8hd4zA3YzWUMpump",
+  "entry_time": "2025-01-09T13:41:17.439366",
+  "entry_price": 6.458359325152065e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.0134649999999998,
+  "highest_price_seen": 6.458359325152065e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-09T13:41:17.440367",
+      "time_in_trade_minutes": 0.0,
+      "price": 5.87123575013824e-05,
+      "return_pct": -9.090909090909104,
+      "volume": 279603.4594145769,
+      "remaining_position_size": 100,
+      "highest_price_seen": 6.458359325152065e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T13:42:17.727267",
+      "time_in_trade_minutes": 1.0,
+      "price": 5.481771849065871e-05,
+      "return_pct": -15.121293612185315,
+      "volume": 279603.4594145769,
+      "remaining_position_size": 100,
+      "highest_price_seen": 6.458359325152065e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-09T13:42:17.727267",
+      "time_in_trade_minutes": 1.0,
+      "price": 5.481771849065871e-05,
+      "return_pct": -15.121293612185315,
+      "volume": 279603.4594145769,
+      "remaining_position_size": 100,
+      "highest_price_seen": 6.458359325152065e-05,
+      "event": "stop_loss",
+      "reason": "Stop loss triggered at -15.12%"
+    }
+  ]
+}

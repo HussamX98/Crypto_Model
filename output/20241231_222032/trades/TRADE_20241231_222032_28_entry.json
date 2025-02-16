@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_28",
+  "token_address": "GRPNHZFj2FrGoJcvndHFSGZoxEGfFfYP9F6ugurzpump",
+  "token_symbol": "RUNNER25",
+  "entry_time": "2024-12-31T23:35:41.667746",
+  "market_price": 6.334863387400682e-06,
+  "entry_price_with_slippage": 7.285092895510783e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.12840505730702567,
+    "momentum_7m": 0.12840505730702567,
+    "trend_acceleration": 0.01605063216337821,
+    "price_change_15m": 0.12840505730702567
+  }
+}

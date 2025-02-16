@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250116_123938_5",
+  "token_symbol": "DNA",
+  "entry_time": "2025-01-16T18:17:28.418554",
+  "market_price": 1.5627592256894834e-05,
+  "entry_price": 1.7971731095429057e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.31089831312895266,
+    "volatility_5m": 0.09011845794143501,
+    "momentum_7m": 0.30513251738919545,
+    "trend_acceleration": 0.0010743071998317588,
+    "price_change_15m": 0.30513251738919545
+  }
+}

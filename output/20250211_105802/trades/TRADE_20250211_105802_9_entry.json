@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250211_105802_9",
+  "token_symbol": "CT",
+  "entry_time": "2025-02-11T17:03:14.363965",
+  "market_price": 1.3733189855007125e-05,
+  "entry_price": 1.5793168333258193e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.30053325065635694,
+    "volatility_5m": 0.08811845843337404,
+    "momentum_7m": 0.30053325065635694,
+    "trend_acceleration": 0.007203990836097934,
+    "price_change_15m": 0.30053325065635694
+  }
+}

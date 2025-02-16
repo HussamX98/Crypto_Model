@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_91",
+  "token_address": "74YjebPfzdkdYu2xukX7hxmVQdo3zhQPDsqtm3F2pump",
+  "token_symbol": "GIGATRUMP",
+  "entry_time": "2025-01-01T00:52:06.502967",
+  "market_price": 3.563103319496414e-05,
+  "entry_price_with_slippage": 4.097568817420875e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.14800641452441865,
+    "momentum_7m": 0.2033796626495854
+  }
+}

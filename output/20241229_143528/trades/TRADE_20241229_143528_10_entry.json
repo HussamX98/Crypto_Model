@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_10",
+  "token_address": "EkP848gANSLCpUbKTYrpGxuCNWTzcNhgBaXABkjXpump",
+  "token_symbol": "zaza",
+  "entry_time": "2024-12-29T15:14:39.177718",
+  "entry_price": 1.3613081851436844e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.541006179078245,
+    "momentum_7m": 1.541006179078245,
+    "trend_acceleration": 0.19262577238478062,
+    "price_change_15m": 1.541006179078245
+  }
+}

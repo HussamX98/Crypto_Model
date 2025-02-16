@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_26",
+  "token_address": "BTUbqVD8pMnV7nYPZ93tUQjZgqvCUytEBzhbGyvhpump",
+  "token_symbol": "DORITOS",
+  "entry_time": "2025-01-09T23:08:08.326302",
+  "market_price": 6.240387811992449e-06,
+  "entry_price_with_slippage": 6.864426593191695e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9249999999999999,
+  "features": {
+    "momentum_5m": 0.15813223461805914,
+    "momentum_7m": 0.15813223461805914,
+    "trend_acceleration": 0.019766529327257393,
+    "price_change_15m": 0.15813223461805914
+  },
+  "volume": 913.1206070477824
+}

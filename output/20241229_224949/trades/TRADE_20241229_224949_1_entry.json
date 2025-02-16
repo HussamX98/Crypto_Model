@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_1",
+  "token_address": "5KXuQgVp4BSwqTQk2LpDETo8gLbiLftuv12VcqvGpump",
+  "token_symbol": "TEETH",
+  "entry_time": "2024-12-29T23:10:34.701257",
+  "market_price": 7.85849951204244e-05,
+  "entry_price_with_slippage": 9.037274438848805e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.1879816199101154,
+    "volatility_5m": 0.7217301598606778,
+    "momentum_7m": 1.1879816199101154,
+    "trend_acceleration": 0.0208924817683232,
+    "price_change_15m": 1.0229708656071517,
+    "relative_volume": 2.4864022057783624
+  }
+}

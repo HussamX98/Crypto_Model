@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_3",
+  "token_address": "8AXYi2rBvTfXRq6XzgisT6o7ocJ4h9NVgd2wB4oSpump",
+  "token_symbol": "OVERMIND",
+  "entry_time": "2024-12-31T22:28:46.591881",
+  "market_price": 1.2898179089229309e-05,
+  "entry_price_with_slippage": 1.4832905952613704e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.2618006249376894,
+    "momentum_7m": 0.43166063960132117
+  }
+}

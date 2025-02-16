@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_221758_1",
+  "token_address": "HLPPgonco1wfmJ1m1zywQNNxuyqBNwRPpd5Ub1SJpump",
+  "token_symbol": "NO DIDDY",
+  "entry_time": "2025-01-09T22:40:35.635217",
+  "market_price": 1.0333456875338149e-05,
+  "entry_price_with_slippage": 1.1366802562871965e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.11462313443236272,
+    "momentum_7m": 0.4369557901411092,
+    "trend_acceleration": 0.01620986748075265
+  },
+  "volume": 3418.836628848727
+}

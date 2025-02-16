@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_3",
+  "token_address": "D91s4Q4zLYJefwN1VuXP7M6K4sJdTMVB3TyS6ju5pump",
+  "token_symbol": "Dentist",
+  "entry_time": "2024-12-29T23:15:49.644703",
+  "market_price": 6.582219231826037e-06,
+  "entry_price_with_slippage": 7.569552116599942e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.8842093248830121,
+    "volatility_5m": 0.442104662441506,
+    "momentum_7m": 0.9199969137666686,
+    "trend_acceleration": 0.11052616561037651,
+    "price_change_15m": 0.9199969137666686,
+    "relative_volume": 1.42229320630294
+  }
+}

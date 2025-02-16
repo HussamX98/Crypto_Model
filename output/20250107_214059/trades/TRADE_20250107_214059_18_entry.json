@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20250107_214059_18",
+  "token_address": "GB6GUo9S4ZLrUftGaScLgCVjGnmcAEEZuod6SrCvpump",
+  "token_symbol": "MELOS ",
+  "entry_time": "2025-01-07T22:04:26.416963",
+  "market_price": 9.837389616546981e-06,
+  "entry_price_with_slippage": 1.082112857820168e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.7054079923386161,
+  "features": {
+    "momentum_5m": 0.17174678727629233,
+    "momentum_7m": 0.3288384426786517,
+    "trend_acceleration": 0.014072450824325067
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "trade_id": "TRADE_20250108_130244_65",
+  "token_symbol": "PLM",
+  "token_address": "3CzG2VLuP6YJRvYZmYdqF9zE6chhzqPhLSuetJx8pump",
+  "entry_time": "2025-01-08T14:32:34.499487",
+  "entry_price": 0.0003351996185375075,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 5.037181783333334,
+  "highest_price_seen": 0.0004352962789138527,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:32:34.500490",
+      "time_in_trade_minutes": 0.0,
+      "price": 0.0003047269259431886,
+      "return_pct": -9.090909090909104,
+      "volume": 451332.53725089156,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0003351996185375075,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:33:34.739473",
+      "time_in_trade_minutes": 1.0,
+      "price": 0.0003405218372247084,
+      "return_pct": 1.587775878272768,
+      "volume": 505028.51936423685,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0003405218372247084,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:34:35.430899",
+      "time_in_trade_minutes": 2.02,
+      "price": 0.0003814832424925423,
+      "return_pct": 13.807779423190425,
+      "volume": 505028.51936423685,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0003814832424925423,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:35:35.674567",
+      "time_in_trade_minutes": 3.02,
+      "price": 0.0004352962789138527,
+      "return_pct": 29.861806171818415,
+      "volume": 505028.51936423685,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0004352962789138527,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:36:36.222484",
+      "time_in_trade_minutes": 4.03,
+      "price": 0.00035305855866825316,
+      "return_pct": 5.327852164231306,
+      "volume": 505028.51936423685,
+      "remaining_position_size": 100,
+      "highest_price_seen": 0.0004352962789138527,
+      "event": "monitoring"
+    }
+  ]
+}

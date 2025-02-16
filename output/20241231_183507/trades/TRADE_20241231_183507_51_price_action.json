@@ -1,0 +1,79 @@
+{
+  "trade_id": "TRADE_20241231_183507_51",
+  "token_symbol": "GIGATRUMP",
+  "token_address": "73Ljvad4UKCWX995RXyocUzKBzSejgTntR6WFagfpump",
+  "entry_time": "2024-12-31T20:13:16.087306",
+  "entry_price": 4.0670566890846814e-05,
+  "initial_position_size": 10.45,
+  "confidence_score": 0.6,
+  "features_at_entry": {
+    "momentum_5m": 0.1330265468533065,
+    "momentum_7m": 0.1323995984016877
+  },
+  "price_action": [
+    {
+      "timestamp": "2024-12-31T20:13:16.088306",
+      "time_in_trade_minutes": 0.0,
+      "price": 3.53657103398668e-05,
+      "return_pct": -13.043478260869556,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:14:16.558941",
+      "time_in_trade_minutes": 1.01,
+      "price": 3.6442843135174804e-05,
+      "return_pct": -10.395045062977692,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:15:16.808565",
+      "time_in_trade_minutes": 2.01,
+      "price": 3.718127883425121e-05,
+      "return_pct": -8.579393707396033,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:16:17.009545",
+      "time_in_trade_minutes": 3.02,
+      "price": 3.8275923736894615e-05,
+      "return_pct": -5.887902080094021,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:17:17.486849",
+      "time_in_trade_minutes": 4.02,
+      "price": 3.967847146984709e-05,
+      "return_pct": -2.4393449534705125,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:18:17.772440",
+      "time_in_trade_minutes": 5.03,
+      "price": 4.194969731057709e-05,
+      "return_pct": 3.1451010337850915,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2024-12-31T20:19:18.011442",
+      "time_in_trade_minutes": 6.03,
+      "price": 4.555260238778559e-05,
+      "return_pct": 12.003854064885221,
+      "volume": 0.0,
+      "remaining_position_size": 10.45,
+      "event": "monitoring"
+    }
+  ],
+  "monitoring_duration_minutes": 7.043940233333333
+}

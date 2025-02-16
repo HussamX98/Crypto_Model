@@ -1,0 +1,9 @@
+{
+  "trade_id": "TRADE_20250211_105802_8",
+  "exit_type": "trailing_stop",
+  "exit_time": "2025-02-11T16:45:49.439040",
+  "exit_price": 3.4373744133518935e-05,
+  "return_pct": 9.526058495096867,
+  "time_in_trade_minutes": 7.72009495,
+  "peak_return": 23.174646615785257
+}

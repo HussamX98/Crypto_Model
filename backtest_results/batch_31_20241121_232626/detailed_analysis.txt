@@ -1,0 +1,64 @@
+=== DETAILED BACKTEST ANALYSIS ===
+
+OVERALL STATISTICS:
+--------------------------------------------------
+Total Tokens Analyzed: 226
+Total Trades Found: 1230
+
+
+HOLDING PERIOD: 45 minutes
+--------------------------------------------------
+Number of Trades: 750
+Average Return: 12.86x
+Max Return: 356.70x
+
+Confidence Score Distribution:
+Mean: 0.946
+High Confidence (>0.9): 659
+Medium Confidence (0.8-0.9): 91
+
+
+HOLDING PERIOD: 30 minutes
+--------------------------------------------------
+Number of Trades: 480
+Average Return: 12.67x
+Max Return: 177.16x
+
+Confidence Score Distribution:
+Mean: 0.948
+High Confidence (>0.9): 430
+Medium Confidence (0.8-0.9): 50
+
+
+FEATURE ANALYSIS:
+--------------------------------------------------
+
+momentum_7m:
+Mean: 0.541
+Std: 0.699
+Range: [-0.629, 5.329]
+
+momentum_5m:
+Mean: 0.461
+Std: 0.805
+Range: [-0.854, 13.450]
+
+trend_acceleration:
+Mean: 0.024
+Std: 1.418
+Range: [-27.110, 3.217]
+
+momentum_acc_7m:
+Mean: 0.319
+Std: 1.441
+Range: [-17.098, 6.329]
+
+momentum_acc_14m:
+Mean: 0.462
+Std: 0.964
+Range: [-6.414, 5.320]
+
+price_change_15m:
+Mean: 0.891
+Std: 2.871
+Range: [-0.999, 37.841]

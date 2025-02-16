@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_54",
+  "token_address": "FEGCyJ3CReqoUKyaWqE53yF4A4ZzogD1JobwD48Lpump",
+  "token_symbol": "DOGE",
+  "entry_time": "2025-01-07T22:15:35.965676",
+  "market_price": 1.0339916736931394e-05,
+  "entry_price_with_slippage": 1.1373908410624535e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.40889535501155416,
+    "momentum_7m": 0.38204551817115107,
+    "trend_acceleration": 0.006698619951719914,
+    "price_change_15m": 0.6758914900164108
+  }
+}

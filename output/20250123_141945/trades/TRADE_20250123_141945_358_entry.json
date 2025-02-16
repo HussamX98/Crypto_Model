@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_358",
+  "token_address": "DsKqSCh1sfXUGEG7wZCzfbQkAiG5Kt2pTorv6Uvgpump",
+  "token_symbol": "TAUL",
+  "entry_time": "2025-01-23T17:36:24.679282",
+  "entry_price": 8.33007822397791e-06,
+  "market_price": 7.243546281719922e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 181.32331059999999
+}

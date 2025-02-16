@@ -1,0 +1,1756 @@
+=== DETAILED TRADE ANALYSIS ===
+
+Trade ID: TRADE_20241231_222032_1
+Token: NYC
+Entry Time: 2024-12-31T23:00:46.286436
+Entry Price: $0.00000803
+Market Price at Entry: $0.00000698
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0863
+  momentum_7m: 0.2808
+  trend_acceleration: 0.0096
+
+Take Profit Points:
+  Time: 2024-12-31T23:07:16.385171
+  Price: $0.00001325
+  PnL: $27.86
+  Return: 55.72%
+  Time: 2024-12-31T23:16:50.364882
+  Price: $0.00570553
+  PnL: $31.70
+  Return: 63.39%
+  Time: 2024-12-31T23:26:35.124790
+  Price: $0.00002525
+  PnL: $36.55
+  Return: 73.10%
+
+Exit Details:
+  Exit Price: $0.00000574
+  Final PnL: $-28.53
+  Return: -28.53%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_10
+Token: NYC
+Entry Time: 2024-12-31T23:00:46.286436
+Entry Price: $0.00000803
+Market Price at Entry: $0.00000698
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0863
+  momentum_7m: 0.2808
+  trend_acceleration: 0.0096
+
+Exit Details:
+  Exit Price: $0.00000574
+  Final PnL: $-28.53
+  Return: -28.53%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_11
+Token: 2025AI
+Entry Time: 2024-12-31T23:01:14.189842
+Entry Price: $0.00000851
+Market Price at Entry: $0.00000740
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.7579
+  momentum_7m: 0.3829
+  trend_acceleration: 0.0382
+  price_change_15m: 0.0390
+
+Take Profit Points:
+  Time: 2024-12-31T23:07:16.385171
+  Price: $0.00001325
+  PnL: $27.86
+  Return: 55.72%
+
+Exit Details:
+  Exit Price: $0.00001983
+  Final PnL: $66.51
+  Return: 133.03%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_12
+Token: VEXBOLTS
+Entry Time: 2024-12-31T23:01:47.184201
+Entry Price: $0.00000869
+Market Price at Entry: $0.00000755
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3372
+  momentum_7m: 0.3810
+  trend_acceleration: 0.0131
+  price_change_15m: 0.1292
+
+Exit Details:
+  Exit Price: $0.00000568
+  Final PnL: $-34.64
+  Return: -34.64%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_13
+Token: GIGATRUMP
+Entry Time: 2024-12-31T23:09:28.667842
+Entry Price: $0.00004262
+Market Price at Entry: $0.00003706
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1510
+  momentum_7m: 0.1959
+
+Exit Details:
+  Exit Price: $0.00000707
+  Final PnL: $-83.40
+  Return: -83.40%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_14
+Token: CHILLTATE
+Entry Time: 2024-12-31T23:12:52.779695
+Entry Price: $0.00004125
+Market Price at Entry: $0.00003587
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0901
+  momentum_7m: 0.1244
+
+Exit Details:
+  Exit Price: $0.00000638
+  Final PnL: $-84.54
+  Return: -84.54%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_15
+Token: TIM
+Entry Time: 2024-12-31T23:13:16.655105
+Entry Price: $0.00000915
+Market Price at Entry: $0.00000796
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1143
+  momentum_7m: 0.2246
+
+Exit Details:
+  Exit Price: $0.00000626
+  Final PnL: $-31.54
+  Return: -31.54%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_16
+Token: RUNNER25
+Entry Time: 2024-12-31T23:13:54.375441
+Entry Price: $0.00000720
+Market Price at Entry: $0.00000626
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1675
+  momentum_7m: 0.1554
+  trend_acceleration: -0.0378
+
+Exit Details:
+  Exit Price: $0.00000533
+  Final PnL: $-26.04
+  Return: -26.04%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_17
+Token: POPKM
+Entry Time: 2024-12-31T23:14:48.527099
+Entry Price: $0.00349195
+Market Price at Entry: $0.00303647
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0756
+  momentum_7m: 0.3974
+
+Take Profit Points:
+  Time: 2024-12-31T23:16:50.364882
+  Price: $0.00570553
+  PnL: $31.70
+  Return: 63.39%
+
+Exit Details:
+  Exit Price: $0.00377227
+  Final PnL: $4.01
+  Return: 8.03%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_18
+Token: KFD
+Entry Time: 2024-12-31T23:16:58.398855
+Entry Price: $0.00000701
+Market Price at Entry: $0.00000610
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1393
+  momentum_7m: 0.1477
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_19
+Token: RUNNER
+Entry Time: 2024-12-31T23:21:32.348997
+Entry Price: $0.00001459
+Market Price at Entry: $0.00001268
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1334
+  momentum_7m: 0.2431
+  trend_acceleration: 0.0061
+
+Take Profit Points:
+  Time: 2024-12-31T23:26:35.124790
+  Price: $0.00002525
+  PnL: $36.55
+  Return: 73.10%
+
+Exit Details:
+  Exit Price: $0.00001796
+  Final PnL: $11.58
+  Return: 23.15%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_2
+Token: TM
+Entry Time: 2024-12-31T23:26:50.557905
+Entry Price: $0.00000643
+Market Price at Entry: $0.00000559
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2035
+  momentum_7m: 0.2035
+  trend_acceleration: 0.0254
+  price_change_15m: -0.9906
+
+Take Profit Points:
+  Time: 2024-12-31T23:54:41.737814
+  Price: $0.00006306
+  PnL: $25.14
+  Return: 50.27%
+
+Exit Details:
+  Exit Price: $0.00000481
+  Final PnL: $-25.10
+  Return: -25.10%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_20
+Token: TM
+Entry Time: 2024-12-31T23:26:50.557905
+Entry Price: $0.00000643
+Market Price at Entry: $0.00000559
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2035
+  momentum_7m: 0.2035
+  trend_acceleration: 0.0254
+  price_change_15m: -0.9906
+
+Exit Details:
+  Exit Price: $0.00000481
+  Final PnL: $-25.10
+  Return: -25.10%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_21
+Token: ANUS
+Entry Time: 2024-12-31T23:26:59.564972
+Entry Price: $0.00002092
+Market Price at Entry: $0.00001819
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3734
+  momentum_7m: 0.2762
+  trend_acceleration: 0.0011
+
+Exit Details:
+  Exit Price: $0.00001473
+  Final PnL: $-29.57
+  Return: -29.57%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_22
+Token: 2025
+Entry Time: 2024-12-31T23:27:31.937673
+Entry Price: $0.00000012
+Market Price at Entry: $0.00000011
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2764
+  momentum_7m: 0.2764
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_23
+Token: MIDNITE
+Entry Time: 2024-12-31T23:29:18.941109
+Entry Price: $0.00000510
+Market Price at Entry: $0.00000444
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1885
+  momentum_7m: 0.1316
+  trend_acceleration: 0.0231
+  price_change_15m: -0.8804
+
+Exit Details:
+  Exit Price: $0.00000370
+  Final PnL: $-27.53
+  Return: -27.53%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_24
+Token: backto
+Entry Time: 2024-12-31T23:31:36.514272
+Entry Price: $0.00000724
+Market Price at Entry: $0.00000630
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1491
+  momentum_7m: 0.1491
+
+Exit Details:
+  Exit Price: $0.00000533
+  Final PnL: $-26.37
+  Return: -26.37%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_25
+Token: WIFIUS
+Entry Time: 2024-12-31T23:32:35.252745
+Entry Price: $0.00000746
+Market Price at Entry: $0.00000648
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1907
+  momentum_7m: 0.1087
+
+Exit Details:
+  Exit Price: $0.00000553
+  Final PnL: $-25.85
+  Return: -25.85%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_26
+Token: MOW
+Entry Time: 2024-12-31T23:35:20.196759
+Entry Price: $0.00004196
+Market Price at Entry: $0.00003649
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1288
+  momentum_7m: 0.1804
+
+Take Profit Points:
+  Time: 2024-12-31T23:54:41.737814
+  Price: $0.00006306
+  PnL: $25.14
+  Return: 50.27%
+
+Exit Details:
+  Exit Price: $0.00000695
+  Final PnL: $-41.72
+  Return: -83.45%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_27
+Token: HNY
+Entry Time: 2024-12-31T23:35:28.285520
+Entry Price: $0.00015596
+Market Price at Entry: $0.00013562
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1491
+  momentum_7m: 0.1960
+  trend_acceleration: 0.0000
+
+Exit Details:
+  Exit Price: $0.00002234
+  Final PnL: $-85.67
+  Return: -85.67%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_28
+Token: RUNNER25
+Entry Time: 2024-12-31T23:35:41.667746
+Entry Price: $0.00000729
+Market Price at Entry: $0.00000633
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1284
+  momentum_7m: 0.1284
+  trend_acceleration: 0.0161
+  price_change_15m: 0.1284
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_29
+Token: CKAI
+Entry Time: 2024-12-31T23:36:01.945450
+Entry Price: $0.00000695
+Market Price at Entry: $0.00000604
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1146
+  momentum_7m: 0.1146
+  trend_acceleration: 0.0083
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_3
+Token: AI 
+Entry Time: 2024-12-31T23:43:04.686860
+Entry Price: $0.00004061
+Market Price at Entry: $0.00003532
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0936
+  momentum_7m: 0.1067
+
+Take Profit Points:
+  Time: 2025-01-01T00:04:13.573378
+  Price: $0.00001959
+  PnL: $30.29
+  Return: 60.57%
+  Time: 2025-01-01T00:02:12.834686
+  Price: $0.00872031
+  PnL: $38.57
+  Return: 77.14%
+
+Exit Details:
+  Exit Price: $0.00000909
+  Final PnL: $-77.61
+  Return: -77.61%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_30
+Token: AI 
+Entry Time: 2024-12-31T23:43:04.686860
+Entry Price: $0.00004061
+Market Price at Entry: $0.00003532
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0936
+  momentum_7m: 0.1067
+
+Exit Details:
+  Exit Price: $0.00000909
+  Final PnL: $-77.61
+  Return: -77.61%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_31
+Token: TM
+Entry Time: 2024-12-31T23:46:51.303685
+Entry Price: $0.00000601
+Market Price at Entry: $0.00000523
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1127
+  momentum_7m: 0.1127
+  trend_acceleration: 0.0023
+  price_change_15m: 0.0669
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_32
+Token: LADYBOY
+Entry Time: 2024-12-31T23:48:06.742030
+Entry Price: $0.00001220
+Market Price at Entry: $0.00001061
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2627
+  momentum_7m: 0.4556
+
+Take Profit Points:
+  Time: 2025-01-01T00:04:13.573378
+  Price: $0.00001959
+  PnL: $30.29
+  Return: 60.57%
+
+Exit Details:
+  Exit Price: $0.00001084
+  Final PnL: $-5.56
+  Return: -11.13%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_33
+Token: ANUS
+Entry Time: 2024-12-31T23:48:20.298368
+Entry Price: $0.00002003
+Market Price at Entry: $0.00001742
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0987
+  momentum_7m: 0.1126
+  trend_acceleration: 0.0100
+
+Exit Details:
+  Exit Price: $0.00001494
+  Final PnL: $-25.41
+  Return: -25.41%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_34
+Token: MNL
+Entry Time: 2024-12-31T23:51:21.055614
+Entry Price: $0.00000782
+Market Price at Entry: $0.00000680
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1567
+  momentum_7m: 0.1503
+  trend_acceleration: 0.0060
+  price_change_15m: -0.2071
+
+Exit Details:
+  Exit Price: $0.00000569
+  Final PnL: $-27.30
+  Return: -27.30%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_35
+Token: POPNU
+Entry Time: 2024-12-31T23:54:10.164522
+Entry Price: $0.00492280
+Market Price at Entry: $0.00428069
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3726
+  momentum_7m: 0.2540
+  trend_acceleration: 0.0376
+
+Take Profit Points:
+  Time: 2025-01-01T00:02:12.834686
+  Price: $0.00872031
+  PnL: $38.57
+  Return: 77.14%
+
+Exit Details:
+  Exit Price: $0.00602147
+  Final PnL: $11.16
+  Return: 22.32%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_36
+Token: TM
+Entry Time: 2024-12-31T23:59:27.086502
+Entry Price: $0.00000641
+Market Price at Entry: $0.00000557
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2189
+  momentum_7m: 0.2189
+
+Exit Details:
+  Exit Price: $0.00000408
+  Final PnL: $-36.27
+  Return: -36.27%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_37
+Token: ENTRO
+Entry Time: 2025-01-01T00:01:12.837030
+Entry Price: $0.00005618
+Market Price at Entry: $0.00004885
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 1.0619
+  momentum_7m: 0.3789
+  trend_acceleration: 0.1724
+
+Exit Details:
+  Exit Price: $0.00000635
+  Final PnL: $-88.70
+  Return: -88.70%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_38
+Token: HNY
+Entry Time: 2025-01-01T00:01:46.677907
+Entry Price: $0.00004514
+Market Price at Entry: $0.00003925
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.4043
+  momentum_7m: 1.0339
+  trend_acceleration: 0.0334
+
+Exit Details:
+  Exit Price: $0.00002241
+  Final PnL: $-50.37
+  Return: -50.37%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_39
+Token: NY
+Entry Time: 2025-01-01T00:02:53.870491
+Entry Price: $0.00000789
+Market Price at Entry: $0.00000686
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2891
+  momentum_7m: 0.2866
+  trend_acceleration: 0.0205
+
+Exit Details:
+  Exit Price: $0.00000576
+  Final PnL: $-26.97
+  Return: -26.97%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_4
+Token: AI 
+Entry Time: 2025-01-01T00:05:24.468030
+Entry Price: $0.00003977
+Market Price at Entry: $0.00003458
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1093
+  momentum_7m: 0.1284
+
+Take Profit Points:
+  Time: 2025-01-01T00:26:24.538801
+  Price: $0.42437252
+  PnL: $27.53
+  Return: 55.07%
+
+Exit Details:
+  Exit Price: $0.00000531
+  Final PnL: $-86.65
+  Return: -86.65%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_40
+Token: AI 
+Entry Time: 2025-01-01T00:05:24.468030
+Entry Price: $0.00003977
+Market Price at Entry: $0.00003458
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1093
+  momentum_7m: 0.1284
+
+Exit Details:
+  Exit Price: $0.00000531
+  Final PnL: $-86.65
+  Return: -86.65%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_41
+Token: ANUS
+Entry Time: 2025-01-01T00:06:29.741059
+Entry Price: $0.00002179
+Market Price at Entry: $0.00001895
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1019
+  momentum_7m: 0.2260
+
+Exit Details:
+  Exit Price: $0.00001539
+  Final PnL: $-29.38
+  Return: -29.38%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_42
+Token: TRUMPIUS
+Entry Time: 2025-01-01T00:08:48.481606
+Entry Price: $0.00000745
+Market Price at Entry: $0.00000647
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1613
+  momentum_7m: 0.2109
+  trend_acceleration: 0.0142
+
+Exit Details:
+  Exit Price: $0.00000531
+  Final PnL: $-28.62
+  Return: -28.62%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_43
+Token: 2025AI
+Entry Time: 2025-01-01T00:08:55.764792
+Entry Price: $0.00001217
+Market Price at Entry: $0.00001059
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1241
+  momentum_7m: 0.1044
+  trend_acceleration: 0.0122
+  price_change_15m: -0.3509
+
+Exit Details:
+  Exit Price: $0.00000909
+  Final PnL: $-25.36
+  Return: -25.36%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_44
+Token: TOOTH
+Entry Time: 2025-01-01T00:11:28.295589
+Entry Price: $0.00000696
+Market Price at Entry: $0.00000605
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1290
+  momentum_7m: 0.1154
+  trend_acceleration: 0.0027
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_45
+Token: POPEYE
+Entry Time: 2025-01-01T00:15:40.055373
+Entry Price: $0.00199004
+Market Price at Entry: $0.00173047
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.4833
+  momentum_7m: 0.5073
+  trend_acceleration: 2.5453
+
+Exit Details:
+  Exit Price: $0.00003184
+  Final PnL: $-98.40
+  Return: -98.40%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_46
+Token: ENTRO
+Entry Time: 2025-01-01T00:19:20.192386
+Entry Price: $0.00000708
+Market Price at Entry: $0.00000616
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2163
+  momentum_7m: 0.1626
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_47
+Token: HNY
+Entry Time: 2025-01-01T00:19:56.588638
+Entry Price: $0.00002688
+Market Price at Entry: $0.00002337
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2408
+  momentum_7m: 0.1892
+
+Exit Details:
+  Exit Price: $0.00001851
+  Final PnL: $-31.14
+  Return: -31.14%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_48
+Token: TM
+Entry Time: 2025-01-01T00:22:21.141958
+Entry Price: $0.27366706
+Market Price at Entry: $0.23797136
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2711
+  momentum_7m: 0.4376
+  trend_acceleration: -0.0759
+  price_change_15m: 44819.4120
+
+Take Profit Points:
+  Time: 2025-01-01T00:26:24.538801
+  Price: $0.42437252
+  PnL: $27.53
+  Return: 55.07%
+
+Exit Details:
+  Exit Price: $0.37790365
+  Final PnL: $19.04
+  Return: 38.09%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_49
+Token: GM
+Entry Time: 2025-01-01T00:24:04.415348
+Entry Price: $0.00002458
+Market Price at Entry: $0.00002137
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3438
+  momentum_7m: 1.0894
+  trend_acceleration: 0.0309
+
+Exit Details:
+  Exit Price: $0.00001437
+  Final PnL: $-41.52
+  Return: -41.52%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_5
+Token: POPNU
+Entry Time: 2025-01-01T00:24:23.426812
+Entry Price: $0.01439899
+Market Price at Entry: $0.01252086
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.7697
+  momentum_7m: 0.5740
+  trend_acceleration: 0.0370
+
+Exit Details:
+  Exit Price: $0.01007199
+  Final PnL: $-30.05
+  Return: -30.05%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_50
+Token: POPNU
+Entry Time: 2025-01-01T00:24:23.426812
+Entry Price: $0.01439899
+Market Price at Entry: $0.01252086
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.7697
+  momentum_7m: 0.5740
+  trend_acceleration: 0.0370
+
+Exit Details:
+  Exit Price: $0.01007199
+  Final PnL: $-30.05
+  Return: -30.05%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_51
+Token: STEPHEN
+Entry Time: 2025-01-01T00:25:34.892516
+Entry Price: $0.00001017
+Market Price at Entry: $0.00000884
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3790
+  momentum_7m: 0.2982
+
+Exit Details:
+  Exit Price: $0.00000573
+  Final PnL: $-43.70
+  Return: -43.70%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_52
+Token: GIGATRUMP
+Entry Time: 2025-01-01T00:25:47.109878
+Entry Price: $0.00004416
+Market Price at Entry: $0.00003840
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1648
+  momentum_7m: 0.1991
+
+Exit Details:
+  Exit Price: $0.00000616
+  Final PnL: $-86.06
+  Return: -86.06%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_53
+Token: PIXMUS
+Entry Time: 2025-01-01T00:30:23.940283
+Entry Price: $0.00000778
+Market Price at Entry: $0.00000676
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1419
+  momentum_7m: 0.1221
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_54
+Token: TMIN
+Entry Time: 2025-01-01T00:30:38.615936
+Entry Price: $0.00000757
+Market Price at Entry: $0.00000658
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1859
+  momentum_7m: 0.2052
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_55
+Token: LB6
+Entry Time: 2025-01-01T00:34:00.582565
+Entry Price: $0.00000745
+Market Price at Entry: $0.00000648
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1065
+  momentum_7m: 0.1216
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_56
+Token: HNY
+Entry Time: 2025-01-01T00:35:22.547664
+Entry Price: $0.00000858
+Market Price at Entry: $0.00000746
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3150
+  momentum_7m: 0.3150
+  trend_acceleration: 0.0444
+  price_change_15m: 0.3150
+
+Exit Details:
+  Exit Price: $0.00000552
+  Final PnL: $-35.66
+  Return: -35.66%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_57
+Token: NY
+Entry Time: 2025-01-01T00:35:22.569183
+Entry Price: $0.00000713
+Market Price at Entry: $0.00000620
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1525
+  momentum_7m: 0.1525
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_58
+Token: 3
+Entry Time: 2025-01-01T00:37:18.245468
+Entry Price: $0.00000848
+Market Price at Entry: $0.00000737
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0827
+  momentum_7m: 0.1073
+  trend_acceleration: 0.0307
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_59
+Token: ADHDCOIN
+Entry Time: 2025-01-01T00:37:24.798361
+Entry Price: $0.00000949
+Market Price at Entry: $0.00000825
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1389
+  momentum_7m: 0.2750
+
+Exit Details:
+  Exit Price: $0.00000531
+  Final PnL: $-44.03
+  Return: -44.03%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_6
+Token: BWOULD
+Entry Time: 2025-01-01T00:38:11.612459
+Entry Price: $0.00000774
+Market Price at Entry: $0.00000673
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2614
+  momentum_7m: 0.2608
+  trend_acceleration: 0.0333
+
+Exit Details:
+  Exit Price: $0.00000546
+  Final PnL: $-29.42
+  Return: -29.42%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_60
+Token: BWOULD
+Entry Time: 2025-01-01T00:38:11.612459
+Entry Price: $0.00000774
+Market Price at Entry: $0.00000673
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2614
+  momentum_7m: 0.2608
+  trend_acceleration: 0.0333
+
+Exit Details:
+  Exit Price: $0.00000546
+  Final PnL: $-29.42
+  Return: -29.42%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_61
+Token: QQKKA
+Entry Time: 2025-01-01T00:38:40.533286
+Entry Price: $0.00000693
+Market Price at Entry: $0.00000603
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1292
+  momentum_7m: 0.1241
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_62
+Token: KERMIT
+Entry Time: 2025-01-01T00:38:40.666496
+Entry Price: $0.00000766
+Market Price at Entry: $0.00000666
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1858
+  momentum_7m: 0.1858
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_63
+Token: kukius
+Entry Time: 2025-01-01T00:40:24.226046
+Entry Price: $0.00001035
+Market Price at Entry: $0.00000900
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1989
+  momentum_7m: 0.4647
+
+Exit Details:
+  Exit Price: $0.00000553
+  Final PnL: $-46.56
+  Return: -46.56%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_64
+Token: HNY
+Entry Time: 2025-01-01T00:41:10.971382
+Entry Price: $0.00000675
+Market Price at Entry: $0.00000587
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2588
+  momentum_7m: 0.2554
+  trend_acceleration: 0.0256
+  price_change_15m: 0.2802
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_65
+Token: DCT
+Entry Time: 2025-01-01T00:41:30.775277
+Entry Price: $0.00000739
+Market Price at Entry: $0.00000643
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1407
+  momentum_7m: 0.1407
+
+Exit Details:
+  Exit Price: $0.00000547
+  Final PnL: $-26.00
+  Return: -26.00%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_66
+Token: CUNT
+Entry Time: 2025-01-01T00:41:41.387301
+Entry Price: $0.00001016
+Market Price at Entry: $0.00000884
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.4499
+  momentum_7m: 0.4145
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_67
+Token: Gey
+Entry Time: 2025-01-01T00:41:41.663073
+Entry Price: $0.00000816
+Market Price at Entry: $0.00000710
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1292
+  momentum_7m: 0.2007
+
+Exit Details:
+  Exit Price: $0.00000536
+  Final PnL: $-34.27
+  Return: -34.27%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_68
+Token: Dickcoin 
+Entry Time: 2025-01-01T00:42:06.287012
+Entry Price: $0.00000877
+Market Price at Entry: $0.00000763
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2265
+  momentum_7m: 0.2265
+
+Exit Details:
+  Exit Price: $0.00000533
+  Final PnL: $-39.23
+  Return: -39.23%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_69
+Token: HNY
+Entry Time: 2025-01-01T00:43:16.717002
+Entry Price: $0.00002001
+Market Price at Entry: $0.00001740
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1144
+  momentum_7m: 0.1063
+  trend_acceleration: 0.0140
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_7
+Token: OnlyChills
+Entry Time: 2025-01-01T00:43:17.627718
+Entry Price: $0.00004923
+Market Price at Entry: $0.00004281
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3008
+  momentum_7m: 0.3941
+
+Take Profit Points:
+  Time: 2025-01-01T00:45:35.482998
+  Price: $0.28935253
+  PnL: $26.85
+  Return: 53.71%
+  Time: 2025-01-01T00:52:38.422052
+  Price: $0.00001332
+  PnL: $31.25
+  Return: 62.51%
+  Time: 2025-01-01T00:52:30.176466
+  Price: $0.00007640
+  PnL: $42.37
+  Return: 84.73%
+
+Exit Details:
+  Exit Price: $0.00000663
+  Final PnL: $-86.52
+  Return: -86.52%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_70
+Token: OnlyChills
+Entry Time: 2025-01-01T00:43:17.627718
+Entry Price: $0.00004923
+Market Price at Entry: $0.00004281
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3008
+  momentum_7m: 0.3941
+
+Exit Details:
+  Exit Price: $0.00000663
+  Final PnL: $-86.52
+  Return: -86.52%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_71
+Token: 5x30 
+Entry Time: 2025-01-01T00:43:22.391996
+Entry Price: $0.00000817
+Market Price at Entry: $0.00000711
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1958
+  momentum_7m: 0.1958
+
+Exit Details:
+  Exit Price: $0.00000579
+  Final PnL: $-29.21
+  Return: -29.21%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_72
+Token: TM
+Entry Time: 2025-01-01T00:43:32.349248
+Entry Price: $0.18824978
+Market Price at Entry: $0.16369546
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2566
+  momentum_7m: 0.4689
+  trend_acceleration: 0.0024
+  price_change_15m: -0.6135
+
+Take Profit Points:
+  Time: 2025-01-01T00:45:35.482998
+  Price: $0.28935253
+  PnL: $26.85
+  Return: 53.71%
+
+Exit Details:
+  Exit Price: $0.05119204
+  Final PnL: $-36.40
+  Return: -72.81%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_73
+Token: ELSON
+Entry Time: 2025-01-01T00:44:23.855688
+Entry Price: $0.00000731
+Market Price at Entry: $0.00000636
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1676
+  momentum_7m: 0.1871
+
+Exit Details:
+  Exit Price: $0.00000541
+  Final PnL: $-25.93
+  Return: -25.93%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_74
+Token: GTOAi
+Entry Time: 2025-01-01T00:46:23.095165
+Entry Price: $0.00000776
+Market Price at Entry: $0.00000675
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0777
+  momentum_7m: 0.1090
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_75
+Token: HHW
+Entry Time: 2025-01-01T00:46:32.805171
+Entry Price: $0.00000820
+Market Price at Entry: $0.00000713
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2931
+  momentum_7m: 0.1068
+
+Take Profit Points:
+  Time: 2025-01-01T00:52:38.422052
+  Price: $0.00001332
+  PnL: $31.25
+  Return: 62.51%
+
+Exit Details:
+  Exit Price: $0.00000947
+  Final PnL: $7.74
+  Return: 15.49%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_76
+Token: NGA
+Entry Time: 2025-01-01T00:46:46.091790
+Entry Price: $0.00000777
+Market Price at Entry: $0.00000676
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.2728
+  momentum_7m: 0.1983
+  trend_acceleration: 0.0239
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_77
+Token: Ghost
+Entry Time: 2025-01-01T00:47:18.843429
+Entry Price: $0.00000717
+Market Price at Entry: $0.00000623
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1010
+  momentum_7m: 0.1317
+  trend_acceleration: 0.0403
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_78
+Token: LLAMA
+Entry Time: 2025-01-01T00:47:19.334631
+Entry Price: $0.00016902
+Market Price at Entry: $0.00014698
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3022
+  momentum_7m: 0.1990
+  trend_acceleration: 0.0355
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_79
+Token: GM
+Entry Time: 2025-01-01T00:47:20.159480
+Entry Price: $0.00004136
+Market Price at Entry: $0.00003596
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.8405
+  momentum_7m: 0.5256
+  trend_acceleration: 0.0538
+
+Take Profit Points:
+  Time: 2025-01-01T00:52:30.176466
+  Price: $0.00007640
+  PnL: $42.37
+  Return: 84.73%
+
+Exit Details:
+  Exit Price: $0.00004766
+  Final PnL: $7.63
+  Return: 15.25%
+  Exit Type: trailing_stop
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_8
+Token: WAGMI
+Entry Time: 2025-01-01T00:47:33.788141
+Entry Price: $0.00001425
+Market Price at Entry: $0.00001239
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3001
+  momentum_7m: 0.4633
+  trend_acceleration: -0.0288
+
+Take Profit Points:
+  Time: 2024-12-31T23:33:38.508583
+  Price: $0.00009916
+  PnL: $27.01
+  Return: 54.02%
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_80
+Token: WAGMI
+Entry Time: 2025-01-01T00:47:33.788141
+Entry Price: $0.00001425
+Market Price at Entry: $0.00001239
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.3001
+  momentum_7m: 0.4633
+  trend_acceleration: -0.0288
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_81
+Token: TM
+Entry Time: 2025-01-01T00:48:01.225441
+Entry Price: $0.00000850
+Market Price at Entry: $0.00000739
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1762
+  momentum_7m: 0.1456
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_82
+Token: GIGATRUMP
+Entry Time: 2025-01-01T00:48:45.843961
+Entry Price: $0.00000744
+Market Price at Entry: $0.00000647
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1590
+  momentum_7m: 0.2151
+  trend_acceleration: 0.0130
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_83
+Token: BWOULD
+Entry Time: 2025-01-01T00:48:45.899383
+Entry Price: $0.00000998
+Market Price at Entry: $0.00000868
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.6310
+  momentum_7m: 0.6310
+  trend_acceleration: 0.0612
+  price_change_15m: 0.5053
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_84
+Token: KEKIUSCEO
+Entry Time: 2025-01-01T00:48:55.413725
+Entry Price: $0.00000716
+Market Price at Entry: $0.00000623
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1329
+  momentum_7m: 0.1496
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_85
+Token: 0.001
+Entry Time: 2025-01-01T00:49:06.267865
+Entry Price: $0.00000705
+Market Price at Entry: $0.00000613
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1121
+  momentum_7m: 0.1120
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_86
+Token: DOGEFATHER
+Entry Time: 2025-01-01T00:49:15.608997
+Entry Price: $0.00001060
+Market Price at Entry: $0.00000922
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1970
+  momentum_7m: 0.1970
+  trend_acceleration: 0.0126
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_87
+Token: Kuzco AI
+Entry Time: 2025-01-01T00:50:47.932149
+Entry Price: $0.00000701
+Market Price at Entry: $0.00000610
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1382
+  momentum_7m: 0.1235
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_88
+Token: PIXEL
+Entry Time: 2025-01-01T00:51:29.698208
+Entry Price: $0.00000776
+Market Price at Entry: $0.00000675
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1200
+  momentum_7m: 0.1200
+  trend_acceleration: 0.0057
+  price_change_15m: 0.0525
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_89
+Token: OCTO
+Entry Time: 2025-01-01T00:51:46.875168
+Entry Price: $0.00004213
+Market Price at Entry: $0.00003663
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0987
+  momentum_7m: 0.1223
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_9
+Token: Untrusted
+Entry Time: 2025-01-01T00:51:46.876173
+Entry Price: $0.00000737
+Market Price at Entry: $0.00000641
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1443
+  momentum_7m: 0.1754
+
+Exit Details:
+  Exit Price: $0.00000008
+  Final PnL: $-28.12
+  Return: -28.12%
+  Exit Type: stop_loss
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_90
+Token: Untrusted
+Entry Time: 2025-01-01T00:51:46.876173
+Entry Price: $0.00000737
+Market Price at Entry: $0.00000641
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1443
+  momentum_7m: 0.1754
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_91
+Token: GIGATRUMP
+Entry Time: 2025-01-01T00:52:06.502967
+Entry Price: $0.00004098
+Market Price at Entry: $0.00003563
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1480
+  momentum_7m: 0.2034
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_92
+Token: 2025
+Entry Time: 2025-01-01T00:52:20.981538
+Entry Price: $0.00000773
+Market Price at Entry: $0.00000672
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1400
+  momentum_7m: 0.2575
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_93
+Token: Dada
+Entry Time: 2025-01-01T00:52:50.840177
+Entry Price: $0.00000739
+Market Price at Entry: $0.00000643
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.0879
+  momentum_7m: 0.1553
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_94
+Token: 2025
+Entry Time: 2025-01-01T00:53:30.499205
+Entry Price: $0.00000894
+Market Price at Entry: $0.00000778
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.1727
+  momentum_7m: 0.3352
+
+==================================================
+
+Trade ID: TRADE_20241231_222032_95
+Token: TRUMP25
+Entry Time: 2025-01-01T00:54:56.489705
+Entry Price: $0.00000965
+Market Price at Entry: $0.00000840
+Position Size: $100.00
+
+Entry Features:
+  momentum_5m: 0.4794
+  momentum_7m: 0.4427
+  trend_acceleration: 0.0633
+
+==================================================
+

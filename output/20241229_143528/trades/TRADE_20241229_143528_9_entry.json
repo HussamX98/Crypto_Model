@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_9",
+  "token_address": "8uCk5WtP3GpdiRmvRA1dYGG9HEuymDD6ZJhhWWacpump",
+  "token_symbol": "RUNNER",
+  "entry_time": "2024-12-29T15:08:12.481839",
+  "entry_price": 1.2833470085209066e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.6726047743778276,
+    "momentum_7m": 0.6726047743778276,
+    "trend_acceleration": 0.03106300784955461,
+    "price_change_15m": 1.005913827592574
+  }
+}

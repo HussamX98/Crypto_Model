@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_221758_20",
+  "token_address": "74aboRvtaLdftSDH3cjC8z3ifBfUHZMp7x4TR2Vmpump",
+  "token_symbol": "EP1LEPSY",
+  "entry_time": "2025-01-09T23:04:16.507131",
+  "market_price": 1.1775575924395676e-05,
+  "entry_price_with_slippage": 1.2953133516835245e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.2635033503920621,
+    "momentum_7m": 0.38538436482167504,
+    "trend_acceleration": 0.026390627494253194
+  },
+  "volume": 6546.868624956535
+}

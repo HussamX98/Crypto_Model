@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_32",
+  "token_address": "87JwVgpW3dfqcsaSYeN4NUq5VT3wppL8wdgrHZRzpump",
+  "token_symbol": "OBESE COIN",
+  "entry_time": "2025-01-08T13:52:30.633279",
+  "market_price": 6.662726615183201e-06,
+  "entry_price_with_slippage": 7.328999276701521e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9453933022661715,
+  "features": {
+    "momentum_5m": 0.22378164448037863,
+    "momentum_7m": 0.22378164448037863,
+    "trend_acceleration": 0.02797270556004733,
+    "price_change_15m": 0.21808995339925707
+  }
+}

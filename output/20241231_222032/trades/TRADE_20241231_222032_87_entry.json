@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_87",
+  "token_address": "8VRVgfsxxtKb9DhV5C7q7zb6SyNxb9FePgf2tTJ9pump",
+  "token_symbol": "Kuzco AI",
+  "entry_time": "2025-01-01T00:50:47.932149",
+  "market_price": 6.096928787688338e-06,
+  "entry_price_with_slippage": 7.011468105841589e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.13824985861800432,
+    "momentum_7m": 0.12351942230273139
+  }
+}

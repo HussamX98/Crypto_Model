@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_54",
+  "token_address": "3CzG2VLuP6YJRvYZmYdqF9zE6chhzqPhLSuetJx8pump",
+  "token_symbol": "PLM",
+  "entry_time": "2025-01-08T14:16:29.243468",
+  "market_price": 0.0002737893983973543,
+  "entry_price_with_slippage": 0.00030116833823708974,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.904743893887322,
+  "features": {
+    "momentum_5m": 0.4022090625391659,
+    "momentum_7m": 0.33517868065394274,
+    "trend_acceleration": 0.010474389388732214,
+    "price_change_15m": 1.0109521917638418
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_390",
+  "token_address": "CYLFfvagwG5kbd727jUF6z5SRto7pqoB8qDUQ37Ypump",
+  "token_symbol": "FRIDON",
+  "entry_time": "2025-01-23T17:37:25.650828",
+  "entry_price": 8.322516780552668e-06,
+  "market_price": 7.236971113524059e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 187.32388073333334
+}

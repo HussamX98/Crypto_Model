@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_135403_18",
+  "token_address": "FxwjyewsutYQpLKRZJuEyG5jJeNwcn4bnsNStDRRpump",
+  "token_symbol": "CHTTR",
+  "entry_time": "2024-12-31T15:36:56.675051",
+  "market_price": 3.43390591183522e-05,
+  "entry_price_with_slippage": 3.9489917986105026e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 1.135407209314962,
+    "momentum_7m": 1.135407209314962,
+    "trend_acceleration": 0.04206708112217361,
+    "price_change_15m": 4.967820126057745
+  }
+}

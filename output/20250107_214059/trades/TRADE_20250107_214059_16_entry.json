@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_16",
+  "token_address": "CDQQnevkVJMwAre1nw1DhMKxCf8oa3uLsJ85ZBigpump",
+  "token_symbol": "A55&8008",
+  "entry_time": "2025-01-07T22:04:03.030495",
+  "market_price": 1.649626717823237e-05,
+  "entry_price_with_slippage": 1.814589389605561e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.2883020276168795,
+    "momentum_7m": 0.7221083616259607,
+    "trend_acceleration": 0.0067433653567327695,
+    "price_change_15m": 1.1280084038667924
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_822",
+  "token_address": "4Y9DmjhRUVnvdijzajQBQvNF7CevWey7UB1HpEK5pump",
+  "token_symbol": "Democrat",
+  "entry_time": "2025-01-23T17:51:34.204597",
+  "entry_price": 8.332785189349116e-06,
+  "market_price": 7.245900164651405e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.00011419886144969915,
+    "momentum_7m": -0.00011419886144969915,
+    "trend_acceleration": 0.0,
+    "price_volatility": 5.709943072484957e-05,
+    "price_change_15m": -0.00011419886144969915,
+    "volume_momentum": 0.003137586552543592
+  },
+  "token_age_minutes": 181.35708266666668
+}

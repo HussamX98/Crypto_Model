@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2025-01-23T17:29:23.730076",
+    "price": 1.067132442547285e-05,
+    "return_pct": -13.043478260869556,
+    "time_in_trade_minutes": 0.005116866666666667,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:30:27.526856",
+    "price": 1.067132442547285e-05,
+    "return_pct": -13.043478260869556,
+    "time_in_trade_minutes": 1.0683965333333334,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:31:27.836583",
+    "price": 1.07235089811168e-05,
+    "return_pct": -12.61824637152056,
+    "time_in_trade_minutes": 2.07355865,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:32:28.168965",
+    "price": 1.089841975178509e-05,
+    "return_pct": -11.192965719784464,
+    "time_in_trade_minutes": 3.07909835,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:33:28.469871",
+    "price": 1.089841975178509e-05,
+    "return_pct": -11.192965719784464,
+    "time_in_trade_minutes": 4.08411345,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:35:40.022258",
+    "price": 1.089841975178509e-05,
+    "return_pct": -11.192965719784464,
+    "time_in_trade_minutes": 6.276653233333334,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:36:40.323484",
+    "price": 1.1043239207835537e-05,
+    "return_pct": -10.012887626737289,
+    "time_in_trade_minutes": 7.281673666666666,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:37:40.623475",
+    "price": 1.1052657251620743e-05,
+    "return_pct": -9.936143607298288,
+    "time_in_trade_minutes": 8.286673516666665,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:44:21.327394",
+    "price": 1.1284923066885219e-05,
+    "return_pct": -8.043498738767141,
+    "time_in_trade_minutes": 14.965072166666666,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:45:21.668732",
+    "price": 1.1422490948703295e-05,
+    "return_pct": -6.922510937350024,
+    "time_in_trade_minutes": 15.970761133333333,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:46:21.941153",
+    "price": 1.163805296494806e-05,
+    "return_pct": -5.165978907738511,
+    "time_in_trade_minutes": 16.975301483333332,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:48:31.431115",
+    "price": 1.1759400686495341e-05,
+    "return_pct": -4.1771629589391175,
+    "time_in_trade_minutes": 19.133467516666666,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:49:31.772619",
+    "price": 1.1759400686495341e-05,
+    "return_pct": -4.1771629589391175,
+    "time_in_trade_minutes": 20.13915925,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:50:32.078718",
+    "price": 1.1759400686495341e-05,
+    "return_pct": -4.1771629589391175,
+    "time_in_trade_minutes": 21.1442609,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:51:33.913597",
+    "price": 1.1759400686495341e-05,
+    "return_pct": -4.1771629589391175,
+    "time_in_trade_minutes": 22.174842216666665,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:52:34.457590",
+    "price": 1.1759400686495341e-05,
+    "return_pct": -4.1771629589391175,
+    "time_in_trade_minutes": 23.183908766666665,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T17:54:42.469580",
+    "price": 1.1688694785598268e-05,
+    "return_pct": -4.753318172978416,
+    "time_in_trade_minutes": 25.317441933333335,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:01:24.989530",
+    "price": 1.1788837088817016e-05,
+    "return_pct": -3.9372970288680142,
+    "time_in_trade_minutes": 32.02610776666667,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:02:25.269687",
+    "price": 1.1852297005020458e-05,
+    "return_pct": -3.42018655945564,
+    "time_in_trade_minutes": 33.03077705,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:03:25.581777",
+    "price": 1.1869015923313321e-05,
+    "return_pct": -3.2839505193894447,
+    "time_in_trade_minutes": 34.03597855,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:05:34.130907",
+    "price": 1.1801701742581696e-05,
+    "return_pct": -3.8324679092430425,
+    "time_in_trade_minutes": 36.17846405,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:06:34.437438",
+    "price": 1.0487560873422928e-05,
+    "return_pct": -14.540896825949012,
+    "time_in_trade_minutes": 37.183572899999994,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:07:34.802701",
+    "price": 9.941894002707437e-06,
+    "return_pct": -18.987326454911624,
+    "time_in_trade_minutes": 38.189660616666664,
+    "peak_return": 0
+  },
+  {
+    "timestamp": "2025-01-23T18:08:38.577743",
+    "price": 8.467187404625549e-06,
+    "return_pct": -31.004143790990746,
+    "time_in_trade_minutes": 39.25257798333334,
+    "peak_return": 0
+  }
+]

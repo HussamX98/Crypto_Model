@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_32",
+  "token_address": "3DMfxyKRRjLuif325CP5U1AhEhz5bNrsgvkYeKfppump",
+  "token_symbol": "Kom",
+  "entry_time": "2025-01-09T23:12:44.344663",
+  "market_price": 7.116537441480609e-05,
+  "entry_price_with_slippage": 7.82819118562867e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.19933727696600623,
+    "momentum_7m": 0.17401941160134982,
+    "trend_acceleration": 0.01183568454470775,
+    "price_change_15m": -0.059723834531455355
+  },
+  "volume": 32056.042905834685
+}

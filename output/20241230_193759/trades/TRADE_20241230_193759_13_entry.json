@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_13",
+  "token_address": "3fDmZ2DXRemJwXcYnhVw9h3a9AjKcS7jTAsRuu8Lpump",
+  "token_symbol": "DOOKIECOIN",
+  "entry_time": "2024-12-30T20:26:23.380889",
+  "market_price": 3.1179316514465415e-05,
+  "entry_price_with_slippage": 3.585621399163523e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.498811411826138,
+    "volume_change_5m": 0.22540954541228797,
+    "volatility_5m": 0.06696989167965975,
+    "momentum_7m": 0.42340102869921714,
+    "trend_acceleration": 0.02379830309130279,
+    "price_change_15m": 0.6645746818555687,
+    "volume_change_15m": 0.5704839255420908,
+    "relative_volume": 2.2741519094606613
+  }
+}

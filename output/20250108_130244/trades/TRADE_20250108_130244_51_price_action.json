@@ -1,0 +1,43 @@
+{
+  "trade_id": "TRADE_20250108_130244_51",
+  "token_symbol": "MLGKK",
+  "token_address": "9EyrZHBNGADLPeXaHUcqkEo8xjqEfyG6eRKpuuYHpump",
+  "entry_time": "2025-01-08T14:08:30.418141",
+  "entry_price": 1.1240305395706478e-05,
+  "initial_position_size": 100,
+  "monitoring_duration_minutes": 1.01280415,
+  "highest_price_seen": 1.1240305395706478e-05,
+  "price_action": [
+    {
+      "timestamp": "2025-01-08T14:08:30.419141",
+      "time_in_trade_minutes": 0.0,
+      "price": 9.633081013712295e-06,
+      "return_pct": -14.298760802425381,
+      "volume": 1959.5583513071438,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1240305395706478e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:09:30.677413",
+      "time_in_trade_minutes": 1.0,
+      "price": 7.845825521759523e-06,
+      "return_pct": -30.19917835367324,
+      "volume": 1959.5583513071438,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1240305395706478e-05,
+      "event": "monitoring"
+    },
+    {
+      "timestamp": "2025-01-08T14:09:30.677413",
+      "time_in_trade_minutes": 1.0,
+      "price": 7.845825521759523e-06,
+      "return_pct": -30.19917835367324,
+      "volume": 1959.5583513071438,
+      "remaining_position_size": 100,
+      "highest_price_seen": 1.1240305395706478e-05,
+      "event": "initial_stop_loss_hit",
+      "stop_price": 8.430229046779858e-06
+    }
+  ]
+}

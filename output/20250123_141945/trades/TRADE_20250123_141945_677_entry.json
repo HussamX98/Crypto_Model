@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_677",
+  "token_address": "3LGyM38yXaLq23L1TAebATzHdFNLV5BrRsWrqBnQpump",
+  "token_symbol": "MOM",
+  "entry_time": "2025-01-23T17:46:22.240414",
+  "entry_price": 8.764247172973254e-06,
+  "market_price": 7.621084498237612e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 182.91131915
+}

@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20241229_224949_10",
+  "token_address": "BSTYGFzVfkZ65PFUXVoBGwhFcMbnKbz86PW8RZFapump",
+  "token_symbol": "NEVERSELL",
+  "entry_time": "2024-12-29T23:36:00.992323",
+  "market_price": 0.00018593324232291854,
+  "entry_price_with_slippage": 0.0002138232286713563,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.706063223931831,
+    "volatility_5m": 0.21294828107158495,
+    "momentum_7m": 0.6430564127715761,
+    "trend_acceleration": 0.025283952873970242,
+    "price_change_15m": 0.9369700736124715,
+    "relative_volume": 1.6996618556831429
+  }
+}

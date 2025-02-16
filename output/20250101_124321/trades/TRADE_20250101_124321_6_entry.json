@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250101_124321_6",
+  "token_address": "8PdmrWLspsceP4rFepMwH6dLGNM7iTqNLyuGwJSzpump",
+  "token_symbol": "MScode",
+  "entry_time": "2025-01-01T13:22:36.580912",
+  "market_price": 2.479481135624196e-05,
+  "entry_price_with_slippage": 2.8514033059678254e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.8209817229397811,
+    "momentum_7m": 0.7508317606326442,
+    "trend_acceleration": 0.06180481019346448,
+    "price_change_15m": 1.0194128923655192
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_1",
+  "token_address": "GKZbSbRAgdxSFXoyfJn25ra3pTyuWfyxjNAW24z9pump",
+  "token_symbol": "DSL",
+  "entry_time": "2024-12-29T14:49:47.210402",
+  "entry_price": 2.529383344416208e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.32611501936302556,
+    "momentum_7m": 0.38535129902142895,
+    "trend_acceleration": 0.02243638626568896,
+    "price_change_15m": 2.9923304915637243
+  }
+}

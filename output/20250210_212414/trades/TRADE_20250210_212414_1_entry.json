@@ -1,0 +1,14 @@
+{
+  "trade_id": "TRADE_20250210_212414_1",
+  "token_symbol": "SS",
+  "entry_time": "2025-02-10T21:29:45.199828",
+  "market_price": 2.6937829474340606e-05,
+  "entry_price": 3.097850389549169e-05,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.4515441924244392,
+    "volatility_5m": 0.1903944534999388,
+    "momentum_7m": 1.1205632852403844
+  }
+}

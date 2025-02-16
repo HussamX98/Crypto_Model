@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_26",
+  "token_address": "J1Ee4SDKJi7QC4zWxwofck3xmLuytLGo9tU7HLkgpump",
+  "token_symbol": "ELONMA",
+  "entry_time": "2025-01-07T22:06:08.945016",
+  "market_price": 2.6827597785632185e-05,
+  "entry_price_with_slippage": 2.9510357564195406e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.9082052008271984,
+  "features": {
+    "momentum_5m": 0.12656416066175868,
+    "momentum_7m": 0.4001498739090936,
+    "trend_acceleration": 0.020049569859187474,
+    "price_change_15m": 1.1748758660209209
+  }
+}

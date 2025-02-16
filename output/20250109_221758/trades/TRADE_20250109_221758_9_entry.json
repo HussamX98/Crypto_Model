@@ -1,0 +1,18 @@
+{
+  "trade_id": "TRADE_20250109_221758_9",
+  "token_address": "HRuKrCt9KXCNC3CwWSjkHizafzBFFh32qE3dvP2Spump",
+  "token_symbol": "Magic",
+  "entry_time": "2025-01-09T22:53:23.905713",
+  "market_price": 6.366377554866081e-06,
+  "entry_price_with_slippage": 7.00301531035269e-06,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.85,
+  "features": {
+    "momentum_5m": 0.11113619255376483,
+    "momentum_7m": 0.12258946495745393,
+    "trend_acceleration": 0.01348186972544213,
+    "price_change_15m": -0.15261976345876405
+  },
+  "volume": 18244.197163008095
+}

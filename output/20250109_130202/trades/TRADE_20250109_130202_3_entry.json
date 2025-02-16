@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250109_130202_3",
+  "token_address": "9uaquG97Y4sCmU6b4WAVKhxGABkK8hd4zA3YzWUMpump",
+  "token_symbol": "BOND",
+  "entry_time": "2025-01-09T13:41:17.439366",
+  "market_price": 5.87123575013824e-05,
+  "entry_price_with_slippage": 6.458359325152065e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.2886512192136177,
+    "momentum_7m": 0.4106544204912186,
+    "trend_acceleration": 0.02161845405558066,
+    "price_change_15m": 0.40973815572672656
+  }
+}

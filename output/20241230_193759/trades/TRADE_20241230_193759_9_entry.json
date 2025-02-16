@@ -1,0 +1,21 @@
+{
+  "trade_id": "TRADE_20241230_193759_9",
+  "token_address": "4Too9jQpvQdTU9iSGhpbSL1i8gTmJjhXsHLBLv1Upump",
+  "token_symbol": "RESOLUTION",
+  "entry_time": "2024-12-30T20:21:20.775480",
+  "market_price": 4.73442768561083e-05,
+  "entry_price_with_slippage": 5.444591838452455e-05,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.3629582348753779,
+    "volume_change_5m": 0.0,
+    "volatility_5m": 0.1444054550444785,
+    "momentum_7m": 0.5982808929240746,
+    "trend_acceleration": 0.042411153908452,
+    "price_change_15m": 0.7099011196306049,
+    "volume_change_15m": 0,
+    "relative_volume": 3.8333333333333335
+  }
+}

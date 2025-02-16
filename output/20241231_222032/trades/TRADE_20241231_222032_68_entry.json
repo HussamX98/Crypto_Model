@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241231_222032_68",
+  "token_address": "FcGMoK7meiwYt7APmFu5sPnRu61xNeBYpdMMYqaXpump",
+  "token_symbol": "Dickcoin ",
+  "entry_time": "2025-01-01T00:42:06.287012",
+  "market_price": 7.6281244789498085e-06,
+  "entry_price_with_slippage": 8.77234315079228e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.226471544853321,
+    "momentum_7m": 0.226471544853321
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250108_130244_19",
+  "token_address": "AMPBrV89bHvnQkSD8Ttow8ELf2wAcb4ZXxyRsNchpump",
+  "token_symbol": "AI",
+  "entry_time": "2025-01-08T13:44:28.588265",
+  "market_price": 2.124418421466597e-05,
+  "entry_price_with_slippage": 2.336860263613257e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.44328737283499753,
+    "momentum_7m": 0.2431302986954058,
+    "trend_acceleration": 0.03891331417635624,
+    "price_change_15m": 1.288646997734693
+  }
+}

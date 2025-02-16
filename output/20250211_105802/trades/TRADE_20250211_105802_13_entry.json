@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20250211_105802_13",
+  "token_symbol": "SFM",
+  "entry_time": "2025-02-11T17:34:09.365044",
+  "market_price": 0.00024375733513501242,
+  "entry_price": 0.0002803209354052643,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.6655496851134666,
+    "volatility_5m": 0.035435388708925354,
+    "momentum_7m": 0.4270848150826181,
+    "trend_acceleration": 0.025516430060165726
+  }
+}

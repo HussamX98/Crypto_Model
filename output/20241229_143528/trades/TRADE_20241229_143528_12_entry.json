@@ -1,0 +1,15 @@
+{
+  "trade_id": "TRADE_20241229_143528_12",
+  "token_address": "FHJjutZMA1x5X8rvugRgbP2JK3ETaY8NSv7gossBpump",
+  "token_symbol": "Really",
+  "entry_time": "2024-12-29T15:16:22.216944",
+  "entry_price": 1.4217332157461417e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.37607690988851705,
+    "momentum_7m": 0.7309163401227521,
+    "trend_acceleration": 0.03866725897468998,
+    "price_change_15m": 1.0055504948533343
+  }
+}

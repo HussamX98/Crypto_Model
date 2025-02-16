@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_903",
+  "token_address": "2zg8J6XRaZKeYv4A4tq53ziv2borPmDjw763kmjWpump",
+  "token_symbol": "zipperai",
+  "entry_time": "2025-01-23T17:56:40.215660",
+  "entry_price": 8.181895298755725e-06,
+  "market_price": 7.1146915641354145e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 201.01951641666668
+}

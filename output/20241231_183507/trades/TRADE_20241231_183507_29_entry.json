@@ -1,0 +1,16 @@
+{
+  "trade_id": "TRADE_20241231_183507_29",
+  "token_address": "td51prFb5iyFho2Str5NgSHHkXPM7G82AdDwReZpump",
+  "token_symbol": "TM",
+  "entry_time": "2024-12-31T19:29:38.595751",
+  "market_price": 5.854697497353962e-06,
+  "entry_price_with_slippage": 6.732902121957056e-06,
+  "slippage_percent": 15,
+  "position_size": 30.0,
+  "confidence_score": 0.6,
+  "features": {
+    "momentum_5m": 0.03216304094815592,
+    "momentum_7m": 0.03216304094815592,
+    "trend_acceleration": 0.0
+  }
+}

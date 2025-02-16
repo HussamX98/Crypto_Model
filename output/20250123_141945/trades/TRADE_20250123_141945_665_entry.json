@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_665",
+  "token_address": "DCNzUSfcGvK1UU6Gxu4Wa2177Jq2Yf5iQanp657kpump",
+  "token_symbol": "Yourdream",
+  "entry_time": "2025-01-23T17:45:30.845592",
+  "entry_price": 8.351513693382755e-06,
+  "market_price": 7.26218582033283e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.0,
+    "momentum_7m": 0.0,
+    "trend_acceleration": 0.0,
+    "price_volatility": 0.0,
+    "price_change_15m": 0.0,
+    "volume_momentum": 0.0
+  },
+  "token_age_minutes": 184.36261805
+}

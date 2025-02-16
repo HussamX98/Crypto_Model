@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_931",
+  "token_address": "8FR8qdY14FJcBYZn11ryrfV9Y5zgcYZTEHGmF38ypump",
+  "token_symbol": "MAKE",
+  "entry_time": "2025-01-23T17:57:35.907889",
+  "entry_price": 8.209948569103338e-06,
+  "market_price": 7.1390857122637735e-06,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": -0.001329491777856906,
+    "momentum_7m": -0.001329491777856906,
+    "trend_acceleration": -0.000664745888928453,
+    "price_volatility": 0.0009400926516543773,
+    "price_change_15m": -0.001329491777856906,
+    "volume_momentum": 0.0008273566969911883
+  },
+  "token_age_minutes": 182.58051089999998
+}

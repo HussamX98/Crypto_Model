@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20241231_222032_23",
+  "token_address": "CE8PR2ftTEXWCAV2gyDGRWSQWWw2ZwJmoeqchVRDpump",
+  "token_symbol": "MIDNITE",
+  "entry_time": "2024-12-31T23:29:18.941109",
+  "market_price": 4.437721962842947e-06,
+  "entry_price_with_slippage": 5.1033802572693895e-06,
+  "slippage_percent": 15,
+  "position_size": 100,
+  "confidence_score": 0.8,
+  "features": {
+    "momentum_5m": 0.1885253286048345,
+    "momentum_7m": 0.13164829322226512,
+    "trend_acceleration": 0.02312407256167294,
+    "price_change_15m": -0.8803538021170808
+  }
+}

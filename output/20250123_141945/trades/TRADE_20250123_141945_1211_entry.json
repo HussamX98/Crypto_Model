@@ -1,0 +1,19 @@
+{
+  "trade_id": "TRADE_20250123_141945_1211",
+  "token_address": "5WgJCxy3XqfE9Ge43CMHYfQRqgCBnU9UynByJi4Rpump",
+  "token_symbol": "TRST",
+  "entry_time": "2025-01-23T18:17:39.728030",
+  "entry_price": 0.00010998499676227974,
+  "market_price": 9.56391276193737e-05,
+  "position_size": 100,
+  "confidence_score": 1.0,
+  "features": {
+    "momentum_5m": 0.004583916673189359,
+    "momentum_7m": 0.004583916673189359,
+    "trend_acceleration": -0.004132149100167126,
+    "price_volatility": 0.0029218706496020653,
+    "price_change_15m": -0.03896452252543314,
+    "volume_momentum": 0.00013672953015131384
+  },
+  "token_age_minutes": 215.26772753333336
+}

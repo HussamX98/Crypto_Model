@@ -1,0 +1,17 @@
+{
+  "trade_id": "TRADE_20250107_214059_43",
+  "token_address": "GQ7keimCiexZxwnh7scRpaSx7zsNxC62e2hq7c5Cpump",
+  "token_symbol": "JIZZ",
+  "entry_time": "2025-01-07T22:13:16.674598",
+  "market_price": 1.2907855386009222e-05,
+  "entry_price_with_slippage": 1.4198640924610145e-05,
+  "slippage_percent": 10.000000000000009,
+  "position_size": 100,
+  "confidence_score": 0.8142226907558439,
+  "features": {
+    "momentum_5m": 0.1365927353343721,
+    "momentum_7m": 0.13913244090735932,
+    "trend_acceleration": 0.03963212675844524,
+    "price_change_15m": 0.5209688004895003
+  }
+}
